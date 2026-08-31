@@ -1,0 +1,19 @@
+__pycache__/
+*.pyc
+*.egg-info/
+dist/
+.venv/
+venv/
+
+# binary / large data — re-derivable from data/cord_test.parquet or local
+*.png
+*.jpg
+*.jpeg
+*.parquet
+data/predictions/
+
+results/
+__MACOSX/
+.DS_Store
+Thumbs.db
+*.sqlite

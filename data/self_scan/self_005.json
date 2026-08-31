@@ -1,0 +1,57 @@
+{
+  "prediction": {
+    "menu_items": [
+      {
+        "name": "Set Roka Tori Nanban",
+        "quantity": 1,
+        "unit_price": 30000,
+        "amount": 30000
+      },
+      {
+        "name": "Roka Tori Nanban",
+        "quantity": 1,
+        "unit_price": 23000,
+        "amount": 23000
+      },
+      {
+        "name": "Set Roka On Fire",
+        "quantity": 1,
+        "unit_price": 27000,
+        "amount": 27000
+      },
+      {
+        "name": "Set Roka Golden",
+        "quantity": 1,
+        "unit_price": 25000,
+        "amount": 25000
+      },
+      {
+        "name": "Set Roka Chizu",
+        "quantity": 1,
+        "unit_price": 27000,
+        "amount": 27000
+      },
+      {
+        "name": "Coca Cola",
+        "quantity": 1,
+        "unit_price": 10000,
+        "amount": 10000
+      }
+    ],
+    "subtotal": 142000,
+    "discount": null,
+    "tax": 14200,
+    "service_charge": null,
+    "total": 156200,
+    "payment": {
+      "method": "cash",
+      "amount_paid": 156200,
+      "change": 0
+    }
+  },
+  "meta": {
+    "vendor": "ROKAVILLE",
+    "date": "25/07/2026",
+    "source": "photo"
+  }
+}

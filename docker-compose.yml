@@ -1,0 +1,27 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      VLM_BASE_URL: ${VLM_BASE_URL:-http://host.docker.internal:20128/v1}
+      VLM_API_KEY: ${VLM_API_KEY:-}
+      VLM_MODEL: ${VLM_MODEL:-bai/mimo-v2.5}
+    volumes:
+      - ./data:/app/data
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  # docker compose run --rm eval
+  eval:
+    build: .
+    command: ["python", "run_eval.py"]
+    environment:
+      VLM_BASE_URL: ${VLM_BASE_URL:-http://host.docker.internal:20128/v1}
+      VLM_API_KEY: ${VLM_API_KEY:-}
+      VLM_MODEL: ${VLM_MODEL:-bai/mimo-v2.5}
+    volumes:
+      - ./data:/app/data
+      - ./results:/app/results
+    extra_hosts:
+      - "host.docker.internal:host-gateway"

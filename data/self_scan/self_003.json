@@ -1,0 +1,52 @@
+{
+  "prediction": {
+    "menu_items": [
+      {
+        "name": "Paket Blackpepper",
+        "quantity": 1,
+        "unit_price": 17000,
+        "amount": 17000
+      },
+      {
+        "name": "Paket Mertua Kalem",
+        "quantity": 3,
+        "unit_price": 17000,
+        "amount": 51000
+      },
+      {
+        "name": "Paket Keju Kalem",
+        "quantity": 2,
+        "unit_price": 20000,
+        "amount": 40000
+      },
+      {
+        "name": "Es Teh",
+        "quantity": 5,
+        "unit_price": 3000,
+        "amount": 15000
+      },
+      {
+        "name": "Air Es",
+        "quantity": 1,
+        "unit_price": 2000,
+        "amount": 2000
+      }
+    ],
+    "subtotal": 125000,
+    "discount": null,
+    "tax": null,
+    "service_charge": null,
+    "total": 125000,
+    "payment": {
+      "method": "transfer",
+      "amount_paid": 125000,
+      "change": null
+    }
+  },
+  "meta": {
+    "vendor": "Ayam Mertua UGM",
+    "date": "06/06/2025",
+    "source": "photo",
+    "note": "total items 12"
+  }
+}

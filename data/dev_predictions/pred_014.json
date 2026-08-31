@@ -1,0 +1,57 @@
+{
+  "idx": 14,
+  "image": "cord_014.png",
+  "model": "bai/mimo-v2.5",
+  "latency_s": 97.72,
+  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"RedVelvet Cheese Slc\",\n      \"quantity\": 1,\n      \"unit_price\": 38000,\n      \"amount\": 38000\n    },\n    {\n      \"name\": \"Chicken Baked Rice\",\n      \"quantity\": 1,\n      \"unit_price\": 55000,\n      \"amount\": 55000\n    },\n    {\n      \"name\": \"Fish n Chips\",\n      \"quantity\": 1,\n      \"unit_price\": 65000,\n      \"amount\": 65000\n    },\n    {\n      \"name\": \"Mushroom Soup\",\n      \"quantity\": 1,\n      \"unit_price\": 35000,\n      \"amount\": 35000\n    },\n    {\n      \"name\": \"Chamomile\",\n      \"quantity\": 1,\n      \"unit_price\": 25000,\n      \"amount\": 25000\n    },\n    {\n      \"name\": \"Iced Tea\",\n      \"quantity\": 1,\n      \"unit_price\": 20000,\n      \"amount\": 20000\n    }\n  ],\n  \"subtotal\": 238000,\n  \"discount\": 100000,\n  \"tax\": 25585,\n  \"service_charge\": 17850,\n  \"total\": 281435,\n  \"payment\": {\n    \"method\": \"cash\",\n    \"amount_paid\": 200000,\n    \"change\": 18565\n  }\n}",
+  "prediction": {
+    "menu_items": [
+      {
+        "name": "RedVelvet Cheese Slc",
+        "quantity": 1,
+        "unit_price": 38000,
+        "amount": 38000
+      },
+      {
+        "name": "Chicken Baked Rice",
+        "quantity": 1,
+        "unit_price": 55000,
+        "amount": 55000
+      },
+      {
+        "name": "Fish n Chips",
+        "quantity": 1,
+        "unit_price": 65000,
+        "amount": 65000
+      },
+      {
+        "name": "Mushroom Soup",
+        "quantity": 1,
+        "unit_price": 35000,
+        "amount": 35000
+      },
+      {
+        "name": "Chamomile",
+        "quantity": 1,
+        "unit_price": 25000,
+        "amount": 25000
+      },
+      {
+        "name": "Iced Tea",
+        "quantity": 1,
+        "unit_price": 20000,
+        "amount": 20000
+      }
+    ],
+    "subtotal": 238000,
+    "discount": 100000,
+    "tax": 25585,
+    "service_charge": 17850,
+    "total": 281435,
+    "payment": {
+      "method": "cash",
+      "amount_paid": 200000,
+      "change": 18565
+    }
+  }
+}

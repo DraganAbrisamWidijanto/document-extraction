@@ -1,0 +1,40 @@
+{
+  "prediction": {
+    "menu_items": [
+      {
+        "name": "Paket A1",
+        "quantity": 3,
+        "unit_price": 32273,
+        "amount": 96819
+      },
+      {
+        "name": "Merdeka 1",
+        "quantity": 2,
+        "unit_price": 31364,
+        "amount": 62728
+      },
+      {
+        "name": "Merdeka 3",
+        "quantity": 1,
+        "unit_price": 34091,
+        "amount": 34091
+      }
+    ],
+    "subtotal": 193638,
+    "discount": null,
+    "tax": 19364,
+    "service_charge": null,
+    "total": 213002,
+    "payment": {
+      "method": "debit",
+      "amount_paid": 213002,
+      "change": null
+    }
+  },
+  "meta": {
+    "vendor": "NASGOR 69",
+    "date": "01/03/2026",
+    "source": "photo",
+    "note": "item names uncertain (vision read price-as-name)"
+  }
+}

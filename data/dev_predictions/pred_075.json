@@ -1,0 +1,57 @@
+{
+  "idx": 75,
+  "image": "cord_075.png",
+  "model": "bai/mimo-v2.5",
+  "latency_s": 16.56,
+  "raw": "{\"menu_items\":[{\"name\":\"CHOCO PUFF\",\"quantity\":1,\"unit_price\":29091,\"amount\":29091},{\"name\":\"CREAMY BEEF CLS FTC\",\"quantity\":1,\"unit_price\":42727,\"amount\":42727},{\"name\":\"NEW ORIENTAL CHK RICE\",\"quantity\":1,\"unit_price\":34545,\"amount\":34545},{\"name\":\"LIPTON PITCHER\",\"quantity\":1,\"unit_price\":54545,\"amount\":54545},{\"name\":\"SC/P SUPER SUPREME\",\"quantity\":1,\"unit_price\":47273,\"amount\":47273},{\"name\":\"CB/P BLACK PEPP BEEF\",\"quantity\":1,\"unit_price\":48182,\"amount\":48182}],\"subtotal\":256363,\"discount\":null,\"tax\":25637,\"service_charge\":null,\"total\":282000,\"payment\":{\"method\":null,\"amount_paid\":null,\"change\":null}}",
+  "prediction": {
+    "menu_items": [
+      {
+        "name": "CHOCO PUFF",
+        "quantity": 1,
+        "unit_price": 29091,
+        "amount": 29091
+      },
+      {
+        "name": "CREAMY BEEF CLS FTC",
+        "quantity": 1,
+        "unit_price": 42727,
+        "amount": 42727
+      },
+      {
+        "name": "NEW ORIENTAL CHK RICE",
+        "quantity": 1,
+        "unit_price": 34545,
+        "amount": 34545
+      },
+      {
+        "name": "LIPTON PITCHER",
+        "quantity": 1,
+        "unit_price": 54545,
+        "amount": 54545
+      },
+      {
+        "name": "SC/P SUPER SUPREME",
+        "quantity": 1,
+        "unit_price": 47273,
+        "amount": 47273
+      },
+      {
+        "name": "CB/P BLACK PEPP BEEF",
+        "quantity": 1,
+        "unit_price": 48182,
+        "amount": 48182
+      }
+    ],
+    "subtotal": 256363,
+    "discount": null,
+    "tax": 25637,
+    "service_charge": null,
+    "total": 282000,
+    "payment": {
+      "method": null,
+      "amount_paid": null,
+      "change": null
+    }
+  }
+}

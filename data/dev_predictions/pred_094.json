@@ -1,0 +1,45 @@
+{
+  "idx": 94,
+  "image": "cord_094.png",
+  "model": "bai/mimo-v2.5",
+  "latency_s": 36.68,
+  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"TAHU GORENG\",\n      \"quantity\": 1,\n      \"unit_price\": 28000,\n      \"amount\": 28000\n    },\n    {\n      \"name\": \"CAKWE\",\n      \"quantity\": 1,\n      \"unit_price\": 17000,\n      \"amount\": 17000\n    },\n    {\n      \"name\": \"PHO TAI CHIN (R)\",\n      \"quantity\": 1,\n      \"unit_price\": 63000,\n      \"amount\": 63000\n    },\n    {\n      \"name\": \"TEA\",\n      \"quantity\": 1,\n      \"unit_price\": 11000,\n      \"amount\": 11000\n    }\n  ],\n  \"subtotal\": 119000,\n  \"discount\": null,\n  \"tax\": 12733,\n  \"service_charge\": 8330,\n  \"total\": 140063,\n  \"payment\": {\n    \"method\": \"credit_card\",\n    \"amount_paid\": 140063,\n    \"change\": null\n  }\n}",
+  "prediction": {
+    "menu_items": [
+      {
+        "name": "TAHU GORENG",
+        "quantity": 1,
+        "unit_price": 28000,
+        "amount": 28000
+      },
+      {
+        "name": "CAKWE",
+        "quantity": 1,
+        "unit_price": 17000,
+        "amount": 17000
+      },
+      {
+        "name": "PHO TAI CHIN (R)",
+        "quantity": 1,
+        "unit_price": 63000,
+        "amount": 63000
+      },
+      {
+        "name": "TEA",
+        "quantity": 1,
+        "unit_price": 11000,
+        "amount": 11000
+      }
+    ],
+    "subtotal": 119000,
+    "discount": null,
+    "tax": 12733,
+    "service_charge": 8330,
+    "total": 140063,
+    "payment": {
+      "method": "credit_card",
+      "amount_paid": 140063,
+      "change": null
+    }
+  }
+}

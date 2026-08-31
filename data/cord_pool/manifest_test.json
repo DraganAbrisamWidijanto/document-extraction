@@ -1,0 +1,272 @@
+[
+  {
+    "idx": 1,
+    "image": "cord_001.png",
+    "gt_type": "cord",
+    "split": "test"
+  },
+  {
+    "idx": 4,
+    "image": "cord_004.png",
+    "gt_type": "cord",
+    "split": "test"
+  },
+  {
+    "idx": 7,
+    "image": "cord_007.png",
+    "gt_type": "cord",
+    "split": "test"
+  },
+  {
+    "idx": 8,
+    "image": "cord_008.png",
+    "gt_type": "cord",
+    "split": "test"
+  },
+  {
+    "idx": 12,
+    "image": "cord_012.png",
+    "gt_type": "cord",
+    "split": "test"
+  },
+  {
+    "idx": 17,
+    "image": "cord_017.png",
+    "gt_type": "cord",
+    "split": "test"
+  },
+  {
+    "idx": 19,
+    "image": "cord_019.png",
+    "gt_type": "cord",
+    "split": "test"
+  },
+  {
+    "idx": 20,
+    "image": "cord_020.png",
+    "gt_type": "cord",
+    "split": "test"
+  },
+  {
+    "idx": 21,
+    "image": "cord_021.png",
+    "gt_type": "cord",
+    "split": "test"
+  },
+  {
+    "idx": 24,
+    "image": "cord_024.png",
+    "gt_type": "cord",
+    "split": "test"
+  },
+  {
+    "idx": 29,
+    "image": "cord_029.png",
+    "gt_type": "cord",
+    "split": "test"
+  },
+  {
+    "idx": 33,
+    "image": "cord_033.png",
+    "gt_type": "cord",
+    "split": "test"
+  },
+  {
+    "idx": 34,
+    "image": "cord_034.png",
+    "gt_type": "cord",
+    "split": "test"
+  },
+  {
+    "idx": 36,
+    "image": "cord_036.png",
+    "gt_type": "cord",
+    "split": "test"
+  },
+  {
+    "idx": 37,
+    "image": "cord_037.png",
+    "gt_type": "cord",
+    "split": "test"
+  },
+  {
+    "idx": 38,
+    "image": "cord_038.png",
+    "gt_type": "cord",
+    "split": "test"
+  },
+  {
+    "idx": 41,
+    "image": "cord_041.png",
+    "gt_type": "cord",
+    "split": "test"
+  },
+  {
+    "idx": 43,
+    "image": "cord_043.png",
+    "gt_type": "cord",
+    "split": "test"
+  },
+  {
+    "idx": 45,
+    "image": "cord_045.png",
+    "gt_type": "cord",
+    "split": "test"
+  },
+  {
+    "idx": 51,
+    "image": "cord_051.png",
+    "gt_type": "cord",
+    "split": "test"
+  },
+  {
+    "idx": 55,
+    "image": "cord_055.png",
+    "gt_type": "cord",
+    "split": "test"
+  },
+  {
+    "idx": 56,
+    "image": "cord_056.png",
+    "gt_type": "cord",
+    "split": "test"
+  },
+  {
+    "idx": 58,
+    "image": "cord_058.png",
+    "gt_type": "cord",
+    "split": "test"
+  },
+  {
+    "idx": 59,
+    "image": "cord_059.png",
+    "gt_type": "cord",
+    "split": "test"
+  },
+  {
+    "idx": 60,
+    "image": "cord_060.png",
+    "gt_type": "cord",
+    "split": "test"
+  },
+  {
+    "idx": 61,
+    "image": "cord_061.png",
+    "gt_type": "cord",
+    "split": "test"
+  },
+  {
+    "idx": 64,
+    "image": "cord_064.png",
+    "gt_type": "cord",
+    "split": "test"
+  },
+  {
+    "idx": 65,
+    "image": "cord_065.png",
+    "gt_type": "cord",
+    "split": "test"
+  },
+  {
+    "idx": 66,
+    "image": "cord_066.png",
+    "gt_type": "cord",
+    "split": "test"
+  },
+  {
+    "idx": 69,
+    "image": "cord_069.png",
+    "gt_type": "cord",
+    "split": "test"
+  },
+  {
+    "idx": 70,
+    "image": "cord_070.png",
+    "gt_type": "cord",
+    "split": "test"
+  },
+  {
+    "idx": 74,
+    "image": "cord_074.png",
+    "gt_type": "cord",
+    "split": "test"
+  },
+  {
+    "idx": 76,
+    "image": "cord_076.png",
+    "gt_type": "cord",
+    "split": "test"
+  },
+  {
+    "idx": 78,
+    "image": "cord_078.png",
+    "gt_type": "cord",
+    "split": "test"
+  },
+  {
+    "idx": 79,
+    "image": "cord_079.png",
+    "gt_type": "cord",
+    "split": "test"
+  },
+  {
+    "idx": 81,
+    "image": "cord_081.png",
+    "gt_type": "cord",
+    "split": "test"
+  },
+  {
+    "idx": 82,
+    "image": "cord_082.png",
+    "gt_type": "cord",
+    "split": "test"
+  },
+  {
+    "idx": 84,
+    "image": "cord_084.png",
+    "gt_type": "cord",
+    "split": "test"
+  },
+  {
+    "idx": 85,
+    "image": "cord_085.png",
+    "gt_type": "cord",
+    "split": "test"
+  },
+  {
+    "idx": 93,
+    "image": "cord_093.png",
+    "gt_type": "cord",
+    "split": "test"
+  },
+  {
+    "idx": 94,
+    "image": "cord_094.png",
+    "gt_type": "cord",
+    "split": "test"
+  },
+  {
+    "idx": 95,
+    "image": "cord_095.png",
+    "gt_type": "cord",
+    "split": "test"
+  },
+  {
+    "idx": 97,
+    "image": "cord_097.png",
+    "gt_type": "cord",
+    "split": "test"
+  },
+  {
+    "idx": 98,
+    "image": "cord_098.png",
+    "gt_type": "cord",
+    "split": "test"
+  },
+  {
+    "idx": 99,
+    "image": "cord_099.png",
+    "gt_type": "cord",
+    "split": "test"
+  }
+]

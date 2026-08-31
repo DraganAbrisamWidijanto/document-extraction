@@ -1,0 +1,87 @@
+[
+  {
+    "idx": "self_001",
+    "image": "self_001.jpg",
+    "gt": "self_001.json",
+    "size": [
+      902,
+      1600
+    ],
+    "fields": [
+      "menu",
+      "sub_total",
+      "total",
+      "payment"
+    ],
+    "vendor": "NASGOR 69",
+    "source": "photo"
+  },
+  {
+    "idx": "self_002",
+    "image": "self_002.jpg",
+    "gt": "self_002.json",
+    "size": [
+      702,
+      826
+    ],
+    "fields": [
+      "menu",
+      "sub_total",
+      "total",
+      "payment"
+    ],
+    "vendor": "Ayam Gepuk Pak Gembus",
+    "source": "photo"
+  },
+  {
+    "idx": "self_003",
+    "image": "self_003.jpg",
+    "gt": "self_003.json",
+    "size": [
+      900,
+      1600
+    ],
+    "fields": [
+      "menu",
+      "sub_total",
+      "total",
+      "payment"
+    ],
+    "vendor": "Ayam Mertua UGM",
+    "source": "photo"
+  },
+  {
+    "idx": "self_004",
+    "image": "self_004.jpg",
+    "gt": "self_004.json",
+    "size": [
+      720,
+      1280
+    ],
+    "fields": [
+      "menu",
+      "sub_total",
+      "total",
+      "payment"
+    ],
+    "vendor": "Mie Bonafide",
+    "source": "photo"
+  },
+  {
+    "idx": "self_005",
+    "image": "self_005.jpg",
+    "gt": "self_005.json",
+    "size": [
+      900,
+      1600
+    ],
+    "fields": [
+      "menu",
+      "sub_total",
+      "total",
+      "payment"
+    ],
+    "vendor": "ROKAVILLE",
+    "source": "photo"
+  }
+]

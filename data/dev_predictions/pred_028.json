@@ -1,0 +1,39 @@
+{
+  "idx": 28,
+  "image": "cord_028.png",
+  "model": "bai/mimo-v2.5",
+  "latency_s": 88.02,
+  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"SAMGYOPSAL\",\n      \"quantity\": 2,\n      \"unit_price\": 97000,\n      \"amount\": 194000\n    },\n    {\n      \"name\": \"SUL LUNG TANG\",\n      \"quantity\": 1,\n      \"unit_price\": 75000,\n      \"amount\": 75000\n    },\n    {\n      \"name\": \"MAKOLI\",\n      \"quantity\": 1,\n      \"unit_price\": 100000,\n      \"amount\": 100000\n    }\n  ],\n  \"subtotal\": 369000,\n  \"discount\": 0,\n  \"tax\": 38745,\n  \"service_charge\": 18450,\n  \"total\": 426195,\n  \"payment\": {\n    \"method\": null,\n    \"amount_paid\": null,\n    \"change\": null\n  }\n}",
+  "prediction": {
+    "menu_items": [
+      {
+        "name": "SAMGYOPSAL",
+        "quantity": 2,
+        "unit_price": 97000,
+        "amount": 194000
+      },
+      {
+        "name": "SUL LUNG TANG",
+        "quantity": 1,
+        "unit_price": 75000,
+        "amount": 75000
+      },
+      {
+        "name": "MAKOLI",
+        "quantity": 1,
+        "unit_price": 100000,
+        "amount": 100000
+      }
+    ],
+    "subtotal": 369000,
+    "discount": 0,
+    "tax": 38745,
+    "service_charge": 18450,
+    "total": 426195,
+    "payment": {
+      "method": null,
+      "amount_paid": null,
+      "change": null
+    }
+  }
+}

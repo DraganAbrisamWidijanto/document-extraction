@@ -1,0 +1,33 @@
+{
+  "idx": 31,
+  "image": "cord_031.png",
+  "model": "bai/mimo-v2.5",
+  "latency_s": 306.31,
+  "raw": "```json\n{\n  \"menu_items\": [\n    {\n      \"name\": \"SALMON PESTO\",\n      \"quantity\": 1,\n      \"unit_price\": 85500,\n      \"amount\": 85500\n    },\n    {\n      \"name\": \"SALMON PESTO\",\n      \"quantity\": 1,\n      \"unit_price\": 85500,\n      \"amount\": 85500\n    }\n  ],\n  \"subtotal\": 85500,\n  \"discount\": 85500,\n  \"tax\": 18126,\n  \"service_charge\": 10260,\n  \"total\": 113886,\n  \"payment\": {\n    \"method\": null,\n    \"amount_paid\": null,\n    \"change\": null\n  }\n}\n```",
+  "prediction": {
+    "menu_items": [
+      {
+        "name": "SALMON PESTO",
+        "quantity": 1,
+        "unit_price": 85500,
+        "amount": 85500
+      },
+      {
+        "name": "SALMON PESTO",
+        "quantity": 1,
+        "unit_price": 85500,
+        "amount": 85500
+      }
+    ],
+    "subtotal": 85500,
+    "discount": 85500,
+    "tax": 18126,
+    "service_charge": 10260,
+    "total": 113886,
+    "payment": {
+      "method": null,
+      "amount_paid": null,
+      "change": null
+    }
+  }
+}

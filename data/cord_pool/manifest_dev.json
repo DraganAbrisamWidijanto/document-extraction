@@ -1,0 +1,32 @@
+[
+  {
+    "idx": 0,
+    "image": "cord_000.png",
+    "gt_type": "cord",
+    "split": "dev"
+  },
+  {
+    "idx": 14,
+    "image": "cord_014.png",
+    "gt_type": "cord",
+    "split": "dev"
+  },
+  {
+    "idx": 28,
+    "image": "cord_028.png",
+    "gt_type": "cord",
+    "split": "dev"
+  },
+  {
+    "idx": 31,
+    "image": "cord_031.png",
+    "gt_type": "cord",
+    "split": "dev"
+  },
+  {
+    "idx": 75,
+    "image": "cord_075.png",
+    "gt_type": "cord",
+    "split": "dev"
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "idx": 0,
+  "image": "cord_000.png",
+  "model": "bai/mimo-v2.5",
+  "latency_s": 123.13,
+  "raw": "{\"menu_items\":[{\"name\":\"901016 -TICKET CP\",\"quantity\":2,\"unit_price\":60000,\"amount\":null}],\"subtotal\":60000,\"discount\":60000,\"tax\":5455,\"service_charge\":null,\"total\":60000,\"payment\":{\"method\":\"debit\",\"amount_paid\":60000,\"change\":null}}",
+  "prediction": {
+    "menu_items": [
+      {
+        "name": "901016 -TICKET CP",
+        "quantity": 2,
+        "unit_price": 60000,
+        "amount": null
+      }
+    ],
+    "subtotal": 60000,
+    "discount": 60000,
+    "tax": 5455,
+    "service_charge": null,
+    "total": 60000,
+    "payment": {
+      "method": "debit",
+      "amount_paid": 60000,
+      "change": null
+    }
+  }
+}
