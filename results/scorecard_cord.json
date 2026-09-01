@@ -3,41 +3,43 @@
   "docs": 45,
   "macro_f1": 0.928,
   "field_f1": {
-    "subtotal": 0.939,
+    "subtotal": 0.952,
     "discount": 0.857,
-    "tax": 1.0,
+    "tax": 0.979,
     "service_charge": 0.933,
     "total": 1.0,
-    "payment.method": 0.984,
-    "payment.amount_paid": 1.0,
+    "payment.method": 0.949,
+    "payment.amount_paid": 0.984,
     "payment.change": 0.97,
-    "item.quantity": 0.829,
-    "item.unit_price": 0.755,
-    "item.amount": 0.943
+    "item.quantity": 0.839,
+    "item.unit_price": 0.797,
+    "item.amount": 0.947
   },
   "total_exact": [
     44,
     45
   ],
-  "item_name_f1": 0.919,
+  "item_name_f1": 0.932,
   "latency": {
-    "mean": 14.0,
-    "median": 3.4,
+    "mean": 3.7,
+    "median": 2.6,
     "min": 1.9,
-    "max": 34.5
+    "max": 33.5
   },
   "cost_usd": 0.0,
   "tokens": {
     "prompt": 120741,
-    "completion": 25091
+    "completion": 24948
   },
   "abstentions": {
-    "subtotal": 1
+    "subtotal": 2,
+    "payment.method": 2,
+    "payment.amount_paid": 1
   },
   "confidence": {
     "total": {
       "tp": 0.94,
-      "wrong": 0.95
+      "wrong": 0.9
     },
     "payment.method": {
       "tp": null,
@@ -53,14 +55,14 @@
     },
     "item.amount": {
       "tp": 0.94,
-      "wrong": 0.95
+      "wrong": 0.9
     },
     "subtotal": {
       "tp": 0.93,
       "wrong": null
     },
     "discount": {
-      "tp": 0.93,
+      "tp": 0.92,
       "wrong": null
     },
     "payment.change": {
@@ -76,7 +78,7 @@
       "wrong": null
     },
     "service_charge": {
-      "tp": 0.92,
+      "tp": 0.95,
       "wrong": 0.9
     }
   }

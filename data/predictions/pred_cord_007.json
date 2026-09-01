@@ -2,7 +2,7 @@
   "name": "cord_007",
   "image": "",
   "model": "gemini-3.5-flash-lite",
-  "latency_s": 3.19,
+  "latency_s": 2.4,
   "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"Kupon 15\",\n      \"quantity\": null,\n      \"unit_price\": null,\n      \"amount\": 100000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.0,\n        \"unit_price\": 0.0,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"ADD CHICKEN BOX\",\n      \"quantity\": null,\n      \"unit_price\": null,\n      \"amount\": 909,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.0,\n        \"unit_price\": 0.0,\n        \"amount\": 0.9\n      }\n    }\n  ],\n  \"subtotal\": 100909,\n  \"discount\": null,\n  \"tax\": 10091,\n  \"service_charge\": null,\n  \"total\": 111000,\n  \"confidence\": {\n    \"subtotal\": 0.9,\n    \"discount\": 0.0,\n    \"tax\": 0.9,\n    \"service_charge\": 0.0,\n    \"total\": 0.9,\n    \"payment.method\": 0.9,\n    \"payment.amount_paid\": 0.9,\n    \"payment.change\": 0.0\n  },\n  \"payment\": {\n    \"method\": \"cash\",\n    \"amount_paid\": 111000,\n    \"change\": null\n  }\n}",
   "prediction": {
     "menu_items": [

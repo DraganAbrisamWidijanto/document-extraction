@@ -3,7 +3,19 @@
 Proyek: `C:\Users\ASUS\Documents\lamarankerja\datasaur` — **jangan ada file keluar dari folder ini**.
 Deadline: 3 hari dari email diterima. Submit: invite `saripudin@datasaur.ai`, `satrio.putra@datasaur.ai`, `diah.pitaloka@datasaur.ai` ke private repo.
 
-## Status Terakhir (2 Sep 2026 — sesi baru setelah shutdown laptop)
+## Status Terakhir (2 Sep 2026 — sesi audit & closeout, commit `3d35605`)
+
+Audit vs requirement PDF selesai; semua must-fix (kecuali verifikasi Docker) sudah dieksekusi:
+- Sample images (84) + 55 predictions + 7 eval artifacts DI-COMMIT (sebelumnya di-gitignore) → eval jalan out of the box di clone baru
+- `.gitignore` sekarang menutup semua varian key (`geminiapi*.txt`, termasuk "geminiapi - Copy.txt" yang berisi 5 key) dan folder drop `self scan/`
+- macro F1 diperbaiki: fixed label set + macro hanya atas field evaluabel (set-nya ditentukan dataset, stabil antar versi). Final: CORD 0.928 (11 field), self 0.986 (9 field — discount & service_charge tidak punya instance GT di self, di-exclude dan disebut eksplisit di summary)
+- GT self_006–010 ditandai verified manual terhadap foto (meta.note); klaim README diselaraskan
+- README: justifikasi arsitektur (single-call vs agentic), definisi macro, catatan jujur kalibrasi confidence (conf_tp ≈ conf_wrong → self-report belum terkalibrasi; andalkan abstention)
+- `.env.example` pakai path placeholder
+
+**Sisa langkah: GitHub** — repo private, push, invite 3 reviewer. Docker sudah terverifikasi end-to-end (commit `29c0a5a` + `fb21fd2`): `compose up api` hidup, `compose run --rm eval` one-shot sukses (55/55 via API container), scorecard resmi di `results/` (CORD macro 0.928 / total exact 44/45; self 0.986 / 10/10), regression gate PASS vs run sebelumnya.
+
+## Status sebelumnya (2 Sep — sesi baru setelah shutdown laptop)
 
 **Sesi ini (2 Sep)**: +5 self-scan baru (self_006..010) → GT dibuat VLM + verifikasi vision.
 

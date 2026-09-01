@@ -2,7 +2,7 @@
   "name": "cord_033",
   "image": "",
   "model": "gemini-3.5-flash-lite",
-  "latency_s": 3.48,
+  "latency_s": 2.96,
   "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"GRILLED BABY POTATO (R\",\n      \"quantity\": 1,\n      \"unit_price\": 50500,\n      \"amount\": 50500,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"HOT TUNA\",\n      \"quantity\": 1,\n      \"unit_price\": 67000,\n      \"amount\": 67000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"HOT TUNA\",\n      \"quantity\": 1,\n      \"unit_price\": 67000,\n      \"amount\": 67000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    }\n  ],\n  \"subtotal\": 117500,\n  \"discount\": 67000,\n  \"tax\": 19557,\n  \"service_charge\": 11070,\n  \"total\": 148127,\n  \"confidence\": {\n    \"subtotal\": 0.9,\n    \"discount\": 0.9,\n    \"tax\": 0.9,\n    \"service_charge\": 0.9,\n    \"total\": 0.9,\n    \"payment.method\": 0.0,\n    \"payment.amount_paid\": 0.0,\n    \"payment.change\": 0.0\n  },\n  \"payment\": {\n    \"method\": null,\n    \"amount_paid\": null,\n    \"change\": null\n  }\n}",
   "prediction": {
     "menu_items": [

@@ -1,9 +1,9 @@
 {
   "split": "self",
   "docs": 10,
-  "macro_f1": 0.986,
+  "macro_f1": 0.993,
   "field_f1": {
-    "subtotal": 0.875,
+    "subtotal": 0.941,
     "discount": 0,
     "tax": 1.0,
     "service_charge": 0,
@@ -21,18 +21,18 @@
   ],
   "item_name_f1": 1.0,
   "latency": {
-    "mean": 2.6,
-    "median": 2.6,
+    "mean": 5.4,
+    "median": 2.5,
     "min": 2.0,
-    "max": 3.4
+    "max": 32.6
   },
   "cost_usd": 0.0,
   "tokens": {
     "prompt": 26852,
-    "completion": 5661
+    "completion": 5539
   },
   "abstentions": {
-    "subtotal": 2
+    "subtotal": 1
   },
   "confidence": {
     "subtotal": {
@@ -56,15 +56,15 @@
       "wrong": null
     },
     "item.quantity": {
-      "tp": 0.99,
+      "tp": 0.98,
       "wrong": null
     },
     "item.unit_price": {
-      "tp": 0.99,
+      "tp": 0.98,
       "wrong": null
     },
     "item.amount": {
-      "tp": 0.99,
+      "tp": 0.98,
       "wrong": null
     },
     "payment.change": {

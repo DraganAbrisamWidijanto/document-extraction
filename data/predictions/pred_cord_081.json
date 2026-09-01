@@ -2,7 +2,7 @@
   "name": "cord_081",
   "image": "",
   "model": "gemini-3.5-flash-lite",
-  "latency_s": 33.02,
+  "latency_s": 2.15,
   "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"3002-Kyoto Choco Mochi\",\n      \"quantity\": 2,\n      \"unit_price\": 14000,\n      \"amount\": 28000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"1001-Choco Bun\",\n      \"quantity\": 1,\n      \"unit_price\": 22000,\n      \"amount\": 22000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"6001-Plastic Bag Small\",\n      \"quantity\": 1,\n      \"unit_price\": 0,\n      \"amount\": 0,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    }\n  ],\n  \"subtotal\": null,\n  \"discount\": null,\n  \"tax\": null,\n  \"service_charge\": null,\n  \"total\": 50000,\n  \"confidence\": {\n    \"subtotal\": 0.0,\n    \"discount\": 0.0,\n    \"tax\": 0.0,\n    \"service_charge\": 0.0,\n    \"total\": 0.9,\n    \"payment.method\": 0.0,\n    \"payment.amount_paid\": 0.0,\n    \"payment.change\": 0.0\n  },\n  \"payment\": {\n    \"method\": null,\n    \"amount_paid\": null,\n    \"change\": null\n  }\n}",
   "prediction": {
     "menu_items": [
@@ -70,7 +70,7 @@
     "total_tokens": 3195
   },
   "cost_usd": 0.0,
-  "downscaled": true,
+  "downscaled": false,
   "validation": {
     "valid": true,
     "errors": []

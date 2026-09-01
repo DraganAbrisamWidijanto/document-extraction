@@ -2,8 +2,8 @@
   "name": "cord_055",
   "image": "",
   "model": "gemini-3.5-flash-lite",
-  "latency_s": 32.56,
-  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"APPLE CINNAMON PASTRY\",\n      \"quantity\": 1,\n      \"unit_price\": 22000,\n      \"amount\": 22000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"ROYAL CHEESE TART\",\n      \"quantity\": 2,\n      \"unit_price\": 16000,\n      \"amount\": 32000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    }\n  ],\n  \"subtotal\": null,\n  \"discount\": null,\n  \"tax\": null,\n  \"service_charge\": null,\n  \"total\": 54000,\n  \"confidence\": {\n    \"subtotal\": 0,\n    \"discount\": 0,\n    \"tax\": 0,\n    \"service_charge\": 0,\n    \"total\": 0.9,\n    \"payment.method\": 0.5,\n    \"payment.amount_paid\": 0.9,\n    \"payment.change\": 0\n  },\n  \"payment\": {\n    \"method\": \"credit_card\",\n    \"amount_paid\": 54000,\n    \"change\": null\n  }\n}",
+  "latency_s": 1.96,
+  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"APPLE CINNAMON PASTRY\",\n      \"quantity\": 1,\n      \"unit_price\": 22000,\n      \"amount\": 22000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"ROYAL CHEESE TART\",\n      \"quantity\": 2,\n      \"unit_price\": 16000,\n      \"amount\": 32000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    }\n  ],\n  \"subtotal\": null,\n  \"discount\": null,\n  \"tax\": null,\n  \"service_charge\": null,\n  \"total\": 54000,\n  \"confidence\": {\n    \"subtotal\": 0.0,\n    \"discount\": 0.0,\n    \"tax\": 0.0,\n    \"service_charge\": 0.0,\n    \"total\": 0.9,\n    \"payment.method\": 0.0,\n    \"payment.amount_paid\": 0.9,\n    \"payment.change\": 0.0\n  },\n  \"payment\": {\n    \"method\": null,\n    \"amount_paid\": 54000,\n    \"change\": null\n  }\n}",
   "prediction": {
     "menu_items": [
       {
@@ -12,10 +12,10 @@
         "unit_price": 22000,
         "amount": 22000,
         "confidence": {
-          "name": 1,
-          "quantity": 1,
-          "unit_price": 1,
-          "amount": 1
+          "name": 0.9,
+          "quantity": 0.9,
+          "unit_price": 0.9,
+          "amount": 0.9
         }
       },
       {
@@ -24,10 +24,10 @@
         "unit_price": 16000,
         "amount": 32000,
         "confidence": {
-          "name": 1,
-          "quantity": 1,
-          "unit_price": 1,
-          "amount": 1
+          "name": 0.9,
+          "quantity": 0.9,
+          "unit_price": 0.9,
+          "amount": 0.9
         }
       }
     ],
@@ -37,28 +37,28 @@
     "service_charge": null,
     "total": 54000,
     "confidence": {
-      "subtotal": 0,
-      "discount": 0,
-      "tax": 0,
-      "service_charge": 0,
+      "subtotal": 0.0,
+      "discount": 0.0,
+      "tax": 0.0,
+      "service_charge": 0.0,
       "total": 0.9,
-      "payment.method": 0.5,
+      "payment.method": 0.0,
       "payment.amount_paid": 0.9,
-      "payment.change": 0
+      "payment.change": 0.0
     },
     "payment": {
-      "method": "credit_card",
+      "method": null,
       "amount_paid": 54000,
       "change": null
     }
   },
   "usage": {
-    "completion_tokens": 376,
+    "completion_tokens": 399,
     "prompt_tokens": 2678,
-    "total_tokens": 3054
+    "total_tokens": 3077
   },
   "cost_usd": 0.0,
-  "downscaled": true,
+  "downscaled": false,
   "validation": {
     "valid": true,
     "errors": []

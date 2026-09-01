@@ -139,7 +139,7 @@
     "idx": 21,
     "img": "cord_021.png",
     "fields": {
-      "subtotal": "fp",
+      "subtotal": null,
       "discount": null,
       "tax": null,
       "service_charge": null,
@@ -305,15 +305,13 @@
     },
     "n_items_gt": 1,
     "n_items_pred": 1,
-    "missing_items": [
-      "Cheese Tart"
-    ]
+    "missing_items": []
   },
   {
     "idx": 45,
     "img": "cord_045.png",
     "fields": {
-      "subtotal": "fp",
+      "subtotal": null,
       "discount": null,
       "tax": null,
       "service_charge": null,
@@ -354,7 +352,7 @@
       "tax": null,
       "service_charge": null,
       "total": "tp",
-      "payment.method": "tp",
+      "payment.method": "fn",
       "payment.amount_paid": "tp",
       "payment.change": null
     },
@@ -453,7 +451,7 @@
     "idx": 64,
     "img": "cord_064.png",
     "fields": {
-      "subtotal": "tp",
+      "subtotal": "fn",
       "discount": null,
       "tax": null,
       "service_charge": null,
@@ -472,7 +470,7 @@
     "fields": {
       "subtotal": "tp",
       "discount": null,
-      "tax": null,
+      "tax": "fp",
       "service_charge": null,
       "total": "tp",
       "payment.method": null,
@@ -649,8 +647,8 @@
       "tax": "tp",
       "service_charge": null,
       "total": "tp",
-      "payment.method": "wrong",
-      "payment.amount_paid": "tp",
+      "payment.method": "fn",
+      "payment.amount_paid": "fn",
       "payment.change": null
     },
     "n_items_gt": 2,
@@ -740,9 +738,7 @@
     },
     "n_items_gt": 3,
     "n_items_pred": 3,
-    "missing_items": [
-      "SATE ATI GO"
-    ]
+    "missing_items": []
   },
   {
     "idx": 98,
@@ -772,7 +768,7 @@
       "tax": "tp",
       "service_charge": "fp",
       "total": "tp",
-      "payment.method": "tp",
+      "payment.method": "wrong",
       "payment.amount_paid": "tp",
       "payment.change": "tp"
     },

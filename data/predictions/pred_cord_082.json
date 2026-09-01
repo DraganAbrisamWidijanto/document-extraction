@@ -2,8 +2,8 @@
   "name": "cord_082",
   "image": "",
   "model": "gemini-3.5-flash-lite",
-  "latency_s": 2.46,
-  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"Chocolate Log Cake\",\n      \"quantity\": 1,\n      \"unit_price\": 115000,\n      \"amount\": 115000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"Snowman Cake Chocolate\",\n      \"quantity\": 1,\n      \"unit_price\": 60000,\n      \"amount\": 60000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"Strawberry Log Cake\",\n      \"quantity\": 2,\n      \"unit_price\": 105000,\n      \"amount\": 210000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    }\n  ],\n  \"subtotal\": 385000,\n  \"discount\": null,\n  \"tax\": null,\n  \"service_charge\": null,\n  \"total\": 385000,\n  \"confidence\": {\n    \"subtotal\": 0.9,\n    \"discount\": 0.0,\n    \"tax\": 0.0,\n    \"service_charge\": 0.0,\n    \"total\": 0.9,\n    \"payment.method\": 0.9,\n    \"payment.amount_paid\": 0.9,\n    \"payment.change\": 0.9\n  },\n  \"payment\": {\n    \"method\": \"credit_card\",\n    \"amount_paid\": 385000,\n    \"change\": 0\n  }\n}",
+  "latency_s": 2.22,
+  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"Chocolate Log Cake\",\n      \"quantity\": 1,\n      \"unit_price\": 115000,\n      \"amount\": 115000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"Snowman Cake Chocolate\",\n      \"quantity\": 1,\n      \"unit_price\": 60000,\n      \"amount\": 60000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"Strawberry Log Cake\",\n      \"quantity\": 2,\n      \"unit_price\": 105000,\n      \"amount\": 210000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    }\n  ],\n  \"subtotal\": 385000,\n  \"discount\": null,\n  \"tax\": null,\n  \"service_charge\": null,\n  \"total\": 385000,\n  \"confidence\": {\n    \"subtotal\": 1,\n    \"discount\": 0,\n    \"tax\": 0,\n    \"service_charge\": 0,\n    \"total\": 1,\n    \"payment.method\": 1,\n    \"payment.amount_paid\": 1,\n    \"payment.change\": 1\n  },\n  \"payment\": {\n    \"method\": \"credit_card\",\n    \"amount_paid\": 385000,\n    \"change\": 0\n  }\n}",
   "prediction": {
     "menu_items": [
       {
@@ -12,10 +12,10 @@
         "unit_price": 115000,
         "amount": 115000,
         "confidence": {
-          "name": 0.9,
-          "quantity": 0.9,
-          "unit_price": 0.9,
-          "amount": 0.9
+          "name": 1,
+          "quantity": 1,
+          "unit_price": 1,
+          "amount": 1
         }
       },
       {
@@ -24,10 +24,10 @@
         "unit_price": 60000,
         "amount": 60000,
         "confidence": {
-          "name": 0.9,
-          "quantity": 0.9,
-          "unit_price": 0.9,
-          "amount": 0.9
+          "name": 1,
+          "quantity": 1,
+          "unit_price": 1,
+          "amount": 1
         }
       },
       {
@@ -36,10 +36,10 @@
         "unit_price": 105000,
         "amount": 210000,
         "confidence": {
-          "name": 0.9,
-          "quantity": 0.9,
-          "unit_price": 0.9,
-          "amount": 0.9
+          "name": 1,
+          "quantity": 1,
+          "unit_price": 1,
+          "amount": 1
         }
       }
     ],
@@ -49,14 +49,14 @@
     "service_charge": null,
     "total": 385000,
     "confidence": {
-      "subtotal": 0.9,
-      "discount": 0.0,
-      "tax": 0.0,
-      "service_charge": 0.0,
-      "total": 0.9,
-      "payment.method": 0.9,
-      "payment.amount_paid": 0.9,
-      "payment.change": 0.9
+      "subtotal": 1,
+      "discount": 0,
+      "tax": 0,
+      "service_charge": 0,
+      "total": 1,
+      "payment.method": 1,
+      "payment.amount_paid": 1,
+      "payment.change": 1
     },
     "payment": {
       "method": "credit_card",
@@ -65,12 +65,12 @@
     }
   },
   "usage": {
-    "completion_tokens": 509,
+    "completion_tokens": 469,
     "prompt_tokens": 2678,
-    "total_tokens": 3187
+    "total_tokens": 3147
   },
   "cost_usd": 0.0,
-  "downscaled": true,
+  "downscaled": false,
   "validation": {
     "valid": true,
     "errors": []

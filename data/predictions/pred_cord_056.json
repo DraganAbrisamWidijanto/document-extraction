@@ -2,7 +2,7 @@
   "name": "cord_056",
   "image": "",
   "model": "gemini-3.5-flash-lite",
-  "latency_s": 32.31,
+  "latency_s": 33.51,
   "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"AIR MINERAL\",\n      \"quantity\": null,\n      \"unit_price\": null,\n      \"amount\": 8181,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.0,\n        \"unit_price\": 0.0,\n        \"amount\": 0.9\n      }\n    }\n  ],\n  \"subtotal\": 8181,\n  \"discount\": null,\n  \"tax\": 818,\n  \"service_charge\": null,\n  \"total\": 8999,\n  \"confidence\": {\n    \"subtotal\": 0.9,\n    \"discount\": 0.0,\n    \"tax\": 0.9,\n    \"service_charge\": 0.0,\n    \"total\": 0.9,\n    \"payment.method\": 0.9,\n    \"payment.amount_paid\": 0.9,\n    \"payment.change\": 0.9\n  },\n  \"payment\": {\n    \"method\": \"cash\",\n    \"amount_paid\": 10000,\n    \"change\": 1001\n  }\n}",
   "prediction": {
     "menu_items": [
@@ -46,7 +46,7 @@
     "total_tokens": 3000
   },
   "cost_usd": 0.0,
-  "downscaled": true,
+  "downscaled": false,
   "validation": {
     "valid": true,
     "errors": []

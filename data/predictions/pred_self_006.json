@@ -2,7 +2,7 @@
   "name": "self_006",
   "image": "",
   "model": "gemini-3.5-flash-lite",
-  "latency_s": 2.61,
+  "latency_s": 2.33,
   "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"BEEF BURGER\",\n      \"quantity\": 2,\n      \"unit_price\": 10000,\n      \"amount\": 20000,\n      \"confidence\": {\n        \"name\": 1.0,\n        \"quantity\": 1.0,\n        \"unit_price\": 1.0,\n        \"amount\": 1.0\n      }\n    },\n    {\n      \"name\": \"TEH\",\n      \"quantity\": 1,\n      \"unit_price\": 4000,\n      \"amount\": 4000,\n      \"confidence\": {\n        \"name\": 1.0,\n        \"quantity\": 1.0,\n        \"unit_price\": 1.0,\n        \"amount\": 1.0\n      }\n    },\n    {\n      \"name\": \"NW + TEH TW\",\n      \"quantity\": 1,\n      \"unit_price\": 11000,\n      \"amount\": 11000,\n      \"confidence\": {\n        \"name\": 1.0,\n        \"quantity\": 1.0,\n        \"unit_price\": 1.0,\n        \"amount\": 1.0\n      }\n    },\n    {\n      \"name\": \"NL + TEH TW\",\n      \"quantity\": 3,\n      \"unit_price\": 12000,\n      \"amount\": 36000,\n      \"confidence\": {\n        \"name\": 1.0,\n        \"quantity\": 1.0,\n        \"unit_price\": 1.0,\n        \"amount\": 1.0\n      }\n    }\n  ],\n  \"subtotal\": null,\n  \"discount\": null,\n  \"tax\": 6455,\n  \"service_charge\": null,\n  \"total\": 71000,\n  \"confidence\": {\n    \"subtotal\": 0.0,\n    \"discount\": 0.0,\n    \"tax\": 1.0,\n    \"service_charge\": 0.0,\n    \"total\": 1.0,\n    \"payment.method\": 1.0,\n    \"payment.amount_paid\": 1.0,\n    \"payment.change\": 1.0\n  },\n  \"payment\": {\n    \"method\": \"cash\",\n    \"amount_paid\": 101000,\n    \"change\": 30000\n  }\n}",
   "prediction": {
     "menu_items": [

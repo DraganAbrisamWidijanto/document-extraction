@@ -2,7 +2,7 @@
   "name": "cord_001",
   "image": "",
   "model": "gemini-3.5-flash-lite",
-  "latency_s": 17.4,
+  "latency_s": 2.48,
   "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"J.STB PROMO\",\n      \"quantity\": null,\n      \"unit_price\": 17500,\n      \"amount\": 17500,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.0,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"Y.B.BAT\",\n      \"quantity\": null,\n      \"unit_price\": 46000,\n      \"amount\": 46000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.0,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"Y.BASO PROM\",\n      \"quantity\": null,\n      \"unit_price\": 27500,\n      \"amount\": 27500,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.0,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    }\n  ],\n  \"subtotal\": null,\n  \"discount\": null,\n  \"tax\": null,\n  \"service_charge\": null,\n  \"total\": 91000,\n  \"confidence\": {\n    \"subtotal\": 0.0,\n    \"discount\": 0.0,\n    \"tax\": 0.0,\n    \"service_charge\": 0.0,\n    \"total\": 0.9,\n    \"payment.method\": 0.9,\n    \"payment.amount_paid\": 0.9,\n    \"payment.change\": 0.0\n  },\n  \"payment\": {\n    \"method\": \"cash\",\n    \"amount_paid\": 91000,\n    \"change\": null\n  }\n}",
   "prediction": {
     "menu_items": [

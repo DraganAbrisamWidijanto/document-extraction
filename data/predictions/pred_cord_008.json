@@ -2,8 +2,8 @@
   "name": "cord_008",
   "image": "",
   "model": "gemini-3.5-flash-lite",
-  "latency_s": 3.11,
-  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"[REG] BLACK SAKURA\",\n      \"quantity\": 1,\n      \"unit_price\": 45455,\n      \"amount\": 45455,\n      \"confidence\": {\n        \"name\": 0.95,\n        \"quantity\": 0.95,\n        \"unit_price\": 0.95,\n        \"amount\": 0.95\n      }\n    },\n    {\n      \"name\": \"COOKIE DOH SAUCES\",\n      \"quantity\": 1,\n      \"unit_price\": 0,\n      \"amount\": 0,\n      \"confidence\": {\n        \"name\": 0.95,\n        \"quantity\": 0.95,\n        \"unit_price\": 0.95,\n        \"amount\": 0.95\n      }\n    },\n    {\n      \"name\": \"NATA DE COCO\",\n      \"quantity\": 1,\n      \"unit_price\": 0,\n      \"amount\": 0,\n      \"confidence\": {\n        \"name\": 0.95,\n        \"quantity\": 0.95,\n        \"unit_price\": 0.95,\n        \"amount\": 0.95\n      }\n    }\n  ],\n  \"subtotal\": 45455,\n  \"discount\": null,\n  \"tax\": 4545,\n  \"service_charge\": null,\n  \"total\": 50000,\n  \"confidence\": {\n    \"subtotal\": 0.95,\n    \"discount\": 0.0,\n    \"tax\": 0.95,\n    \"service_charge\": 0.0,\n    \"total\": 0.95,\n    \"payment.method\": 0.9,\n    \"payment.amount_paid\": 0.95,\n    \"payment.change\": 0.0\n  },\n  \"payment\": {\n    \"method\": \"credit_card\",\n    \"amount_paid\": 50000,\n    \"change\": null\n  }\n}",
+  "latency_s": 2.65,
+  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"[REG] BLACK SAKURA\",\n      \"quantity\": 1,\n      \"unit_price\": 45455,\n      \"amount\": 45455,\n      \"confidence\": {\n        \"name\": 0.95,\n        \"quantity\": 0.95,\n        \"unit_price\": 0.95,\n        \"amount\": 0.95\n      }\n    },\n    {\n      \"name\": \"COOKIE DOH SAUCES\",\n      \"quantity\": 1,\n      \"unit_price\": 0,\n      \"amount\": 0,\n      \"confidence\": {\n        \"name\": 0.95,\n        \"quantity\": 0.95,\n        \"unit_price\": 0.95,\n        \"amount\": 0.95\n      }\n    },\n    {\n      \"name\": \"NATA DE COCO\",\n      \"quantity\": 1,\n      \"unit_price\": 0,\n      \"amount\": 0,\n      \"confidence\": {\n        \"name\": 0.95,\n        \"quantity\": 0.95,\n        \"unit_price\": 0.95,\n        \"amount\": 0.95\n      }\n    }\n  ],\n  \"subtotal\": 45455,\n  \"discount\": null,\n  \"tax\": 4545,\n  \"service_charge\": null,\n  \"total\": 50000,\n  \"confidence\": {\n    \"subtotal\": 0.95,\n    \"discount\": 0.0,\n    \"tax\": 0.95,\n    \"service_charge\": 0.0,\n    \"total\": 0.95,\n    \"payment.method\": 0.5,\n    \"payment.amount_paid\": 0.95,\n    \"payment.change\": 0.0\n  },\n  \"payment\": {\n    \"method\": \"credit_card\",\n    \"amount_paid\": 50000,\n    \"change\": null\n  }\n}",
   "prediction": {
     "menu_items": [
       {
@@ -54,7 +54,7 @@
       "tax": 0.95,
       "service_charge": 0.0,
       "total": 0.95,
-      "payment.method": 0.9,
+      "payment.method": 0.5,
       "payment.amount_paid": 0.95,
       "payment.change": 0.0
     },
@@ -70,7 +70,7 @@
     "total_tokens": 3190
   },
   "cost_usd": 0.0,
-  "downscaled": true,
+  "downscaled": false,
   "validation": {
     "valid": true,
     "errors": []

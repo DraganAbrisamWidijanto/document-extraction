@@ -2,7 +2,7 @@
   "name": "cord_034",
   "image": "",
   "model": "gemini-3.5-flash-lite",
-  "latency_s": 2.18,
+  "latency_s": 3.69,
   "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"Ash Chick Sambal Matah\",\n      \"quantity\": 5,\n      \"unit_price\": 15000,\n      \"amount\": 75000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"Jamur Goreng\",\n      \"quantity\": 2,\n      \"unit_price\": 5000,\n      \"amount\": 10000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    }\n  ],\n  \"subtotal\": 85000,\n  \"discount\": null,\n  \"tax\": 8500,\n  \"service_charge\": null,\n  \"total\": 93500,\n  \"confidence\": {\n    \"subtotal\": 0.9,\n    \"discount\": 0.0,\n    \"tax\": 0.9,\n    \"service_charge\": 0.0,\n    \"total\": 0.9,\n    \"payment.method\": 0.9,\n    \"payment.amount_paid\": 0.9,\n    \"payment.change\": 0.9\n  },\n  \"payment\": {\n    \"method\": \"cash\",\n    \"amount_paid\": 100000,\n    \"change\": 6500\n  }\n}",
   "prediction": {
     "menu_items": [

@@ -2,128 +2,128 @@
   "name": "cord_041",
   "image": "",
   "model": "gemini-3.5-flash-lite",
-  "latency_s": 34.53,
-  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"Chicken Maryland\",\n      \"quantity\": null,\n      \"unit_price\": 47619,\n      \"amount\": 47619,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 0,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"Cappucino (Hot/Iced)\",\n      \"quantity\": null,\n      \"unit_price\": 30303,\n      \"amount\": 30303,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 0,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"Naga Lychee Juice\",\n      \"quantity\": null,\n      \"unit_price\": 34632,\n      \"amount\": 34632,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 0,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"Cafe Latte\",\n      \"quantity\": null,\n      \"unit_price\": 30303,\n      \"amount\": 30303,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 0,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"Hot Chocolate Marshmallo\",\n      \"quantity\": null,\n      \"unit_price\": 30303,\n      \"amount\": 30303,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 0,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"Chicken Cesar Salad\",\n      \"quantity\": null,\n      \"unit_price\": 43290,\n      \"amount\": 43290,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 0,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"Mineral Water\",\n      \"quantity\": null,\n      \"unit_price\": 12987,\n      \"amount\": 12987,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 0,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"Mineral Water\",\n      \"quantity\": null,\n      \"unit_price\": 12987,\n      \"amount\": 12987,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 0,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"Lychee/Peach/Lemon/Mango\",\n      \"quantity\": null,\n      \"unit_price\": 25974,\n      \"amount\": 25974,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 0,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"Chicken Maryland\",\n      \"quantity\": null,\n      \"unit_price\": 47619,\n      \"amount\": 47619,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 0,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    }\n  ],\n  \"subtotal\": 316017,\n  \"discount\": null,\n  \"tax\": null,\n  \"service_charge\": 48982,\n  \"total\": 365000,\n  \"confidence\": {\n    \"subtotal\": 1,\n    \"discount\": 0,\n    \"tax\": 0,\n    \"service_charge\": 0.9,\n    \"total\": 1,\n    \"payment.method\": 0,\n    \"payment.amount_paid\": 0,\n    \"payment.change\": 0\n  },\n  \"payment\": {\n    \"method\": null,\n    \"amount_paid\": null,\n    \"change\": null\n  }\n}",
+  "latency_s": 4.82,
+  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"Chicken Maryland\",\n      \"quantity\": null,\n      \"unit_price\": null,\n      \"amount\": 47619,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.0,\n        \"unit_price\": 0.0,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"Cappucino (Hot/Iced)\",\n      \"quantity\": null,\n      \"unit_price\": null,\n      \"amount\": 30303,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.0,\n        \"unit_price\": 0.0,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"Naga Lychee Juice\",\n      \"quantity\": null,\n      \"unit_price\": null,\n      \"amount\": 34632,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.0,\n        \"unit_price\": 0.0,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"Cafe Latte\",\n      \"quantity\": null,\n      \"unit_price\": null,\n      \"amount\": 30303,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.0,\n        \"unit_price\": 0.0,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"Hot Chocolate Marshmallo\",\n      \"quantity\": null,\n      \"unit_price\": null,\n      \"amount\": 30303,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.0,\n        \"unit_price\": 0.0,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"Chicken Cesar Salad\",\n      \"quantity\": null,\n      \"unit_price\": null,\n      \"amount\": 43290,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.0,\n        \"unit_price\": 0.0,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"Mineral Water\",\n      \"quantity\": null,\n      \"unit_price\": null,\n      \"amount\": 12987,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.0,\n        \"unit_price\": 0.0,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"Mineral Water\",\n      \"quantity\": null,\n      \"unit_price\": null,\n      \"amount\": 12987,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.0,\n        \"unit_price\": 0.0,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"Lychee/Peach/Lemon/Mango\",\n      \"quantity\": null,\n      \"unit_price\": null,\n      \"amount\": 25974,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.0,\n        \"unit_price\": 0.0,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"Chicken Maryland\",\n      \"quantity\": null,\n      \"unit_price\": null,\n      \"amount\": 47619,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.0,\n        \"unit_price\": 0.0,\n        \"amount\": 0.9\n      }\n    }\n  ],\n  \"subtotal\": 316017,\n  \"discount\": null,\n  \"tax\": null,\n  \"service_charge\": 48982,\n  \"total\": 365000,\n  \"confidence\": {\n    \"subtotal\": 0.9,\n    \"discount\": 0.0,\n    \"tax\": 0.0,\n    \"service_charge\": 0.9,\n    \"total\": 0.9,\n    \"payment.method\": 0.0,\n    \"payment.amount_paid\": 0.0,\n    \"payment.change\": 0.0\n  },\n  \"payment\": {\n    \"method\": null,\n    \"amount_paid\": null,\n    \"change\": null\n  }\n}",
   "prediction": {
     "menu_items": [
       {
         "name": "Chicken Maryland",
         "quantity": null,
-        "unit_price": 47619,
+        "unit_price": null,
         "amount": 47619,
         "confidence": {
-          "name": 1,
-          "quantity": 0,
-          "unit_price": 1,
-          "amount": 1
+          "name": 0.9,
+          "quantity": 0.0,
+          "unit_price": 0.0,
+          "amount": 0.9
         }
       },
       {
         "name": "Cappucino (Hot/Iced)",
         "quantity": null,
-        "unit_price": 30303,
+        "unit_price": null,
         "amount": 30303,
         "confidence": {
-          "name": 1,
-          "quantity": 0,
-          "unit_price": 1,
-          "amount": 1
+          "name": 0.9,
+          "quantity": 0.0,
+          "unit_price": 0.0,
+          "amount": 0.9
         }
       },
       {
         "name": "Naga Lychee Juice",
         "quantity": null,
-        "unit_price": 34632,
+        "unit_price": null,
         "amount": 34632,
         "confidence": {
-          "name": 1,
-          "quantity": 0,
-          "unit_price": 1,
-          "amount": 1
+          "name": 0.9,
+          "quantity": 0.0,
+          "unit_price": 0.0,
+          "amount": 0.9
         }
       },
       {
         "name": "Cafe Latte",
         "quantity": null,
-        "unit_price": 30303,
+        "unit_price": null,
         "amount": 30303,
         "confidence": {
-          "name": 1,
-          "quantity": 0,
-          "unit_price": 1,
-          "amount": 1
+          "name": 0.9,
+          "quantity": 0.0,
+          "unit_price": 0.0,
+          "amount": 0.9
         }
       },
       {
         "name": "Hot Chocolate Marshmallo",
         "quantity": null,
-        "unit_price": 30303,
+        "unit_price": null,
         "amount": 30303,
         "confidence": {
-          "name": 1,
-          "quantity": 0,
-          "unit_price": 1,
-          "amount": 1
+          "name": 0.9,
+          "quantity": 0.0,
+          "unit_price": 0.0,
+          "amount": 0.9
         }
       },
       {
         "name": "Chicken Cesar Salad",
         "quantity": null,
-        "unit_price": 43290,
+        "unit_price": null,
         "amount": 43290,
         "confidence": {
-          "name": 1,
-          "quantity": 0,
-          "unit_price": 1,
-          "amount": 1
+          "name": 0.9,
+          "quantity": 0.0,
+          "unit_price": 0.0,
+          "amount": 0.9
         }
       },
       {
         "name": "Mineral Water",
         "quantity": null,
-        "unit_price": 12987,
+        "unit_price": null,
         "amount": 12987,
         "confidence": {
-          "name": 1,
-          "quantity": 0,
-          "unit_price": 1,
-          "amount": 1
+          "name": 0.9,
+          "quantity": 0.0,
+          "unit_price": 0.0,
+          "amount": 0.9
         }
       },
       {
         "name": "Mineral Water",
         "quantity": null,
-        "unit_price": 12987,
+        "unit_price": null,
         "amount": 12987,
         "confidence": {
-          "name": 1,
-          "quantity": 0,
-          "unit_price": 1,
-          "amount": 1
+          "name": 0.9,
+          "quantity": 0.0,
+          "unit_price": 0.0,
+          "amount": 0.9
         }
       },
       {
         "name": "Lychee/Peach/Lemon/Mango",
         "quantity": null,
-        "unit_price": 25974,
+        "unit_price": null,
         "amount": 25974,
         "confidence": {
-          "name": 1,
-          "quantity": 0,
-          "unit_price": 1,
-          "amount": 1
+          "name": 0.9,
+          "quantity": 0.0,
+          "unit_price": 0.0,
+          "amount": 0.9
         }
       },
       {
         "name": "Chicken Maryland",
         "quantity": null,
-        "unit_price": 47619,
+        "unit_price": null,
         "amount": 47619,
         "confidence": {
-          "name": 1,
-          "quantity": 0,
-          "unit_price": 1,
-          "amount": 1
+          "name": 0.9,
+          "quantity": 0.0,
+          "unit_price": 0.0,
+          "amount": 0.9
         }
       }
     ],
@@ -133,14 +133,14 @@
     "service_charge": 48982,
     "total": 365000,
     "confidence": {
-      "subtotal": 1,
-      "discount": 0,
-      "tax": 0,
+      "subtotal": 0.9,
+      "discount": 0.0,
+      "tax": 0.0,
       "service_charge": 0.9,
-      "total": 1,
-      "payment.method": 0,
-      "payment.amount_paid": 0,
-      "payment.change": 0
+      "total": 0.9,
+      "payment.method": 0.0,
+      "payment.amount_paid": 0.0,
+      "payment.change": 0.0
     },
     "payment": {
       "method": null,
@@ -149,9 +149,9 @@
     }
   },
   "usage": {
-    "completion_tokens": 1104,
+    "completion_tokens": 1148,
     "prompt_tokens": 2698,
-    "total_tokens": 3802
+    "total_tokens": 3846
   },
   "cost_usd": 0.0,
   "downscaled": false,

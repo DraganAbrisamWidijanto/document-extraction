@@ -2,8 +2,8 @@
   "name": "cord_051",
   "image": "",
   "model": "gemini-3.5-flash-lite",
-  "latency_s": 32.99,
-  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"(TA) NASI GORENG TERI MEDAN\",\n      \"quantity\": 4,\n      \"unit_price\": 41365,\n      \"amount\": 165460,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"(TA) BIHUN GORENG SEAFOOD\",\n      \"quantity\": 1,\n      \"unit_price\": 40456,\n      \"amount\": 40456,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"(TA) KWETIAW SEAFOOD SIRAM\",\n      \"quantity\": 1,\n      \"unit_price\": 42274,\n      \"amount\": 42274,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"(TA) NASI GORENG\",\n      \"quantity\": 2,\n      \"unit_price\": 27728,\n      \"amount\": 55456,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    }\n  ],\n  \"subtotal\": 303646,\n  \"discount\": null,\n  \"tax\": 30365,\n  \"service_charge\": null,\n  \"total\": 334000,\n  \"confidence\": {\n    \"subtotal\": 0.9,\n    \"discount\": 0.0,\n    \"tax\": 0.9,\n    \"service_charge\": 0.0,\n    \"total\": 0.9,\n    \"payment.method\": 0.9,\n    \"payment.amount_paid\": 0.9,\n    \"payment.change\": 0.0\n  },\n  \"payment\": {\n    \"method\": \"debit\",\n    \"amount_paid\": 334000,\n    \"change\": null\n  }\n}",
+  "latency_s": 4.1,
+  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"(TA) NASI GORENG TERI MEDAN\",\n      \"quantity\": 4,\n      \"unit_price\": 41365,\n      \"amount\": 165460,\n      \"confidence\": {\n        \"name\": 0.95,\n        \"quantity\": 0.95,\n        \"unit_price\": 0.95,\n        \"amount\": 0.95\n      }\n    },\n    {\n      \"name\": \"(TA) BIHUN GORENG SEAFOOD\",\n      \"quantity\": 1,\n      \"unit_price\": 40456,\n      \"amount\": 40456,\n      \"confidence\": {\n        \"name\": 0.95,\n        \"quantity\": 0.95,\n        \"unit_price\": 0.95,\n        \"amount\": 0.95\n      }\n    },\n    {\n      \"name\": \"(TA) KWETIAW SEAFOOD SIRAM\",\n      \"quantity\": 1,\n      \"unit_price\": 42274,\n      \"amount\": 42274,\n      \"confidence\": {\n        \"name\": 0.95,\n        \"quantity\": 0.95,\n        \"unit_price\": 0.95,\n        \"amount\": 0.95\n      }\n    },\n    {\n      \"name\": \"(TA) NASI GORENG\",\n      \"quantity\": 2,\n      \"unit_price\": 27728,\n      \"amount\": 55456,\n      \"confidence\": {\n        \"name\": 0.95,\n        \"quantity\": 0.95,\n        \"unit_price\": 0.95,\n        \"amount\": 0.95\n      }\n    }\n  ],\n  \"subtotal\": 303646,\n  \"discount\": null,\n  \"tax\": 30365,\n  \"service_charge\": null,\n  \"total\": 334000,\n  \"confidence\": {\n    \"subtotal\": 0.95,\n    \"discount\": 0.0,\n    \"tax\": 0.95,\n    \"service_charge\": 0.0,\n    \"total\": 0.95,\n    \"payment.method\": 0.95,\n    \"payment.amount_paid\": 0.95,\n    \"payment.change\": 0.0\n  },\n  \"payment\": {\n    \"method\": \"debit\",\n    \"amount_paid\": 334000,\n    \"change\": null\n  }\n}",
   "prediction": {
     "menu_items": [
       {
@@ -12,10 +12,10 @@
         "unit_price": 41365,
         "amount": 165460,
         "confidence": {
-          "name": 0.9,
-          "quantity": 0.9,
-          "unit_price": 0.9,
-          "amount": 0.9
+          "name": 0.95,
+          "quantity": 0.95,
+          "unit_price": 0.95,
+          "amount": 0.95
         }
       },
       {
@@ -24,10 +24,10 @@
         "unit_price": 40456,
         "amount": 40456,
         "confidence": {
-          "name": 0.9,
-          "quantity": 0.9,
-          "unit_price": 0.9,
-          "amount": 0.9
+          "name": 0.95,
+          "quantity": 0.95,
+          "unit_price": 0.95,
+          "amount": 0.95
         }
       },
       {
@@ -36,10 +36,10 @@
         "unit_price": 42274,
         "amount": 42274,
         "confidence": {
-          "name": 0.9,
-          "quantity": 0.9,
-          "unit_price": 0.9,
-          "amount": 0.9
+          "name": 0.95,
+          "quantity": 0.95,
+          "unit_price": 0.95,
+          "amount": 0.95
         }
       },
       {
@@ -48,10 +48,10 @@
         "unit_price": 27728,
         "amount": 55456,
         "confidence": {
-          "name": 0.9,
-          "quantity": 0.9,
-          "unit_price": 0.9,
-          "amount": 0.9
+          "name": 0.95,
+          "quantity": 0.95,
+          "unit_price": 0.95,
+          "amount": 0.95
         }
       }
     ],
@@ -61,13 +61,13 @@
     "service_charge": null,
     "total": 334000,
     "confidence": {
-      "subtotal": 0.9,
+      "subtotal": 0.95,
       "discount": 0.0,
-      "tax": 0.9,
+      "tax": 0.95,
       "service_charge": 0.0,
-      "total": 0.9,
-      "payment.method": 0.9,
-      "payment.amount_paid": 0.9,
+      "total": 0.95,
+      "payment.method": 0.95,
+      "payment.amount_paid": 0.95,
       "payment.change": 0.0
     },
     "payment": {
@@ -77,12 +77,12 @@
     }
   },
   "usage": {
-    "completion_tokens": 637,
+    "completion_tokens": 658,
     "prompt_tokens": 2698,
-    "total_tokens": 3335
+    "total_tokens": 3356
   },
   "cost_usd": 0.0,
-  "downscaled": true,
+  "downscaled": false,
   "validation": {
     "valid": true,
     "errors": []

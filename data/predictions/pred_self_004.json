@@ -2,8 +2,8 @@
   "name": "self_004",
   "image": "",
   "model": "gemini-3.5-flash-lite",
-  "latency_s": 2.6,
-  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"Yamie Asin Ayam\",\n      \"quantity\": 4,\n      \"unit_price\": 11000,\n      \"amount\": 44000,\n      \"confidence\": {\n        \"name\": 0.95,\n        \"quantity\": 0.95,\n        \"unit_price\": 0.95,\n        \"amount\": 0.95\n      }\n    },\n    {\n      \"name\": \"Chili Oil Ayam\",\n      \"quantity\": 1,\n      \"unit_price\": 14000,\n      \"amount\": 14000,\n      \"confidence\": {\n        \"name\": 0.95,\n        \"quantity\": 0.95,\n        \"unit_price\": 0.95,\n        \"amount\": 0.95\n      }\n    },\n    {\n      \"name\": \"Jeruk Es\",\n      \"quantity\": 1,\n      \"unit_price\": 5000,\n      \"amount\": 5000,\n      \"confidence\": {\n        \"name\": 0.95,\n        \"quantity\": 0.95,\n        \"unit_price\": 0.95,\n        \"amount\": 0.95\n      }\n    },\n    {\n      \"name\": \"Teh Es\",\n      \"quantity\": 4,\n      \"unit_price\": 4000,\n      \"amount\": 16000,\n      \"confidence\": {\n        \"name\": 0.95,\n        \"quantity\": 0.95,\n        \"unit_price\": 0.95,\n        \"amount\": 0.95\n      }\n    }\n  ],\n  \"subtotal\": 79000,\n  \"discount\": null,\n  \"tax\": null,\n  \"service_charge\": null,\n  \"total\": 79000,\n  \"confidence\": {\n    \"subtotal\": 0.95,\n    \"discount\": 0.0,\n    \"tax\": 0.0,\n    \"service_charge\": 0.0,\n    \"total\": 0.95,\n    \"payment.method\": 0.95,\n    \"payment.amount_paid\": 0.95,\n    \"payment.change\": 0.0\n  },\n  \"payment\": {\n    \"method\": \"emoney\",\n    \"amount_paid\": 79000,\n    \"change\": null\n  }\n}",
+  "latency_s": 32.64,
+  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"Yamie Asin Ayam\",\n      \"quantity\": 4,\n      \"unit_price\": 11000,\n      \"amount\": 44000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"Chili Oil Ayam\",\n      \"quantity\": 1,\n      \"unit_price\": 14000,\n      \"amount\": 14000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"Jeruk Es\",\n      \"quantity\": 1,\n      \"unit_price\": 5000,\n      \"amount\": 5000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"Teh Es\",\n      \"quantity\": 4,\n      \"unit_price\": 4000,\n      \"amount\": 16000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    }\n  ],\n  \"subtotal\": 79000,\n  \"discount\": null,\n  \"tax\": null,\n  \"service_charge\": null,\n  \"total\": 79000,\n  \"confidence\": {\n    \"subtotal\": 0.9,\n    \"discount\": 0.0,\n    \"tax\": 0.0,\n    \"service_charge\": 0.0,\n    \"total\": 0.9,\n    \"payment.method\": 0.9,\n    \"payment.amount_paid\": 0.9,\n    \"payment.change\": 0.0\n  },\n  \"payment\": {\n    \"method\": \"emoney\",\n    \"amount_paid\": 79000,\n    \"change\": null\n  }\n}",
   "prediction": {
     "menu_items": [
       {
@@ -12,10 +12,10 @@
         "unit_price": 11000,
         "amount": 44000,
         "confidence": {
-          "name": 0.95,
-          "quantity": 0.95,
-          "unit_price": 0.95,
-          "amount": 0.95
+          "name": 0.9,
+          "quantity": 0.9,
+          "unit_price": 0.9,
+          "amount": 0.9
         }
       },
       {
@@ -24,10 +24,10 @@
         "unit_price": 14000,
         "amount": 14000,
         "confidence": {
-          "name": 0.95,
-          "quantity": 0.95,
-          "unit_price": 0.95,
-          "amount": 0.95
+          "name": 0.9,
+          "quantity": 0.9,
+          "unit_price": 0.9,
+          "amount": 0.9
         }
       },
       {
@@ -36,10 +36,10 @@
         "unit_price": 5000,
         "amount": 5000,
         "confidence": {
-          "name": 0.95,
-          "quantity": 0.95,
-          "unit_price": 0.95,
-          "amount": 0.95
+          "name": 0.9,
+          "quantity": 0.9,
+          "unit_price": 0.9,
+          "amount": 0.9
         }
       },
       {
@@ -48,10 +48,10 @@
         "unit_price": 4000,
         "amount": 16000,
         "confidence": {
-          "name": 0.95,
-          "quantity": 0.95,
-          "unit_price": 0.95,
-          "amount": 0.95
+          "name": 0.9,
+          "quantity": 0.9,
+          "unit_price": 0.9,
+          "amount": 0.9
         }
       }
     ],
@@ -61,13 +61,13 @@
     "service_charge": null,
     "total": 79000,
     "confidence": {
-      "subtotal": 0.95,
+      "subtotal": 0.9,
       "discount": 0.0,
       "tax": 0.0,
       "service_charge": 0.0,
-      "total": 0.95,
-      "payment.method": 0.95,
-      "payment.amount_paid": 0.95,
+      "total": 0.9,
+      "payment.method": 0.9,
+      "payment.amount_paid": 0.9,
       "payment.change": 0.0
     },
     "payment": {
@@ -77,9 +77,9 @@
     }
   },
   "usage": {
-    "completion_tokens": 619,
+    "completion_tokens": 599,
     "prompt_tokens": 2698,
-    "total_tokens": 3317
+    "total_tokens": 3297
   },
   "cost_usd": 0.0,
   "downscaled": false,

@@ -98,10 +98,10 @@ Field-level P/R/F1 over: subtotal, discount, tax, service_charge, total, payment
 
 | Split | Macro F1 | total exact | Item name F1 | Latency (mean/median) | Cost |
 |---|---|---|---|---|---|
-| CORD (45) | **0.93** | **44/45 (98%)** | 0.92 | 14.0s / 3.4s | $0.00 |
-| Self (10) | **0.99** | **10/10 (100%)** | **1.00** | 2.6s / 2.6s | $0.00 |
+| CORD (45) | **0.93** | **44/45 (98%)** | 0.93 | 3.7s / 2.6s | $0.00 |
+| Self (10) | **0.99** | **10/10 (100%)** | **1.00** | 5.4s / 2.5s | $0.00 |
 
-*(Macro F1: CORD 0.928 over 11 evaluable fields; self 0.986 over 9 — `discount` and `service_charge` excluded because no self-scan receipt carries those lines. Latest run, Sep 2 2026 — prompt v7: explicit-vs-derived null/0, tax-inclusive handling, EDC→null, integer-only money, bundle/DISC line rules, final-total = amount-paid rule, modifier lines not separate items. Item fields on self are 1.00/1.00/1.00 (37/37 items); the only CORD total miss is cord_095 — a flaky ambiguous receipt where the model reads the cash amount (62,000) as the total instead of total due (62,000 − 201 = 61,799).)*
+*(Official run: `docker compose run --rm eval` — re-extracted all 55 documents live through the containerized API, then scored; scorecard + per-document results committed under `results/`. Macro F1: CORD 0.928 over 11 evaluable fields; self 0.986 over 9 — `discount` and `service_charge` excluded because no self-scan receipt carries those lines. A/B vs the previous in-process run passes the regression gate (`compare_evals.py`, macro 0.928 → 0.928). Latest prompt v7: explicit-vs-derived null/0, tax-inclusive handling, EDC→null, integer-only money, bundle/DISC line rules, final-total = amount-paid rule, modifier lines not separate items. Item fields on self are 1.00/1.00/1.00 (37/37 items); the only CORD total miss is cord_095 — a flaky ambiguous receipt where the model reads the cash amount (62,000) as the total instead of total due (62,000 − 201 = 61,799).)*
 
 ### Optimization: image downscaling
 7 images failed initially (timeout, 5.7–16.8 MB, 2048×4096 px). **Downscaled to max 1600px + JPEG 85** (200–400KB, 2–11% of original) → **all 7 succeeded**. Impact: +13% total accuracy, −35% mean latency, zero timeouts. Now integrated into the main pipeline (`extractor.downscale`), not just retry.

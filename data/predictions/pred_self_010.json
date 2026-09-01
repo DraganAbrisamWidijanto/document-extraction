@@ -2,7 +2,7 @@
   "name": "self_010",
   "image": "",
   "model": "gemini-3.5-flash-lite",
-  "latency_s": 2.35,
+  "latency_s": 2.55,
   "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"Paket Ayam Nashville\",\n      \"quantity\": 1,\n      \"unit_price\": 28000,\n      \"amount\": 28000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"Paket Ayam Korean\",\n      \"quantity\": 1,\n      \"unit_price\": 28000,\n      \"amount\": 28000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"Black Tea\",\n      \"quantity\": 1,\n      \"unit_price\": 5000,\n      \"amount\": 5000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"Lemon Tea\",\n      \"quantity\": 1,\n      \"unit_price\": 8000,\n      \"amount\": 8000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    }\n  ],\n  \"subtotal\": 69000,\n  \"discount\": null,\n  \"tax\": null,\n  \"service_charge\": null,\n  \"total\": 69000,\n  \"confidence\": {\n    \"subtotal\": 1,\n    \"discount\": 0,\n    \"tax\": 0,\n    \"service_charge\": 0,\n    \"total\": 1,\n    \"payment.method\": 1,\n    \"payment.amount_paid\": 1,\n    \"payment.change\": 0\n  },\n  \"payment\": {\n    \"method\": \"emoney\",\n    \"amount_paid\": 69000,\n    \"change\": null\n  }\n}",
   "prediction": {
     "menu_items": [
