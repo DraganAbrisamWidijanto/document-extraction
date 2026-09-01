@@ -1,0 +1,66 @@
+{
+  "name": "cord_084",
+  "image": "",
+  "model": "gemini-3.5-flash-lite",
+  "latency_s": 2.51,
+  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"Kroket\",\n      \"quantity\": 1,\n      \"unit_price\": 12000,\n      \"amount\": 12000,\n      \"confidence\": {\n        \"name\": 1.0,\n        \"quantity\": 1.0,\n        \"unit_price\": 1.0,\n        \"amount\": 1.0\n      }\n    },\n    {\n      \"name\": \"Arem Arem\",\n      \"quantity\": 2,\n      \"unit_price\": 12000,\n      \"amount\": 24000,\n      \"confidence\": {\n        \"name\": 1.0,\n        \"quantity\": 1.0,\n        \"unit_price\": 1.0,\n        \"amount\": 1.0\n      }\n    }\n  ],\n  \"subtotal\": 36000,\n  \"discount\": null,\n  \"tax\": 3600,\n  \"service_charge\": null,\n  \"total\": 39600,\n  \"confidence\": {\n    \"subtotal\": 1.0,\n    \"discount\": 0.0,\n    \"tax\": 1.0,\n    \"service_charge\": 0.0,\n    \"total\": 1.0,\n    \"payment.method\": 0.0,\n    \"payment.amount_paid\": 1.0,\n    \"payment.change\": 0.0\n  },\n  \"payment\": {\n    \"method\": \"other\",\n    \"amount_paid\": 39600,\n    \"change\": null\n  }\n}",
+  "prediction": {
+    "menu_items": [
+      {
+        "name": "Kroket",
+        "quantity": 1,
+        "unit_price": 12000,
+        "amount": 12000,
+        "confidence": {
+          "name": 1.0,
+          "quantity": 1.0,
+          "unit_price": 1.0,
+          "amount": 1.0
+        }
+      },
+      {
+        "name": "Arem Arem",
+        "quantity": 2,
+        "unit_price": 12000,
+        "amount": 24000,
+        "confidence": {
+          "name": 1.0,
+          "quantity": 1.0,
+          "unit_price": 1.0,
+          "amount": 1.0
+        }
+      }
+    ],
+    "subtotal": 36000,
+    "discount": null,
+    "tax": 3600,
+    "service_charge": null,
+    "total": 39600,
+    "confidence": {
+      "subtotal": 1.0,
+      "discount": 0.0,
+      "tax": 1.0,
+      "service_charge": 0.0,
+      "total": 1.0,
+      "payment.method": 0.0,
+      "payment.amount_paid": 1.0,
+      "payment.change": 0.0
+    },
+    "payment": {
+      "method": "other",
+      "amount_paid": 39600,
+      "change": null
+    }
+  },
+  "usage": {
+    "completion_tokens": 403,
+    "prompt_tokens": 2702,
+    "total_tokens": 3105
+  },
+  "cost_usd": 0.0,
+  "downscaled": false,
+  "validation": {
+    "valid": true,
+    "errors": []
+  }
+}

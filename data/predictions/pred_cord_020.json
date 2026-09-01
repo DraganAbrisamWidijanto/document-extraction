@@ -1,0 +1,102 @@
+{
+  "name": "cord_020",
+  "image": "",
+  "model": "gemini-3.5-flash-lite",
+  "latency_s": 3.0,
+  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"cashew nuts chkn\",\n      \"quantity\": 1,\n      \"unit_price\": 64500,\n      \"amount\": 64500,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"garlic pepper beef\",\n      \"quantity\": 1,\n      \"unit_price\": 79500,\n      \"amount\": 79500,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"red curry beef\",\n      \"quantity\": 1,\n      \"unit_price\": 69500,\n      \"amount\": 69500,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"phad thai\",\n      \"quantity\": 1,\n      \"unit_price\": 64500,\n      \"amount\": 64500,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"steamed rice\",\n      \"quantity\": 4,\n      \"unit_price\": 11900,\n      \"amount\": 47600,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    }\n  ],\n  \"subtotal\": 325600,\n  \"discount\": null,\n  \"tax\": 34351,\n  \"service_charge\": 17909,\n  \"total\": 377859,\n  \"confidence\": {\n    \"subtotal\": 0.9,\n    \"discount\": 0.0,\n    \"tax\": 0.9,\n    \"service_charge\": 0.9,\n    \"total\": 0.9,\n    \"payment.method\": 0.0,\n    \"payment.amount_paid\": 0.0,\n    \"payment.change\": 0.0\n  },\n  \"payment\": {\n    \"method\": null,\n    \"amount_paid\": null,\n    \"change\": null\n  }\n}",
+  "prediction": {
+    "menu_items": [
+      {
+        "name": "cashew nuts chkn",
+        "quantity": 1,
+        "unit_price": 64500,
+        "amount": 64500,
+        "confidence": {
+          "name": 0.9,
+          "quantity": 0.9,
+          "unit_price": 0.9,
+          "amount": 0.9
+        }
+      },
+      {
+        "name": "garlic pepper beef",
+        "quantity": 1,
+        "unit_price": 79500,
+        "amount": 79500,
+        "confidence": {
+          "name": 0.9,
+          "quantity": 0.9,
+          "unit_price": 0.9,
+          "amount": 0.9
+        }
+      },
+      {
+        "name": "red curry beef",
+        "quantity": 1,
+        "unit_price": 69500,
+        "amount": 69500,
+        "confidence": {
+          "name": 0.9,
+          "quantity": 0.9,
+          "unit_price": 0.9,
+          "amount": 0.9
+        }
+      },
+      {
+        "name": "phad thai",
+        "quantity": 1,
+        "unit_price": 64500,
+        "amount": 64500,
+        "confidence": {
+          "name": 0.9,
+          "quantity": 0.9,
+          "unit_price": 0.9,
+          "amount": 0.9
+        }
+      },
+      {
+        "name": "steamed rice",
+        "quantity": 4,
+        "unit_price": 11900,
+        "amount": 47600,
+        "confidence": {
+          "name": 0.9,
+          "quantity": 0.9,
+          "unit_price": 0.9,
+          "amount": 0.9
+        }
+      }
+    ],
+    "subtotal": 325600,
+    "discount": null,
+    "tax": 34351,
+    "service_charge": 17909,
+    "total": 377859,
+    "confidence": {
+      "subtotal": 0.9,
+      "discount": 0.0,
+      "tax": 0.9,
+      "service_charge": 0.9,
+      "total": 0.9,
+      "payment.method": 0.0,
+      "payment.amount_paid": 0.0,
+      "payment.change": 0.0
+    },
+    "payment": {
+      "method": null,
+      "amount_paid": null,
+      "change": null
+    }
+  },
+  "usage": {
+    "completion_tokens": 707,
+    "prompt_tokens": 2678,
+    "total_tokens": 3385
+  },
+  "cost_usd": 0.0,
+  "downscaled": true,
+  "validation": {
+    "valid": true,
+    "errors": []
+  }
+}

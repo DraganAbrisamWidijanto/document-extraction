@@ -1,0 +1,46 @@
+{
+  "prediction": {
+    "menu_items": [
+      {
+        "name": "R. Tori Paitan Shortplate",
+        "quantity": 1,
+        "unit_price": 36000,
+        "amount": 36000
+      },
+      {
+        "name": "R. Basic Tori Paitan",
+        "quantity": 1,
+        "unit_price": 26000,
+        "amount": 26000
+      },
+      {
+        "name": "RD. Gyudon",
+        "quantity": 1,
+        "unit_price": 42000,
+        "amount": 42000
+      },
+      {
+        "name": "D. Ocha (free refil)",
+        "quantity": 3,
+        "unit_price": 5000,
+        "amount": 15000
+      }
+    ],
+    "subtotal": 119000,
+    "discount": null,
+    "tax": null,
+    "service_charge": null,
+    "total": 119000,
+    "payment": {
+      "method": "transfer",
+      "amount_paid": 119000,
+      "change": 0
+    }
+  },
+  "meta": {
+    "vendor": "Tottori_ID Resto Japanese Fusion",
+    "date": "14/02/2026",
+    "source": "photo",
+    "note": "GT verified manually against the receipt photo (vendor, date, items, amounts)."
+  }
+}

@@ -4,22 +4,24 @@ services:
     ports:
       - "8000:8000"
     environment:
-      VLM_BASE_URL: ${VLM_BASE_URL:-http://host.docker.internal:20128/v1}
+      VLM_BASE_URL: ${VLM_BASE_URL:-https://generativelanguage.googleapis.com/v1beta/openai}
       VLM_API_KEY: ${VLM_API_KEY:-}
-      VLM_MODEL: ${VLM_MODEL:-bai/mimo-v2.5}
+      VLM_MODEL: ${VLM_MODEL:-gemini-3.5-flash-lite}
     volumes:
       - ./data:/app/data
     extra_hosts:
       - "host.docker.internal:host-gateway"
 
-  # docker compose run --rm eval
+  # docker compose run --rm eval   (end-to-end: extract fresh via the API, then score)
   eval:
     build: .
-    command: ["python", "run_eval.py"]
+    command: ["python", "run_eval.py", "--live", "--api-url", "http://api:8000", "--workers", "5"]
+    depends_on:
+      - api
     environment:
-      VLM_BASE_URL: ${VLM_BASE_URL:-http://host.docker.internal:20128/v1}
+      VLM_BASE_URL: ${VLM_BASE_URL:-https://generativelanguage.googleapis.com/v1beta/openai}
       VLM_API_KEY: ${VLM_API_KEY:-}
-      VLM_MODEL: ${VLM_MODEL:-bai/mimo-v2.5}
+      VLM_MODEL: ${VLM_MODEL:-gemini-3.5-flash-lite}
     volumes:
       - ./data:/app/data
       - ./results:/app/results

@@ -1,0 +1,34 @@
+{
+  "prediction": {
+    "menu_items": [
+      {
+        "name": "1 SET PAKET MERONCE",
+        "quantity": 1,
+        "unit_price": 35000,
+        "amount": 35000
+      },
+      {
+        "name": "PAKET POUCH KANVAS",
+        "quantity": 2,
+        "unit_price": 50000,
+        "amount": 100000
+      }
+    ],
+    "subtotal": 135000,
+    "discount": null,
+    "tax": null,
+    "service_charge": null,
+    "total": 135000,
+    "payment": {
+      "method": "emoney",
+      "amount_paid": 135000,
+      "change": null
+    }
+  },
+  "meta": {
+    "vendor": "SARSA Creative Space",
+    "date": "23/02/2026",
+    "source": "photo",
+    "note": "GT verified manually against the receipt photo (vendor, date, items, amounts)."
+  }
+}

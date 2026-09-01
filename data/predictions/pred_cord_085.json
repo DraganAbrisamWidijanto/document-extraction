@@ -1,0 +1,174 @@
+{
+  "name": "cord_085",
+  "image": "",
+  "model": "gemini-3.5-flash-lite",
+  "latency_s": 4.14,
+  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"Nasi Putih\",\n      \"quantity\": 3,\n      \"unit_price\": 10000,\n      \"amount\": 30000,\n      \"confidence\": {\n        \"name\": 0.95,\n        \"quantity\": 0.95,\n        \"unit_price\": 0.95,\n        \"amount\": 0.95\n      }\n    },\n    {\n      \"name\": \"Nasi Tambah\",\n      \"quantity\": 1,\n      \"unit_price\": 7000,\n      \"amount\": 7000,\n      \"confidence\": {\n        \"name\": 0.95,\n        \"quantity\": 0.95,\n        \"unit_price\": 0.95,\n        \"amount\": 0.95\n      }\n    },\n    {\n      \"name\": \"Ayam Pop\",\n      \"quantity\": 2,\n      \"unit_price\": 20000,\n      \"amount\": 40000,\n      \"confidence\": {\n        \"name\": 0.95,\n        \"quantity\": 0.95,\n        \"unit_price\": 0.95,\n        \"amount\": 0.95\n      }\n    },\n    {\n      \"name\": \"Samabal SP\",\n      \"quantity\": 1,\n      \"unit_price\": 11000,\n      \"amount\": 11000,\n      \"confidence\": {\n        \"name\": 0.95,\n        \"quantity\": 0.95,\n        \"unit_price\": 0.95,\n        \"amount\": 0.95\n      }\n    },\n    {\n      \"name\": \"Sambal Gabus Asin Cb\",\n      \"quantity\": 1,\n      \"unit_price\": 18000,\n      \"amount\": 18000,\n      \"confidence\": {\n        \"name\": 0.95,\n        \"quantity\": 0.95,\n        \"unit_price\": 0.95,\n        \"amount\": 0.95\n      }\n    },\n    {\n      \"name\": \"Kerupuk Kuah\",\n      \"quantity\": 1,\n      \"unit_price\": 15000,\n      \"amount\": 15000,\n      \"confidence\": {\n        \"name\": 0.95,\n        \"quantity\": 0.95,\n        \"unit_price\": 0.95,\n        \"amount\": 0.95\n      }\n    },\n    {\n      \"name\": \"Ikan Bawal Besa\",\n      \"quantity\": 1,\n      \"unit_price\": 28500,\n      \"amount\": 28500,\n      \"confidence\": {\n        \"name\": 0.95,\n        \"quantity\": 0.95,\n        \"unit_price\": 0.95,\n        \"amount\": 0.95\n      }\n    },\n    {\n      \"name\": \"Telur Dadar\",\n      \"quantity\": 1,\n      \"unit_price\": 10000,\n      \"amount\": 10000,\n      \"confidence\": {\n        \"name\": 0.95,\n        \"quantity\": 0.95,\n        \"unit_price\": 0.95,\n        \"amount\": 0.95\n      }\n    },\n    {\n      \"name\": \"Teh Es\",\n      \"quantity\": 1,\n      \"unit_price\": 7000,\n      \"amount\": 7000,\n      \"confidence\": {\n        \"name\": 0.95,\n        \"quantity\": 0.95,\n        \"unit_price\": 0.95,\n        \"amount\": 0.95\n      }\n    },\n    {\n      \"name\": \"Teh Manis\",\n      \"quantity\": 1,\n      \"unit_price\": 9000,\n      \"amount\": 9000,\n      \"confidence\": {\n        \"name\": 0.95,\n        \"quantity\": 0.95,\n        \"unit_price\": 0.95,\n        \"amount\": 0.95\n      }\n    },\n    {\n      \"name\": \"Es Batu\",\n      \"quantity\": 1,\n      \"unit_price\": 4000,\n      \"amount\": 4000,\n      \"confidence\": {\n        \"name\": 0.95,\n        \"quantity\": 0.95,\n        \"unit_price\": 0.95,\n        \"amount\": 0.95\n      }\n    }\n  ],\n  \"subtotal\": 179500,\n  \"discount\": null,\n  \"tax\": 17950,\n  \"service_charge\": null,\n  \"total\": 197450,\n  \"confidence\": {\n    \"subtotal\": 0.95,\n    \"discount\": 0.0,\n    \"tax\": 0.95,\n    \"service_charge\": 0.0,\n    \"total\": 0.95,\n    \"payment.method\": 0.95,\n    \"payment.amount_paid\": 0.95,\n    \"payment.change\": 0.0\n  },\n  \"payment\": {\n    \"method\": \"cash\",\n    \"amount_paid\": 197450,\n    \"change\": null\n  }\n}",
+  "prediction": {
+    "menu_items": [
+      {
+        "name": "Nasi Putih",
+        "quantity": 3,
+        "unit_price": 10000,
+        "amount": 30000,
+        "confidence": {
+          "name": 0.95,
+          "quantity": 0.95,
+          "unit_price": 0.95,
+          "amount": 0.95
+        }
+      },
+      {
+        "name": "Nasi Tambah",
+        "quantity": 1,
+        "unit_price": 7000,
+        "amount": 7000,
+        "confidence": {
+          "name": 0.95,
+          "quantity": 0.95,
+          "unit_price": 0.95,
+          "amount": 0.95
+        }
+      },
+      {
+        "name": "Ayam Pop",
+        "quantity": 2,
+        "unit_price": 20000,
+        "amount": 40000,
+        "confidence": {
+          "name": 0.95,
+          "quantity": 0.95,
+          "unit_price": 0.95,
+          "amount": 0.95
+        }
+      },
+      {
+        "name": "Samabal SP",
+        "quantity": 1,
+        "unit_price": 11000,
+        "amount": 11000,
+        "confidence": {
+          "name": 0.95,
+          "quantity": 0.95,
+          "unit_price": 0.95,
+          "amount": 0.95
+        }
+      },
+      {
+        "name": "Sambal Gabus Asin Cb",
+        "quantity": 1,
+        "unit_price": 18000,
+        "amount": 18000,
+        "confidence": {
+          "name": 0.95,
+          "quantity": 0.95,
+          "unit_price": 0.95,
+          "amount": 0.95
+        }
+      },
+      {
+        "name": "Kerupuk Kuah",
+        "quantity": 1,
+        "unit_price": 15000,
+        "amount": 15000,
+        "confidence": {
+          "name": 0.95,
+          "quantity": 0.95,
+          "unit_price": 0.95,
+          "amount": 0.95
+        }
+      },
+      {
+        "name": "Ikan Bawal Besa",
+        "quantity": 1,
+        "unit_price": 28500,
+        "amount": 28500,
+        "confidence": {
+          "name": 0.95,
+          "quantity": 0.95,
+          "unit_price": 0.95,
+          "amount": 0.95
+        }
+      },
+      {
+        "name": "Telur Dadar",
+        "quantity": 1,
+        "unit_price": 10000,
+        "amount": 10000,
+        "confidence": {
+          "name": 0.95,
+          "quantity": 0.95,
+          "unit_price": 0.95,
+          "amount": 0.95
+        }
+      },
+      {
+        "name": "Teh Es",
+        "quantity": 1,
+        "unit_price": 7000,
+        "amount": 7000,
+        "confidence": {
+          "name": 0.95,
+          "quantity": 0.95,
+          "unit_price": 0.95,
+          "amount": 0.95
+        }
+      },
+      {
+        "name": "Teh Manis",
+        "quantity": 1,
+        "unit_price": 9000,
+        "amount": 9000,
+        "confidence": {
+          "name": 0.95,
+          "quantity": 0.95,
+          "unit_price": 0.95,
+          "amount": 0.95
+        }
+      },
+      {
+        "name": "Es Batu",
+        "quantity": 1,
+        "unit_price": 4000,
+        "amount": 4000,
+        "confidence": {
+          "name": 0.95,
+          "quantity": 0.95,
+          "unit_price": 0.95,
+          "amount": 0.95
+        }
+      }
+    ],
+    "subtotal": 179500,
+    "discount": null,
+    "tax": 17950,
+    "service_charge": null,
+    "total": 197450,
+    "confidence": {
+      "subtotal": 0.95,
+      "discount": 0.0,
+      "tax": 0.95,
+      "service_charge": 0.0,
+      "total": 0.95,
+      "payment.method": 0.95,
+      "payment.amount_paid": 0.95,
+      "payment.change": 0.0
+    },
+    "payment": {
+      "method": "cash",
+      "amount_paid": 197450,
+      "change": null
+    }
+  },
+  "usage": {
+    "completion_tokens": 1360,
+    "prompt_tokens": 2662,
+    "total_tokens": 4022
+  },
+  "cost_usd": 0.0,
+  "downscaled": true,
+  "validation": {
+    "valid": true,
+    "errors": []
+  }
+}

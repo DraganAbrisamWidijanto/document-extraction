@@ -21,7 +21,8 @@
     "sub_total": {
       "subtotal_price": "117,500",
       "service_price": "11,070",
-      "tax_price": "19,557"
+      "tax_price": "19,557",
+      "discount_price": "67,000"
     },
     "total": {
       "total_price": "148,127"

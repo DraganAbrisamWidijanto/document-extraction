@@ -1,0 +1,78 @@
+{
+  "name": "cord_098",
+  "image": "",
+  "model": "gemini-3.5-flash-lite",
+  "latency_s": 33.08,
+  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"BLACK PEPPER MEATBALL PAS\",\n      \"quantity\": 1,\n      \"unit_price\": 79000,\n      \"amount\": 79000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"TRUFFLE CREAM\",\n      \"quantity\": 1,\n      \"unit_price\": 77000,\n      \"amount\": 77000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"EARL GREY MILK TEA\",\n      \"quantity\": 1,\n      \"unit_price\": 59000,\n      \"amount\": 59000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    }\n  ],\n  \"subtotal\": 215000,\n  \"discount\": null,\n  \"tax\": 22790,\n  \"service_charge\": 12900,\n  \"total\": 250690,\n  \"confidence\": {\n    \"subtotal\": 0.9,\n    \"discount\": 0.0,\n    \"tax\": 0.9,\n    \"service_charge\": 0.9,\n    \"total\": 0.9,\n    \"payment.method\": 0.0,\n    \"payment.amount_paid\": 0.0,\n    \"payment.change\": 0.0\n  },\n  \"payment\": {\n    \"method\": null,\n    \"amount_paid\": null,\n    \"change\": null\n  }\n}",
+  "prediction": {
+    "menu_items": [
+      {
+        "name": "BLACK PEPPER MEATBALL PAS",
+        "quantity": 1,
+        "unit_price": 79000,
+        "amount": 79000,
+        "confidence": {
+          "name": 0.9,
+          "quantity": 0.9,
+          "unit_price": 0.9,
+          "amount": 0.9
+        }
+      },
+      {
+        "name": "TRUFFLE CREAM",
+        "quantity": 1,
+        "unit_price": 77000,
+        "amount": 77000,
+        "confidence": {
+          "name": 0.9,
+          "quantity": 0.9,
+          "unit_price": 0.9,
+          "amount": 0.9
+        }
+      },
+      {
+        "name": "EARL GREY MILK TEA",
+        "quantity": 1,
+        "unit_price": 59000,
+        "amount": 59000,
+        "confidence": {
+          "name": 0.9,
+          "quantity": 0.9,
+          "unit_price": 0.9,
+          "amount": 0.9
+        }
+      }
+    ],
+    "subtotal": 215000,
+    "discount": null,
+    "tax": 22790,
+    "service_charge": 12900,
+    "total": 250690,
+    "confidence": {
+      "subtotal": 0.9,
+      "discount": 0.0,
+      "tax": 0.9,
+      "service_charge": 0.9,
+      "total": 0.9,
+      "payment.method": 0.0,
+      "payment.amount_paid": 0.0,
+      "payment.change": 0.0
+    },
+    "payment": {
+      "method": null,
+      "amount_paid": null,
+      "change": null
+    }
+  },
+  "usage": {
+    "completion_tokens": 512,
+    "prompt_tokens": 2687,
+    "total_tokens": 3199
+  },
+  "cost_usd": 0.0,
+  "downscaled": true,
+  "validation": {
+    "valid": true,
+    "errors": []
+  }
+}

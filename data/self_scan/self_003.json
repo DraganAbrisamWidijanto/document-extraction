@@ -40,7 +40,7 @@
     "payment": {
       "method": "transfer",
       "amount_paid": 125000,
-      "change": null
+      "change": 0
     }
   },
   "meta": {

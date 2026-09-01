@@ -1,0 +1,172 @@
+[
+  {
+    "idx": "self_001",
+    "img": "self_001.jpg",
+    "fields": {
+      "subtotal": "tp",
+      "discount": null,
+      "tax": "tp",
+      "service_charge": null,
+      "total": "tp",
+      "payment.method": "tp",
+      "payment.amount_paid": "tp",
+      "payment.change": null
+    },
+    "n_items_gt": 3,
+    "n_items_pred": 3,
+    "missing_items": []
+  },
+  {
+    "idx": "self_002",
+    "img": "self_002.jpg",
+    "fields": {
+      "subtotal": "tp",
+      "discount": null,
+      "tax": null,
+      "service_charge": null,
+      "total": "tp",
+      "payment.method": "tp",
+      "payment.amount_paid": "tp",
+      "payment.change": null
+    },
+    "n_items_gt": 2,
+    "n_items_pred": 2,
+    "missing_items": []
+  },
+  {
+    "idx": "self_003",
+    "img": "self_003.jpg",
+    "fields": {
+      "subtotal": "fn",
+      "discount": null,
+      "tax": null,
+      "service_charge": null,
+      "total": "tp",
+      "payment.method": "tp",
+      "payment.amount_paid": "tp",
+      "payment.change": "tp"
+    },
+    "n_items_gt": 5,
+    "n_items_pred": 5,
+    "missing_items": []
+  },
+  {
+    "idx": "self_004",
+    "img": "self_004.jpg",
+    "fields": {
+      "subtotal": "tp",
+      "discount": null,
+      "tax": null,
+      "service_charge": null,
+      "total": "tp",
+      "payment.method": "tp",
+      "payment.amount_paid": "tp",
+      "payment.change": null
+    },
+    "n_items_gt": 4,
+    "n_items_pred": 4,
+    "missing_items": []
+  },
+  {
+    "idx": "self_005",
+    "img": "self_005.jpg",
+    "fields": {
+      "subtotal": "tp",
+      "discount": null,
+      "tax": "tp",
+      "service_charge": null,
+      "total": "tp",
+      "payment.method": "tp",
+      "payment.amount_paid": "tp",
+      "payment.change": "tp"
+    },
+    "n_items_gt": 6,
+    "n_items_pred": 6,
+    "missing_items": []
+  },
+  {
+    "idx": "self_006",
+    "img": "self_006.jpg",
+    "fields": {
+      "subtotal": "fn",
+      "discount": null,
+      "tax": "tp",
+      "service_charge": null,
+      "total": "tp",
+      "payment.method": "tp",
+      "payment.amount_paid": "tp",
+      "payment.change": "tp"
+    },
+    "n_items_gt": 4,
+    "n_items_pred": 4,
+    "missing_items": []
+  },
+  {
+    "idx": "self_007",
+    "img": "self_007.jpg",
+    "fields": {
+      "subtotal": "tp",
+      "discount": null,
+      "tax": null,
+      "service_charge": null,
+      "total": "tp",
+      "payment.method": "tp",
+      "payment.amount_paid": "tp",
+      "payment.change": "tp"
+    },
+    "n_items_gt": 4,
+    "n_items_pred": 4,
+    "missing_items": []
+  },
+  {
+    "idx": "self_008",
+    "img": "self_008.jpg",
+    "fields": {
+      "subtotal": null,
+      "discount": null,
+      "tax": null,
+      "service_charge": null,
+      "total": "tp",
+      "payment.method": null,
+      "payment.amount_paid": "tp",
+      "payment.change": null
+    },
+    "n_items_gt": 3,
+    "n_items_pred": 3,
+    "missing_items": []
+  },
+  {
+    "idx": "self_009",
+    "img": "self_009.jpg",
+    "fields": {
+      "subtotal": "tp",
+      "discount": null,
+      "tax": null,
+      "service_charge": null,
+      "total": "tp",
+      "payment.method": "tp",
+      "payment.amount_paid": "tp",
+      "payment.change": null
+    },
+    "n_items_gt": 2,
+    "n_items_pred": 2,
+    "missing_items": []
+  },
+  {
+    "idx": "self_010",
+    "img": "self_010.jpg",
+    "fields": {
+      "subtotal": "tp",
+      "discount": null,
+      "tax": null,
+      "service_charge": null,
+      "total": "tp",
+      "payment.method": "tp",
+      "payment.amount_paid": "tp",
+      "payment.change": null
+    },
+    "n_items_gt": 4,
+    "n_items_pred": 4,
+    "missing_items": []
+  }
+]

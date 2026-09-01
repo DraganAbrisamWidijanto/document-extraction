@@ -1,0 +1,90 @@
+{
+  "name": "cord_074",
+  "image": "",
+  "model": "gemini-3.5-flash-lite",
+  "latency_s": 2.46,
+  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"BLACKCURRANT\",\n      \"quantity\": 1,\n      \"unit_price\": 32000,\n      \"amount\": 32000,\n      \"confidence\": {\n        \"name\": 1.0,\n        \"quantity\": 1.0,\n        \"unit_price\": 1.0,\n        \"amount\": 1.0\n      }\n    },\n    {\n      \"name\": \"SPRITE\",\n      \"quantity\": 1,\n      \"unit_price\": 32000,\n      \"amount\": 32000,\n      \"confidence\": {\n        \"name\": 1.0,\n        \"quantity\": 1.0,\n        \"unit_price\": 1.0,\n        \"amount\": 1.0\n      }\n    },\n    {\n      \"name\": \"GRILLED CALAMARI\",\n      \"quantity\": 1,\n      \"unit_price\": 85000,\n      \"amount\": 85000,\n      \"confidence\": {\n        \"name\": 1.0,\n        \"quantity\": 1.0,\n        \"unit_price\": 1.0,\n        \"amount\": 1.0\n      }\n    },\n    {\n      \"name\": \"DINE FOR 2\",\n      \"quantity\": 1,\n      \"unit_price\": 129000,\n      \"amount\": 129000,\n      \"confidence\": {\n        \"name\": 1.0,\n        \"quantity\": 1.0,\n        \"unit_price\": 1.0,\n        \"amount\": 1.0\n      }\n    }\n  ],\n  \"subtotal\": 278000,\n  \"discount\": null,\n  \"tax\": 30024,\n  \"service_charge\": 22240,\n  \"total\": 330264,\n  \"confidence\": {\n    \"subtotal\": 1.0,\n    \"discount\": 0.0,\n    \"tax\": 1.0,\n    \"service_charge\": 1.0,\n    \"total\": 1.0,\n    \"payment.method\": 0.0,\n    \"payment.amount_paid\": 0.0,\n    \"payment.change\": 0.0\n  },\n  \"payment\": {\n    \"method\": null,\n    \"amount_paid\": null,\n    \"change\": null\n  }\n}",
+  "prediction": {
+    "menu_items": [
+      {
+        "name": "BLACKCURRANT",
+        "quantity": 1,
+        "unit_price": 32000,
+        "amount": 32000,
+        "confidence": {
+          "name": 1.0,
+          "quantity": 1.0,
+          "unit_price": 1.0,
+          "amount": 1.0
+        }
+      },
+      {
+        "name": "SPRITE",
+        "quantity": 1,
+        "unit_price": 32000,
+        "amount": 32000,
+        "confidence": {
+          "name": 1.0,
+          "quantity": 1.0,
+          "unit_price": 1.0,
+          "amount": 1.0
+        }
+      },
+      {
+        "name": "GRILLED CALAMARI",
+        "quantity": 1,
+        "unit_price": 85000,
+        "amount": 85000,
+        "confidence": {
+          "name": 1.0,
+          "quantity": 1.0,
+          "unit_price": 1.0,
+          "amount": 1.0
+        }
+      },
+      {
+        "name": "DINE FOR 2",
+        "quantity": 1,
+        "unit_price": 129000,
+        "amount": 129000,
+        "confidence": {
+          "name": 1.0,
+          "quantity": 1.0,
+          "unit_price": 1.0,
+          "amount": 1.0
+        }
+      }
+    ],
+    "subtotal": 278000,
+    "discount": null,
+    "tax": 30024,
+    "service_charge": 22240,
+    "total": 330264,
+    "confidence": {
+      "subtotal": 1.0,
+      "discount": 0.0,
+      "tax": 1.0,
+      "service_charge": 1.0,
+      "total": 1.0,
+      "payment.method": 0.0,
+      "payment.amount_paid": 0.0,
+      "payment.change": 0.0
+    },
+    "payment": {
+      "method": null,
+      "amount_paid": null,
+      "change": null
+    }
+  },
+  "usage": {
+    "completion_tokens": 611,
+    "prompt_tokens": 2698,
+    "total_tokens": 3309
+  },
+  "cost_usd": 0.0,
+  "downscaled": true,
+  "validation": {
+    "valid": true,
+    "errors": []
+  }
+}

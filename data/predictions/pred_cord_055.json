@@ -1,0 +1,66 @@
+{
+  "name": "cord_055",
+  "image": "",
+  "model": "gemini-3.5-flash-lite",
+  "latency_s": 32.56,
+  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"APPLE CINNAMON PASTRY\",\n      \"quantity\": 1,\n      \"unit_price\": 22000,\n      \"amount\": 22000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"ROYAL CHEESE TART\",\n      \"quantity\": 2,\n      \"unit_price\": 16000,\n      \"amount\": 32000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    }\n  ],\n  \"subtotal\": null,\n  \"discount\": null,\n  \"tax\": null,\n  \"service_charge\": null,\n  \"total\": 54000,\n  \"confidence\": {\n    \"subtotal\": 0,\n    \"discount\": 0,\n    \"tax\": 0,\n    \"service_charge\": 0,\n    \"total\": 0.9,\n    \"payment.method\": 0.5,\n    \"payment.amount_paid\": 0.9,\n    \"payment.change\": 0\n  },\n  \"payment\": {\n    \"method\": \"credit_card\",\n    \"amount_paid\": 54000,\n    \"change\": null\n  }\n}",
+  "prediction": {
+    "menu_items": [
+      {
+        "name": "APPLE CINNAMON PASTRY",
+        "quantity": 1,
+        "unit_price": 22000,
+        "amount": 22000,
+        "confidence": {
+          "name": 1,
+          "quantity": 1,
+          "unit_price": 1,
+          "amount": 1
+        }
+      },
+      {
+        "name": "ROYAL CHEESE TART",
+        "quantity": 2,
+        "unit_price": 16000,
+        "amount": 32000,
+        "confidence": {
+          "name": 1,
+          "quantity": 1,
+          "unit_price": 1,
+          "amount": 1
+        }
+      }
+    ],
+    "subtotal": null,
+    "discount": null,
+    "tax": null,
+    "service_charge": null,
+    "total": 54000,
+    "confidence": {
+      "subtotal": 0,
+      "discount": 0,
+      "tax": 0,
+      "service_charge": 0,
+      "total": 0.9,
+      "payment.method": 0.5,
+      "payment.amount_paid": 0.9,
+      "payment.change": 0
+    },
+    "payment": {
+      "method": "credit_card",
+      "amount_paid": 54000,
+      "change": null
+    }
+  },
+  "usage": {
+    "completion_tokens": 376,
+    "prompt_tokens": 2678,
+    "total_tokens": 3054
+  },
+  "cost_usd": 0.0,
+  "downscaled": true,
+  "validation": {
+    "valid": true,
+    "errors": []
+  }
+}

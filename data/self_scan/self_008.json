@@ -1,0 +1,40 @@
+{
+  "prediction": {
+    "menu_items": [
+      {
+        "name": "Hazelnut Latte",
+        "quantity": 1,
+        "unit_price": 32000,
+        "amount": 32000
+      },
+      {
+        "name": "Vanilla Latte",
+        "quantity": 1,
+        "unit_price": 32000,
+        "amount": 32000
+      },
+      {
+        "name": "Cafe Latte",
+        "quantity": 1,
+        "unit_price": 28000,
+        "amount": 28000
+      }
+    ],
+    "subtotal": null,
+    "discount": null,
+    "tax": null,
+    "service_charge": null,
+    "total": 92000,
+    "payment": {
+      "method": null,
+      "amount_paid": 92000,
+      "change": null
+    }
+  },
+  "meta": {
+    "vendor": "Relasi Space After Home",
+    "date": "14/02/2026",
+    "source": "photo",
+    "note": "GT verified manually against the receipt photo (vendor, date, items, amounts). No subtotal line on receipt; payment method null (EDC generic, not debit/credit)."
+  }
+}

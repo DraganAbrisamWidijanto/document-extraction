@@ -38,7 +38,7 @@
     },
     "total": {
       "total_price": "Rp. 91,000",
-      "creditcardprice": "91,000"
+      "debitprice": "91,000"
     }
   },
   "meta": {

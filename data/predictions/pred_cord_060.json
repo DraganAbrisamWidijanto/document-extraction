@@ -1,0 +1,66 @@
+{
+  "name": "cord_060",
+  "image": "",
+  "model": "gemini-3.5-flash-lite",
+  "latency_s": 32.7,
+  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"Topping Milo Sparkle (untuk 1 Porsi)\",\n      \"quantity\": 1,\n      \"unit_price\": 1250,\n      \"amount\": 1250,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"Bola Ubi Mini Original (14 Pcs)\",\n      \"quantity\": 2,\n      \"unit_price\": 12500,\n      \"amount\": 25000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    }\n  ],\n  \"subtotal\": 26250,\n  \"discount\": null,\n  \"tax\": null,\n  \"service_charge\": null,\n  \"total\": 26250,\n  \"confidence\": {\n    \"subtotal\": 0.9,\n    \"discount\": 0.0,\n    \"tax\": 0.0,\n    \"service_charge\": 0.0,\n    \"total\": 0.9,\n    \"payment.method\": 0.9,\n    \"payment.amount_paid\": 0.0,\n    \"payment.change\": 0.0\n  },\n  \"payment\": {\n    \"method\": \"emoney\",\n    \"amount_paid\": null,\n    \"change\": null\n  }\n}",
+  "prediction": {
+    "menu_items": [
+      {
+        "name": "Topping Milo Sparkle (untuk 1 Porsi)",
+        "quantity": 1,
+        "unit_price": 1250,
+        "amount": 1250,
+        "confidence": {
+          "name": 0.9,
+          "quantity": 0.9,
+          "unit_price": 0.9,
+          "amount": 0.9
+        }
+      },
+      {
+        "name": "Bola Ubi Mini Original (14 Pcs)",
+        "quantity": 2,
+        "unit_price": 12500,
+        "amount": 25000,
+        "confidence": {
+          "name": 0.9,
+          "quantity": 0.9,
+          "unit_price": 0.9,
+          "amount": 0.9
+        }
+      }
+    ],
+    "subtotal": 26250,
+    "discount": null,
+    "tax": null,
+    "service_charge": null,
+    "total": 26250,
+    "confidence": {
+      "subtotal": 0.9,
+      "discount": 0.0,
+      "tax": 0.0,
+      "service_charge": 0.0,
+      "total": 0.9,
+      "payment.method": 0.9,
+      "payment.amount_paid": 0.0,
+      "payment.change": 0.0
+    },
+    "payment": {
+      "method": "emoney",
+      "amount_paid": null,
+      "change": null
+    }
+  },
+  "usage": {
+    "completion_tokens": 407,
+    "prompt_tokens": 2698,
+    "total_tokens": 3105
+  },
+  "cost_usd": 0.0,
+  "downscaled": true,
+  "validation": {
+    "valid": true,
+    "errors": []
+  }
+}

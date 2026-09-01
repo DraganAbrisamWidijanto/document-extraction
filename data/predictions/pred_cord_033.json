@@ -1,0 +1,78 @@
+{
+  "name": "cord_033",
+  "image": "",
+  "model": "gemini-3.5-flash-lite",
+  "latency_s": 3.48,
+  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"GRILLED BABY POTATO (R\",\n      \"quantity\": 1,\n      \"unit_price\": 50500,\n      \"amount\": 50500,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"HOT TUNA\",\n      \"quantity\": 1,\n      \"unit_price\": 67000,\n      \"amount\": 67000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"HOT TUNA\",\n      \"quantity\": 1,\n      \"unit_price\": 67000,\n      \"amount\": 67000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    }\n  ],\n  \"subtotal\": 117500,\n  \"discount\": 67000,\n  \"tax\": 19557,\n  \"service_charge\": 11070,\n  \"total\": 148127,\n  \"confidence\": {\n    \"subtotal\": 0.9,\n    \"discount\": 0.9,\n    \"tax\": 0.9,\n    \"service_charge\": 0.9,\n    \"total\": 0.9,\n    \"payment.method\": 0.0,\n    \"payment.amount_paid\": 0.0,\n    \"payment.change\": 0.0\n  },\n  \"payment\": {\n    \"method\": null,\n    \"amount_paid\": null,\n    \"change\": null\n  }\n}",
+  "prediction": {
+    "menu_items": [
+      {
+        "name": "GRILLED BABY POTATO (R",
+        "quantity": 1,
+        "unit_price": 50500,
+        "amount": 50500,
+        "confidence": {
+          "name": 0.9,
+          "quantity": 0.9,
+          "unit_price": 0.9,
+          "amount": 0.9
+        }
+      },
+      {
+        "name": "HOT TUNA",
+        "quantity": 1,
+        "unit_price": 67000,
+        "amount": 67000,
+        "confidence": {
+          "name": 0.9,
+          "quantity": 0.9,
+          "unit_price": 0.9,
+          "amount": 0.9
+        }
+      },
+      {
+        "name": "HOT TUNA",
+        "quantity": 1,
+        "unit_price": 67000,
+        "amount": 67000,
+        "confidence": {
+          "name": 0.9,
+          "quantity": 0.9,
+          "unit_price": 0.9,
+          "amount": 0.9
+        }
+      }
+    ],
+    "subtotal": 117500,
+    "discount": 67000,
+    "tax": 19557,
+    "service_charge": 11070,
+    "total": 148127,
+    "confidence": {
+      "subtotal": 0.9,
+      "discount": 0.9,
+      "tax": 0.9,
+      "service_charge": 0.9,
+      "total": 0.9,
+      "payment.method": 0.0,
+      "payment.amount_paid": 0.0,
+      "payment.change": 0.0
+    },
+    "payment": {
+      "method": null,
+      "amount_paid": null,
+      "change": null
+    }
+  },
+  "usage": {
+    "completion_tokens": 514,
+    "prompt_tokens": 2678,
+    "total_tokens": 3192
+  },
+  "cost_usd": 0.0,
+  "downscaled": false,
+  "validation": {
+    "valid": true,
+    "errors": []
+  }
+}

@@ -30,8 +30,8 @@
     "total": {
       "total_price": "334,000",
       "total_etc": "-11",
-      "creditcardprice": "334,000",
-      "menuqty_cnt": "8"
+      "menuqty_cnt": "8",
+      "debitprice": "334,000"
     }
   },
   "meta": {

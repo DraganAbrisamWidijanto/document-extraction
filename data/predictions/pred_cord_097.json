@@ -1,0 +1,78 @@
+{
+  "name": "cord_097",
+  "image": "",
+  "model": "gemini-3.5-flash-lite",
+  "latency_s": 33.01,
+  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"BUBUR GO\",\n      \"quantity\": 2,\n      \"unit_price\": 20000,\n      \"amount\": 40000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"PUYUH GO\",\n      \"quantity\": null,\n      \"unit_price\": null,\n      \"amount\": 6000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.0,\n        \"unit_price\": 0.0,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"SATE ATIG\",\n      \"quantity\": 3,\n      \"unit_price\": 3000,\n      \"amount\": 9000,\n      \"confidence\": {\n        \"name\": 0.8,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    }\n  ],\n  \"subtotal\": null,\n  \"discount\": null,\n  \"tax\": null,\n  \"service_charge\": null,\n  \"total\": 55000,\n  \"confidence\": {\n    \"subtotal\": 0.0,\n    \"discount\": 0.0,\n    \"tax\": 0.0,\n    \"service_charge\": 0.0,\n    \"total\": 0.9,\n    \"payment.method\": 0.9,\n    \"payment.amount_paid\": 0.9,\n    \"payment.change\": 0.0\n  },\n  \"payment\": {\n    \"method\": \"cash\",\n    \"amount_paid\": 55000,\n    \"change\": null\n  }\n}",
+  "prediction": {
+    "menu_items": [
+      {
+        "name": "BUBUR GO",
+        "quantity": 2,
+        "unit_price": 20000,
+        "amount": 40000,
+        "confidence": {
+          "name": 0.9,
+          "quantity": 0.9,
+          "unit_price": 0.9,
+          "amount": 0.9
+        }
+      },
+      {
+        "name": "PUYUH GO",
+        "quantity": null,
+        "unit_price": null,
+        "amount": 6000,
+        "confidence": {
+          "name": 0.9,
+          "quantity": 0.0,
+          "unit_price": 0.0,
+          "amount": 0.9
+        }
+      },
+      {
+        "name": "SATE ATIG",
+        "quantity": 3,
+        "unit_price": 3000,
+        "amount": 9000,
+        "confidence": {
+          "name": 0.8,
+          "quantity": 0.9,
+          "unit_price": 0.9,
+          "amount": 0.9
+        }
+      }
+    ],
+    "subtotal": null,
+    "discount": null,
+    "tax": null,
+    "service_charge": null,
+    "total": 55000,
+    "confidence": {
+      "subtotal": 0.0,
+      "discount": 0.0,
+      "tax": 0.0,
+      "service_charge": 0.0,
+      "total": 0.9,
+      "payment.method": 0.9,
+      "payment.amount_paid": 0.9,
+      "payment.change": 0.0
+    },
+    "payment": {
+      "method": "cash",
+      "amount_paid": 55000,
+      "change": null
+    }
+  },
+  "usage": {
+    "completion_tokens": 486,
+    "prompt_tokens": 2700,
+    "total_tokens": 3186
+  },
+  "cost_usd": 0.0,
+  "downscaled": false,
+  "validation": {
+    "valid": true,
+    "errors": []
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "name": "self_002",
+  "image": "",
+  "model": "gemini-3.5-flash-lite",
+  "latency_s": 2.43,
+  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"GEMOI 1\",\n      \"quantity\": 1,\n      \"unit_price\": 24000,\n      \"amount\": 24000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"GEMOI 2\",\n      \"quantity\": 1,\n      \"unit_price\": 25000,\n      \"amount\": 25000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    }\n  ],\n  \"subtotal\": 49000,\n  \"discount\": null,\n  \"tax\": null,\n  \"service_charge\": null,\n  \"total\": 49000,\n  \"confidence\": {\n    \"subtotal\": 1,\n    \"discount\": 0,\n    \"tax\": 0,\n    \"service_charge\": 0,\n    \"total\": 1,\n    \"payment.method\": 1,\n    \"payment.amount_paid\": 1,\n    \"payment.change\": 1\n  },\n  \"payment\": {\n    \"method\": \"cash\",\n    \"amount_paid\": 49000,\n    \"change\": null\n  }\n}",
+  "prediction": {
+    "menu_items": [
+      {
+        "name": "GEMOI 1",
+        "quantity": 1,
+        "unit_price": 24000,
+        "amount": 24000,
+        "confidence": {
+          "name": 1,
+          "quantity": 1,
+          "unit_price": 1,
+          "amount": 1
+        }
+      },
+      {
+        "name": "GEMOI 2",
+        "quantity": 1,
+        "unit_price": 25000,
+        "amount": 25000,
+        "confidence": {
+          "name": 1,
+          "quantity": 1,
+          "unit_price": 1,
+          "amount": 1
+        }
+      }
+    ],
+    "subtotal": 49000,
+    "discount": null,
+    "tax": null,
+    "service_charge": null,
+    "total": 49000,
+    "confidence": {
+      "subtotal": 1,
+      "discount": 0,
+      "tax": 0,
+      "service_charge": 0,
+      "total": 1,
+      "payment.method": 1,
+      "payment.amount_paid": 1,
+      "payment.change": 1
+    },
+    "payment": {
+      "method": "cash",
+      "amount_paid": 49000,
+      "change": null
+    }
+  },
+  "usage": {
+    "completion_tokens": 368,
+    "prompt_tokens": 2678,
+    "total_tokens": 3046
+  },
+  "cost_usd": 0.0,
+  "downscaled": false,
+  "validation": {
+    "valid": true,
+    "errors": []
+  }
+}

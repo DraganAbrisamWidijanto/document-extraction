@@ -5,15 +5,16 @@ dist/
 .venv/
 venv/
 
-# binary / large data — re-derivable from data/cord_test.parquet or local
-*.png
-*.jpg
-*.jpeg
+# large source data — re-derivable from data/cord_test.parquet via export_gt.py / select_pool.py
 *.parquet
-data/predictions/
-
-results/
 __MACOSX/
 .DS_Store
 Thumbs.db
 *.sqlite
+
+# raw photo drop folder — curated copies live in data/self_scan/
+self scan/
+
+# secrets — never commit API keys
+geminiapi*.txt
+.env

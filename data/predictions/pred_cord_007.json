@@ -1,0 +1,66 @@
+{
+  "name": "cord_007",
+  "image": "",
+  "model": "gemini-3.5-flash-lite",
+  "latency_s": 3.19,
+  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"Kupon 15\",\n      \"quantity\": null,\n      \"unit_price\": null,\n      \"amount\": 100000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.0,\n        \"unit_price\": 0.0,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"ADD CHICKEN BOX\",\n      \"quantity\": null,\n      \"unit_price\": null,\n      \"amount\": 909,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.0,\n        \"unit_price\": 0.0,\n        \"amount\": 0.9\n      }\n    }\n  ],\n  \"subtotal\": 100909,\n  \"discount\": null,\n  \"tax\": 10091,\n  \"service_charge\": null,\n  \"total\": 111000,\n  \"confidence\": {\n    \"subtotal\": 0.9,\n    \"discount\": 0.0,\n    \"tax\": 0.9,\n    \"service_charge\": 0.0,\n    \"total\": 0.9,\n    \"payment.method\": 0.9,\n    \"payment.amount_paid\": 0.9,\n    \"payment.change\": 0.0\n  },\n  \"payment\": {\n    \"method\": \"cash\",\n    \"amount_paid\": 111000,\n    \"change\": null\n  }\n}",
+  "prediction": {
+    "menu_items": [
+      {
+        "name": "Kupon 15",
+        "quantity": null,
+        "unit_price": null,
+        "amount": 100000,
+        "confidence": {
+          "name": 0.9,
+          "quantity": 0.0,
+          "unit_price": 0.0,
+          "amount": 0.9
+        }
+      },
+      {
+        "name": "ADD CHICKEN BOX",
+        "quantity": null,
+        "unit_price": null,
+        "amount": 909,
+        "confidence": {
+          "name": 0.9,
+          "quantity": 0.0,
+          "unit_price": 0.0,
+          "amount": 0.9
+        }
+      }
+    ],
+    "subtotal": 100909,
+    "discount": null,
+    "tax": 10091,
+    "service_charge": null,
+    "total": 111000,
+    "confidence": {
+      "subtotal": 0.9,
+      "discount": 0.0,
+      "tax": 0.9,
+      "service_charge": 0.0,
+      "total": 0.9,
+      "payment.method": 0.9,
+      "payment.amount_paid": 0.9,
+      "payment.change": 0.0
+    },
+    "payment": {
+      "method": "cash",
+      "amount_paid": 111000,
+      "change": null
+    }
+  },
+  "usage": {
+    "completion_tokens": 397,
+    "prompt_tokens": 2678,
+    "total_tokens": 3075
+  },
+  "cost_usd": 0.0,
+  "downscaled": false,
+  "validation": {
+    "valid": true,
+    "errors": []
+  }
+}

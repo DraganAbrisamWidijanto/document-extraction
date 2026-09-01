@@ -1,0 +1,78 @@
+{
+  "name": "self_008",
+  "image": "",
+  "model": "gemini-3.5-flash-lite",
+  "latency_s": 2.34,
+  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"Hazelnut Latte\",\n      \"quantity\": 1,\n      \"unit_price\": 32000,\n      \"amount\": 32000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"Vanilla Latte\",\n      \"quantity\": 1,\n      \"unit_price\": 32000,\n      \"amount\": 32000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"Cafe Latte\",\n      \"quantity\": 1,\n      \"unit_price\": 28000,\n      \"amount\": 28000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    }\n  ],\n  \"subtotal\": null,\n  \"discount\": null,\n  \"tax\": null,\n  \"service_charge\": null,\n  \"total\": 92000,\n  \"confidence\": {\n    \"subtotal\": 0,\n    \"discount\": 0,\n    \"tax\": 0,\n    \"service_charge\": 0,\n    \"total\": 1,\n    \"payment.method\": 0,\n    \"payment.amount_paid\": 1,\n    \"payment.change\": 0\n  },\n  \"payment\": {\n    \"method\": null,\n    \"amount_paid\": 92000,\n    \"change\": null\n  }\n}",
+  "prediction": {
+    "menu_items": [
+      {
+        "name": "Hazelnut Latte",
+        "quantity": 1,
+        "unit_price": 32000,
+        "amount": 32000,
+        "confidence": {
+          "name": 1,
+          "quantity": 1,
+          "unit_price": 1,
+          "amount": 1
+        }
+      },
+      {
+        "name": "Vanilla Latte",
+        "quantity": 1,
+        "unit_price": 32000,
+        "amount": 32000,
+        "confidence": {
+          "name": 1,
+          "quantity": 1,
+          "unit_price": 1,
+          "amount": 1
+        }
+      },
+      {
+        "name": "Cafe Latte",
+        "quantity": 1,
+        "unit_price": 28000,
+        "amount": 28000,
+        "confidence": {
+          "name": 1,
+          "quantity": 1,
+          "unit_price": 1,
+          "amount": 1
+        }
+      }
+    ],
+    "subtotal": null,
+    "discount": null,
+    "tax": null,
+    "service_charge": null,
+    "total": 92000,
+    "confidence": {
+      "subtotal": 0,
+      "discount": 0,
+      "tax": 0,
+      "service_charge": 0,
+      "total": 1,
+      "payment.method": 0,
+      "payment.amount_paid": 1,
+      "payment.change": 0
+    },
+    "payment": {
+      "method": null,
+      "amount_paid": 92000,
+      "change": null
+    }
+  },
+  "usage": {
+    "completion_tokens": 450,
+    "prompt_tokens": 2662,
+    "total_tokens": 3112
+  },
+  "cost_usd": 0.0,
+  "downscaled": false,
+  "validation": {
+    "valid": true,
+    "errors": []
+  }
+}

@@ -1,0 +1,310 @@
+[
+  {
+    "idx": "self_001",
+    "status": "PASS",
+    "corrected_gt": {
+      "prediction": {
+        "menu_items": [
+          {"name": "Paket A1", "quantity": 3, "unit_price": 32273, "amount": 96819},
+          {"name": "Merdeka 1", "quantity": 2, "unit_price": 31364, "amount": 62728},
+          {"name": "Merdeka 3", "quantity": 1, "unit_price": 34091, "amount": 34091}
+        ],
+        "subtotal": 193638,
+        "discount": null,
+        "tax": 19364,
+        "service_charge": null,
+        "total": 213002,
+        "payment": {"method": "debit", "amount_paid": 213002, "change": null}
+      },
+      "meta": {"vendor": "NASGOR 69", "date": "01/03/2026", "source": "photo"}
+    },
+    "issues": [],
+    "manual_review": false,
+    "manual_review_reason": null,
+    "confidence": 0.99
+  },
+  {
+    "idx": "self_002",
+    "status": "PASS",
+    "corrected_gt": {
+      "prediction": {
+        "menu_items": [
+          {"name": "GEMO1 1", "quantity": 1, "unit_price": 24000, "amount": 24000},
+          {"name": "GEMO1 2", "quantity": 1, "unit_price": 25000, "amount": 25000}
+        ],
+        "subtotal": 49000,
+        "discount": null,
+        "tax": null,
+        "service_charge": null,
+        "total": 49000,
+        "payment": {"method": "cash", "amount_paid": 49000, "change": 0}
+      },
+      "meta": {"vendor": "Ayam Gepuk Pak Gembus", "date": "01/10/2025", "source": "photo"}
+    },
+    "issues": [
+      {
+        "field": "menu_items[0].name",
+        "type": "ambiguous",
+        "severity": "low",
+        "original_value": "GEMOI 1",
+        "corrected_value": "GEMO1 1",
+        "reason": "Receipt prints 'GEMO1 1' (digit 1, not letter I). The font is ambiguous; 'GEMOI' vs 'GEMO1' cannot be determined with certainty. Retaining the printed transcription 'GEMO1 1' as corrected. The 1/confusion has no impact on financial fields."
+      },
+      {
+        "field": "menu_items[1].name",
+        "type": "ambiguous",
+        "severity": "low",
+        "original_value": "GEMOI 2",
+        "corrected_value": "GEMO1 2",
+        "reason": "Same as above — printed as 'GEMO1 2'."
+      },
+      {
+        "field": "payment.change",
+        "type": "wrong_value",
+        "severity": "low",
+        "original_value": 0,
+        "corrected_value": null,
+        "reason": "Explicit-vs-derived rule: receipt does NOT print a change/kembalian line (payment = Tunai 49,000 = Total Bayar 49,000, no Kembalian row). change must be null (absent), not 0. Corrected in GT."
+      }
+    ],
+    "manual_review": false,
+    "manual_review_reason": null,
+    "confidence": 0.98
+  },
+  {
+    "idx": "self_003",
+    "status": "PASS",
+    "corrected_gt": {
+      "prediction": {
+        "menu_items": [
+          {"name": "Paket Blackpepper", "quantity": 1, "unit_price": 17000, "amount": 17000},
+          {"name": "Paket Mertua Kalem", "quantity": 3, "unit_price": 17000, "amount": 51000},
+          {"name": "Paket Keju Kalem", "quantity": 2, "unit_price": 20000, "amount": 40000},
+          {"name": "Es Teh", "quantity": 5, "unit_price": 3000, "amount": 15000},
+          {"name": "Air Es", "quantity": 1, "unit_price": 2000, "amount": 2000}
+        ],
+        "subtotal": 125000,
+        "discount": null,
+        "tax": null,
+        "service_charge": null,
+        "total": 125000,
+        "payment": {"method": "transfer", "amount_paid": 125000, "change": null}
+      },
+      "meta": {"vendor": "Ayam Mertua UGM", "date": "06/06/2025", "source": "photo", "note": "total items 12"}
+    },
+    "issues": [
+      {
+        "field": "payment.change",
+        "type": "wrong_value",
+        "severity": "low",
+        "original_value": null,
+        "corrected_value": 0,
+        "reason": "Explicit-vs-derived rule: receipt explicitly prints 'Change 0'. change must be 0 (explicitly printed zero), not null. Corrected in GT."
+      }
+    ],
+    "manual_review": false,
+    "manual_review_reason": null,
+    "confidence": 0.99
+  },
+  {
+    "idx": "self_004",
+    "status": "PASS",
+    "corrected_gt": {
+      "prediction": {
+        "menu_items": [
+          {"name": "Yamie Asin Ayam", "quantity": 4, "unit_price": 11000, "amount": 44000},
+          {"name": "Chili Oil Ayam", "quantity": 1, "unit_price": 14000, "amount": 14000},
+          {"name": "Jeruk Es", "quantity": 1, "unit_price": 5000, "amount": 5000},
+          {"name": "Teh Es", "quantity": 4, "unit_price": 4000, "amount": 16000}
+        ],
+        "subtotal": 79000,
+        "discount": null,
+        "tax": null,
+        "service_charge": null,
+        "total": 79000,
+        "payment": {"method": "emoney", "amount_paid": 79000, "change": null}
+      },
+      "meta": {"vendor": "Mie Bonafide", "date": "05/10/2025", "source": "photo"}
+    },
+    "issues": [],
+    "manual_review": false,
+    "manual_review_reason": null,
+    "confidence": 0.99
+  },
+  {
+    "idx": "self_005",
+    "status": "PASS",
+    "corrected_gt": {
+      "prediction": {
+        "menu_items": [
+          {"name": "Set Roka Tori Nanban", "quantity": 1, "unit_price": 30000, "amount": 30000},
+          {"name": "Roka Tori Nanban", "quantity": 1, "unit_price": 23000, "amount": 23000},
+          {"name": "Set Roka On Fire", "quantity": 1, "unit_price": 27000, "amount": 27000},
+          {"name": "Set Roka Golden", "quantity": 1, "unit_price": 25000, "amount": 25000},
+          {"name": "Set Roka Chizu", "quantity": 1, "unit_price": 27000, "amount": 27000},
+          {"name": "Coca Cola", "quantity": 1, "unit_price": 10000, "amount": 10000}
+        ],
+        "subtotal": 142000,
+        "discount": null,
+        "tax": 14200,
+        "service_charge": null,
+        "total": 156200,
+        "payment": {"method": "cash", "amount_paid": 156200, "change": 0}
+      },
+      "meta": {"vendor": "ROKAVILLE", "date": "25/07/2026", "source": "photo"}
+    },
+    "issues": [],
+    "manual_review": false,
+    "manual_review_reason": null,
+    "confidence": 0.99
+  },
+  {
+    "idx": "self_006",
+    "status": "PASS",
+    "corrected_gt": {
+      "prediction": {
+        "menu_items": [
+          {"name": "BEEF BURGER", "quantity": 2, "unit_price": 10000, "amount": 20000},
+          {"name": "TEH", "quantity": 1, "unit_price": 4000, "amount": 4000},
+          {"name": "NW + TEH TW", "quantity": 1, "unit_price": 11000, "amount": 11000},
+          {"name": "NL + TEH TW", "quantity": 3, "unit_price": 12000, "amount": 36000}
+        ],
+        "subtotal": 71000,
+        "discount": null,
+        "tax": 6455,
+        "service_charge": null,
+        "total": 71000,
+        "payment": {"method": "cash", "amount_paid": 101000, "change": 30000}
+      },
+      "meta": {"vendor": "Olive Fried Chicken", "date": "04/02/2026", "source": "photo", "note": "Tax-inclusive pricing: subtotal=sum of items (gross), DPP (tax base)=64545, tax=6455, total=71000"}
+    },
+    "issues": [],
+    "manual_review": false,
+    "manual_review_reason": null,
+    "confidence": 0.99
+  },
+  {
+    "idx": "self_007",
+    "status": "PASS",
+    "corrected_gt": {
+      "prediction": {
+        "menu_items": [
+          {"name": "R. Tori Paitan Shortplate", "quantity": 1, "unit_price": 36000, "amount": 36000},
+          {"name": "R. Basic Tori Paitan", "quantity": 1, "unit_price": 26000, "amount": 26000},
+          {"name": "RD. Gyudon", "quantity": 1, "unit_price": 42000, "amount": 42000},
+          {"name": "D. Ocha (free refil)", "quantity": 3, "unit_price": 5000, "amount": 15000}
+        ],
+        "subtotal": 119000,
+        "discount": null,
+        "tax": null,
+        "service_charge": null,
+        "total": 119000,
+        "payment": {"method": "transfer", "amount_paid": 119000, "change": 0}
+      },
+      "meta": {"vendor": "Tottori_ID Resto Japanese Fusion", "date": "14/02/2026", "source": "photo"}
+    },
+    "issues": [
+      {
+        "field": "menu_items[2].name",
+        "type": "other",
+        "severity": "low",
+        "original_value": "RD. Gyudon",
+        "corrected_value": "RD. Gyudon",
+        "reason": "Receipt prints 'Rd. Gyudon' (lowercase d). GT uses 'RD. Gyudon' (uppercase D). Capitalization difference only, no semantic impact. No correction needed."
+      }
+    ],
+    "manual_review": false,
+    "manual_review_reason": null,
+    "confidence": 0.99
+  },
+  {
+    "idx": "self_008",
+    "status": "PASS",
+    "corrected_gt": {
+      "prediction": {
+        "menu_items": [
+          {"name": "Hazelnut Latte", "quantity": 1, "unit_price": 32000, "amount": 32000},
+          {"name": "Vanilla Latte", "quantity": 1, "unit_price": 32000, "amount": 32000},
+          {"name": "Cafe Latte", "quantity": 1, "unit_price": 28000, "amount": 28000}
+        ],
+        "subtotal": null,
+        "discount": null,
+        "tax": null,
+        "service_charge": null,
+        "total": 92000,
+        "payment": {"method": "debit", "amount_paid": 92000, "change": null}
+      },
+      "meta": {"vendor": "Relasi Space After Home", "date": "14/02/2026", "source": "photo", "note": "No subtotal line on receipt"}
+    },
+    "issues": [
+      {
+        "field": "menu_items",
+        "type": "other",
+        "severity": "low",
+        "original_value": "Hazelnut Latte Ice, Vanilla Latte Ice, Cafe Latte Ice",
+        "corrected_value": "Hazelnut Latte, Vanilla Latte, Cafe Latte",
+        "reason": "Receipt prints drink names on separate lines from temperature modifier 'Ice' (which appears after the price line). GT appended 'Ice' to each name. The concatenation is semantically correct (they are iced drinks) but not exact transcription. Minor — no impact on financial fields."
+      }
+    ],
+    "manual_review": false,
+    "manual_review_reason": null,
+    "confidence": 0.99
+  },
+  {
+    "idx": "self_009",
+    "status": "PASS",
+    "corrected_gt": {
+      "prediction": {
+        "menu_items": [
+          {"name": "1 SET PAKET MERONCE", "quantity": 1, "unit_price": 35000, "amount": 35000},
+          {"name": "PAKET POUCH KANVAS", "quantity": 2, "unit_price": 50000, "amount": 100000}
+        ],
+        "subtotal": 135000,
+        "discount": null,
+        "tax": null,
+        "service_charge": null,
+        "total": 135000,
+        "payment": {"method": "emoney", "amount_paid": 135000, "change": null}
+      },
+      "meta": {"vendor": "SARSA Creative Space", "date": "23/02/2026", "source": "photo"}
+    },
+    "issues": [
+      {
+        "field": "menu_items",
+        "type": "other",
+        "severity": "low",
+        "original_value": 2,
+        "corrected_value": 2,
+        "reason": "Receipt prints bundle breakdown (1x MERONCE MANIK MANIK, 1x GUNTING MERONCE, etc.) under each main item. GT correctly treats these as sub-items of the main package, not separate menu items. This is the correct annotation choice."
+      }
+    ],
+    "manual_review": false,
+    "manual_review_reason": null,
+    "confidence": 0.99
+  },
+  {
+    "idx": "self_010",
+    "status": "PASS",
+    "corrected_gt": {
+      "prediction": {
+        "menu_items": [
+          {"name": "Paket Ayam Nashville", "quantity": 1, "unit_price": 28000, "amount": 28000},
+          {"name": "Paket Ayam Korean", "quantity": 1, "unit_price": 28000, "amount": 28000},
+          {"name": "Black Tea", "quantity": 1, "unit_price": 5000, "amount": 5000},
+          {"name": "Lemon Tea", "quantity": 1, "unit_price": 8000, "amount": 8000}
+        ],
+        "subtotal": 69000,
+        "discount": null,
+        "tax": null,
+        "service_charge": null,
+        "total": 69000,
+        "payment": {"method": "emoney", "amount_paid": 69000, "change": null}
+      },
+      "meta": {"vendor": "Maverick", "date": "17/12/2025", "source": "photo"}
+    },
+    "issues": [],
+    "manual_review": false,
+    "manual_review_reason": null,
+    "confidence": 0.99
+  }
+]

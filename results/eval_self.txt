@@ -1,0 +1,27 @@
+
+======================================================================
+EVAL SUMMARY (self)  docs=10
+======================================================================
+field                   P      R     F1  tp fp fn wrong  conf_tp conf_wrong
+subtotal             1.00   0.78   0.88   7  0  2   0     0.97         -
+discount             0.00   0.00   0.00   0  0  0   0        -         -
+tax                  1.00   1.00   1.00   3  0  0   0     0.98         -
+service_charge       0.00   0.00   0.00   0  0  0   0        -         -
+total                1.00   1.00   1.00  10  0  0   0     0.98         -
+payment.method       1.00   1.00   1.00   9  0  0   0        -         -
+payment.amount_paid   1.00   1.00   1.00  10  0  0   0        -         -
+payment.change       1.00   1.00   1.00   4  0  0   0        -         -
+item.quantity        1.00   1.00   1.00  37  0  0   0     0.99         -
+item.unit_price      1.00   1.00   1.00  37  0  0   0     0.99         -
+item.amount          1.00   1.00   1.00  37  0  0   0     0.99         -
+----------------------------------------------------------------------
+MICRO/FIELD-LEVEL    1.00   0.99   0.99  (154 tp / 0 fp / 2 fn / 0 wrong)
+MACRO (field avg)    1.00   0.98   0.99  (mean field F1 over 9 evaluable fields; no-GT fields excluded: discount, service_charge)
+
+Item name match: P=1.00 R=1.00 F1=1.00 (37/37 gt matched, 37 pred)
+total exact: 10/10 (1.00)
+
+Abstentions (GT present, pred null) per field: subtotal=2
+Total-field abstention: 0/10
+Latency: mean=2.6s median=2.6s min=2.0s max=3.4s
+Tokens: 26852 in / 5661 out | cost: $0.000000

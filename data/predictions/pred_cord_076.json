@@ -1,0 +1,90 @@
+{
+  "name": "cord_076",
+  "image": "",
+  "model": "gemini-3.5-flash-lite",
+  "latency_s": 2.83,
+  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"BASO TAHU\",\n      \"quantity\": null,\n      \"unit_price\": 46000,\n      \"amount\": 46000,\n      \"confidence\": {\n        \"name\": 0.95,\n        \"quantity\": 0.0,\n        \"unit_price\": 0.95,\n        \"amount\": 0.95\n      }\n    },\n    {\n      \"name\": \"NASI PUTIH\",\n      \"quantity\": null,\n      \"unit_price\": 6000,\n      \"amount\": 6000,\n      \"confidence\": {\n        \"name\": 0.95,\n        \"quantity\": 0.0,\n        \"unit_price\": 0.95,\n        \"amount\": 0.95\n      }\n    },\n    {\n      \"name\": \"BASO TAHU\",\n      \"quantity\": 2,\n      \"unit_price\": 6000,\n      \"amount\": 12000,\n      \"confidence\": {\n        \"name\": 0.95,\n        \"quantity\": 0.95,\n        \"unit_price\": 0.95,\n        \"amount\": 0.95\n      }\n    },\n    {\n      \"name\": \"NASI PUTIH\",\n      \"quantity\": null,\n      \"unit_price\": 12000,\n      \"amount\": 12000,\n      \"confidence\": {\n        \"name\": 0.95,\n        \"quantity\": 0.0,\n        \"unit_price\": 0.95,\n        \"amount\": 0.95\n      }\n    }\n  ],\n  \"subtotal\": null,\n  \"discount\": null,\n  \"tax\": null,\n  \"service_charge\": null,\n  \"total\": 110000,\n  \"confidence\": {\n    \"subtotal\": 0.0,\n    \"discount\": 0.0,\n    \"tax\": 0.0,\n    \"service_charge\": 0.0,\n    \"total\": 0.95,\n    \"payment.method\": 0.95,\n    \"payment.amount_paid\": 0.95,\n    \"payment.change\": 0.0\n  },\n  \"payment\": {\n    \"method\": \"cash\",\n    \"amount_paid\": 110000,\n    \"change\": null\n  }\n}",
+  "prediction": {
+    "menu_items": [
+      {
+        "name": "BASO TAHU",
+        "quantity": null,
+        "unit_price": 46000,
+        "amount": 46000,
+        "confidence": {
+          "name": 0.95,
+          "quantity": 0.0,
+          "unit_price": 0.95,
+          "amount": 0.95
+        }
+      },
+      {
+        "name": "NASI PUTIH",
+        "quantity": null,
+        "unit_price": 6000,
+        "amount": 6000,
+        "confidence": {
+          "name": 0.95,
+          "quantity": 0.0,
+          "unit_price": 0.95,
+          "amount": 0.95
+        }
+      },
+      {
+        "name": "BASO TAHU",
+        "quantity": 2,
+        "unit_price": 6000,
+        "amount": 12000,
+        "confidence": {
+          "name": 0.95,
+          "quantity": 0.95,
+          "unit_price": 0.95,
+          "amount": 0.95
+        }
+      },
+      {
+        "name": "NASI PUTIH",
+        "quantity": null,
+        "unit_price": 12000,
+        "amount": 12000,
+        "confidence": {
+          "name": 0.95,
+          "quantity": 0.0,
+          "unit_price": 0.95,
+          "amount": 0.95
+        }
+      }
+    ],
+    "subtotal": null,
+    "discount": null,
+    "tax": null,
+    "service_charge": null,
+    "total": 110000,
+    "confidence": {
+      "subtotal": 0.0,
+      "discount": 0.0,
+      "tax": 0.0,
+      "service_charge": 0.0,
+      "total": 0.95,
+      "payment.method": 0.95,
+      "payment.amount_paid": 0.95,
+      "payment.change": 0.0
+    },
+    "payment": {
+      "method": "cash",
+      "amount_paid": 110000,
+      "change": null
+    }
+  },
+  "usage": {
+    "completion_tokens": 611,
+    "prompt_tokens": 2678,
+    "total_tokens": 3289
+  },
+  "cost_usd": 0.0,
+  "downscaled": true,
+  "validation": {
+    "valid": true,
+    "errors": []
+  }
+}

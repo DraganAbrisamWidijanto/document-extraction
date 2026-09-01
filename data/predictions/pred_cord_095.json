@@ -1,0 +1,66 @@
+{
+  "name": "cord_095",
+  "image": "",
+  "model": "gemini-3.5-flash-lite",
+  "latency_s": 2.38,
+  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"BASO TAHU\",\n      \"quantity\": 1,\n      \"unit_price\": 43181,\n      \"amount\": 43181,\n      \"confidence\": {\n        \"name\": 0.95,\n        \"quantity\": 0.95,\n        \"unit_price\": 0.95,\n        \"amount\": 0.95\n      }\n    },\n    {\n      \"name\": \"ES JERUK\",\n      \"quantity\": 1,\n      \"unit_price\": 13000,\n      \"amount\": 13000,\n      \"confidence\": {\n        \"name\": 0.95,\n        \"quantity\": 0.95,\n        \"unit_price\": 0.95,\n        \"amount\": 0.95\n      }\n    }\n  ],\n  \"subtotal\": 56181,\n  \"discount\": null,\n  \"tax\": 5618,\n  \"service_charge\": null,\n  \"total\": 62000,\n  \"confidence\": {\n    \"subtotal\": 0.95,\n    \"discount\": 0.0,\n    \"tax\": 0.95,\n    \"service_charge\": 0.0,\n    \"total\": 0.95,\n    \"payment.method\": 0.95,\n    \"payment.amount_paid\": 0.95,\n    \"payment.change\": 0.95\n  },\n  \"payment\": {\n    \"method\": \"cash\",\n    \"amount_paid\": 62000,\n    \"change\": 201\n  }\n}",
+  "prediction": {
+    "menu_items": [
+      {
+        "name": "BASO TAHU",
+        "quantity": 1,
+        "unit_price": 43181,
+        "amount": 43181,
+        "confidence": {
+          "name": 0.95,
+          "quantity": 0.95,
+          "unit_price": 0.95,
+          "amount": 0.95
+        }
+      },
+      {
+        "name": "ES JERUK",
+        "quantity": 1,
+        "unit_price": 13000,
+        "amount": 13000,
+        "confidence": {
+          "name": 0.95,
+          "quantity": 0.95,
+          "unit_price": 0.95,
+          "amount": 0.95
+        }
+      }
+    ],
+    "subtotal": 56181,
+    "discount": null,
+    "tax": 5618,
+    "service_charge": null,
+    "total": 62000,
+    "confidence": {
+      "subtotal": 0.95,
+      "discount": 0.0,
+      "tax": 0.95,
+      "service_charge": 0.0,
+      "total": 0.95,
+      "payment.method": 0.95,
+      "payment.amount_paid": 0.95,
+      "payment.change": 0.95
+    },
+    "payment": {
+      "method": "cash",
+      "amount_paid": 62000,
+      "change": 201
+    }
+  },
+  "usage": {
+    "completion_tokens": 421,
+    "prompt_tokens": 2678,
+    "total_tokens": 3099
+  },
+  "cost_usd": 0.0,
+  "downscaled": true,
+  "validation": {
+    "valid": true,
+    "errors": []
+  }
+}

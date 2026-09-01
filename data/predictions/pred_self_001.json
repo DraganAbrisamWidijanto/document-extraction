@@ -1,0 +1,78 @@
+{
+  "name": "self_001",
+  "image": "",
+  "model": "gemini-3.5-flash-lite",
+  "latency_s": 3.05,
+  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"Paket A1\",\n      \"quantity\": 3,\n      \"unit_price\": 32273,\n      \"amount\": 96819,\n      \"confidence\": {\n        \"name\": 0.95,\n        \"quantity\": 0.95,\n        \"unit_price\": 0.95,\n        \"amount\": 0.95\n      }\n    },\n    {\n      \"name\": \"Merdeka 1\",\n      \"quantity\": 2,\n      \"unit_price\": 31364,\n      \"amount\": 62728,\n      \"confidence\": {\n        \"name\": 0.95,\n        \"quantity\": 0.95,\n        \"unit_price\": 0.95,\n        \"amount\": 0.95\n      }\n    },\n    {\n      \"name\": \"Merdeka 3\",\n      \"quantity\": 1,\n      \"unit_price\": 34091,\n      \"amount\": 34091,\n      \"confidence\": {\n        \"name\": 0.95,\n        \"quantity\": 0.95,\n        \"unit_price\": 0.95,\n        \"amount\": 0.95\n      }\n    }\n  ],\n  \"subtotal\": 193638,\n  \"discount\": null,\n  \"tax\": 19364,\n  \"service_charge\": null,\n  \"total\": 213002,\n  \"confidence\": {\n    \"subtotal\": 0.95,\n    \"discount\": 0.0,\n    \"tax\": 0.95,\n    \"service_charge\": 0.0,\n    \"total\": 0.95,\n    \"payment.method\": 0.95,\n    \"payment.amount_paid\": 0.95,\n    \"payment.change\": 0.0\n  },\n  \"payment\": {\n    \"method\": \"debit\",\n    \"amount_paid\": 213002,\n    \"change\": null\n  }\n}",
+  "prediction": {
+    "menu_items": [
+      {
+        "name": "Paket A1",
+        "quantity": 3,
+        "unit_price": 32273,
+        "amount": 96819,
+        "confidence": {
+          "name": 0.95,
+          "quantity": 0.95,
+          "unit_price": 0.95,
+          "amount": 0.95
+        }
+      },
+      {
+        "name": "Merdeka 1",
+        "quantity": 2,
+        "unit_price": 31364,
+        "amount": 62728,
+        "confidence": {
+          "name": 0.95,
+          "quantity": 0.95,
+          "unit_price": 0.95,
+          "amount": 0.95
+        }
+      },
+      {
+        "name": "Merdeka 3",
+        "quantity": 1,
+        "unit_price": 34091,
+        "amount": 34091,
+        "confidence": {
+          "name": 0.95,
+          "quantity": 0.95,
+          "unit_price": 0.95,
+          "amount": 0.95
+        }
+      }
+    ],
+    "subtotal": 193638,
+    "discount": null,
+    "tax": 19364,
+    "service_charge": null,
+    "total": 213002,
+    "confidence": {
+      "subtotal": 0.95,
+      "discount": 0.0,
+      "tax": 0.95,
+      "service_charge": 0.0,
+      "total": 0.95,
+      "payment.method": 0.95,
+      "payment.amount_paid": 0.95,
+      "payment.change": 0.0
+    },
+    "payment": {
+      "method": "debit",
+      "amount_paid": 213002,
+      "change": null
+    }
+  },
+  "usage": {
+    "completion_tokens": 527,
+    "prompt_tokens": 2698,
+    "total_tokens": 3225
+  },
+  "cost_usd": 0.0,
+  "downscaled": false,
+  "validation": {
+    "valid": true,
+    "errors": []
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "name": "cord_059",
+  "image": "",
+  "model": "gemini-3.5-flash-lite",
+  "latency_s": 34.29,
+  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"Tahu Isi\",\n      \"quantity\": 2,\n      \"unit_price\": 39000,\n      \"amount\": 78000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"Tea\",\n      \"quantity\": 5,\n      \"unit_price\": 6000,\n      \"amount\": 30000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"Kepiting 7-8.4ons - Chilly\",\n      \"quantity\": 1,\n      \"unit_price\": 297490,\n      \"amount\": 297490,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"Udang Telur Asin - Regular\",\n      \"quantity\": 1,\n      \"unit_price\": 47500,\n      \"amount\": 47500,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"Kailan 2 Rasa\",\n      \"quantity\": 1,\n      \"unit_price\": 45000,\n      \"amount\": 45000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"Mantau - 2 pcs\",\n      \"quantity\": 1,\n      \"unit_price\": 25000,\n      \"amount\": 25000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"Sweet Tea\",\n      \"quantity\": 2,\n      \"unit_price\": 8000,\n      \"amount\": 16000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"Nasi Putih\",\n      \"quantity\": 7,\n      \"unit_price\": 6000,\n      \"amount\": 42000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"Mantau - 3 pcs\",\n      \"quantity\": 1,\n      \"unit_price\": 37500,\n      \"amount\": 37500,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    }\n  ],\n  \"subtotal\": 618490,\n  \"discount\": null,\n  \"tax\": 61849,\n  \"service_charge\": null,\n  \"total\": 680500,\n  \"confidence\": {\n    \"subtotal\": 0.9,\n    \"discount\": 0.0,\n    \"tax\": 0.9,\n    \"service_charge\": 0.0,\n    \"total\": 0.9,\n    \"payment.method\": 0.0,\n    \"payment.amount_paid\": 0.0,\n    \"payment.change\": 0.0\n  },\n  \"payment\": {\n    \"method\": null,\n    \"amount_paid\": null,\n    \"change\": null\n  }\n}",
+  "prediction": {
+    "menu_items": [
+      {
+        "name": "Tahu Isi",
+        "quantity": 2,
+        "unit_price": 39000,
+        "amount": 78000,
+        "confidence": {
+          "name": 0.9,
+          "quantity": 0.9,
+          "unit_price": 0.9,
+          "amount": 0.9
+        }
+      },
+      {
+        "name": "Tea",
+        "quantity": 5,
+        "unit_price": 6000,
+        "amount": 30000,
+        "confidence": {
+          "name": 0.9,
+          "quantity": 0.9,
+          "unit_price": 0.9,
+          "amount": 0.9
+        }
+      },
+      {
+        "name": "Kepiting 7-8.4ons - Chilly",
+        "quantity": 1,
+        "unit_price": 297490,
+        "amount": 297490,
+        "confidence": {
+          "name": 0.9,
+          "quantity": 0.9,
+          "unit_price": 0.9,
+          "amount": 0.9
+        }
+      },
+      {
+        "name": "Udang Telur Asin - Regular",
+        "quantity": 1,
+        "unit_price": 47500,
+        "amount": 47500,
+        "confidence": {
+          "name": 0.9,
+          "quantity": 0.9,
+          "unit_price": 0.9,
+          "amount": 0.9
+        }
+      },
+      {
+        "name": "Kailan 2 Rasa",
+        "quantity": 1,
+        "unit_price": 45000,
+        "amount": 45000,
+        "confidence": {
+          "name": 0.9,
+          "quantity": 0.9,
+          "unit_price": 0.9,
+          "amount": 0.9
+        }
+      },
+      {
+        "name": "Mantau - 2 pcs",
+        "quantity": 1,
+        "unit_price": 25000,
+        "amount": 25000,
+        "confidence": {
+          "name": 0.9,
+          "quantity": 0.9,
+          "unit_price": 0.9,
+          "amount": 0.9
+        }
+      },
+      {
+        "name": "Sweet Tea",
+        "quantity": 2,
+        "unit_price": 8000,
+        "amount": 16000,
+        "confidence": {
+          "name": 0.9,
+          "quantity": 0.9,
+          "unit_price": 0.9,
+          "amount": 0.9
+        }
+      },
+      {
+        "name": "Nasi Putih",
+        "quantity": 7,
+        "unit_price": 6000,
+        "amount": 42000,
+        "confidence": {
+          "name": 0.9,
+          "quantity": 0.9,
+          "unit_price": 0.9,
+          "amount": 0.9
+        }
+      },
+      {
+        "name": "Mantau - 3 pcs",
+        "quantity": 1,
+        "unit_price": 37500,
+        "amount": 37500,
+        "confidence": {
+          "name": 0.9,
+          "quantity": 0.9,
+          "unit_price": 0.9,
+          "amount": 0.9
+        }
+      }
+    ],
+    "subtotal": 618490,
+    "discount": null,
+    "tax": 61849,
+    "service_charge": null,
+    "total": 680500,
+    "confidence": {
+      "subtotal": 0.9,
+      "discount": 0.0,
+      "tax": 0.9,
+      "service_charge": 0.0,
+      "total": 0.9,
+      "payment.method": 0.0,
+      "payment.amount_paid": 0.0,
+      "payment.change": 0.0
+    },
+    "payment": {
+      "method": null,
+      "amount_paid": null,
+      "change": null
+    }
+  },
+  "usage": {
+    "completion_tokens": 1119,
+    "prompt_tokens": 2662,
+    "total_tokens": 3781
+  },
+  "cost_usd": 0.0,
+  "downscaled": true,
+  "validation": {
+    "valid": true,
+    "errors": []
+  }
+}

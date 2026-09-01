@@ -1,0 +1,90 @@
+{
+  "name": "self_010",
+  "image": "",
+  "model": "gemini-3.5-flash-lite",
+  "latency_s": 2.35,
+  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"Paket Ayam Nashville\",\n      \"quantity\": 1,\n      \"unit_price\": 28000,\n      \"amount\": 28000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"Paket Ayam Korean\",\n      \"quantity\": 1,\n      \"unit_price\": 28000,\n      \"amount\": 28000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"Black Tea\",\n      \"quantity\": 1,\n      \"unit_price\": 5000,\n      \"amount\": 5000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"Lemon Tea\",\n      \"quantity\": 1,\n      \"unit_price\": 8000,\n      \"amount\": 8000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    }\n  ],\n  \"subtotal\": 69000,\n  \"discount\": null,\n  \"tax\": null,\n  \"service_charge\": null,\n  \"total\": 69000,\n  \"confidence\": {\n    \"subtotal\": 1,\n    \"discount\": 0,\n    \"tax\": 0,\n    \"service_charge\": 0,\n    \"total\": 1,\n    \"payment.method\": 1,\n    \"payment.amount_paid\": 1,\n    \"payment.change\": 0\n  },\n  \"payment\": {\n    \"method\": \"emoney\",\n    \"amount_paid\": 69000,\n    \"change\": null\n  }\n}",
+  "prediction": {
+    "menu_items": [
+      {
+        "name": "Paket Ayam Nashville",
+        "quantity": 1,
+        "unit_price": 28000,
+        "amount": 28000,
+        "confidence": {
+          "name": 1,
+          "quantity": 1,
+          "unit_price": 1,
+          "amount": 1
+        }
+      },
+      {
+        "name": "Paket Ayam Korean",
+        "quantity": 1,
+        "unit_price": 28000,
+        "amount": 28000,
+        "confidence": {
+          "name": 1,
+          "quantity": 1,
+          "unit_price": 1,
+          "amount": 1
+        }
+      },
+      {
+        "name": "Black Tea",
+        "quantity": 1,
+        "unit_price": 5000,
+        "amount": 5000,
+        "confidence": {
+          "name": 1,
+          "quantity": 1,
+          "unit_price": 1,
+          "amount": 1
+        }
+      },
+      {
+        "name": "Lemon Tea",
+        "quantity": 1,
+        "unit_price": 8000,
+        "amount": 8000,
+        "confidence": {
+          "name": 1,
+          "quantity": 1,
+          "unit_price": 1,
+          "amount": 1
+        }
+      }
+    ],
+    "subtotal": 69000,
+    "discount": null,
+    "tax": null,
+    "service_charge": null,
+    "total": 69000,
+    "confidence": {
+      "subtotal": 1,
+      "discount": 0,
+      "tax": 0,
+      "service_charge": 0,
+      "total": 1,
+      "payment.method": 1,
+      "payment.amount_paid": 1,
+      "payment.change": 0
+    },
+    "payment": {
+      "method": "emoney",
+      "amount_paid": 69000,
+      "change": null
+    }
+  },
+  "usage": {
+    "completion_tokens": 547,
+    "prompt_tokens": 2662,
+    "total_tokens": 3209
+  },
+  "cost_usd": 0.0,
+  "downscaled": false,
+  "validation": {
+    "valid": true,
+    "errors": []
+  }
+}

@@ -1,0 +1,634 @@
+[
+  {
+    "doc": "cord_001",
+    "kind": "scalar",
+    "field": "subtotal",
+    "res": "fp",
+    "pred": 91000,
+    "gt": null
+  },
+  {
+    "doc": "cord_001",
+    "kind": "pay",
+    "field": "change",
+    "res": "fp",
+    "pred": 0,
+    "gt": null
+  },
+  {
+    "doc": "cord_007",
+    "kind": "item",
+    "field": "name",
+    "res": "fp_extra",
+    "pred": "ADD CHICKEN BOX",
+    "gt": null
+  },
+  {
+    "doc": "cord_008",
+    "kind": "pay",
+    "field": "method",
+    "res": "fn",
+    "pred": null,
+    "gt": "credit_card"
+  },
+  {
+    "doc": "cord_008",
+    "kind": "item",
+    "field": "name",
+    "res": "fp_extra",
+    "pred": "COOKIE DOH SAUCES",
+    "gt": null
+  },
+  {
+    "doc": "cord_008",
+    "kind": "item",
+    "field": "name",
+    "res": "fp_extra",
+    "pred": "NATA DE COCO",
+    "gt": null
+  },
+  {
+    "doc": "cord_012",
+    "kind": "item",
+    "field": "name",
+    "res": "fp_extra",
+    "pred": "0571-1854 BLUS WANITA",
+    "gt": null
+  },
+  {
+    "doc": "cord_012",
+    "kind": "item",
+    "field": "name",
+    "res": "fp_extra",
+    "pred": "1002-0060 SHOPPING BAG",
+    "gt": null
+  },
+  {
+    "doc": "cord_012",
+    "kind": "item",
+    "field": "name",
+    "res": "fn_missing",
+    "pred": null,
+    "gt": "BLUS WANITA"
+  },
+  {
+    "doc": "cord_012",
+    "kind": "item",
+    "field": "name",
+    "res": "fn_missing",
+    "pred": null,
+    "gt": "SHOPPING BAG"
+  },
+  {
+    "doc": "cord_017",
+    "kind": "scalar",
+    "field": "discount",
+    "res": "fp",
+    "pred": 0,
+    "gt": null
+  },
+  {
+    "doc": "cord_017",
+    "kind": "pay",
+    "field": "method",
+    "res": "wrong",
+    "pred": "debit",
+    "gt": "credit_card"
+  },
+  {
+    "doc": "cord_024",
+    "kind": "scalar",
+    "field": "subtotal",
+    "res": "fp",
+    "pred": 118000,
+    "gt": null
+  },
+  {
+    "doc": "cord_024",
+    "kind": "pay",
+    "field": "method",
+    "res": "wrong",
+    "pred": "debit",
+    "gt": "credit_card"
+  },
+  {
+    "doc": "cord_029",
+    "kind": "item",
+    "field": "name",
+    "res": "fp_extra",
+    "pred": "I-ABURA UDON SPICY",
+    "gt": null
+  },
+  {
+    "doc": "cord_029",
+    "kind": "item",
+    "field": "name",
+    "res": "fp_extra",
+    "pred": "I-KAKE UDON",
+    "gt": null
+  },
+  {
+    "doc": "cord_033",
+    "kind": "scalar",
+    "field": "discount",
+    "res": "fp",
+    "pred": 67000,
+    "gt": null
+  },
+  {
+    "doc": "cord_036",
+    "kind": "item",
+    "field": "name",
+    "res": "fp_extra",
+    "pred": "- Sedang",
+    "gt": null
+  },
+  {
+    "doc": "cord_038",
+    "kind": "item",
+    "field": "name",
+    "res": "fp_extra",
+    "pred": "DF Fish Fillet Garic",
+    "gt": null
+  },
+  {
+    "doc": "cord_038",
+    "kind": "item",
+    "field": "name",
+    "res": "fn_missing",
+    "pred": null,
+    "gt": "DF Fish Fillet Garlc"
+  },
+  {
+    "doc": "cord_043",
+    "kind": "item",
+    "field": "name",
+    "res": "fp_extra",
+    "pred": "6 Pcs Cheese Tart",
+    "gt": null
+  },
+  {
+    "doc": "cord_043",
+    "kind": "item",
+    "field": "name",
+    "res": "fp_extra",
+    "pred": "Box of 6",
+    "gt": null
+  },
+  {
+    "doc": "cord_043",
+    "kind": "item",
+    "field": "name",
+    "res": "fp_extra",
+    "pred": "PP Carrier",
+    "gt": null
+  },
+  {
+    "doc": "cord_043",
+    "kind": "item",
+    "field": "name",
+    "res": "fn_missing",
+    "pred": null,
+    "gt": "Cheese Tart"
+  },
+  {
+    "doc": "cord_051",
+    "kind": "pay",
+    "field": "method",
+    "res": "wrong",
+    "pred": "debit",
+    "gt": "credit_card"
+  },
+  {
+    "doc": "cord_051",
+    "kind": "item",
+    "field": "name",
+    "res": "fp_extra",
+    "pred": "(TA) NASI GORG TERI",
+    "gt": null
+  },
+  {
+    "doc": "cord_051",
+    "kind": "item",
+    "field": "name",
+    "res": "fp_extra",
+    "pred": "(TA) BIHUN GORENG",
+    "gt": null
+  },
+  {
+    "doc": "cord_051",
+    "kind": "item",
+    "field": "name",
+    "res": "fp_extra",
+    "pred": "(TA) KWETIAW SEAFOOD",
+    "gt": null
+  },
+  {
+    "doc": "cord_051",
+    "kind": "item",
+    "field": "name",
+    "res": "fn_missing",
+    "pred": null,
+    "gt": "(TA) NASI GRG TERI MEDAN"
+  },
+  {
+    "doc": "cord_051",
+    "kind": "item",
+    "field": "name",
+    "res": "fn_missing",
+    "pred": null,
+    "gt": "(TA) BIHUN GORENG SEAFOOD"
+  },
+  {
+    "doc": "cord_051",
+    "kind": "item",
+    "field": "name",
+    "res": "fn_missing",
+    "pred": null,
+    "gt": "(TA) KWETIAW SEAFOOD SIRAM"
+  },
+  {
+    "doc": "cord_055",
+    "kind": "scalar",
+    "field": "subtotal",
+    "res": "fp",
+    "pred": 54000,
+    "gt": null
+  },
+  {
+    "doc": "cord_055",
+    "kind": "pay",
+    "field": "method",
+    "res": "fn",
+    "pred": null,
+    "gt": "credit_card"
+  },
+  {
+    "doc": "cord_055",
+    "kind": "pay",
+    "field": "amount_paid",
+    "res": "fn",
+    "pred": null,
+    "gt": 54000
+  },
+  {
+    "doc": "cord_058",
+    "kind": "pay",
+    "field": "method",
+    "res": "fp",
+    "pred": "cash",
+    "gt": null
+  },
+  {
+    "doc": "cord_058",
+    "kind": "pay",
+    "field": "amount_paid",
+    "res": "fp",
+    "pred": 100000,
+    "gt": null
+  },
+  {
+    "doc": "cord_058",
+    "kind": "pay",
+    "field": "change",
+    "res": "wrong",
+    "pred": 45000,
+    "gt": 39500
+  },
+  {
+    "doc": "cord_059",
+    "kind": "item",
+    "field": "name",
+    "res": "fp_extra",
+    "pred": "Kepiting 7-8.4ons - Chilly",
+    "gt": null
+  },
+  {
+    "doc": "cord_059",
+    "kind": "item",
+    "field": "name",
+    "res": "fn_missing",
+    "pred": null,
+    "gt": "Kepiting 7-8.4ons - Chilly 0.7 1"
+  },
+  {
+    "doc": "cord_060",
+    "kind": "pay",
+    "field": "method",
+    "res": "fp",
+    "pred": "emoney",
+    "gt": null
+  },
+  {
+    "doc": "cord_061",
+    "kind": "item",
+    "field": "name",
+    "res": "fp_extra",
+    "pred": "DISC ITEM",
+    "gt": null
+  },
+  {
+    "doc": "cord_061",
+    "kind": "item",
+    "field": "name",
+    "res": "fp_extra",
+    "pred": "DISC ITEM",
+    "gt": null
+  },
+  {
+    "doc": "cord_061",
+    "kind": "item",
+    "field": "name",
+    "res": "fp_extra",
+    "pred": "DISC ITEM",
+    "gt": null
+  },
+  {
+    "doc": "cord_064",
+    "kind": "scalar",
+    "field": "subtotal",
+    "res": "fp",
+    "pred": 16000,
+    "gt": null
+  },
+  {
+    "doc": "cord_069",
+    "kind": "scalar",
+    "field": "subtotal",
+    "res": "fp",
+    "pred": 74000,
+    "gt": null
+  },
+  {
+    "doc": "cord_070",
+    "kind": "item",
+    "field": "name",
+    "res": "fn_missing",
+    "pred": null,
+    "gt": "=*LARGE*=="
+  },
+  {
+    "doc": "cord_070",
+    "kind": "item",
+    "field": "name",
+    "res": "fn_missing",
+    "pred": null,
+    "gt": "=*MEDIUM*="
+  },
+  {
+    "doc": "cord_076",
+    "kind": "scalar",
+    "field": "total",
+    "res": "fn",
+    "pred": null,
+    "gt": 110000
+  },
+  {
+    "doc": "cord_078",
+    "kind": "item",
+    "field": "name",
+    "res": "fp_extra",
+    "pred": "Extra Jelly Lychee",
+    "gt": null
+  },
+  {
+    "doc": "cord_081",
+    "kind": "scalar",
+    "field": "subtotal",
+    "res": "fp",
+    "pred": 50000,
+    "gt": null
+  },
+  {
+    "doc": "cord_084",
+    "kind": "pay",
+    "field": "method",
+    "res": "wrong",
+    "pred": "other",
+    "gt": "emoney"
+  },
+  {
+    "doc": "cord_095",
+    "kind": "pay",
+    "field": "method",
+    "res": "fp",
+    "pred": "cash",
+    "gt": null
+  },
+  {
+    "doc": "cord_095",
+    "kind": "pay",
+    "field": "amount_paid",
+    "res": "fp",
+    "pred": 62000,
+    "gt": null
+  },
+  {
+    "doc": "cord_095",
+    "kind": "pay",
+    "field": "change",
+    "res": "fp",
+    "pred": 201,
+    "gt": null
+  },
+  {
+    "doc": "cord_097",
+    "kind": "item",
+    "field": "name",
+    "res": "fp_extra",
+    "pred": "SATE ATB GO",
+    "gt": null
+  },
+  {
+    "doc": "cord_097",
+    "kind": "item",
+    "field": "name",
+    "res": "fn_missing",
+    "pred": null,
+    "gt": "SATE ATI GO"
+  },
+  {
+    "doc": "cord_098",
+    "kind": "item",
+    "field": "name",
+    "res": "fp_extra",
+    "pred": "BLACK PEPPER MEATBALL PAS",
+    "gt": null
+  },
+  {
+    "doc": "cord_098",
+    "kind": "item",
+    "field": "name",
+    "res": "fn_missing",
+    "pred": null,
+    "gt": "BLACK PAPPER MEATBALL PAS"
+  },
+  {
+    "doc": "cord_099",
+    "kind": "scalar",
+    "field": "tax",
+    "res": "fp",
+    "pred": 6818,
+    "gt": null
+  },
+  {
+    "doc": "cord_099",
+    "kind": "scalar",
+    "field": "service_charge",
+    "res": "fp",
+    "pred": 0,
+    "gt": null
+  },
+  {
+    "doc": "cord_099",
+    "kind": "pay",
+    "field": "method",
+    "res": "fn",
+    "pred": null,
+    "gt": "credit_card"
+  },
+  {
+    "doc": "cord_099",
+    "kind": "item",
+    "field": "name",
+    "res": "fp_extra",
+    "pred": "PAKET SLICES",
+    "gt": null
+  },
+  {
+    "doc": "cord_099",
+    "kind": "item",
+    "field": "name",
+    "res": "fp_extra",
+    "pred": "\u00bb FL Cake - French Vanilla SLC",
+    "gt": null
+  },
+  {
+    "doc": "cord_099",
+    "kind": "item",
+    "field": "name",
+    "res": "fp_extra",
+    "pred": "PAKET SLICES",
+    "gt": null
+  },
+  {
+    "doc": "cord_099",
+    "kind": "item",
+    "field": "name",
+    "res": "fp_extra",
+    "pred": "\u00bb FL Cake - Green Tea SLC",
+    "gt": null
+  },
+  {
+    "doc": "cord_099",
+    "kind": "item",
+    "field": "name",
+    "res": "fp_extra",
+    "pred": "PAKET SLICES",
+    "gt": null
+  },
+  {
+    "doc": "cord_099",
+    "kind": "item",
+    "field": "name",
+    "res": "fp_extra",
+    "pred": "FL Cake - Belgium Choco SLC",
+    "gt": null
+  },
+  {
+    "doc": "self_002",
+    "kind": "pay",
+    "field": "change",
+    "res": "fp",
+    "pred": 0,
+    "gt": null
+  },
+  {
+    "doc": "self_003",
+    "kind": "scalar",
+    "field": "subtotal",
+    "res": "fn",
+    "pred": null,
+    "gt": 125000
+  },
+  {
+    "doc": "self_006",
+    "kind": "scalar",
+    "field": "subtotal",
+    "res": "fn",
+    "pred": null,
+    "gt": 71000
+  },
+  {
+    "doc": "self_009",
+    "kind": "item",
+    "field": "name",
+    "res": "fp_extra",
+    "pred": "SET PAKET MERONCE",
+    "gt": null
+  },
+  {
+    "doc": "self_009",
+    "kind": "item",
+    "field": "name",
+    "res": "fp_extra",
+    "pred": "1x MERONCE MANIK MANIK",
+    "gt": null
+  },
+  {
+    "doc": "self_009",
+    "kind": "item",
+    "field": "name",
+    "res": "fp_extra",
+    "pred": "1x GUNTING MERONCE",
+    "gt": null
+  },
+  {
+    "doc": "self_009",
+    "kind": "item",
+    "field": "name",
+    "res": "fp_extra",
+    "pred": "1x TEH CELUP",
+    "gt": null
+  },
+  {
+    "doc": "self_009",
+    "kind": "item",
+    "field": "name",
+    "res": "fp_extra",
+    "pred": "2x POUCH KANVAS",
+    "gt": null
+  },
+  {
+    "doc": "self_009",
+    "kind": "item",
+    "field": "name",
+    "res": "fp_extra",
+    "pred": "2x CAT 12 WARNA",
+    "gt": null
+  },
+  {
+    "doc": "self_009",
+    "kind": "item",
+    "field": "name",
+    "res": "fp_extra",
+    "pred": "2x PIRING CAT AIR",
+    "gt": null
+  },
+  {
+    "doc": "self_009",
+    "kind": "item",
+    "field": "name",
+    "res": "fp_extra",
+    "pred": "2x TEH CELUP",
+    "gt": null
+  },
+  {
+    "doc": "self_009",
+    "kind": "item",
+    "field": "name",
+    "res": "fn_missing",
+    "pred": null,
+    "gt": "1 SET PAKET MERONCE"
+  }
+]

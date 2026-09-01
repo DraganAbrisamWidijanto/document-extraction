@@ -1,0 +1,66 @@
+{
+  "name": "cord_066",
+  "image": "",
+  "model": "gemini-3.5-flash-lite",
+  "latency_s": 2.76,
+  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"PILLOW DURIA\",\n      \"quantity\": null,\n      \"unit_price\": 36364,\n      \"amount\": 36364,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.0,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"PLASTIK 25\",\n      \"quantity\": null,\n      \"unit_price\": 0,\n      \"amount\": 0,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.0,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    }\n  ],\n  \"subtotal\": 36364,\n  \"discount\": null,\n  \"tax\": 3636,\n  \"service_charge\": null,\n  \"total\": 40000,\n  \"confidence\": {\n    \"subtotal\": 0.9,\n    \"discount\": 0.0,\n    \"tax\": 0.9,\n    \"service_charge\": 0.0,\n    \"total\": 0.9,\n    \"payment.method\": 0.9,\n    \"payment.amount_paid\": 0.9,\n    \"payment.change\": 0.9\n  },\n  \"payment\": {\n    \"method\": \"cash\",\n    \"amount_paid\": 50000,\n    \"change\": 10000\n  }\n}",
+  "prediction": {
+    "menu_items": [
+      {
+        "name": "PILLOW DURIA",
+        "quantity": null,
+        "unit_price": 36364,
+        "amount": 36364,
+        "confidence": {
+          "name": 0.9,
+          "quantity": 0.0,
+          "unit_price": 0.9,
+          "amount": 0.9
+        }
+      },
+      {
+        "name": "PLASTIK 25",
+        "quantity": null,
+        "unit_price": 0,
+        "amount": 0,
+        "confidence": {
+          "name": 0.9,
+          "quantity": 0.0,
+          "unit_price": 0.9,
+          "amount": 0.9
+        }
+      }
+    ],
+    "subtotal": 36364,
+    "discount": null,
+    "tax": 3636,
+    "service_charge": null,
+    "total": 40000,
+    "confidence": {
+      "subtotal": 0.9,
+      "discount": 0.0,
+      "tax": 0.9,
+      "service_charge": 0.0,
+      "total": 0.9,
+      "payment.method": 0.9,
+      "payment.amount_paid": 0.9,
+      "payment.change": 0.9
+    },
+    "payment": {
+      "method": "cash",
+      "amount_paid": 50000,
+      "change": 10000
+    }
+  },
+  "usage": {
+    "completion_tokens": 401,
+    "prompt_tokens": 2678,
+    "total_tokens": 3079
+  },
+  "cost_usd": 0.0,
+  "downscaled": true,
+  "validation": {
+    "valid": true,
+    "errors": []
+  }
+}

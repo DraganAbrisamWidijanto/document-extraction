@@ -1,0 +1,138 @@
+{
+  "name": "cord_070",
+  "image": "",
+  "model": "gemini-3.5-flash-lite",
+  "latency_s": 3.42,
+  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"UDANG RE\",\n      \"quantity\": 2,\n      \"unit_price\": 216000,\n      \"amount\": 432000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"AYM GR JUN NJAN\",\n      \"quantity\": 1,\n      \"unit_price\": 108000,\n      \"amount\": 108000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"SAPO TH SEAFOOD\",\n      \"quantity\": 1,\n      \"unit_price\": 172000,\n      \"amount\": 172000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"POCAI 3\",\n      \"quantity\": 2,\n      \"unit_price\": 111000,\n      \"amount\": 222000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"GURAME FILLET M ASAM MANIS\",\n      \"quantity\": 1,\n      \"unit_price\": 163000,\n      \"amount\": 163000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"BIHUN GORENG JJ\",\n      \"quantity\": 1,\n      \"unit_price\": 116000,\n      \"amount\": 116000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"ICED TEA\",\n      \"quantity\": 5,\n      \"unit_price\": 12000,\n      \"amount\": 60000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"NASI PUTIH\",\n      \"quantity\": 7,\n      \"unit_price\": 10000,\n      \"amount\": 70000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    }\n  ],\n  \"subtotal\": 1343000,\n  \"discount\": null,\n  \"tax\": 142358,\n  \"service_charge\": 80580,\n  \"total\": 1565938,\n  \"confidence\": {\n    \"subtotal\": 0.9,\n    \"discount\": 0.0,\n    \"tax\": 0.9,\n    \"service_charge\": 0.9,\n    \"total\": 0.9,\n    \"payment.method\": 0.0,\n    \"payment.amount_paid\": 0.0,\n    \"payment.change\": 0.0\n  },\n  \"payment\": {\n    \"method\": null,\n    \"amount_paid\": null,\n    \"change\": null\n  }\n}",
+  "prediction": {
+    "menu_items": [
+      {
+        "name": "UDANG RE",
+        "quantity": 2,
+        "unit_price": 216000,
+        "amount": 432000,
+        "confidence": {
+          "name": 0.9,
+          "quantity": 0.9,
+          "unit_price": 0.9,
+          "amount": 0.9
+        }
+      },
+      {
+        "name": "AYM GR JUN NJAN",
+        "quantity": 1,
+        "unit_price": 108000,
+        "amount": 108000,
+        "confidence": {
+          "name": 0.9,
+          "quantity": 0.9,
+          "unit_price": 0.9,
+          "amount": 0.9
+        }
+      },
+      {
+        "name": "SAPO TH SEAFOOD",
+        "quantity": 1,
+        "unit_price": 172000,
+        "amount": 172000,
+        "confidence": {
+          "name": 0.9,
+          "quantity": 0.9,
+          "unit_price": 0.9,
+          "amount": 0.9
+        }
+      },
+      {
+        "name": "POCAI 3",
+        "quantity": 2,
+        "unit_price": 111000,
+        "amount": 222000,
+        "confidence": {
+          "name": 0.9,
+          "quantity": 0.9,
+          "unit_price": 0.9,
+          "amount": 0.9
+        }
+      },
+      {
+        "name": "GURAME FILLET M ASAM MANIS",
+        "quantity": 1,
+        "unit_price": 163000,
+        "amount": 163000,
+        "confidence": {
+          "name": 0.9,
+          "quantity": 0.9,
+          "unit_price": 0.9,
+          "amount": 0.9
+        }
+      },
+      {
+        "name": "BIHUN GORENG JJ",
+        "quantity": 1,
+        "unit_price": 116000,
+        "amount": 116000,
+        "confidence": {
+          "name": 0.9,
+          "quantity": 0.9,
+          "unit_price": 0.9,
+          "amount": 0.9
+        }
+      },
+      {
+        "name": "ICED TEA",
+        "quantity": 5,
+        "unit_price": 12000,
+        "amount": 60000,
+        "confidence": {
+          "name": 0.9,
+          "quantity": 0.9,
+          "unit_price": 0.9,
+          "amount": 0.9
+        }
+      },
+      {
+        "name": "NASI PUTIH",
+        "quantity": 7,
+        "unit_price": 10000,
+        "amount": 70000,
+        "confidence": {
+          "name": 0.9,
+          "quantity": 0.9,
+          "unit_price": 0.9,
+          "amount": 0.9
+        }
+      }
+    ],
+    "subtotal": 1343000,
+    "discount": null,
+    "tax": 142358,
+    "service_charge": 80580,
+    "total": 1565938,
+    "confidence": {
+      "subtotal": 0.9,
+      "discount": 0.0,
+      "tax": 0.9,
+      "service_charge": 0.9,
+      "total": 0.9,
+      "payment.method": 0.0,
+      "payment.amount_paid": 0.0,
+      "payment.change": 0.0
+    },
+    "payment": {
+      "method": null,
+      "amount_paid": null,
+      "change": null
+    }
+  },
+  "usage": {
+    "completion_tokens": 1038,
+    "prompt_tokens": 2662,
+    "total_tokens": 3700
+  },
+  "cost_usd": 0.0,
+  "downscaled": true,
+  "validation": {
+    "valid": true,
+    "errors": []
+  }
+}

@@ -22,7 +22,7 @@
     "payment": {
       "method": "cash",
       "amount_paid": 49000,
-      "change": 0
+      "change": null
     }
   },
   "meta": {

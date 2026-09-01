@@ -1,0 +1,54 @@
+{
+  "name": "cord_064",
+  "image": "",
+  "model": "gemini-3.5-flash-lite",
+  "latency_s": 2.08,
+  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"SINGLE SCOOP\",\n      \"quantity\": 1,\n      \"unit_price\": 16000,\n      \"amount\": 16000,\n      \"confidence\": {\n        \"name\": 1.0,\n        \"quantity\": 0.8,\n        \"unit_price\": 1.0,\n        \"amount\": 1.0\n      }\n    }\n  ],\n  \"subtotal\": 16000,\n  \"discount\": null,\n  \"tax\": null,\n  \"service_charge\": null,\n  \"total\": 16000,\n  \"confidence\": {\n    \"subtotal\": 0.9,\n    \"discount\": 0.0,\n    \"tax\": 0.0,\n    \"service_charge\": 0.0,\n    \"total\": 1.0,\n    \"payment.method\": 1.0,\n    \"payment.amount_paid\": 1.0,\n    \"payment.change\": 1.0\n  },\n  \"payment\": {\n    \"method\": \"cash\",\n    \"amount_paid\": 50000,\n    \"change\": 34000\n  }\n}",
+  "prediction": {
+    "menu_items": [
+      {
+        "name": "SINGLE SCOOP",
+        "quantity": 1,
+        "unit_price": 16000,
+        "amount": 16000,
+        "confidence": {
+          "name": 1.0,
+          "quantity": 0.8,
+          "unit_price": 1.0,
+          "amount": 1.0
+        }
+      }
+    ],
+    "subtotal": 16000,
+    "discount": null,
+    "tax": null,
+    "service_charge": null,
+    "total": 16000,
+    "confidence": {
+      "subtotal": 0.9,
+      "discount": 0.0,
+      "tax": 0.0,
+      "service_charge": 0.0,
+      "total": 1.0,
+      "payment.method": 1.0,
+      "payment.amount_paid": 1.0,
+      "payment.change": 1.0
+    },
+    "payment": {
+      "method": "cash",
+      "amount_paid": 50000,
+      "change": 34000
+    }
+  },
+  "usage": {
+    "completion_tokens": 303,
+    "prompt_tokens": 2705,
+    "total_tokens": 3008
+  },
+  "cost_usd": 0.0,
+  "downscaled": true,
+  "validation": {
+    "valid": true,
+    "errors": []
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "name": "cord_081",
+  "image": "",
+  "model": "gemini-3.5-flash-lite",
+  "latency_s": 33.02,
+  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"3002-Kyoto Choco Mochi\",\n      \"quantity\": 2,\n      \"unit_price\": 14000,\n      \"amount\": 28000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"1001-Choco Bun\",\n      \"quantity\": 1,\n      \"unit_price\": 22000,\n      \"amount\": 22000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"6001-Plastic Bag Small\",\n      \"quantity\": 1,\n      \"unit_price\": 0,\n      \"amount\": 0,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    }\n  ],\n  \"subtotal\": null,\n  \"discount\": null,\n  \"tax\": null,\n  \"service_charge\": null,\n  \"total\": 50000,\n  \"confidence\": {\n    \"subtotal\": 0.0,\n    \"discount\": 0.0,\n    \"tax\": 0.0,\n    \"service_charge\": 0.0,\n    \"total\": 0.9,\n    \"payment.method\": 0.0,\n    \"payment.amount_paid\": 0.0,\n    \"payment.change\": 0.0\n  },\n  \"payment\": {\n    \"method\": null,\n    \"amount_paid\": null,\n    \"change\": null\n  }\n}",
+  "prediction": {
+    "menu_items": [
+      {
+        "name": "3002-Kyoto Choco Mochi",
+        "quantity": 2,
+        "unit_price": 14000,
+        "amount": 28000,
+        "confidence": {
+          "name": 0.9,
+          "quantity": 0.9,
+          "unit_price": 0.9,
+          "amount": 0.9
+        }
+      },
+      {
+        "name": "1001-Choco Bun",
+        "quantity": 1,
+        "unit_price": 22000,
+        "amount": 22000,
+        "confidence": {
+          "name": 0.9,
+          "quantity": 0.9,
+          "unit_price": 0.9,
+          "amount": 0.9
+        }
+      },
+      {
+        "name": "6001-Plastic Bag Small",
+        "quantity": 1,
+        "unit_price": 0,
+        "amount": 0,
+        "confidence": {
+          "name": 0.9,
+          "quantity": 0.9,
+          "unit_price": 0.9,
+          "amount": 0.9
+        }
+      }
+    ],
+    "subtotal": null,
+    "discount": null,
+    "tax": null,
+    "service_charge": null,
+    "total": 50000,
+    "confidence": {
+      "subtotal": 0.0,
+      "discount": 0.0,
+      "tax": 0.0,
+      "service_charge": 0.0,
+      "total": 0.9,
+      "payment.method": 0.0,
+      "payment.amount_paid": 0.0,
+      "payment.change": 0.0
+    },
+    "payment": {
+      "method": null,
+      "amount_paid": null,
+      "change": null
+    }
+  },
+  "usage": {
+    "completion_tokens": 497,
+    "prompt_tokens": 2698,
+    "total_tokens": 3195
+  },
+  "cost_usd": 0.0,
+  "downscaled": true,
+  "validation": {
+    "valid": true,
+    "errors": []
+  }
+}

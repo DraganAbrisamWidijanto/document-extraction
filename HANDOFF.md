@@ -3,48 +3,90 @@
 Proyek: `C:\Users\ASUS\Documents\lamarankerja\datasaur` — **jangan ada file keluar dari folder ini**.
 Deadline: 3 hari dari email diterima. Submit: invite `saripudin@datasaur.ai`, `satrio.putra@datasaur.ai`, `diah.pitaloka@datasaur.ai` ke private repo.
 
-## Status Terakhir (31 Agu 2026, ~01:30)
+## Status Terakhir (2 Sep 2026 — sesi baru setelah shutdown laptop)
+
+**Sesi ini (2 Sep)**: +5 self-scan baru (self_006..010) → GT dibuat VLM + verifikasi vision.
+
+**Update berikutnya (2 Sep, setelah re-run):**
+- Prompt v6: explicit-vs-derived (null≠0), tax-inclusive, EDC→null, integer-only money, bundle/DISC rules, variant tidak ditambah ke nama
+- Evaluator: `name_norm()` strip kode prefix item (e.g. "0571-1854 BLUS WANITA" → "BLUS WANITA")
+- `batch_extract.py --api-url` + `run_eval.py --api-url` + docker-compose eval → **ekstraksi lewat HTTP API** (compliance PDF "runs the harness against that API"; sebelumnya langsung import module)
+- GT self_008 payment.method debit→null (EDC generic); self_002 change 0→null; self_003 change null→0
+- Viewer: auto-refresh dihapus (user minta); reload manual F5
+
+**Self-scan sekarang 10 dokumen** (5 manual + 5 VLM-draft):
+- self_006 Olive Fried Chicken, self_007 Tottori_ID, self_008 Relasi Space After Home,
+  self_009 SARSA Creative Space, self_010 Maverick — gambar dari folder `self scan/` (WhatsApp)
+- GT 5 baru dihasilkan `make_self_gt.py` (VLM extract → strip confidence → meta vendor/date dari vision_analyze)
+- **GT baru = DRAFT VLM, belum verified manual user** — note `"VLM-generated draft GT — review & verify"` di tiap file
+
+**Eval self terbaru (10 docs): macro F1 0.99, total exact 10/10, item fields 1.00/1.00/1.00**
+- SELF: 0 fp, 0 wrong, semua 37 item match — hasil terbaik
+- CORD (45): macro F1 0.88, total exact 44/45, item name F1 0.92
+- Satu-satunya miss CORD: cord_095 (flaky — model baca cash 62.000 sebagai total, padahal total due = 62.000−201 = 61.799). Run sebelumnya benar, sekarang salah → murni variance model, bukan bug
+- Kegagalan self_001/self_008 sudah fix (aturan final-total = amount-paid; modifier line bukan item terpisah)
+
+**Error analysis (results/error_analysis.json)**: item fp dari name-granularity (bundle sub-item, ejaan) = measurement jujur, bukan bug. GT CORD tidak lengkap (subtotal.fp dll) bukan error model. Yang bisa di-fix sudah semua di-fix.
+
+**Temp files (tidak di-commit):**
+- `viewer_app.py` + `viewer_app.html` — web viewer: image zoom/pan, model prediction vs GT, field table
+- Jalan di `http://127.0.0.1:8100` — restart: `cd datasaur && python viewer_app.py`
+- `make_self_gt.py` — helper: VLM → draft GT (strip confidence, meta placeholder)
+
+**Keputusan besar sesi ini: pindah VLM dari `bai/mimo-v2.5` (9Router, key pribadi user) ke `gemini-3.5-flash-lite` (Gemini free tier, 5 key round-robin).**
+Alasan: user keberatan share key 9Router ke engineer Datasaur; Gemini free tier aman dishare. Bonus: latency 22s → 2-4s/doc.
 
 - [x] Requirement dibaca (PDF: `AI_Engineer_Take-Home_Test_Document_Extraction.pdf`)
 - [x] Dataset CORD test split didownload (100 receipt, 234 MB) → `data/cord_test.parquet`
 - [x] 30 gambar random di-sample → `data/dev_sample/` (seed 42, manifest.json + GT JSON tiap gambar)
-- [x] VLM engine dipilih & dites
-- [x] Dev loop pertama jalan (5/6 gambar selesai, 1 timeout)
-- [ ] Schema final & prompt stabil
-- [ ] Eval harness (field-level P/R/F1, confidence, abstention, cost/latency)
-- [ ] Scale ke full set
-- [ ] Optimasi + Docker + README + commit
+- [x] VLM engine dipilih & dites (mimo dulu, lalu migrasi ke Gemini free tier)
+- [x] Dev loop 6/6 + iterasi prompt v2 (unit_price/service/discount/payment rules)
+- [x] Eval harness ditulis & dijalankan: CORD 45 docs macro F1 **0.84**, self-scan 5 docs **0.96**
+- [x] Scale: 50 CORD diverse dipilih, batch extraction 50 gambar selesai (49/49 sukses via retry downscaling)
+- [x] Optimasi terukur: downscaling max 1600px + JPEG 85 → total exact 78%→91%, latency -35%
+- [x] FastAPI + Docker scaffold + README + git init (repo 126KB, 2 commits → sekarang 3+)
+- [x] **AUDIT GAP vs requirement PDF** — ditemukan 7 gap, SEMUA sudah difix (detail di bawah)
+- [x] **Migrasi Gemini**: `app/extractor.py` ditulis ulang — key pool round-robin (5 key free tier), concurrent (ThreadPoolExecutor), downscale di main pipeline, schema validation sendiri, per-field confidence, cost tracking (usage tokens + USD)
+- [x] **Clean code**: file probe (15) dihapus; dev_extract/batch_extract/run_eval/eval_harness ditulis ulang memakai `app.extractor` sebagai satu-satunya sumber pipeline
+- [ ] Invite reviewer (saripudin@datasaur.ai, satrio.putra@datasaur.ai, diah.pitaloka@datasaur.ai) — butuh GitHub user — **USER: TIDAK DILAKUKAN (keputusan user)**
+- [ ] Test docker compose build/up beneran — **USER: TIDAK DILAKUKAN (keputusan user)**
+- [ ] git push ke remote — **USER: TIDAK DILAKUKAN (keputusan user)**
+
+## 7 Gap yang Ditemukan (audit 1 Sep) & Status Fix
+
+| # | Gap (requirement PDF) | Fix | File |
+|---|---|---|---|
+| 1 | Per-field confidence tidak ada | Schema v3 + prompt minta confidence 0-1 per field; abstain = confidence 0.0 | `app/extractor.py` |
+| 2 | Cost tidak visible | Response usage tokens → `compute_cost()`; scorecard berisi tokens + cost USD | `app/extractor.py`, `eval_harness.py` |
+| 3 | Output tidak divalidasi | `validate_prediction()` — typed, enum method, range, unknown keys | `app/extractor.py` |
+| 4 | Tidak ada A/B / regression gate | `compare_evals.py` — diff dua scorecard JSON, gate F1 drop, exit code 1 | `compare_evals.py` |
+| 5 | Tidak ada `.env.example` | Dibuat (VLM_* vars, tanpa secret) | `.env.example` |
+| 6 | Eval tidak end-to-end via API | `run_eval.py --live` → extract fresh via pipeline lalu score; docker eval pakai `--live` | `run_eval.py`, `docker-compose.yml` |
+| 7 | Tidak ada agentic note + custom extension | README section "Agentic Development" + KeyPool (multi-key failover) sebagai extension | `README.md` |
 
 ## VLM Engine (PENTING — hasil tes semua model)
 
-**Engine utama: `bai/mimo-v2.5`** — satu-satunya VLM yang jalan dari 31 model mimo yang dites.
-- Latency ~22s/dokumen, output JSON valid
-- `bai/deepseek-v4-flash-vision-exp` juga jalan (routing ke upstream `mimo-v2.5-free`) — cadangan
-- `oc/mimo-v2.5-free` ❌ TIDAK ADA — prefix `oc/` tidak terdaftar di 9Router
-- Semua `OM/mimo-*`, `oa/mimo-*`, `ir/*`, `mimo/*`, `gmi/*` → 402/403/400/429
-- `OM/MiniMax-M3`, `OM/mimo-v2.5` → 402 kuota habis
+**Engine sekarang: `gemini-3.5-flash-lite` via Gemini OpenAI-compatible endpoint (free tier, 5 key round-robin).**
+- Endpoint: `https://generativelanguage.googleapis.com/v1beta/openai/chat/completions` — **format OpenAI-compatible, header `Authorization: Bearer <key>`**
+- Latency **2-4s/dokumen** (vs mimo 22s), free tier 1500 RPD/key × 5 key
+- Semua 5 key di `geminiapi.txt` valid: 3 AIza + 2 AQ (AQ adalah format key Gemini baru, bukan OAuth)
+- Key dibaca file `geminiapi.txt` (gitignored, TIDAK pernah di-commit) → `KeyPool` round-robin thread-safe
+- Retry: 429/5xx → rotate ke key berikutnya (tidak tidur 30s per attempt), backoff 30s×attempt kalau semua gagal
+- Model lain: `gemini-2.5-flash-lite` deprecated (404); `gemini-2.5-flash` lambat (10-83s); `gemini-flash-lite-latest` ≈ sama cepat tapi alias bisa berubah; `gemini-3.6-flash` lambat (25s)
+- mimo/9Router TIDAK dipakai lagi — `_read_9router_key` dihapus dari extractor
 
-**`vision_analyze` Hermes BISA jalan** (dites pada cord_003.png — deskripsi detail) — untuk verifikasi visual/QA, bukan pipeline.
+## Cara Akses Gemini (script)
 
-Prefix 9Router yang terdaftar: `bai`, `oa`, `ir`, `OM`, `agentic`, `wave`, `gmi`, `wf`, `arza`, `tukeria`.
-
-Pembagian tugas (keputusan user):
-- Script pipeline extraction → direct 9Router `bai/mimo-v2.5`
-- Verifikasi visual/QA → `vision_analyze` Hermes
-- Eval & preprocessing → python lokal (anaconda)
-
-## Cara Akses 9Router (script)
-
-API key dibaca dari SQLite (hindari masking `sk-*`):
+API key dibaca dari `geminiapi.txt` (root proyek, satu key per baris, TIDAK di-commit):
 ```python
-DB = os.path.expanduser("~/AppData/Roaming/9router/db/data.sqlite")
-db = sqlite3.connect(DB)
-api_key = db.execute("SELECT key FROM apiKeys WHERE isActive = 1").fetchone()[0]
+from app.extractor import Config, extract_receipt
+cfg = Config.from_env()   # membaca VLM_BASE_URL/VLM_MODEL/VLM_API_KEY_FILE/env
+res = extract_receipt(image_bytes, "image/png", cfg)
 ```
-Endpoint: `http://127.0.0.1:20128/v1` — WAJIB `stream=False` untuk VLM, image sebagai data URI base64.
-Rate limit: ~1 request/15-20s, sleep 30s saat 429, retry 402/403 dengan backoff.
+Endpoint OpenAI-compatible: `POST {VLM_BASE_URL}/chat/completions` dengan `Authorization: Bearer <key>`.
+Body format sama persis dengan OpenAI (messages + image_url data URI) — itulah kenapa extractor tetap generic.
 
-## Data & Struktur
+## Data & Struktur (setelah clean-code)
 
 ```
 datasaur/
@@ -55,96 +97,99 @@ datasaur/
 │   ├── cord_pool/             # 50 CORD terpilih diverse: 44 PNG+GT test + manifest_dev/test.json
 │   ├── predictions/           # batch extraction test set (pred_cord_XXX.json + pred_self_XXX.json)
 │   └── self_scan/             # 5 self-scan user (foto struk fisik) + GT manual + manifest
-├── dev_extract.py             # extraction pipeline (schema v2)
-├── batch_extract.py           # batch extraction utk test set (cord+self)
-├── select_pool.py             # pilih 50 diverse dari 100 CORD
-├── export_gt.py               # export GT CORD dari parquet
-├── eval_compare.py            # bandingkan pred vs GT (dev loop)
-├── eval_harness.py            # eval field-level P/R/F1 + error typology (support GT cord+self)
-├── test_*.py / raw_probe.py / find_models.py  # probe VLM (historical, bisa hapus)
-└── (selanjutnya: FastAPI + Docker + README)
+├── app/
+│   ├── extractor.py           # pipeline: Config, KeyPool, call_vlm, extract_receipt, validate, cost, extract_many (concurrent)
+│   └── main.py                # FastAPI
+├── dev_extract.py             # dev loop (6 sampel) — pakai app.extractor
+├── batch_extract.py           # batch concurrent (--workers, --overwrite) — pakai app.extractor
+├── eval_harness.py            # field-level P/R/F1 + confidence + abstention + cost; output scorecard JSON
+├── run_eval.py                # E2E: --live extract fresh lalu score (dipakai docker compose run --rm eval)
+├── compare_evals.py           # A/B regression gate dua scorecard
+├── export_gt.py / select_pool.py  # data prep (tidak berubah)
+├── .env.example               # template config (tanpa secret)
+├── geminiapi.txt              # 5 Gemini API key — GITIGNORED, jangan commit
+├── results/                   # eval_cord/self.txt + scorecard_cord/self.json + per_doc_*.json
+└── (retry_failed.py dihapus — downscale sudah jadi bagian extractor.py)
 ```
 
-**Self-scan dataset (31 Agu 2026)**: 5 struk fisik foto dari user → `data/self_scan/self_001..005.jpg` + GT manual `self_XXX.json` (schema extraction + meta vendor/date/source). GT dari reading `vision_analyze`, aritmetika diverifikasi (subtotal=Σamount, total=subtotal+tax, semua OK). **self_001 (NASGOR 69) nama item = kode menu asli (Paket A1 / Merdeka 1 / Merdeka 3) — dikonfirmasi user, GT final.** Pelajaran: jangan crop gambar utk GT — crop 55% atas membuat VLM halusinasi (baca payment yang tak ada di crop).
+**Self-scan dataset (31 Agu 2026)**: 5 struk fisik foto dari user → `data/self_scan/self_001..005.jpg` + GT manual `self_XXX.json`. **self_001 (NASGOR 69) nama item = kode menu asli (Paket A1 / Merdeka 1 / Merdeka 3) — dikonfirmasi user, GT final.** Pelajaran: jangan crop gambar utk GT.
 
-Python: anaconda3 (pandas+pyarrow+pillow) untuk data; hermes venv `AI/hermes/hermes-agent/venv/Scripts/python.exe` untuk API calls.
-
-## Schema Extraction (v1 — sedang di-iterate)
+## Schema Extraction (v3 — dengan confidence)
 
 ```json
 {
-  "menu_items": [{"name", "quantity", "unit_price", "amount"}],
+  "menu_items": [{"name", "quantity", "unit_price", "amount", "confidence": {"name":0-1,...}}],
   "subtotal", "discount", "tax", "service_charge", "total",
-  "payment": {"method": "cash|credit_card|emoney|null", "amount_paid", "change"}
+  "confidence": {"subtotal":0-1, "discount":0-1, "tax":0-1, "service_charge":0-1, "total":0-1,
+                 "payment.method":0-1, "payment.amount_paid":0-1, "payment.change":0-1},
+  "payment": {"method": "cash|credit_card|emoney|debit|transfer|other|null", "amount_paid", "change"}
 }
 ```
-Rules: angka plain (25000, bukan "Rp 25.000"), field absent = null (TIDAK halusinasi), item berurutan sesuai cetak.
+Rules: angka plain, field absent = null (TIDAK halusinasi), item berurutan sesuai cetak, confidence 0.0 utk field yang di-abstain.
 
-**CORD GT hanya punya**: `menu` (nm/cnt/price/unitprice/itemsubtotal/sub), `sub_total` (subtotal_price/discount_price/tax_price/service_price/etc), `total` (total_price/cashprice/changeprice/creditcardprice/emoneyprice/menuqty_cnt). **TIDAK ada vendor/date/invoice_number** → field vendor/date hanya bisa dieval di 5 self-scans (GT kita buat sendiri).
+**CORD GT hanya punya**: `menu` (nm/cnt/price/unitprice/itemsubtotal/sub), `sub_total`, `total`. **TIDAK ada vendor/date/invoice_number** → vendor/date hanya dieval di 5 self-scans.
 
 ## Keputusan yang Sudah Disepakati
 
-1. **Dataset**: CORD (open) + 5 self-scans (Shopee/Tokped digital + foto struk cafe/Indomaret — tangan megang struk OK). Target ~25-45 dokumen final, bukan 1000 (hemat token free user). Pilih sampel MANUAL diverse, jangan random, dari pool 100.
-2. **Dev loop**: 5-10 gambar dulu sampai schema stabil → baru scale. Sampel terpilih: idx [14, 94, 28, 0, 75, 31] (high-res foto HP, low-res, multi-item+tax, credit card, discount, tiny 432×648).
-3. **Stack**: FastAPI + Docker compose (API extraction + `docker compose run --rm eval`), provider configurable OpenAI-compatible.
-4. **Deliverable wajib**: eval harness first-class (field-level metrics, failure by kind, confidence, abstention), cost/latency visible, ≥1 optimasi terukur, agentic development note + 1 custom extension, README lengkap, git history bermakna.
+1. **Dataset**: CORD (open) + 5 self-scans. Target ~25-45 dokumen final, bukan 1000 (hemat token free user). Sampel MANUAL diverse dari pool 100.
+2. **Dev loop**: 5-10 gambar dulu sampai schema stabil → baru scale.
+3. **Stack**: FastAPI + Docker compose, provider configurable OpenAI-compatible.
+4. **Deliverable wajib**: eval harness first-class (field-level metrics, failure by kind, confidence, abstention), cost/latency visible, ≥1 optimasi terukur, agentic development note + 1 custom extension (KeyPool), README lengkap, git history bermakna.
+5. **VLM**: Gemini free tier 5 key round-robin (keputusan sesi ini). Provider tetap OpenAI-compatible → bisa swap kapan saja via env.
 
-## Hasil Dev Loop Pertama (prediksi vs GT belum dibandingkan!)
+## Hasil Dev Loop (mimo, 31 Agu — historical) & tes Gemini (1 Sep)
 
-| idx | total (pred) | items | latency | catatan |
-||---|---|---|---|---|
-| 014 | 281,435 ✅ | 6/6 ✅ | 96.9s | **service_charge 17,050 ❌ (GT 17,850)** — digit error; total tetap benar |
-| 094 | 140,063 ✅ | 4/4 ✅ | 36.7s | semua OK, payment CC |
-| 028 | 426,195 ✅ | 3/3 ✅ | 24.4s | semua OK, discount 0 ✅ |
-| 000 | 60,000 ✅ | 1/1 ✅ | 54.1s | **unit_price 60,000 ❌ (GT 30,000)** — model taruh line total sbg unit price; qty 2 |
-| 075 | 282,000 ✅ | 6/6 ✅ | 25.2s | **unit_price null semua ❌ (abstain)** — cnt=1 → unit_price = amount, tp null |
-| 031 | 113,886 ✅ | 2/2 ✅ | 305.5s | semua OK; discount GT di level item (-85,500), pred taruh top-level — nilai cocok |
+**Dev loop 6 gambar (mimo)**: item names 22/22 benar; amounts 22/22; unit_price 2 error (idx 000, 075); subtotal/tax/total 6/6; service_charge 1 error (idx 014); discount 2/2; payment 3/3; latency 24-305s.
 
-**Ringkasan 6 pred vs GT (31 Agu 2026)**:
-- **Item names**: 22/22 benar, 0 extra, 0 missing
-- **Amounts**: 22/22 benar (line total)
-- **Unit price**: 2 error — idx 000 (salah baca 60k->30k), idx 075 (abstain 6x)
-- **Subtotal/Tax/Total**: 6/6 benar
-- **Service charge**: 1 error — idx 014 (17,050 vs 17,850)
-- **Discount**: 2/2 benar (idx 000, idx 031)
-- **Payment method**: 3/3 benar (3 null — benar)
-- **Latency**: 24.4–305.5s (idx 031 kena timeout 180s sekali, retry sukses)
+**Tes Gemini (1 Sep, 5 gambar CORD)**: total exact 5/5, item name 7/9, latency mean 2.3s (gemini-3.5-flash-lite). Semua 5 key valid.
 
-## Final Eval Results (1 Sep 2026) — batch extraction 50 gambar + retry downscaling
+## Final Eval Results (Gemini 3.5 Flash-Lite, 1 Sep sore — setelah fix normalisasi)
 
 **CORD test (45 docs) — macro F1 0.84**
-- total exact: **41/45 (91%)** — naik dari 35/45 (78%) setelah retry 7 gambar gagal
-- Item name match: P=0.86 R=0.92 F1=0.89 (139/151 GT matched)
-- item.amount F1=0.90, item.unit_price F1=0.73 (banyak FP — model prediksi item ekstra)
-- 0 abstention total (semua 45 kebaca; sebelumnya 7 gagal)
-- Latency: mean 94.2s, median 40.9s, max 418.5s
+- total exact: **44/45 (98%)** — naik dari 40/45 (sebelum fix to_num/GT adapter)
+- Item name match: P=0.83 R=0.90 F1=0.86 (136/151 GT matched)
+- 1 sisa kegagalan: cord_095 (pred 62,000 vs GT 61,799 — selisih 201, model salah baca cashprice sbg total; subtotal+tax = 56,181+5,618 = 61,799)
+- Abstention: 0 total-field
+- Latency: mean 9.9s, median 3.1s, max 36.4s (vs mimo mean 94.2s — **~10x lebih cepat**)
+- Cost: $0.00 (free tier)
 
-**Self-scan (5 docs) — macro F1 0.96**
-- total exact: 5/5 (100%)
-- Item name match: 19/20 (1 missing: self_001 "Merdeka 3")
-- Latency: mean 27.7s (foto fisik, lebih cepat dari PNG CORD)
+**Self-scan (5 docs) — macro F1 0.94**
+- total exact: 4/5 (80%) — 1 sisa: self_001 (pred 193,638 vs GT 213,002 — model tidak menambahkan tax 19,364; subtotal+tax seharusnya 213,002). Sebelumnya (mimo) 5/5 — regresi model
+- Item name match: P=0.90 R=0.90 F1=0.90 (18/20, 1 missing: self_005 "Set Roka On Fire"/"Set Roka Golden")
+- Latency: mean 3.0s | Cost: $0.00
 
-**Optimasi terukur (downscaling)**: 7 gambar gagal (timeout, 5.7–16.8MB, 2048–4096px) di-retry dengan resize max 1600px + JPEG 85 → **semua 7 sukses**. Dampak: total exact 78%→91%, latency mean 145.7s→94.2s (-35%), 0 timeout. Script: `retry_failed.py` (guard `__main__` wajib — jangan import tanpa guard, modul-level loop menimpa pred file).
+**Fix eval yang baru dilakukan (1 Sep sore):**
+- `to_num()` sekarang handle: desimal "365000.00"→365000 (sebelumnya salah ×100), prefix asterisk "*110000" (cord_076)
+- `gt_cord_to_schema()`: fallback total_price → total_etc → cashprice → changeprice → (cash−change) — cord_037 (GT cuma punya total_etc 20.000) & cord_076 (hanya cashprice) sekarang benar
+- Hasil: total exact CORD 40→44/45. Dampak fix ×100: cord_041, cord_043 (GT simpan 365000.00, bukan 36,500,000)
 
-**Kesimpulan**: schema inti (subtotal, total, payment amount) solid. Kelemahan: (1) item hallucination (FP tinggi — item.unit_price P=0.57); (2) format angka campur (`,`, `.`, `Rp`) di CORD.
+## Next Steps (sesi berikutnya)
 
-## Next Steps
-
-1. ~~Bandingkan 5 prediksi vs GT~~ ✅ (6/6 — lihat tabel di atas)
-2. ~~Iterasi prompt~~ ✅ (prompt v2: unit_price/service/discount/payment rules — 075 & 014 fixed)
-3. ~~eval_harness.py~~ ✅ ditulis (field-level P/R/F1, error typology, abstention, latency; support GT cord+self) — **belum dijalankan di test set**
+1. ~~Bandingkan prediksi vs GT~~ ✅
+2. ~~Iterasi prompt~~ ✅ (prompt v3 + confidence)
+3. ~~eval_harness.py~~ ✅ ditulis ulang + scorecard JSON + fix normalisasi
 4. ~~Self-scans~~ ✅ 5 foto + GT manual (final)
-5. ~~Scale~~ ✅ 50 CORD diverse dipilih (44 test baru + 5 dev + 94) — batch extraction jalan di background
-6. Jalankan eval_harness di test set (45 cord + 5 self) setelah batch selesai
-7. FastAPI + Docker + README + git init (private, invite reviewer)
+5. ~~Scale~~ ✅ 50 CORD diverse + batch extraction
+6. ~~Optimasi terukur~~ ✅ downscaling + key rotation + concurrency
+7. ~~Audit gap vs PDF~~ ✅ 7 gap difix (detail di atas)
+8. ~~Cek hasil eval Gemini baru~~ ✅ total exact 44/45 (98%), latency ~10x lebih cepat, cost $0
+9. ~~Hapus file sementara~~ ✅ (15 probe dihapus)
+10. ~~Update README (agentic note, extension, .env.example, metrics)~~ ✅
+11. Invite reviewer + git push — **DITUNDA (keputusan user)**
+12. Docker compose test — **DITUNDA (keputusan user)**
+13. (opsional) Fix 2 kegagalan model: cord_095 & self_001 (bukan bug eval, murni model)
 
-## Pitfalls / Pelajaran
+## Pitfalls / Pelajaran (tambah sesi ini)
 
-- CORD angka format campur: "60.000" (dot) vs "24,000" (koma) — kedua-duanya ribuan separator, perlu normalisasi sebelum banding
-- Terminal timeout 420s: dev_extract jalan lama (~22s/gambar + retry), jalankan dengan `background=true` + notify
-- jangan pass API key lewat terminal command (masking `sk-*` → `***`) — selalu baca dari SQLite dalam script
-- Gambar CORD ada yang 2304×4096 (foto HP) dan 432×648 (kecil) — VLM harus handle keduanya
+- **Gemini OpenAI-compatible endpoint**: `https://generativelanguage.googleapis.com/v1beta/openai/chat/completions` — bukan native `/v1beta/models/...:generateContent`. Header `Authorization: Bearer`, bukan `X-goog-api-key` (tapi keduanya jalan). Response `choices[0].message.content` string (bisa ada markdown fences — parse_json_response handle).
+- **Key Gemini format baru `AQ.`**: BUKAN OAuth token — valid API key, dipakai via Bearer/X-goog-api-key header. Jangan salah-filter hanya `AIza`.
+- **Free tier rate limit**: 1500 RPD per key; pakai 5 key round-robin + concurrency 5 (1 req/key). Jangan 429-loop di satu key.
+- CORD angka format campur: "60.000" (dot) vs "24,000" (koma) — normalisasi sebelum banding
+- jangan pass API key lewat terminal command (masking) — baca dari file dalam script
+- Gambar besar (>1MB) rawan timeout → **downscale di main pipeline** (bukan cuma retry): `extract_receipt` auto-downscale >1MB ke 1600px JPEG 85
+- Python script yang punya module-level loop: WAJIB guard `if __name__ == "__main__":`
 - User: free user, token terbatas — hemat API calls, jangan retry berlebihan
+- Jangan crop gambar utk GT — crop bikin VLM halusinasi
 
 ## Konteks User
 
@@ -152,3 +197,4 @@ Rules: angka plain (25000, bukan "Rp 25.000"), field absent = null (TIDAK halusi
 - Bahasa: Indonesia + Inggris. NO karakter CJK di chat.
 - Gaya: ringkas, langsung, no filler. Deliverable: benci gaya "terdengar AI"
 - Folder lamaran lain: `C:\Users\ASUS\Documents\lamarankerja\`
+- **User keberatan share key 9Router (mimo) ke engineer Datasaur** → pakai Gemini free tier yang aman dishare

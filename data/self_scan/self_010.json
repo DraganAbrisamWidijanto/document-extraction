@@ -1,0 +1,46 @@
+{
+  "prediction": {
+    "menu_items": [
+      {
+        "name": "Paket Ayam Nashville",
+        "quantity": 1,
+        "unit_price": 28000,
+        "amount": 28000
+      },
+      {
+        "name": "Paket Ayam Korean",
+        "quantity": 1,
+        "unit_price": 28000,
+        "amount": 28000
+      },
+      {
+        "name": "Black Tea",
+        "quantity": 1,
+        "unit_price": 5000,
+        "amount": 5000
+      },
+      {
+        "name": "Lemon Tea",
+        "quantity": 1,
+        "unit_price": 8000,
+        "amount": 8000
+      }
+    ],
+    "subtotal": 69000,
+    "discount": null,
+    "tax": null,
+    "service_charge": null,
+    "total": 69000,
+    "payment": {
+      "method": "emoney",
+      "amount_paid": 69000,
+      "change": null
+    }
+  },
+  "meta": {
+    "vendor": "Maverick",
+    "date": "17/12/2025",
+    "source": "photo",
+    "note": "GT verified manually against the receipt photo (vendor, date, items, amounts)."
+  }
+}

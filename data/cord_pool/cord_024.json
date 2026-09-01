@@ -22,8 +22,8 @@
     ],
     "total": {
       "total_price": "Rp.118.000",
-      "creditcardprice": "118.000",
-      "menuqty_cnt": "3"
+      "menuqty_cnt": "3",
+      "debitprice": "118.000"
     }
   },
   "meta": {

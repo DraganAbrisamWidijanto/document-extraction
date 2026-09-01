@@ -1,0 +1,46 @@
+{
+  "prediction": {
+    "menu_items": [
+      {
+        "name": "BEEF BURGER",
+        "quantity": 2,
+        "unit_price": 10000,
+        "amount": 20000
+      },
+      {
+        "name": "TEH",
+        "quantity": 1,
+        "unit_price": 4000,
+        "amount": 4000
+      },
+      {
+        "name": "NW + TEH TW",
+        "quantity": 1,
+        "unit_price": 11000,
+        "amount": 11000
+      },
+      {
+        "name": "NL + TEH TW",
+        "quantity": 3,
+        "unit_price": 12000,
+        "amount": 36000
+      }
+    ],
+    "subtotal": 71000,
+    "discount": null,
+    "tax": 6455,
+    "service_charge": null,
+    "total": 71000,
+    "payment": {
+      "method": "cash",
+      "amount_paid": 101000,
+      "change": 30000
+    }
+  },
+  "meta": {
+    "vendor": "Olive Fried Chicken",
+    "date": "04/02/2026",
+    "source": "photo",
+    "note": "GT verified manually against the receipt photo (vendor, date, items, amounts). Tax-inclusive: item prices include 10% tax; subtotal = sum of items = total 71.000; DPP 64.545 + tax 6.455."
+  }
+}

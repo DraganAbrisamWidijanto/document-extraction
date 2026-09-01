@@ -1,0 +1,783 @@
+[
+  {
+    "idx": 1,
+    "img": "cord_001.png",
+    "fields": {
+      "subtotal": null,
+      "discount": null,
+      "tax": null,
+      "service_charge": null,
+      "total": "tp",
+      "payment.method": "tp",
+      "payment.amount_paid": "tp",
+      "payment.change": null
+    },
+    "n_items_gt": 3,
+    "n_items_pred": 3,
+    "missing_items": []
+  },
+  {
+    "idx": 4,
+    "img": "cord_004.png",
+    "fields": {
+      "subtotal": "tp",
+      "discount": "tp",
+      "tax": null,
+      "service_charge": null,
+      "total": "tp",
+      "payment.method": "tp",
+      "payment.amount_paid": "tp",
+      "payment.change": "tp"
+    },
+    "n_items_gt": 3,
+    "n_items_pred": 3,
+    "missing_items": []
+  },
+  {
+    "idx": 7,
+    "img": "cord_007.png",
+    "fields": {
+      "subtotal": "tp",
+      "discount": null,
+      "tax": "tp",
+      "service_charge": null,
+      "total": "tp",
+      "payment.method": "tp",
+      "payment.amount_paid": "tp",
+      "payment.change": null
+    },
+    "n_items_gt": 1,
+    "n_items_pred": 2,
+    "missing_items": []
+  },
+  {
+    "idx": 8,
+    "img": "cord_008.png",
+    "fields": {
+      "subtotal": "tp",
+      "discount": null,
+      "tax": "tp",
+      "service_charge": null,
+      "total": "tp",
+      "payment.method": "tp",
+      "payment.amount_paid": "tp",
+      "payment.change": null
+    },
+    "n_items_gt": 1,
+    "n_items_pred": 3,
+    "missing_items": []
+  },
+  {
+    "idx": 12,
+    "img": "cord_012.png",
+    "fields": {
+      "subtotal": null,
+      "discount": null,
+      "tax": null,
+      "service_charge": null,
+      "total": "tp",
+      "payment.method": "tp",
+      "payment.amount_paid": "tp",
+      "payment.change": "tp"
+    },
+    "n_items_gt": 2,
+    "n_items_pred": 2,
+    "missing_items": []
+  },
+  {
+    "idx": 17,
+    "img": "cord_017.png",
+    "fields": {
+      "subtotal": "tp",
+      "discount": "fp",
+      "tax": null,
+      "service_charge": null,
+      "total": "tp",
+      "payment.method": "tp",
+      "payment.amount_paid": "tp",
+      "payment.change": null
+    },
+    "n_items_gt": 6,
+    "n_items_pred": 6,
+    "missing_items": []
+  },
+  {
+    "idx": 19,
+    "img": "cord_019.png",
+    "fields": {
+      "subtotal": "tp",
+      "discount": null,
+      "tax": "tp",
+      "service_charge": null,
+      "total": "tp",
+      "payment.method": null,
+      "payment.amount_paid": null,
+      "payment.change": null
+    },
+    "n_items_gt": 2,
+    "n_items_pred": 2,
+    "missing_items": []
+  },
+  {
+    "idx": 20,
+    "img": "cord_020.png",
+    "fields": {
+      "subtotal": "tp",
+      "discount": null,
+      "tax": "tp",
+      "service_charge": "wrong",
+      "total": "tp",
+      "payment.method": null,
+      "payment.amount_paid": null,
+      "payment.change": null
+    },
+    "n_items_gt": 5,
+    "n_items_pred": 5,
+    "missing_items": []
+  },
+  {
+    "idx": 21,
+    "img": "cord_021.png",
+    "fields": {
+      "subtotal": "fp",
+      "discount": null,
+      "tax": null,
+      "service_charge": null,
+      "total": "tp",
+      "payment.method": "tp",
+      "payment.amount_paid": "tp",
+      "payment.change": "tp"
+    },
+    "n_items_gt": 2,
+    "n_items_pred": 2,
+    "missing_items": []
+  },
+  {
+    "idx": 24,
+    "img": "cord_024.png",
+    "fields": {
+      "subtotal": null,
+      "discount": null,
+      "tax": null,
+      "service_charge": null,
+      "total": "tp",
+      "payment.method": "tp",
+      "payment.amount_paid": "tp",
+      "payment.change": null
+    },
+    "n_items_gt": 3,
+    "n_items_pred": 3,
+    "missing_items": []
+  },
+  {
+    "idx": 29,
+    "img": "cord_029.png",
+    "fields": {
+      "subtotal": "tp",
+      "discount": null,
+      "tax": "tp",
+      "service_charge": null,
+      "total": "tp",
+      "payment.method": null,
+      "payment.amount_paid": null,
+      "payment.change": null
+    },
+    "n_items_gt": 6,
+    "n_items_pred": 8,
+    "missing_items": []
+  },
+  {
+    "idx": 33,
+    "img": "cord_033.png",
+    "fields": {
+      "subtotal": "tp",
+      "discount": "tp",
+      "tax": "tp",
+      "service_charge": "tp",
+      "total": "tp",
+      "payment.method": null,
+      "payment.amount_paid": null,
+      "payment.change": null
+    },
+    "n_items_gt": 3,
+    "n_items_pred": 3,
+    "missing_items": []
+  },
+  {
+    "idx": 34,
+    "img": "cord_034.png",
+    "fields": {
+      "subtotal": "tp",
+      "discount": null,
+      "tax": "tp",
+      "service_charge": null,
+      "total": "tp",
+      "payment.method": "tp",
+      "payment.amount_paid": "tp",
+      "payment.change": "tp"
+    },
+    "n_items_gt": 2,
+    "n_items_pred": 2,
+    "missing_items": []
+  },
+  {
+    "idx": 36,
+    "img": "cord_036.png",
+    "fields": {
+      "subtotal": "fn",
+      "discount": null,
+      "tax": null,
+      "service_charge": null,
+      "total": "tp",
+      "payment.method": "tp",
+      "payment.amount_paid": "tp",
+      "payment.change": "tp"
+    },
+    "n_items_gt": 1,
+    "n_items_pred": 1,
+    "missing_items": []
+  },
+  {
+    "idx": 37,
+    "img": "cord_037.png",
+    "fields": {
+      "subtotal": null,
+      "discount": null,
+      "tax": null,
+      "service_charge": null,
+      "total": "tp",
+      "payment.method": "tp",
+      "payment.amount_paid": "tp",
+      "payment.change": "tp"
+    },
+    "n_items_gt": 1,
+    "n_items_pred": 1,
+    "missing_items": []
+  },
+  {
+    "idx": 38,
+    "img": "cord_038.png",
+    "fields": {
+      "subtotal": "tp",
+      "discount": null,
+      "tax": "tp",
+      "service_charge": "tp",
+      "total": "tp",
+      "payment.method": null,
+      "payment.amount_paid": null,
+      "payment.change": null
+    },
+    "n_items_gt": 9,
+    "n_items_pred": 9,
+    "missing_items": [
+      "DF Fish Fillet Garlc"
+    ]
+  },
+  {
+    "idx": 41,
+    "img": "cord_041.png",
+    "fields": {
+      "subtotal": "tp",
+      "discount": null,
+      "tax": null,
+      "service_charge": "tp",
+      "total": "tp",
+      "payment.method": null,
+      "payment.amount_paid": null,
+      "payment.change": null
+    },
+    "n_items_gt": 10,
+    "n_items_pred": 10,
+    "missing_items": []
+  },
+  {
+    "idx": 43,
+    "img": "cord_043.png",
+    "fields": {
+      "subtotal": "tp",
+      "discount": null,
+      "tax": "tp",
+      "service_charge": null,
+      "total": "tp",
+      "payment.method": "tp",
+      "payment.amount_paid": "tp",
+      "payment.change": "tp"
+    },
+    "n_items_gt": 1,
+    "n_items_pred": 1,
+    "missing_items": [
+      "Cheese Tart"
+    ]
+  },
+  {
+    "idx": 45,
+    "img": "cord_045.png",
+    "fields": {
+      "subtotal": "fp",
+      "discount": null,
+      "tax": null,
+      "service_charge": null,
+      "total": "tp",
+      "payment.method": "tp",
+      "payment.amount_paid": "tp",
+      "payment.change": "tp"
+    },
+    "n_items_gt": 4,
+    "n_items_pred": 4,
+    "missing_items": []
+  },
+  {
+    "idx": 51,
+    "img": "cord_051.png",
+    "fields": {
+      "subtotal": "tp",
+      "discount": null,
+      "tax": "tp",
+      "service_charge": null,
+      "total": "tp",
+      "payment.method": "tp",
+      "payment.amount_paid": "tp",
+      "payment.change": null
+    },
+    "n_items_gt": 4,
+    "n_items_pred": 4,
+    "missing_items": [
+      "(TA) NASI GRG TERI MEDAN"
+    ]
+  },
+  {
+    "idx": 55,
+    "img": "cord_055.png",
+    "fields": {
+      "subtotal": null,
+      "discount": null,
+      "tax": null,
+      "service_charge": null,
+      "total": "tp",
+      "payment.method": "tp",
+      "payment.amount_paid": "tp",
+      "payment.change": null
+    },
+    "n_items_gt": 2,
+    "n_items_pred": 2,
+    "missing_items": []
+  },
+  {
+    "idx": 56,
+    "img": "cord_056.png",
+    "fields": {
+      "subtotal": "tp",
+      "discount": null,
+      "tax": "tp",
+      "service_charge": null,
+      "total": "tp",
+      "payment.method": "tp",
+      "payment.amount_paid": "tp",
+      "payment.change": "tp"
+    },
+    "n_items_gt": 1,
+    "n_items_pred": 1,
+    "missing_items": []
+  },
+  {
+    "idx": 58,
+    "img": "cord_058.png",
+    "fields": {
+      "subtotal": "tp",
+      "discount": null,
+      "tax": "tp",
+      "service_charge": null,
+      "total": "tp",
+      "payment.method": "tp",
+      "payment.amount_paid": "tp",
+      "payment.change": "tp"
+    },
+    "n_items_gt": 1,
+    "n_items_pred": 1,
+    "missing_items": []
+  },
+  {
+    "idx": 59,
+    "img": "cord_059.png",
+    "fields": {
+      "subtotal": "tp",
+      "discount": null,
+      "tax": "tp",
+      "service_charge": null,
+      "total": "tp",
+      "payment.method": null,
+      "payment.amount_paid": null,
+      "payment.change": null
+    },
+    "n_items_gt": 9,
+    "n_items_pred": 9,
+    "missing_items": [
+      "Kepiting 7-8.4ons - Chilly 0.7 1"
+    ]
+  },
+  {
+    "idx": 60,
+    "img": "cord_060.png",
+    "fields": {
+      "subtotal": "tp",
+      "discount": null,
+      "tax": null,
+      "service_charge": null,
+      "total": "tp",
+      "payment.method": "fp",
+      "payment.amount_paid": null,
+      "payment.change": null
+    },
+    "n_items_gt": 2,
+    "n_items_pred": 2,
+    "missing_items": []
+  },
+  {
+    "idx": 61,
+    "img": "cord_061.png",
+    "fields": {
+      "subtotal": "tp",
+      "discount": null,
+      "tax": null,
+      "service_charge": null,
+      "total": "tp",
+      "payment.method": "tp",
+      "payment.amount_paid": "tp",
+      "payment.change": null
+    },
+    "n_items_gt": 6,
+    "n_items_pred": 6,
+    "missing_items": []
+  },
+  {
+    "idx": 64,
+    "img": "cord_064.png",
+    "fields": {
+      "subtotal": "tp",
+      "discount": null,
+      "tax": null,
+      "service_charge": null,
+      "total": "tp",
+      "payment.method": "tp",
+      "payment.amount_paid": "tp",
+      "payment.change": "tp"
+    },
+    "n_items_gt": 1,
+    "n_items_pred": 1,
+    "missing_items": []
+  },
+  {
+    "idx": 65,
+    "img": "cord_065.png",
+    "fields": {
+      "subtotal": "tp",
+      "discount": null,
+      "tax": null,
+      "service_charge": null,
+      "total": "tp",
+      "payment.method": null,
+      "payment.amount_paid": null,
+      "payment.change": null
+    },
+    "n_items_gt": 1,
+    "n_items_pred": 1,
+    "missing_items": []
+  },
+  {
+    "idx": 66,
+    "img": "cord_066.png",
+    "fields": {
+      "subtotal": "tp",
+      "discount": null,
+      "tax": "tp",
+      "service_charge": null,
+      "total": "tp",
+      "payment.method": "tp",
+      "payment.amount_paid": "tp",
+      "payment.change": "tp"
+    },
+    "n_items_gt": 2,
+    "n_items_pred": 2,
+    "missing_items": []
+  },
+  {
+    "idx": 69,
+    "img": "cord_069.png",
+    "fields": {
+      "subtotal": null,
+      "discount": null,
+      "tax": null,
+      "service_charge": null,
+      "total": "tp",
+      "payment.method": "tp",
+      "payment.amount_paid": "tp",
+      "payment.change": "tp"
+    },
+    "n_items_gt": 3,
+    "n_items_pred": 3,
+    "missing_items": []
+  },
+  {
+    "idx": 70,
+    "img": "cord_070.png",
+    "fields": {
+      "subtotal": "tp",
+      "discount": null,
+      "tax": "tp",
+      "service_charge": "tp",
+      "total": "tp",
+      "payment.method": null,
+      "payment.amount_paid": null,
+      "payment.change": null
+    },
+    "n_items_gt": 10,
+    "n_items_pred": 8,
+    "missing_items": [
+      "=*LARGE*==",
+      "=*MEDIUM*=",
+      "GURAME FILLET M"
+    ]
+  },
+  {
+    "idx": 74,
+    "img": "cord_074.png",
+    "fields": {
+      "subtotal": "tp",
+      "discount": null,
+      "tax": "tp",
+      "service_charge": "tp",
+      "total": "tp",
+      "payment.method": null,
+      "payment.amount_paid": null,
+      "payment.change": null
+    },
+    "n_items_gt": 4,
+    "n_items_pred": 4,
+    "missing_items": []
+  },
+  {
+    "idx": 76,
+    "img": "cord_076.png",
+    "fields": {
+      "subtotal": null,
+      "discount": null,
+      "tax": null,
+      "service_charge": null,
+      "total": "tp",
+      "payment.method": "tp",
+      "payment.amount_paid": "tp",
+      "payment.change": null
+    },
+    "n_items_gt": 4,
+    "n_items_pred": 4,
+    "missing_items": []
+  },
+  {
+    "idx": 78,
+    "img": "cord_078.png",
+    "fields": {
+      "subtotal": null,
+      "discount": null,
+      "tax": null,
+      "service_charge": null,
+      "total": "tp",
+      "payment.method": "tp",
+      "payment.amount_paid": "tp",
+      "payment.change": "tp"
+    },
+    "n_items_gt": 1,
+    "n_items_pred": 2,
+    "missing_items": []
+  },
+  {
+    "idx": 79,
+    "img": "cord_079.png",
+    "fields": {
+      "subtotal": "fp",
+      "discount": null,
+      "tax": null,
+      "service_charge": null,
+      "total": "tp",
+      "payment.method": "tp",
+      "payment.amount_paid": "tp",
+      "payment.change": null
+    },
+    "n_items_gt": 2,
+    "n_items_pred": 2,
+    "missing_items": []
+  },
+  {
+    "idx": 81,
+    "img": "cord_081.png",
+    "fields": {
+      "subtotal": null,
+      "discount": null,
+      "tax": null,
+      "service_charge": null,
+      "total": "tp",
+      "payment.method": null,
+      "payment.amount_paid": null,
+      "payment.change": null
+    },
+    "n_items_gt": 3,
+    "n_items_pred": 3,
+    "missing_items": []
+  },
+  {
+    "idx": 82,
+    "img": "cord_082.png",
+    "fields": {
+      "subtotal": "tp",
+      "discount": null,
+      "tax": null,
+      "service_charge": null,
+      "total": "tp",
+      "payment.method": "tp",
+      "payment.amount_paid": "tp",
+      "payment.change": "tp"
+    },
+    "n_items_gt": 3,
+    "n_items_pred": 3,
+    "missing_items": []
+  },
+  {
+    "idx": 84,
+    "img": "cord_084.png",
+    "fields": {
+      "subtotal": "tp",
+      "discount": null,
+      "tax": "tp",
+      "service_charge": null,
+      "total": "tp",
+      "payment.method": "wrong",
+      "payment.amount_paid": "tp",
+      "payment.change": null
+    },
+    "n_items_gt": 2,
+    "n_items_pred": 2,
+    "missing_items": []
+  },
+  {
+    "idx": 85,
+    "img": "cord_085.png",
+    "fields": {
+      "subtotal": "tp",
+      "discount": null,
+      "tax": "tp",
+      "service_charge": null,
+      "total": "tp",
+      "payment.method": "tp",
+      "payment.amount_paid": "tp",
+      "payment.change": null
+    },
+    "n_items_gt": 11,
+    "n_items_pred": 11,
+    "missing_items": []
+  },
+  {
+    "idx": 93,
+    "img": "cord_093.png",
+    "fields": {
+      "subtotal": "tp",
+      "discount": null,
+      "tax": "tp",
+      "service_charge": null,
+      "total": "tp",
+      "payment.method": null,
+      "payment.amount_paid": null,
+      "payment.change": null
+    },
+    "n_items_gt": 1,
+    "n_items_pred": 1,
+    "missing_items": []
+  },
+  {
+    "idx": 94,
+    "img": "cord_094.png",
+    "fields": {
+      "subtotal": "tp",
+      "discount": null,
+      "tax": "tp",
+      "service_charge": "tp",
+      "total": "tp",
+      "payment.method": "tp",
+      "payment.amount_paid": "tp",
+      "payment.change": null
+    },
+    "n_items_gt": 4,
+    "n_items_pred": 4,
+    "missing_items": []
+  },
+  {
+    "idx": 95,
+    "img": "cord_095.png",
+    "fields": {
+      "subtotal": "tp",
+      "discount": null,
+      "tax": "tp",
+      "service_charge": null,
+      "total": "wrong",
+      "payment.method": "tp",
+      "payment.amount_paid": "tp",
+      "payment.change": "fp"
+    },
+    "n_items_gt": 2,
+    "n_items_pred": 2,
+    "missing_items": []
+  },
+  {
+    "idx": 97,
+    "img": "cord_097.png",
+    "fields": {
+      "subtotal": null,
+      "discount": null,
+      "tax": null,
+      "service_charge": null,
+      "total": "tp",
+      "payment.method": "tp",
+      "payment.amount_paid": "tp",
+      "payment.change": null
+    },
+    "n_items_gt": 3,
+    "n_items_pred": 3,
+    "missing_items": [
+      "SATE ATI GO"
+    ]
+  },
+  {
+    "idx": 98,
+    "img": "cord_098.png",
+    "fields": {
+      "subtotal": "tp",
+      "discount": null,
+      "tax": "tp",
+      "service_charge": "tp",
+      "total": "tp",
+      "payment.method": null,
+      "payment.amount_paid": null,
+      "payment.change": null
+    },
+    "n_items_gt": 3,
+    "n_items_pred": 3,
+    "missing_items": [
+      "BLACK PAPPER MEATBALL PAS"
+    ]
+  },
+  {
+    "idx": 99,
+    "img": "cord_099.png",
+    "fields": {
+      "subtotal": "tp",
+      "discount": "tp",
+      "tax": "tp",
+      "service_charge": "fp",
+      "total": "tp",
+      "payment.method": "tp",
+      "payment.amount_paid": "tp",
+      "payment.change": "tp"
+    },
+    "n_items_gt": 1,
+    "n_items_pred": 4,
+    "missing_items": []
+  }
+]
