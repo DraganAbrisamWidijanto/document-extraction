@@ -9,6 +9,7 @@ services:
       VLM_MODEL: ${VLM_MODEL:-gemini-3.5-flash-lite}
     volumes:
       - ./data:/app/data
+      - ./geminiapi.txt:/app/geminiapi.txt:ro
     extra_hosts:
       - "host.docker.internal:host-gateway"
 
@@ -24,6 +25,7 @@ services:
       VLM_MODEL: ${VLM_MODEL:-gemini-3.5-flash-lite}
     volumes:
       - ./data:/app/data
+      - ./geminiapi.txt:/app/geminiapi.txt:ro
       - ./results:/app/results
     extra_hosts:
       - "host.docker.internal:host-gateway"

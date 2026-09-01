@@ -173,7 +173,7 @@ def load_api_keys(path: Optional[str] = None) -> list:
     """Read API keys from file (one per line). Env VLM_API_KEY overrides/adds one."""
     keys: list = []
     file = path or os.environ.get("VLM_API_KEY_FILE") or DEFAULT_KEY_FILE
-    if os.path.exists(file):
+    if os.path.isfile(file):
         with open(file) as f:
             for line in f:
                 k = line.strip()
