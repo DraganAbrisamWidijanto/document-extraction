@@ -97,6 +97,7 @@ def main():
                         "name": name, "model": cfg.model,
                         "latency_s": res.get("latency_s"),
                         "raw": res.get("raw", ""), "prediction": res.get("prediction", {}),
+                        "usage": res.get("usage"),
                         "cost_usd": res.get("cost_usd"), "validation": res.get("validation"),
                     }
                 except Exception as e:
