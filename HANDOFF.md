@@ -110,23 +110,23 @@ Rules: angka plain (25000, bukan "Rp 25.000"), field absent = null (TIDAK halusi
 - **Payment method**: 3/3 benar (3 null — benar)
 - **Latency**: 24.4–305.5s (idx 031 kena timeout 180s sekali, retry sukses)
 
-## Final Eval Results (1 Sep 2026, ~01:00) — batch extraction 50 gambar
+## Final Eval Results (1 Sep 2026) — batch extraction 50 gambar + retry downscaling
 
-**CORD test (45 docs) — macro F1 0.81**
-- total exact: 35/45 (78%)
-- Item name match: P=0.90 R=0.75 F1=0.82 (114/151 GT matched)
-- item.amount F1=0.92, item.unit_price F1=0.72 (banyak FP — model prediksi item ekstra)
-- 7 docs gagal total (3× timeout / parse fail) — all FP counts on those
-- Latency: mean 145.7s, median 56.8s, max 570s (triple timeout 3×180s)
-- Sumber error utama: timeout (gambar >6MB, 2304×4096), item hallucination (model baca ulang), format angka campur
+**CORD test (45 docs) — macro F1 0.84**
+- total exact: **41/45 (91%)** — naik dari 35/45 (78%) setelah retry 7 gambar gagal
+- Item name match: P=0.86 R=0.92 F1=0.89 (139/151 GT matched)
+- item.amount F1=0.90, item.unit_price F1=0.73 (banyak FP — model prediksi item ekstra)
+- 0 abstention total (semua 45 kebaca; sebelumnya 7 gagal)
+- Latency: mean 94.2s, median 40.9s, max 418.5s
 
 **Self-scan (5 docs) — macro F1 0.96**
 - total exact: 5/5 (100%)
 - Item name match: 19/20 (1 missing: self_001 "Merdeka 3")
-- Semua money fields OK
 - Latency: mean 27.7s (foto fisik, lebih cepat dari PNG CORD)
 
-**Kesimpulan**: schema inti (subtotal, total, payment amount) solid di CORD & self-scan. Kelemahan: (1) timeout pada gambar besar — timeout 180s → retry 3× = 9 menit wasted; (2) item hallucination (FP tinggi) — model sering menambah item yang tidak ada; (3) unit_price masih error pada qty>1 tanpa unit price eksplisit.
+**Optimasi terukur (downscaling)**: 7 gambar gagal (timeout, 5.7–16.8MB, 2048–4096px) di-retry dengan resize max 1600px + JPEG 85 → **semua 7 sukses**. Dampak: total exact 78%→91%, latency mean 145.7s→94.2s (-35%), 0 timeout. Script: `retry_failed.py` (guard `__main__` wajib — jangan import tanpa guard, modul-level loop menimpa pred file).
+
+**Kesimpulan**: schema inti (subtotal, total, payment amount) solid. Kelemahan: (1) item hallucination (FP tinggi — item.unit_price P=0.57); (2) format angka campur (`,`, `.`, `Rp`) di CORD.
 
 ## Next Steps
 

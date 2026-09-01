@@ -78,6 +78,15 @@ Field-level P/R/F1 over: subtotal, discount, tax, service_charge, total, payment
 | service digit error (014) | 17,050 | 17,850 ✓ |
 | unit_price = line total (000) | 60,000 | still 60,000 (edge: receipt prints no unit price) |
 
+### Final metrics (45 CORD + 5 self-scan)
+| Split | Macro F1 | total exact | Item name F1 | Latency (mean/median) |
+|---|---|---|---|---|
+| CORD (45) | **0.84** | **41/45 (91%)** | 0.89 | 94s / 41s |
+| Self (5)  | **0.96** | **5/5 (100%)** | 0.95 | 28s / 23s |
+
+### Optimization: image downscaling
+7 images failed initially (timeout, 5.7–16.8 MB, 2048×4096 px). **Downscaled to max 1600px + JPEG 85** (200–400KB, 2–11% of original) → **all 7 succeeded**. Impact: +13% total accuracy, −35% mean latency, zero timeouts. (`retry_failed.py` — note: never import without `__main__` guard; the module‑level loop will write into your prediction files).
+
 ## Notes / decisions
 
 - VLM: `bai/mimo-v2.5` via 9Router (stream=False, data-URI image). Fallback `bai/deepseek-v4-flash-vision-exp`.
