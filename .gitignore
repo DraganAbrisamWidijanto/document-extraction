@@ -20,3 +20,4 @@ HANDOFF.md
 self scan/
 Thumbs.db
 venv/
+.hermes-tmp.*

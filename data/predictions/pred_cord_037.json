@@ -4,7 +4,7 @@
   "model": "gemini-3.5-flash-lite",
   "ok": true,
   "error": null,
-  "latency_s": 33.38,
+  "latency_s": 2.56,
   "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"Popcorn Salt (S)\",\n      \"quantity\": 1,\n      \"unit_price\": 20000,\n      \"amount\": 20000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    }\n  ],\n  \"subtotal\": null,\n  \"discount\": null,\n  \"tax\": null,\n  \"service_charge\": null,\n  \"total\": 20000,\n  \"confidence\": {\n    \"subtotal\": 0,\n    \"discount\": 0,\n    \"tax\": 0,\n    \"service_charge\": 0,\n    \"total\": 1,\n    \"payment.method\": 1,\n    \"payment.amount_paid\": 1,\n    \"payment.change\": 1\n  },\n  \"payment\": {\n    \"method\": \"cash\",\n    \"amount_paid\": 50000,\n    \"change\": 30000\n  }\n}",
   "prediction": {
     "menu_items": [
@@ -42,6 +42,7 @@
       "change": 30000
     }
   },
+  "confidence": null,
   "usage": {
     "completion_tokens": 276,
     "prompt_tokens": 2678,

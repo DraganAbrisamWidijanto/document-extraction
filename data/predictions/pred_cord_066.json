@@ -4,7 +4,7 @@
   "model": "gemini-3.5-flash-lite",
   "ok": true,
   "error": null,
-  "latency_s": 32.44,
+  "latency_s": 3.2,
   "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"PILLOW DURIA\",\n      \"quantity\": null,\n      \"unit_price\": null,\n      \"amount\": 36364,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.0,\n        \"unit_price\": 0.0,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"PLASTIK 25\",\n      \"quantity\": null,\n      \"unit_price\": null,\n      \"amount\": 0,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.0,\n        \"unit_price\": 0.0,\n        \"amount\": 0.9\n      }\n    }\n  ],\n  \"subtotal\": 36364,\n  \"discount\": null,\n  \"tax\": 3636,\n  \"service_charge\": null,\n  \"total\": 40000,\n  \"confidence\": {\n    \"subtotal\": 0.9,\n    \"discount\": 0.0,\n    \"tax\": 0.9,\n    \"service_charge\": 0.0,\n    \"total\": 0.9,\n    \"payment.method\": 0.9,\n    \"payment.amount_paid\": 0.9,\n    \"payment.change\": 0.9\n  },\n  \"payment\": {\n    \"method\": \"cash\",\n    \"amount_paid\": 50000,\n    \"change\": 10000\n  }\n}",
   "prediction": {
     "menu_items": [
@@ -54,6 +54,7 @@
       "change": 10000
     }
   },
+  "confidence": null,
   "usage": {
     "completion_tokens": 395,
     "prompt_tokens": 2678,

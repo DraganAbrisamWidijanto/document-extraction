@@ -4,8 +4,8 @@
   "model": "gemini-3.5-flash-lite",
   "ok": true,
   "error": null,
-  "latency_s": 33.04,
-  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"Set Roka Tori Nanban\",\n      \"quantity\": 1,\n      \"unit_price\": 30000,\n      \"amount\": 30000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"Roka Tori Nanban\",\n      \"quantity\": 1,\n      \"unit_price\": 23000,\n      \"amount\": 23000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"Set Roka On Fire + ...\",\n      \"quantity\": 1,\n      \"unit_price\": 27000,\n      \"amount\": 27000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"Set Roka Golden + ...\",\n      \"quantity\": 1,\n      \"unit_price\": 25000,\n      \"amount\": 25000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"Set Roka Chizu\",\n      \"quantity\": 1,\n      \"unit_price\": 27000,\n      \"amount\": 27000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"Coca Cola\",\n      \"quantity\": 1,\n      \"unit_price\": 10000,\n      \"amount\": 10000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    }\n  ],\n  \"subtotal\": 142000,\n  \"discount\": null,\n  \"tax\": 14200,\n  \"service_charge\": null,\n  \"total\": 156200,\n  \"confidence\": {\n    \"subtotal\": 0.9,\n    \"discount\": 0.0,\n    \"tax\": 0.9,\n    \"service_charge\": 0.0,\n    \"total\": 0.9,\n    \"payment.method\": 0.9,\n    \"payment.amount_paid\": 0.9,\n    \"payment.change\": 0.9\n  },\n  \"payment\": {\n    \"method\": \"cash\",\n    \"amount_paid\": 156200,\n    \"change\": 0\n  }\n}",
+  "latency_s": 2.71,
+  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"Set Roka Tori Nanban\",\n      \"quantity\": 1,\n      \"unit_price\": 30000,\n      \"amount\": 30000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"Roka Tori Nanban\",\n      \"quantity\": 1,\n      \"unit_price\": 23000,\n      \"amount\": 23000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"Set Roka On Fire + ...\",\n      \"quantity\": 1,\n      \"unit_price\": 27000,\n      \"amount\": 27000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"Set Roka Golden + ...\",\n      \"quantity\": 1,\n      \"unit_price\": 25000,\n      \"amount\": 25000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"Set Roka Chizu\",\n      \"quantity\": 1,\n      \"unit_price\": 27000,\n      \"amount\": 27000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"Coca Cola\",\n      \"quantity\": 1,\n      \"unit_price\": 10000,\n      \"amount\": 10000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    }\n  ],\n  \"subtotal\": 142000,\n  \"discount\": null,\n  \"tax\": 14200,\n  \"service_charge\": null,\n  \"total\": 156200,\n  \"confidence\": {\n    \"subtotal\": 1,\n    \"discount\": 0,\n    \"tax\": 1,\n    \"service_charge\": 0,\n    \"total\": 1,\n    \"payment.method\": 1,\n    \"payment.amount_paid\": 1,\n    \"payment.change\": 1\n  },\n  \"payment\": {\n    \"method\": \"cash\",\n    \"amount_paid\": 156200,\n    \"change\": 0\n  }\n}",
   "prediction": {
     "menu_items": [
       {
@@ -14,10 +14,10 @@
         "unit_price": 30000,
         "amount": 30000,
         "confidence": {
-          "name": 0.9,
-          "quantity": 0.9,
-          "unit_price": 0.9,
-          "amount": 0.9
+          "name": 1,
+          "quantity": 1,
+          "unit_price": 1,
+          "amount": 1
         }
       },
       {
@@ -26,10 +26,10 @@
         "unit_price": 23000,
         "amount": 23000,
         "confidence": {
-          "name": 0.9,
-          "quantity": 0.9,
-          "unit_price": 0.9,
-          "amount": 0.9
+          "name": 1,
+          "quantity": 1,
+          "unit_price": 1,
+          "amount": 1
         }
       },
       {
@@ -38,10 +38,10 @@
         "unit_price": 27000,
         "amount": 27000,
         "confidence": {
-          "name": 0.9,
-          "quantity": 0.9,
-          "unit_price": 0.9,
-          "amount": 0.9
+          "name": 1,
+          "quantity": 1,
+          "unit_price": 1,
+          "amount": 1
         }
       },
       {
@@ -50,10 +50,10 @@
         "unit_price": 25000,
         "amount": 25000,
         "confidence": {
-          "name": 0.9,
-          "quantity": 0.9,
-          "unit_price": 0.9,
-          "amount": 0.9
+          "name": 1,
+          "quantity": 1,
+          "unit_price": 1,
+          "amount": 1
         }
       },
       {
@@ -62,10 +62,10 @@
         "unit_price": 27000,
         "amount": 27000,
         "confidence": {
-          "name": 0.9,
-          "quantity": 0.9,
-          "unit_price": 0.9,
-          "amount": 0.9
+          "name": 1,
+          "quantity": 1,
+          "unit_price": 1,
+          "amount": 1
         }
       },
       {
@@ -74,10 +74,10 @@
         "unit_price": 10000,
         "amount": 10000,
         "confidence": {
-          "name": 0.9,
-          "quantity": 0.9,
-          "unit_price": 0.9,
-          "amount": 0.9
+          "name": 1,
+          "quantity": 1,
+          "unit_price": 1,
+          "amount": 1
         }
       }
     ],
@@ -87,14 +87,14 @@
     "service_charge": null,
     "total": 156200,
     "confidence": {
-      "subtotal": 0.9,
-      "discount": 0.0,
-      "tax": 0.9,
-      "service_charge": 0.0,
-      "total": 0.9,
-      "payment.method": 0.9,
-      "payment.amount_paid": 0.9,
-      "payment.change": 0.9
+      "subtotal": 1,
+      "discount": 0,
+      "tax": 1,
+      "service_charge": 0,
+      "total": 1,
+      "payment.method": 1,
+      "payment.amount_paid": 1,
+      "payment.change": 1
     },
     "payment": {
       "method": "cash",
@@ -102,10 +102,11 @@
       "change": 0
     }
   },
+  "confidence": null,
   "usage": {
-    "completion_tokens": 820,
+    "completion_tokens": 756,
     "prompt_tokens": 2698,
-    "total_tokens": 3518
+    "total_tokens": 3454
   },
   "cost_usd": 0.0,
   "downscaled": false,

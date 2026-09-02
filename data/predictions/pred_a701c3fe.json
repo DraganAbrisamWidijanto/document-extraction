@@ -4,8 +4,8 @@
   "model": "gemini-3.5-flash-lite",
   "ok": true,
   "error": null,
-  "latency_s": 339.7,
-  "raw": "[{\"page\": 0, \"raw\": \"{\\n  \\\"charity_name\\\": \\\"General Medical Council\\\",\\n  \\\"charity_number\\\": null,\\n  \\\"address_post_town\\\": null,\\n  \\\"address_postcode\\\": null,\\n  \\\"address_street_line\\\": null,\\n  \\\"income_annually_in_british_pounds\\\": null,\\n  \\\"spending_annually_in_british_pounds\\\": null,\\n  \\\"report_date\\\": null,\\n  \\\"confidence\\\": {\\n    \\\"charity_name\\\": 0.8,\\n    \\\"charity_number\\\": 0.0,\\n    \\\"address_post_town\\\": 0.0,\\n    \\\"address_postcode\\\": 0.0,\\n    \\\"address_street_line\\\": 0.0,\\n    \\\"income_annually_in_british_pounds\\\": 0.0,\\n    \\\"spending_annually_in_british_pounds\\\": 0.0,\\n    \\\"report_date\\\": 0.0\\n  }\\n}\"}, {\"page\": 53, \"raw\": \"{\\n  \\\"charity_name\\\": \\\"General Medical Council\\\",\\n  \\\"charity_number\\\": null,\\n  \\\"address_post_town\\\": null,\\n  \\\"address_postcode\\\": null,\\n  \\\"address_street_line\\\": null,\\n  \\\"income_annually_in_british_pounds\\\": null,\\n  \\\"spending_annually_in_british_pounds\\\": null,\\n  \\\"report_date\\\": \\\"2015-12-31\\\",\\n  \\\"confidence\\\": {\\n    \\\"charity_name\\\": 0.9,\\n    \\\"charity_number\\\": 0.0,\\n    \\\"address_post_town\\\": 0.0,\\n    \\\"address_postcode\\\": 0.0,\\n    \\\"address_street_line\\\": 0.0,\\n    \\\"income_annually_in_british_pounds\\\": 0.0,\\n    \\\"spending_annually_in_british_pounds\\\": 0.0,\\n    \\\"report_date\\\": 0.9\\n  }\\n}\"}, {\"page\": 73, \"raw\": \"{\\n  \\\"charity_name\\\": \\\"General Medical Council\\\",\\n  \\\"charity_number\\\": null,\\n  \\\"address_post_town\\\": \\\"Manchester\\\",\\n  \\\"address_postcode\\\": \\\"M3 3AW\\\",\\n  \\\"address_street_line\\\": \\\"3 Hardman Street\\\",\\n  \\\"income_annually_in_british_pounds\\\": null,\\n  \\\"spending_annually_in_british_pounds\\\": null,\\n  \\\"report_date\\\": null,\\n  \\\"confidence\\\": {\\n    \\\"charity_name\\\": 0.9,\\n    \\\"charity_number\\\": 0.0,\\n    \\\"address_post_town\\\": 0.9,\\n    \\\"address_postcode\\\": 0.9,\\n    \\\"address_street_line\\\": 0.9,\\n    \\\"income_annually_in_british_pounds\\\": 0.0,\\n    \\\"spending_annually_in_british_pounds\\\": 0.0,\\n    \\\"report_date\\\": 0.0\\n  }\\n}\"}, {\"page\": 74, \"raw\": \"{\\n  \\\"charity_name\\\": null,\\n  \\\"charity_number\\\": null,\\n  \\\"address_post_town\\\": null,\\n  \\\"address_postcode\\\": null,\\n  \\\"address_street_line\\\": null,\\n  \\\"income_annually_in_british_pounds\\\": null,\\n  \\\"spending_annually_in_british_pounds\\\": null,\\n  \\\"report_date\\\": null,\\n  \\\"confidence\\\": {\\n    \\\"charity_name\\\": 0.0,\\n    \\\"charity_number\\\": 0.0,\\n    \\\"address_post_town\\\": 0.0,\\n    \\\"address_postcode\\\": 0.0,\\n    \\\"address_street_line\\\": 0.0,\\n    \\\"income_annually_in_british_pounds\\\": 0.0,\\n    \\\"spending_annually_in_british_pounds\\\": 0.0,\\n    \\\"report_date\\\": 0.0\\n  }\\n}\"}, {\"page\": 77, \"raw\": \"{\\n  \\\"charity_name\\\": \\\"General Medical Council\\\",\\n  \\\"charity_number\\\": null,\\n  \\\"address_post_town\\\": null,\\n  \\\"address_postcode\\\": null,\\n  \\\"address_street_line\\\": null,\\n  \\\"income_annually_in_british_pounds\\\": 99261000,\\n  \\\"spending_annually_in_british_pounds\\\": 101195000,\\n  \\\"report_date\\\": \\\"2015-12-31\\\",\\n  \\\"confidence\\\": {\\n    \\\"charity_name\\\": 0.9,\\n    \\\"charity_number\\\": 0.0,\\n    \\\"address_post_town\\\": 0.0,\\n    \\\"address_postcode\\\": 0.0,\\n    \\\"address_street_line\\\": 0.0,\\n    \\\"income_annually_in_british_pounds\\\": 1.0,\\n    \\\"spending_annually_in_british_pounds\\\": 1.0,\\n    \\\"report_date\\\": 1.0\\n  }\\n}\"}, {\"page\": 81, \"raw\": \"{\\n  \\\"charity_name\\\": \\\"General Medical Council\\\",\\n  \\\"charity_number\\\": null,\\n  \\\"address_post_town\\\": null,\\n  \\\"address_postcode\\\": null,\\n  \\\"address_street_line\\\": null,\\n  \\\"income_annually_in_british_pounds\\\": null,\\n  \\\"spending_annually_in_british_pounds\\\": null,\\n  \\\"report_date\\\": null,\\n  \\\"confidence\\\": {\\n    \\\"charity_name\\\": 0.9,\\n    \\\"charity_number\\\": 0.0,\\n    \\\"address_post_town\\\": 0.0,\\n    \\\"address_postcode\\\": 0.0,\\n    \\\"address_street_line\\\": 0.0,\\n    \\\"income_annually_in_british_pounds\\\": 0.0,\\n    \\\"spending_annually_in_british_pounds\\\": 0.0,\\n    \\\"report_date\\\": 0.0\\n  }\\n}\"}, {\"page\": 103, \"raw\": \"{\\n  \\\"charity_name\\\": \\\"General Medical Council\\\",\\n  \\\"charity_number\\\": \\\"1089278\\\",\\n  \\\"address_post_town\\\": \\\"Manchester\\\",\\n  \\\"address_postcode\\\": \\\"M3 3AW\\\",\\n  \\\"address_street_line\\\": \\\"3 Hardman Street\\\",\\n  \\\"income_annually_in_british_pounds\\\": null,\\n  \\\"spending_annually_in_british_pounds\\\": null,\\n  \\\"report_date\\\": null,\\n  \\\"confidence\\\": {\\n    \\\"charity_name\\\": 1.0,\\n    \\\"charity_number\\\": 1.0,\\n    \\\"address_post_town\\\": 1.0,\\n    \\\"address_postcode\\\": 1.0,\\n    \\\"address_street_line\\\": 1.0,\\n    \\\"income_annually_in_british_pounds\\\": 0.0,\\n    \\\"spending_annually_in_british_pounds\\\": 0.0,\\n    \\\"report_date\\\": 0.0\\n  }\\n}\"}]",
+  "latency_s": 110.02,
+  "raw": "[{\"page\": 0, \"raw\": \"{\\n  \\\"charity_name\\\": \\\"General Medical Council\\\",\\n  \\\"charity_number\\\": null,\\n  \\\"address_post_town\\\": null,\\n  \\\"address_postcode\\\": null,\\n  \\\"address_street_line\\\": null,\\n  \\\"income_annually_in_british_pounds\\\": null,\\n  \\\"spending_annually_in_british_pounds\\\": null,\\n  \\\"report_date\\\": null,\\n  \\\"confidence\\\": {\\n    \\\"charity_name\\\": 0.8,\\n    \\\"charity_number\\\": 0.0,\\n    \\\"address_post_town\\\": 0.0,\\n    \\\"address_postcode\\\": 0.0,\\n    \\\"address_street_line\\\": 0.0,\\n    \\\"income_annually_in_british_pounds\\\": 0.0,\\n    \\\"spending_annually_in_british_pounds\\\": 0.0,\\n    \\\"report_date\\\": 0.0\\n  }\\n}\"}, {\"page\": 53, \"raw\": \"{\\n  \\\"charity_name\\\": \\\"General Medical Council\\\",\\n  \\\"charity_number\\\": null,\\n  \\\"address_post_town\\\": null,\\n  \\\"address_postcode\\\": null,\\n  \\\"address_street_line\\\": null,\\n  \\\"income_annually_in_british_pounds\\\": null,\\n  \\\"spending_annually_in_british_pounds\\\": null,\\n  \\\"report_date\\\": \\\"2015-12-31\\\",\\n  \\\"confidence\\\": {\\n    \\\"charity_name\\\": 1.0,\\n    \\\"charity_number\\\": 0.0,\\n    \\\"address_post_town\\\": 0.0,\\n    \\\"address_postcode\\\": 0.0,\\n    \\\"address_street_line\\\": 0.0,\\n    \\\"income_annually_in_british_pounds\\\": 0.0,\\n    \\\"spending_annually_in_british_pounds\\\": 0.0,\\n    \\\"report_date\\\": 1.0\\n  }\\n}\"}, {\"page\": 73, \"raw\": \"{\\n  \\\"charity_name\\\": \\\"General Medical Council\\\",\\n  \\\"charity_number\\\": null,\\n  \\\"address_post_town\\\": \\\"London\\\",\\n  \\\"address_postcode\\\": \\\"NW1 3JN\\\",\\n  \\\"address_street_line\\\": \\\"Regent's Place, 350 Euston Road\\\",\\n  \\\"income_annually_in_british_pounds\\\": null,\\n  \\\"spending_annually_in_british_pounds\\\": null,\\n  \\\"report_date\\\": null,\\n  \\\"confidence\\\": {\\n    \\\"charity_name\\\": 0.9,\\n    \\\"charity_number\\\": 0.0,\\n    \\\"address_post_town\\\": 0.9,\\n    \\\"address_postcode\\\": 0.9,\\n    \\\"address_street_line\\\": 0.9,\\n    \\\"income_annually_in_british_pounds\\\": 0.0,\\n    \\\"spending_annually_in_british_pounds\\\": 0.0,\\n    \\\"report_date\\\": 0.0\\n  }\\n}\"}, {\"page\": 74, \"raw\": \"{\\n  \\\"charity_name\\\": null,\\n  \\\"charity_number\\\": null,\\n  \\\"address_post_town\\\": null,\\n  \\\"address_postcode\\\": null,\\n  \\\"address_street_line\\\": null,\\n  \\\"income_annually_in_british_pounds\\\": null,\\n  \\\"spending_annually_in_british_pounds\\\": null,\\n  \\\"report_date\\\": null,\\n  \\\"confidence\\\": {\\n    \\\"charity_name\\\": 0.0,\\n    \\\"charity_number\\\": 0.0,\\n    \\\"address_post_town\\\": 0.0,\\n    \\\"address_postcode\\\": 0.0,\\n    \\\"address_street_line\\\": 0.0,\\n    \\\"income_annually_in_british_pounds\\\": 0.0,\\n    \\\"spending_annually_in_british_pounds\\\": 0.0,\\n    \\\"report_date\\\": 0.0\\n  }\\n}\"}, {\"page\": 77, \"raw\": \"{\\n  \\\"charity_name\\\": \\\"General Medical Council\\\",\\n  \\\"charity_number\\\": null,\\n  \\\"address_post_town\\\": null,\\n  \\\"address_postcode\\\": null,\\n  \\\"address_street_line\\\": null,\\n  \\\"income_annually_in_british_pounds\\\": 99261000,\\n  \\\"spending_annually_in_british_pounds\\\": 101195000,\\n  \\\"report_date\\\": \\\"2015-12-31\\\",\\n  \\\"confidence\\\": {\\n    \\\"charity_name\\\": 0.9,\\n    \\\"charity_number\\\": 0.0,\\n    \\\"address_post_town\\\": 0.0,\\n    \\\"address_postcode\\\": 0.0,\\n    \\\"address_street_line\\\": 0.0,\\n    \\\"income_annually_in_british_pounds\\\": 1.0,\\n    \\\"spending_annually_in_british_pounds\\\": 1.0,\\n    \\\"report_date\\\": 1.0\\n  }\\n}\"}, {\"page\": 81, \"raw\": \"{\\n  \\\"charity_name\\\": \\\"General Medical Council\\\",\\n  \\\"charity_number\\\": null,\\n  \\\"address_post_town\\\": null,\\n  \\\"address_postcode\\\": null,\\n  \\\"address_street_line\\\": null,\\n  \\\"income_annually_in_british_pounds\\\": null,\\n  \\\"spending_annually_in_british_pounds\\\": null,\\n  \\\"report_date\\\": null,\\n  \\\"confidence\\\": {\\n    \\\"charity_name\\\": 0.8,\\n    \\\"charity_number\\\": 0.0,\\n    \\\"address_post_town\\\": 0.0,\\n    \\\"address_postcode\\\": 0.0,\\n    \\\"address_street_line\\\": 0.0,\\n    \\\"income_annually_in_british_pounds\\\": 0.0,\\n    \\\"spending_annually_in_british_pounds\\\": 0.0,\\n    \\\"report_date\\\": 0.0\\n  }\\n}\"}, {\"page\": 103, \"raw\": \"{\\n  \\\"charity_name\\\": \\\"General Medical Council\\\",\\n  \\\"charity_number\\\": \\\"1089278\\\",\\n  \\\"address_post_town\\\": \\\"Manchester\\\",\\n  \\\"address_postcode\\\": \\\"M3 3AW\\\",\\n  \\\"address_street_line\\\": \\\"3 Hardman Street\\\",\\n  \\\"income_annually_in_british_pounds\\\": null,\\n  \\\"spending_annually_in_british_pounds\\\": null,\\n  \\\"report_date\\\": null,\\n  \\\"confidence\\\": {\\n    \\\"charity_name\\\": 1.0,\\n    \\\"charity_number\\\": 1.0,\\n    \\\"address_post_town\\\": 1.0,\\n    \\\"address_postcode\\\": 1.0,\\n    \\\"address_street_line\\\": 1.0,\\n    \\\"income_annually_in_british_pounds\\\": 0.0,\\n    \\\"spending_annually_in_british_pounds\\\": 0.0,\\n    \\\"report_date\\\": 0.0\\n  }\\n}\"}]",
   "prediction": {
     "charity_name": "General Medical Council",
     "charity_number": "1089278",
@@ -16,9 +16,19 @@
     "spending_annually_in_british_pounds": 101195000,
     "report_date": "2015-12-31"
   },
+  "confidence": {
+    "charity_name": 1.0,
+    "charity_number": 1.0,
+    "address_post_town": 0.5,
+    "address_postcode": 0.5,
+    "address_street_line": 0.5,
+    "income_annually_in_british_pounds": 1.0,
+    "spending_annually_in_british_pounds": 1.0,
+    "report_date": 1.0
+  },
   "usage": {
     "prompt_tokens": 16993,
-    "completion_tokens": 1629
+    "completion_tokens": 1638
   },
   "cost_usd": 0.0,
   "downscaled": false,
@@ -26,25 +36,7 @@
     "valid": true,
     "errors": []
   },
-  "pages_total": 104,
-  "pages_selected": 7,
-  "page_indices": [
-    0,
-    53,
-    73,
-    74,
-    77,
-    81,
-    103
-  ],
-  "confidence": {
-    "charity_name": 1.0,
-    "charity_number": 1.0,
-    "address_post_town": 1.0,
-    "address_postcode": 1.0,
-    "address_street_line": 1.0,
-    "income_annually_in_british_pounds": 1.0,
-    "spending_annually_in_british_pounds": 1.0,
-    "report_date": 1.0
-  }
+  "pages_total": null,
+  "pages_selected": null,
+  "page_indices": null
 }

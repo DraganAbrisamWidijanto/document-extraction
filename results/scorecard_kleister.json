@@ -17,15 +17,15 @@
     12
   ],
   "latency": {
-    "mean": 252.3,
-    "median": 240.0,
-    "min": 231.3,
-    "max": 339.7
+    "mean": 85.4,
+    "median": 85.3,
+    "min": 44.4,
+    "max": 113.9
   },
   "cost_usd": 0.0,
   "tokens": {
     "prompt": 223605,
-    "completion": 19888
+    "completion": 19902
   },
   "abstentions": {
     "income_annually_in_british_pounds": 1,
@@ -33,7 +33,7 @@
   },
   "confidence": {
     "charity_name": {
-      "tp": 0.77,
+      "tp": 0.81,
       "wrong": null
     },
     "charity_number": {
@@ -41,23 +41,23 @@
       "wrong": null
     },
     "address_post_town": {
-      "tp": 0.97,
+      "tp": 0.92,
       "wrong": null
     },
     "address_postcode": {
-      "tp": 0.96,
+      "tp": 0.91,
       "wrong": 0.5
     },
     "address_street_line": {
-      "tp": 0.92,
+      "tp": 0.83,
       "wrong": 0.5
     },
     "income_annually_in_british_pounds": {
-      "tp": 0.89,
+      "tp": 0.88,
       "wrong": 1.0
     },
     "spending_annually_in_british_pounds": {
-      "tp": 0.89,
+      "tp": 0.83,
       "wrong": 1.0
     },
     "report_date": {

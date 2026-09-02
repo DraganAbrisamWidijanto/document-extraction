@@ -4,14 +4,14 @@
   "model": "gemini-3.5-flash-lite",
   "ok": true,
   "error": null,
-  "latency_s": 32.72,
-  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"Cheese Tart\",\n      \"quantity\": 6,\n      \"unit_price\": 27500,\n      \"amount\": 165000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    }\n  ],\n  \"subtotal\": 165000,\n  \"discount\": null,\n  \"tax\": 15000,\n  \"service_charge\": null,\n  \"total\": 165000,\n  \"confidence\": {\n    \"subtotal\": 0.9,\n    \"discount\": 0.0,\n    \"tax\": 0.9,\n    \"service_charge\": 0.0,\n    \"total\": 0.9,\n    \"payment.method\": 0.9,\n    \"payment.amount_paid\": 0.9,\n    \"payment.change\": 0.9\n  },\n  \"payment\": {\n    \"method\": \"cash\",\n    \"amount_paid\": 200000,\n    \"change\": 35000\n  }\n}",
+  "latency_s": 33.71,
+  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"6 Pcs Cheese Tart\",\n      \"quantity\": 1,\n      \"unit_price\": 165000,\n      \"amount\": 165000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    }\n  ],\n  \"subtotal\": 165000,\n  \"discount\": null,\n  \"tax\": 15000,\n  \"service_charge\": null,\n  \"total\": 165000,\n  \"confidence\": {\n    \"subtotal\": 0.9,\n    \"discount\": 0.0,\n    \"tax\": 0.9,\n    \"service_charge\": 0.0,\n    \"total\": 0.9,\n    \"payment.method\": 0.9,\n    \"payment.amount_paid\": 0.9,\n    \"payment.change\": 0.9\n  },\n  \"payment\": {\n    \"method\": \"cash\",\n    \"amount_paid\": 200000,\n    \"change\": 35000\n  }\n}",
   "prediction": {
     "menu_items": [
       {
-        "name": "Cheese Tart",
-        "quantity": 6,
-        "unit_price": 27500,
+        "name": "6 Pcs Cheese Tart",
+        "quantity": 1,
+        "unit_price": 165000,
         "amount": 165000,
         "confidence": {
           "name": 0.9,
@@ -42,10 +42,11 @@
       "change": 35000
     }
   },
+  "confidence": null,
   "usage": {
-    "completion_tokens": 311,
+    "completion_tokens": 315,
     "prompt_tokens": 2698,
-    "total_tokens": 3009
+    "total_tokens": 3013
   },
   "cost_usd": 0.0,
   "downscaled": false,

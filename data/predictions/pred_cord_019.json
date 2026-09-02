@@ -4,7 +4,7 @@
   "model": "gemini-3.5-flash-lite",
   "ok": true,
   "error": null,
-  "latency_s": 33.64,
+  "latency_s": 3.61,
   "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"AMBUSH DBL CHS\",\n      \"quantity\": 4,\n      \"unit_price\": 15000,\n      \"amount\": 60000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"AMBUSH CHS BUR\",\n      \"quantity\": 10,\n      \"unit_price\": 10000,\n      \"amount\": 100000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    }\n  ],\n  \"subtotal\": 160000,\n  \"discount\": null,\n  \"tax\": 16000,\n  \"service_charge\": null,\n  \"total\": 176000,\n  \"confidence\": {\n    \"subtotal\": 0.9,\n    \"discount\": 0.0,\n    \"tax\": 0.9,\n    \"service_charge\": 0.0,\n    \"total\": 0.9,\n    \"payment.method\": 0.0,\n    \"payment.amount_paid\": 0.0,\n    \"payment.change\": 0.0\n  },\n  \"payment\": {\n    \"method\": null,\n    \"amount_paid\": null,\n    \"change\": null\n  }\n}",
   "prediction": {
     "menu_items": [
@@ -54,6 +54,7 @@
       "change": null
     }
   },
+  "confidence": null,
   "usage": {
     "completion_tokens": 408,
     "prompt_tokens": 2678,

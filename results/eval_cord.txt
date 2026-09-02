@@ -3,25 +3,25 @@
 EVAL SUMMARY (cord)  docs=45
 ======================================================================
 field                   P      R     F1  tp fp fn wrong  conf_tp conf_wrong
-subtotal             0.97   0.94   0.95  30  1  2   0     0.94         -
-discount             0.75   1.00   0.86   3  1  0   0     0.93         -
-tax                  0.96   1.00   0.98  23  1  0   0     0.95         -
+subtotal             0.94   0.94   0.94  30  2  2   0     0.94         -
+discount             0.75   1.00   0.86   3  1  0   0      0.9         -
+tax                  0.96   1.00   0.98  23  1  0   0     0.94         -
 service_charge       0.89   1.00   0.94   8  1  0   0     0.94         -
-total                1.00   1.00   1.00  44  0  0   1     0.94       1.0
-payment.method       0.97   0.94   0.95  29  1  2   0        -         -
+total                1.00   1.00   1.00  44  0  0   1     0.94      0.95
+payment.method       0.97   1.00   0.98  30  1  0   1        -         -
 payment.amount_paid   1.00   1.00   1.00  31  0  0   0        -         -
 payment.change       0.94   1.00   0.97  16  1  0   0        -         -
-item.quantity        0.71   1.00   0.83  99 41  0   0     0.95         -
-item.unit_price      0.67   1.00   0.80  96 47  0   0     0.95         -
-item.amount          0.91   1.00   0.95  143 15  0   0     0.95      0.95
+item.quantity        0.71   1.00   0.83  98 41  0   0     0.94         -
+item.unit_price      0.67   1.00   0.80  95 47  0   0     0.94         -
+item.amount          0.90   1.00   0.95  142 16  0   0     0.94      0.95
 ----------------------------------------------------------------------
-MICRO/FIELD-LEVEL    0.83   0.99   0.90  (522 tp / 109 fp / 4 fn / 1 wrong)
-MACRO (field avg)    0.89   0.99   0.93  (mean field F1 over 11 evaluable fields)
+MICRO/FIELD-LEVEL    0.82   1.00   0.90  (520 tp / 111 fp / 2 fn / 2 wrong)
+MACRO (field avg)    0.88   0.99   0.93  (mean field F1 over 11 evaluable fields)
 
-Item name match: P=0.91 R=0.95 F1=0.93 (144/151 gt matched, 158 pred)
+Item name match: P=0.91 R=0.95 F1=0.93 (143/151 gt matched, 158 pred)
 total exact: 44/45 (0.98)
 
-Abstentions (GT present, pred null) per field: payment.method=2, subtotal=2
+Abstentions (GT present, pred null) per field: subtotal=2
 Total-field abstention: 0/45
-Latency: mean=33.1s median=33.0s min=32.1s max=35.1s
-Tokens: 120741 in / 25013 out | cost: $0.000000
+Latency: mean=12.0s median=3.8s min=2.0s max=34.6s
+Tokens: 120741 in / 24854 out | cost: $0.000000

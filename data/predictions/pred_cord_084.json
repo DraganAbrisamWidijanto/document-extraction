@@ -4,8 +4,8 @@
   "model": "gemini-3.5-flash-lite",
   "ok": true,
   "error": null,
-  "latency_s": 33.04,
-  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"Kroket\",\n      \"quantity\": 1,\n      \"unit_price\": 12000,\n      \"amount\": 12000,\n      \"confidence\": {\n        \"name\": 1.0,\n        \"quantity\": 1.0,\n        \"unit_price\": 1.0,\n        \"amount\": 1.0\n      }\n    },\n    {\n      \"name\": \"Arem Arem\",\n      \"quantity\": 2,\n      \"unit_price\": 12000,\n      \"amount\": 24000,\n      \"confidence\": {\n        \"name\": 1.0,\n        \"quantity\": 1.0,\n        \"unit_price\": 1.0,\n        \"amount\": 1.0\n      }\n    }\n  ],\n  \"subtotal\": 36000,\n  \"discount\": null,\n  \"tax\": 3600,\n  \"service_charge\": null,\n  \"total\": 39600,\n  \"confidence\": {\n    \"subtotal\": 1.0,\n    \"discount\": 0.0,\n    \"tax\": 1.0,\n    \"service_charge\": 0.0,\n    \"total\": 1.0,\n    \"payment.method\": 0.0,\n    \"payment.amount_paid\": 1.0,\n    \"payment.change\": 0.0\n  },\n  \"payment\": {\n    \"method\": null,\n    \"amount_paid\": 39600,\n    \"change\": null\n  }\n}",
+  "latency_s": 2.64,
+  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"Kroket\",\n      \"quantity\": 1,\n      \"unit_price\": 12000,\n      \"amount\": 12000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"Arem Arem\",\n      \"quantity\": 2,\n      \"unit_price\": 12000,\n      \"amount\": 24000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    }\n  ],\n  \"subtotal\": 36000,\n  \"discount\": null,\n  \"tax\": 3600,\n  \"service_charge\": null,\n  \"total\": 39600,\n  \"confidence\": {\n    \"subtotal\": 1,\n    \"discount\": 0,\n    \"tax\": 1,\n    \"service_charge\": 0,\n    \"total\": 1,\n    \"payment.method\": 0.5,\n    \"payment.amount_paid\": 1,\n    \"payment.change\": 0\n  },\n  \"payment\": {\n    \"method\": \"other\",\n    \"amount_paid\": 39600,\n    \"change\": null\n  }\n}",
   "prediction": {
     "menu_items": [
       {
@@ -14,10 +14,10 @@
         "unit_price": 12000,
         "amount": 12000,
         "confidence": {
-          "name": 1.0,
-          "quantity": 1.0,
-          "unit_price": 1.0,
-          "amount": 1.0
+          "name": 1,
+          "quantity": 1,
+          "unit_price": 1,
+          "amount": 1
         }
       },
       {
@@ -26,10 +26,10 @@
         "unit_price": 12000,
         "amount": 24000,
         "confidence": {
-          "name": 1.0,
-          "quantity": 1.0,
-          "unit_price": 1.0,
-          "amount": 1.0
+          "name": 1,
+          "quantity": 1,
+          "unit_price": 1,
+          "amount": 1
         }
       }
     ],
@@ -39,25 +39,26 @@
     "service_charge": null,
     "total": 39600,
     "confidence": {
-      "subtotal": 1.0,
-      "discount": 0.0,
-      "tax": 1.0,
-      "service_charge": 0.0,
-      "total": 1.0,
-      "payment.method": 0.0,
-      "payment.amount_paid": 1.0,
-      "payment.change": 0.0
+      "subtotal": 1,
+      "discount": 0,
+      "tax": 1,
+      "service_charge": 0,
+      "total": 1,
+      "payment.method": 0.5,
+      "payment.amount_paid": 1,
+      "payment.change": 0
     },
     "payment": {
-      "method": null,
+      "method": "other",
       "amount_paid": 39600,
       "change": null
     }
   },
+  "confidence": null,
   "usage": {
-    "completion_tokens": 402,
+    "completion_tokens": 373,
     "prompt_tokens": 2702,
-    "total_tokens": 3104
+    "total_tokens": 3075
   },
   "cost_usd": 0.0,
   "downscaled": false,

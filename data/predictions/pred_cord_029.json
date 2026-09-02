@@ -4,8 +4,8 @@
   "model": "gemini-3.5-flash-lite",
   "ok": true,
   "error": null,
-  "latency_s": 33.68,
-  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"COLD OCHA\",\n      \"quantity\": 1,\n      \"unit_price\": 10909,\n      \"amount\": 10909,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"BCA PROMO\",\n      \"quantity\": 1,\n      \"unit_price\": 54455,\n      \"amount\": 54455,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"I-ABURA UDON SPICY\",\n      \"quantity\": 1,\n      \"unit_price\": 0,\n      \"amount\": 0,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"I-KAKE UDON\",\n      \"quantity\": 1,\n      \"unit_price\": 0,\n      \"amount\": 0,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"SKEWERED SHUMAI\",\n      \"quantity\": 1,\n      \"unit_price\": 12727,\n      \"amount\": 12727,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"SKEWERED TOFU ROLL\",\n      \"quantity\": 1,\n      \"unit_price\": 12727,\n      \"amount\": 12727,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"EBI TEMPURA\",\n      \"quantity\": 1,\n      \"unit_price\": 13636,\n      \"amount\": 13636,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"KITSUNE UDON (KIDS)\",\n      \"quantity\": 1,\n      \"unit_price\": 28182,\n      \"amount\": 28182,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    }\n  ],\n  \"subtotal\": 132636,\n  \"discount\": null,\n  \"tax\": 13264,\n  \"service_charge\": null,\n  \"total\": 145900,\n  \"confidence\": {\n    \"subtotal\": 0.9,\n    \"discount\": 0.0,\n    \"tax\": 0.9,\n    \"service_charge\": 0.0,\n    \"total\": 0.9,\n    \"payment.method\": 0.0,\n    \"payment.amount_paid\": 0.0,\n    \"payment.change\": 0.0\n  },\n  \"payment\": {\n    \"method\": null,\n    \"amount_paid\": null,\n    \"change\": null\n  }\n}",
+  "latency_s": 3.35,
+  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"COLD OCHA\",\n      \"quantity\": 1,\n      \"unit_price\": 10909,\n      \"amount\": 10909,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"BCA PROMO\",\n      \"quantity\": 1,\n      \"unit_price\": 54455,\n      \"amount\": 54455,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"I-ABURA UDON SPICY\",\n      \"quantity\": 1,\n      \"unit_price\": 0,\n      \"amount\": 0,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"I-KAKE UDON\",\n      \"quantity\": 1,\n      \"unit_price\": 0,\n      \"amount\": 0,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"SKEWERED SHUMAI\",\n      \"quantity\": 1,\n      \"unit_price\": 12727,\n      \"amount\": 12727,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"SKEWERED TOFU ROLL\",\n      \"quantity\": 1,\n      \"unit_price\": 12727,\n      \"amount\": 12727,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"EBI TEMPURA\",\n      \"quantity\": 1,\n      \"unit_price\": 13636,\n      \"amount\": 13636,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"KITSUNE UDON (KIDS)\",\n      \"quantity\": 1,\n      \"unit_price\": 28182,\n      \"amount\": 28182,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    }\n  ],\n  \"subtotal\": 132636,\n  \"discount\": null,\n  \"tax\": 13264,\n  \"service_charge\": null,\n  \"total\": 145900,\n  \"confidence\": {\n    \"subtotal\": 1,\n    \"discount\": 0,\n    \"tax\": 1,\n    \"service_charge\": 0,\n    \"total\": 1,\n    \"payment.method\": 0,\n    \"payment.amount_paid\": 0,\n    \"payment.change\": 0\n  },\n  \"payment\": {\n    \"method\": null,\n    \"amount_paid\": null,\n    \"change\": null\n  }\n}",
   "prediction": {
     "menu_items": [
       {
@@ -14,10 +14,10 @@
         "unit_price": 10909,
         "amount": 10909,
         "confidence": {
-          "name": 0.9,
-          "quantity": 0.9,
-          "unit_price": 0.9,
-          "amount": 0.9
+          "name": 1,
+          "quantity": 1,
+          "unit_price": 1,
+          "amount": 1
         }
       },
       {
@@ -26,10 +26,10 @@
         "unit_price": 54455,
         "amount": 54455,
         "confidence": {
-          "name": 0.9,
-          "quantity": 0.9,
-          "unit_price": 0.9,
-          "amount": 0.9
+          "name": 1,
+          "quantity": 1,
+          "unit_price": 1,
+          "amount": 1
         }
       },
       {
@@ -38,10 +38,10 @@
         "unit_price": 0,
         "amount": 0,
         "confidence": {
-          "name": 0.9,
-          "quantity": 0.9,
-          "unit_price": 0.9,
-          "amount": 0.9
+          "name": 1,
+          "quantity": 1,
+          "unit_price": 1,
+          "amount": 1
         }
       },
       {
@@ -50,10 +50,10 @@
         "unit_price": 0,
         "amount": 0,
         "confidence": {
-          "name": 0.9,
-          "quantity": 0.9,
-          "unit_price": 0.9,
-          "amount": 0.9
+          "name": 1,
+          "quantity": 1,
+          "unit_price": 1,
+          "amount": 1
         }
       },
       {
@@ -62,10 +62,10 @@
         "unit_price": 12727,
         "amount": 12727,
         "confidence": {
-          "name": 0.9,
-          "quantity": 0.9,
-          "unit_price": 0.9,
-          "amount": 0.9
+          "name": 1,
+          "quantity": 1,
+          "unit_price": 1,
+          "amount": 1
         }
       },
       {
@@ -74,10 +74,10 @@
         "unit_price": 12727,
         "amount": 12727,
         "confidence": {
-          "name": 0.9,
-          "quantity": 0.9,
-          "unit_price": 0.9,
-          "amount": 0.9
+          "name": 1,
+          "quantity": 1,
+          "unit_price": 1,
+          "amount": 1
         }
       },
       {
@@ -86,10 +86,10 @@
         "unit_price": 13636,
         "amount": 13636,
         "confidence": {
-          "name": 0.9,
-          "quantity": 0.9,
-          "unit_price": 0.9,
-          "amount": 0.9
+          "name": 1,
+          "quantity": 1,
+          "unit_price": 1,
+          "amount": 1
         }
       },
       {
@@ -98,10 +98,10 @@
         "unit_price": 28182,
         "amount": 28182,
         "confidence": {
-          "name": 0.9,
-          "quantity": 0.9,
-          "unit_price": 0.9,
-          "amount": 0.9
+          "name": 1,
+          "quantity": 1,
+          "unit_price": 1,
+          "amount": 1
         }
       }
     ],
@@ -111,14 +111,14 @@
     "service_charge": null,
     "total": 145900,
     "confidence": {
-      "subtotal": 0.9,
-      "discount": 0.0,
-      "tax": 0.9,
-      "service_charge": 0.0,
-      "total": 0.9,
-      "payment.method": 0.0,
-      "payment.amount_paid": 0.0,
-      "payment.change": 0.0
+      "subtotal": 1,
+      "discount": 0,
+      "tax": 1,
+      "service_charge": 0,
+      "total": 1,
+      "payment.method": 0,
+      "payment.amount_paid": 0,
+      "payment.change": 0
     },
     "payment": {
       "method": null,
@@ -126,10 +126,11 @@
       "change": null
     }
   },
+  "confidence": null,
   "usage": {
-    "completion_tokens": 1007,
+    "completion_tokens": 927,
     "prompt_tokens": 2678,
-    "total_tokens": 3685
+    "total_tokens": 3605
   },
   "cost_usd": 0.0,
   "downscaled": false,

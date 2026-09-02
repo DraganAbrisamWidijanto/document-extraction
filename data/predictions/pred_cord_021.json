@@ -4,8 +4,8 @@
   "model": "gemini-3.5-flash-lite",
   "ok": true,
   "error": null,
-  "latency_s": 32.54,
-  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"NASI GOR SFD TLR\",\n      \"quantity\": 1,\n      \"unit_price\": 35000,\n      \"amount\": 35000,\n      \"confidence\": {\n        \"name\": 1.0,\n        \"quantity\": 1.0,\n        \"unit_price\": 1.0,\n        \"amount\": 1.0\n      }\n    },\n    {\n      \"name\": \"ES TEH TAWAR\",\n      \"quantity\": 1,\n      \"unit_price\": 3000,\n      \"amount\": 3000,\n      \"confidence\": {\n        \"name\": 1.0,\n        \"quantity\": 1.0,\n        \"unit_price\": 1.0,\n        \"amount\": 1.0\n      }\n    }\n  ],\n  \"subtotal\": null,\n  \"discount\": null,\n  \"tax\": null,\n  \"service_charge\": null,\n  \"total\": 38000,\n  \"confidence\": {\n    \"subtotal\": 0.0,\n    \"discount\": 0.0,\n    \"tax\": 0.0,\n    \"service_charge\": 0.0,\n    \"total\": 1.0,\n    \"payment.method\": 1.0,\n    \"payment.amount_paid\": 1.0,\n    \"payment.change\": 1.0\n  },\n  \"payment\": {\n    \"method\": \"cash\",\n    \"amount_paid\": 50000,\n    \"change\": 12000\n  }\n}",
+  "latency_s": 2.63,
+  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"NASI GOR SFD TLR\",\n      \"quantity\": 1,\n      \"unit_price\": 35000,\n      \"amount\": 35000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"ES TEH TAWAR\",\n      \"quantity\": 1,\n      \"unit_price\": 3000,\n      \"amount\": 3000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    }\n  ],\n  \"subtotal\": null,\n  \"discount\": null,\n  \"tax\": null,\n  \"service_charge\": null,\n  \"total\": 38000,\n  \"confidence\": {\n    \"subtotal\": 0.0,\n    \"discount\": 0.0,\n    \"tax\": 0.0,\n    \"service_charge\": 0.0,\n    \"total\": 0.9,\n    \"payment.method\": 0.9,\n    \"payment.amount_paid\": 0.9,\n    \"payment.change\": 0.9\n  },\n  \"payment\": {\n    \"method\": \"cash\",\n    \"amount_paid\": 50000,\n    \"change\": 12000\n  }\n}",
   "prediction": {
     "menu_items": [
       {
@@ -14,10 +14,10 @@
         "unit_price": 35000,
         "amount": 35000,
         "confidence": {
-          "name": 1.0,
-          "quantity": 1.0,
-          "unit_price": 1.0,
-          "amount": 1.0
+          "name": 0.9,
+          "quantity": 0.9,
+          "unit_price": 0.9,
+          "amount": 0.9
         }
       },
       {
@@ -26,10 +26,10 @@
         "unit_price": 3000,
         "amount": 3000,
         "confidence": {
-          "name": 1.0,
-          "quantity": 1.0,
-          "unit_price": 1.0,
-          "amount": 1.0
+          "name": 0.9,
+          "quantity": 0.9,
+          "unit_price": 0.9,
+          "amount": 0.9
         }
       }
     ],
@@ -43,10 +43,10 @@
       "discount": 0.0,
       "tax": 0.0,
       "service_charge": 0.0,
-      "total": 1.0,
-      "payment.method": 1.0,
-      "payment.amount_paid": 1.0,
-      "payment.change": 1.0
+      "total": 0.9,
+      "payment.method": 0.9,
+      "payment.amount_paid": 0.9,
+      "payment.change": 0.9
     },
     "payment": {
       "method": "cash",
@@ -54,6 +54,7 @@
       "change": 12000
     }
   },
+  "confidence": null,
   "usage": {
     "completion_tokens": 402,
     "prompt_tokens": 2662,

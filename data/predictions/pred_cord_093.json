@@ -4,7 +4,7 @@
   "model": "gemini-3.5-flash-lite",
   "ok": true,
   "error": null,
-  "latency_s": 32.14,
+  "latency_s": 2.22,
   "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"THAI ICED TEA (L)\",\n      \"quantity\": 1,\n      \"unit_price\": 16363,\n      \"amount\": 16363,\n      \"confidence\": {\n        \"name\": 1.0,\n        \"quantity\": 1.0,\n        \"unit_price\": 1.0,\n        \"amount\": 1.0\n      }\n    }\n  ],\n  \"subtotal\": 16363,\n  \"discount\": null,\n  \"tax\": 1636,\n  \"service_charge\": null,\n  \"total\": 17999,\n  \"confidence\": {\n    \"subtotal\": 1.0,\n    \"discount\": 0.0,\n    \"tax\": 1.0,\n    \"service_charge\": 0.0,\n    \"total\": 1.0,\n    \"payment.method\": 0.0,\n    \"payment.amount_paid\": 0.0,\n    \"payment.change\": 0.0\n  },\n  \"payment\": {\n    \"method\": null,\n    \"amount_paid\": null,\n    \"change\": null\n  }\n}",
   "prediction": {
     "menu_items": [
@@ -42,6 +42,7 @@
       "change": null
     }
   },
+  "confidence": null,
   "usage": {
     "completion_tokens": 300,
     "prompt_tokens": 2678,

@@ -21,30 +21,30 @@
   ],
   "item_name_f1": 1.0,
   "latency": {
-    "mean": 33.0,
-    "median": 33.0,
-    "min": 32.5,
-    "max": 34.0
+    "mean": 9.0,
+    "median": 3.1,
+    "min": 2.3,
+    "max": 33.3
   },
   "cost_usd": 0.0,
   "tokens": {
     "prompt": 26852,
-    "completion": 5584
+    "completion": 5550
   },
   "abstentions": {
     "subtotal": 1
   },
   "confidence": {
     "subtotal": {
-      "tp": 0.96,
+      "tp": 0.98,
       "wrong": null
     },
     "tax": {
-      "tp": 0.97,
+      "tp": 1.0,
       "wrong": null
     },
     "total": {
-      "tp": 0.96,
+      "tp": 0.97,
       "wrong": null
     },
     "payment.method": {
@@ -56,15 +56,15 @@
       "wrong": null
     },
     "item.quantity": {
-      "tp": 0.96,
+      "tp": 0.98,
       "wrong": null
     },
     "item.unit_price": {
-      "tp": 0.96,
+      "tp": 0.98,
       "wrong": null
     },
     "item.amount": {
-      "tp": 0.96,
+      "tp": 0.98,
       "wrong": null
     },
     "payment.change": {

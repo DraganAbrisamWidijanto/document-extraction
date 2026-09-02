@@ -4,7 +4,7 @@
   "model": "gemini-3.5-flash-lite",
   "ok": true,
   "error": null,
-  "latency_s": 32.98,
+  "latency_s": 3.14,
   "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"BLACKCURRANT\",\n      \"quantity\": 1,\n      \"unit_price\": 32000,\n      \"amount\": 32000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"SPRITE\",\n      \"quantity\": 1,\n      \"unit_price\": 32000,\n      \"amount\": 32000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"GRILLED CALAMARI\",\n      \"quantity\": 1,\n      \"unit_price\": 85000,\n      \"amount\": 85000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"DINE FOR 2\",\n      \"quantity\": 1,\n      \"unit_price\": 129000,\n      \"amount\": 129000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    }\n  ],\n  \"subtotal\": 278000,\n  \"discount\": null,\n  \"tax\": 30024,\n  \"service_charge\": 22240,\n  \"total\": 330264,\n  \"confidence\": {\n    \"subtotal\": 1,\n    \"discount\": 0,\n    \"tax\": 1,\n    \"service_charge\": 1,\n    \"total\": 1,\n    \"payment.method\": 0,\n    \"payment.amount_paid\": 0,\n    \"payment.change\": 0\n  },\n  \"payment\": {\n    \"method\": null,\n    \"amount_paid\": null,\n    \"change\": null\n  }\n}",
   "prediction": {
     "menu_items": [
@@ -78,6 +78,7 @@
       "change": null
     }
   },
+  "confidence": null,
   "usage": {
     "completion_tokens": 563,
     "prompt_tokens": 2698,

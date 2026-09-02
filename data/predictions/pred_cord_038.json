@@ -4,8 +4,8 @@
   "model": "gemini-3.5-flash-lite",
   "ok": true,
   "error": null,
-  "latency_s": 34.09,
-  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"XLB Org Pork 10x\",\n      \"quantity\": 1,\n      \"unit_price\": 78000,\n      \"amount\": 78000,\n      \"confidence\": {\n        \"name\": 1.0,\n        \"quantity\": 1.0,\n        \"unit_price\": 1.0,\n        \"amount\": 1.0\n      }\n    },\n    {\n      \"name\": \"Sicito Babi\",\n      \"quantity\": 1,\n      \"unit_price\": 65000,\n      \"amount\": 65000,\n      \"confidence\": {\n        \"name\": 1.0,\n        \"quantity\": 1.0,\n        \"unit_price\": 1.0,\n        \"amount\": 1.0\n      }\n    },\n    {\n      \"name\": \"Hotplate Tahu\",\n      \"quantity\": 1,\n      \"unit_price\": 58000,\n      \"amount\": 58000,\n      \"confidence\": {\n        \"name\": 1.0,\n        \"quantity\": 1.0,\n        \"unit_price\": 1.0,\n        \"amount\": 1.0\n      }\n    },\n    {\n      \"name\": \"DF Fish Fillet Garic\",\n      \"quantity\": 1,\n      \"unit_price\": 108000,\n      \"amount\": 108000,\n      \"confidence\": {\n        \"name\": 1.0,\n        \"quantity\": 1.0,\n        \"unit_price\": 1.0,\n        \"amount\": 1.0\n      }\n    },\n    {\n      \"name\": \"LM Pork Belly\",\n      \"quantity\": 1,\n      \"unit_price\": 88000,\n      \"amount\": 88000,\n      \"confidence\": {\n        \"name\": 1.0,\n        \"quantity\": 1.0,\n        \"unit_price\": 1.0,\n        \"amount\": 1.0\n      }\n    },\n    {\n      \"name\": \"Siew Mai\",\n      \"quantity\": 1,\n      \"unit_price\": 38800,\n      \"amount\": 38800,\n      \"confidence\": {\n        \"name\": 1.0,\n        \"quantity\": 1.0,\n        \"unit_price\": 1.0,\n        \"amount\": 1.0\n      }\n    },\n    {\n      \"name\": \"Kwan Yin Cup\",\n      \"quantity\": 5,\n      \"unit_price\": 10000,\n      \"amount\": 50000,\n      \"confidence\": {\n        \"name\": 1.0,\n        \"quantity\": 1.0,\n        \"unit_price\": 1.0,\n        \"amount\": 1.0\n      }\n    },\n    {\n      \"name\": \"Herbal Jelly\",\n      \"quantity\": 1,\n      \"unit_price\": 38000,\n      \"amount\": 38000,\n      \"confidence\": {\n        \"name\": 1.0,\n        \"quantity\": 1.0,\n        \"unit_price\": 1.0,\n        \"amount\": 1.0\n      }\n    },\n    {\n      \"name\": \"Onde-Onde\",\n      \"quantity\": 1,\n      \"unit_price\": 38000,\n      \"amount\": 38000,\n      \"confidence\": {\n        \"name\": 1.0,\n        \"quantity\": 1.0,\n        \"unit_price\": 1.0,\n        \"amount\": 1.0\n      }\n    }\n  ],\n  \"subtotal\": 561800,\n  \"discount\": null,\n  \"tax\": 60394,\n  \"service_charge\": 42135,\n  \"total\": 664329,\n  \"confidence\": {\n    \"subtotal\": 1.0,\n    \"discount\": 0.0,\n    \"tax\": 1.0,\n    \"service_charge\": 1.0,\n    \"total\": 1.0,\n    \"payment.method\": 0.0,\n    \"payment.amount_paid\": 0.0,\n    \"payment.change\": 0.0\n  },\n  \"payment\": {\n    \"method\": null,\n    \"amount_paid\": null,\n    \"change\": null\n  }\n}",
+  "latency_s": 34.16,
+  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"XLB Org Pork 10x\",\n      \"quantity\": 1,\n      \"unit_price\": 78000,\n      \"amount\": 78000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"Sicito Babi\",\n      \"quantity\": 1,\n      \"unit_price\": 65000,\n      \"amount\": 65000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"Hotplate Tahu\",\n      \"quantity\": 1,\n      \"unit_price\": 58000,\n      \"amount\": 58000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"DF Fish Fillet Garic\",\n      \"quantity\": 1,\n      \"unit_price\": 108000,\n      \"amount\": 108000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"LM Pork Belly\",\n      \"quantity\": 1,\n      \"unit_price\": 88000,\n      \"amount\": 88000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"Siew Mai\",\n      \"quantity\": 1,\n      \"unit_price\": 38800,\n      \"amount\": 38800,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"Kwan Yin Cup\",\n      \"quantity\": 5,\n      \"unit_price\": 10000,\n      \"amount\": 50000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"Herbal Jelly\",\n      \"quantity\": 1,\n      \"unit_price\": 38000,\n      \"amount\": 38000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"Onde-Onde\",\n      \"quantity\": 1,\n      \"unit_price\": 38000,\n      \"amount\": 38000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    }\n  ],\n  \"subtotal\": 561800,\n  \"discount\": null,\n  \"tax\": 60394,\n  \"service_charge\": 42135,\n  \"total\": 664329,\n  \"confidence\": {\n    \"subtotal\": 0.9,\n    \"discount\": 0.0,\n    \"tax\": 0.9,\n    \"service_charge\": 0.9,\n    \"total\": 0.9,\n    \"payment.method\": 0.0,\n    \"payment.amount_paid\": 0.0,\n    \"payment.change\": 0.0\n  },\n  \"payment\": {\n    \"method\": null,\n    \"amount_paid\": null,\n    \"change\": null\n  }\n}",
   "prediction": {
     "menu_items": [
       {
@@ -14,10 +14,10 @@
         "unit_price": 78000,
         "amount": 78000,
         "confidence": {
-          "name": 1.0,
-          "quantity": 1.0,
-          "unit_price": 1.0,
-          "amount": 1.0
+          "name": 0.9,
+          "quantity": 0.9,
+          "unit_price": 0.9,
+          "amount": 0.9
         }
       },
       {
@@ -26,10 +26,10 @@
         "unit_price": 65000,
         "amount": 65000,
         "confidence": {
-          "name": 1.0,
-          "quantity": 1.0,
-          "unit_price": 1.0,
-          "amount": 1.0
+          "name": 0.9,
+          "quantity": 0.9,
+          "unit_price": 0.9,
+          "amount": 0.9
         }
       },
       {
@@ -38,10 +38,10 @@
         "unit_price": 58000,
         "amount": 58000,
         "confidence": {
-          "name": 1.0,
-          "quantity": 1.0,
-          "unit_price": 1.0,
-          "amount": 1.0
+          "name": 0.9,
+          "quantity": 0.9,
+          "unit_price": 0.9,
+          "amount": 0.9
         }
       },
       {
@@ -50,10 +50,10 @@
         "unit_price": 108000,
         "amount": 108000,
         "confidence": {
-          "name": 1.0,
-          "quantity": 1.0,
-          "unit_price": 1.0,
-          "amount": 1.0
+          "name": 0.9,
+          "quantity": 0.9,
+          "unit_price": 0.9,
+          "amount": 0.9
         }
       },
       {
@@ -62,10 +62,10 @@
         "unit_price": 88000,
         "amount": 88000,
         "confidence": {
-          "name": 1.0,
-          "quantity": 1.0,
-          "unit_price": 1.0,
-          "amount": 1.0
+          "name": 0.9,
+          "quantity": 0.9,
+          "unit_price": 0.9,
+          "amount": 0.9
         }
       },
       {
@@ -74,10 +74,10 @@
         "unit_price": 38800,
         "amount": 38800,
         "confidence": {
-          "name": 1.0,
-          "quantity": 1.0,
-          "unit_price": 1.0,
-          "amount": 1.0
+          "name": 0.9,
+          "quantity": 0.9,
+          "unit_price": 0.9,
+          "amount": 0.9
         }
       },
       {
@@ -86,10 +86,10 @@
         "unit_price": 10000,
         "amount": 50000,
         "confidence": {
-          "name": 1.0,
-          "quantity": 1.0,
-          "unit_price": 1.0,
-          "amount": 1.0
+          "name": 0.9,
+          "quantity": 0.9,
+          "unit_price": 0.9,
+          "amount": 0.9
         }
       },
       {
@@ -98,10 +98,10 @@
         "unit_price": 38000,
         "amount": 38000,
         "confidence": {
-          "name": 1.0,
-          "quantity": 1.0,
-          "unit_price": 1.0,
-          "amount": 1.0
+          "name": 0.9,
+          "quantity": 0.9,
+          "unit_price": 0.9,
+          "amount": 0.9
         }
       },
       {
@@ -110,10 +110,10 @@
         "unit_price": 38000,
         "amount": 38000,
         "confidence": {
-          "name": 1.0,
-          "quantity": 1.0,
-          "unit_price": 1.0,
-          "amount": 1.0
+          "name": 0.9,
+          "quantity": 0.9,
+          "unit_price": 0.9,
+          "amount": 0.9
         }
       }
     ],
@@ -123,11 +123,11 @@
     "service_charge": 42135,
     "total": 664329,
     "confidence": {
-      "subtotal": 1.0,
+      "subtotal": 0.9,
       "discount": 0.0,
-      "tax": 1.0,
-      "service_charge": 1.0,
-      "total": 1.0,
+      "tax": 0.9,
+      "service_charge": 0.9,
+      "total": 0.9,
       "payment.method": 0.0,
       "payment.amount_paid": 0.0,
       "payment.change": 0.0
@@ -138,6 +138,7 @@
       "change": null
     }
   },
+  "confidence": null,
   "usage": {
     "completion_tokens": 1119,
     "prompt_tokens": 2698,

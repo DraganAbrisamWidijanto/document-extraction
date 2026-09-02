@@ -4,7 +4,7 @@
   "model": "gemini-3.5-flash-lite",
   "ok": true,
   "error": null,
-  "latency_s": 33.03,
+  "latency_s": 2.76,
   "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"Paket Blackpepper\",\n      \"quantity\": 1,\n      \"unit_price\": 17000,\n      \"amount\": 17000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"Paket Mertua Kalem\",\n      \"quantity\": 3,\n      \"unit_price\": 17000,\n      \"amount\": 51000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"Paket Keju Kalem\",\n      \"quantity\": 2,\n      \"unit_price\": 20000,\n      \"amount\": 40000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"Es Teh\",\n      \"quantity\": 5,\n      \"unit_price\": 3000,\n      \"amount\": 15000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"Air Es\",\n      \"quantity\": 1,\n      \"unit_price\": 2000,\n      \"amount\": 2000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    }\n  ],\n  \"subtotal\": 125000,\n  \"discount\": null,\n  \"tax\": null,\n  \"service_charge\": null,\n  \"total\": 125000,\n  \"confidence\": {\n    \"subtotal\": 1,\n    \"discount\": 0,\n    \"tax\": 0,\n    \"service_charge\": 0,\n    \"total\": 1,\n    \"payment.method\": 1,\n    \"payment.amount_paid\": 1,\n    \"payment.change\": 1\n  },\n  \"payment\": {\n    \"method\": \"transfer\",\n    \"amount_paid\": 125000,\n    \"change\": 0\n  }\n}",
   "prediction": {
     "menu_items": [
@@ -90,6 +90,7 @@
       "change": 0
     }
   },
+  "confidence": null,
   "usage": {
     "completion_tokens": 648,
     "prompt_tokens": 2698,

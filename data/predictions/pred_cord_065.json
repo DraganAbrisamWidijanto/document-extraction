@@ -4,8 +4,8 @@
   "model": "gemini-3.5-flash-lite",
   "ok": true,
   "error": null,
-  "latency_s": 32.15,
-  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"Bubur Polos + Telur\",\n      \"quantity\": 1,\n      \"unit_price\": 13000,\n      \"amount\": 13000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    }\n  ],\n  \"subtotal\": 13000,\n  \"discount\": null,\n  \"tax\": null,\n  \"service_charge\": null,\n  \"total\": 13000,\n  \"confidence\": {\n    \"subtotal\": 0.9,\n    \"discount\": 0.0,\n    \"tax\": 0.0,\n    \"service_charge\": 0.0,\n    \"total\": 0.9,\n    \"payment.method\": 0.0,\n    \"payment.amount_paid\": 0.0,\n    \"payment.change\": 0.0\n  },\n  \"payment\": {\n    \"method\": null,\n    \"amount_paid\": null,\n    \"change\": null\n  }\n}",
+  "latency_s": 2.74,
+  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"Bubur Polos + Telur\",\n      \"quantity\": 1,\n      \"unit_price\": 13000,\n      \"amount\": 13000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.8,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    }\n  ],\n  \"subtotal\": 13000,\n  \"discount\": null,\n  \"tax\": 0,\n  \"service_charge\": null,\n  \"total\": 13000,\n  \"confidence\": {\n    \"subtotal\": 0.9,\n    \"discount\": 0.0,\n    \"tax\": 0.8,\n    \"service_charge\": 0.0,\n    \"total\": 0.9,\n    \"payment.method\": 0.0,\n    \"payment.amount_paid\": 0.0,\n    \"payment.change\": 0.0\n  },\n  \"payment\": {\n    \"method\": null,\n    \"amount_paid\": null,\n    \"change\": null\n  }\n}",
   "prediction": {
     "menu_items": [
       {
@@ -15,7 +15,7 @@
         "amount": 13000,
         "confidence": {
           "name": 0.9,
-          "quantity": 0.9,
+          "quantity": 0.8,
           "unit_price": 0.9,
           "amount": 0.9
         }
@@ -23,13 +23,13 @@
     ],
     "subtotal": 13000,
     "discount": null,
-    "tax": null,
+    "tax": 0,
     "service_charge": null,
     "total": 13000,
     "confidence": {
       "subtotal": 0.9,
       "discount": 0.0,
-      "tax": 0.0,
+      "tax": 0.8,
       "service_charge": 0.0,
       "total": 0.9,
       "payment.method": 0.0,
@@ -42,10 +42,11 @@
       "change": null
     }
   },
+  "confidence": null,
   "usage": {
-    "completion_tokens": 296,
+    "completion_tokens": 297,
     "prompt_tokens": 2698,
-    "total_tokens": 2994
+    "total_tokens": 2995
   },
   "cost_usd": 0.0,
   "downscaled": false,

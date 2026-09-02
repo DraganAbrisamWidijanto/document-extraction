@@ -16,5 +16,5 @@ MICRO/FIELD-LEVEL                      0.95   0.98   0.96  (82 tp / 4 fp / 2 fn 
 MACRO (field avg)                      0.95   0.98   0.96  (mean field F1 over 8 fields)
 charity_name exact: 12/12 (1.00)
 Abstentions: income_annually_in_british_pounds=1, spending_annually_in_british_pounds=1
-Latency: mean=252.3s median=240.0s min=231.3s max=339.7s
-Tokens: 223605 in / 19888 out | cost: $0.000000
+Latency: mean=85.4s median=85.3s min=44.4s max=113.9s
+Tokens: 223605 in / 19902 out | cost: $0.000000

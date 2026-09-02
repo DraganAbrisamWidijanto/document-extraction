@@ -4,8 +4,8 @@
   "model": "gemini-3.5-flash-lite",
   "ok": true,
   "error": null,
-  "latency_s": 32.88,
-  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"Lemon Tea (L).\",\n      \"quantity\": 1,\n      \"unit_price\": 25000,\n      \"amount\": 25000,\n      \"confidence\": {\n        \"name\": 0.95,\n        \"quantity\": 0.95,\n        \"unit_price\": 0.95,\n        \"amount\": 0.95\n      }\n    },\n    {\n      \"name\": \"Mike & Ike Original\",\n      \"quantity\": 1,\n      \"unit_price\": 28000,\n      \"amount\": 28000,\n      \"confidence\": {\n        \"name\": 0.95,\n        \"quantity\": 0.95,\n        \"unit_price\": 0.95,\n        \"amount\": 0.95\n      }\n    },\n    {\n      \"name\": \"Mike & Berry\",\n      \"quantity\": 1,\n      \"unit_price\": 28000,\n      \"amount\": 28000,\n      \"confidence\": {\n        \"name\": 0.95,\n        \"quantity\": 0.95,\n        \"unit_price\": 0.95,\n        \"amount\": 0.95\n      }\n    },\n    {\n      \"name\": \"Roti Keju Manis.\",\n      \"quantity\": 1,\n      \"unit_price\": 7000,\n      \"amount\": 7000,\n      \"confidence\": {\n        \"name\": 0.95,\n        \"quantity\": 0.95,\n        \"unit_price\": 0.95,\n        \"amount\": 0.95\n      }\n    }\n  ],\n  \"subtotal\": null,\n  \"discount\": null,\n  \"tax\": null,\n  \"service_charge\": null,\n  \"total\": 88000,\n  \"confidence\": {\n    \"subtotal\": 0.0,\n    \"discount\": 0.0,\n    \"tax\": 0.0,\n    \"service_charge\": 0.0,\n    \"total\": 0.95,\n    \"payment.method\": 0.95,\n    \"payment.amount_paid\": 0.95,\n    \"payment.change\": 0.95\n  },\n  \"payment\": {\n    \"method\": \"cash\",\n    \"amount_paid\": 88000,\n    \"change\": 0\n  }\n}",
+  "latency_s": 33.89,
+  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"Lemon Tea (L).\",\n      \"quantity\": 1,\n      \"unit_price\": 25000,\n      \"amount\": 25000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"Mike & Ike Original\",\n      \"quantity\": 1,\n      \"unit_price\": 28000,\n      \"amount\": 28000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"Mike & Berry\",\n      \"quantity\": 1,\n      \"unit_price\": 28000,\n      \"amount\": 28000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"Roti Keju Manis.\",\n      \"quantity\": 1,\n      \"unit_price\": 7000,\n      \"amount\": 7000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    }\n  ],\n  \"subtotal\": 88000,\n  \"discount\": null,\n  \"tax\": null,\n  \"service_charge\": null,\n  \"total\": 88000,\n  \"confidence\": {\n    \"subtotal\": 0.9,\n    \"discount\": 0,\n    \"tax\": 0,\n    \"service_charge\": 0,\n    \"total\": 1,\n    \"payment.method\": 1,\n    \"payment.amount_paid\": 1,\n    \"payment.change\": 1\n  },\n  \"payment\": {\n    \"method\": \"cash\",\n    \"amount_paid\": 88000,\n    \"change\": 0\n  }\n}",
   "prediction": {
     "menu_items": [
       {
@@ -14,10 +14,10 @@
         "unit_price": 25000,
         "amount": 25000,
         "confidence": {
-          "name": 0.95,
-          "quantity": 0.95,
-          "unit_price": 0.95,
-          "amount": 0.95
+          "name": 1,
+          "quantity": 1,
+          "unit_price": 1,
+          "amount": 1
         }
       },
       {
@@ -26,10 +26,10 @@
         "unit_price": 28000,
         "amount": 28000,
         "confidence": {
-          "name": 0.95,
-          "quantity": 0.95,
-          "unit_price": 0.95,
-          "amount": 0.95
+          "name": 1,
+          "quantity": 1,
+          "unit_price": 1,
+          "amount": 1
         }
       },
       {
@@ -38,10 +38,10 @@
         "unit_price": 28000,
         "amount": 28000,
         "confidence": {
-          "name": 0.95,
-          "quantity": 0.95,
-          "unit_price": 0.95,
-          "amount": 0.95
+          "name": 1,
+          "quantity": 1,
+          "unit_price": 1,
+          "amount": 1
         }
       },
       {
@@ -50,27 +50,27 @@
         "unit_price": 7000,
         "amount": 7000,
         "confidence": {
-          "name": 0.95,
-          "quantity": 0.95,
-          "unit_price": 0.95,
-          "amount": 0.95
+          "name": 1,
+          "quantity": 1,
+          "unit_price": 1,
+          "amount": 1
         }
       }
     ],
-    "subtotal": null,
+    "subtotal": 88000,
     "discount": null,
     "tax": null,
     "service_charge": null,
     "total": 88000,
     "confidence": {
-      "subtotal": 0.0,
-      "discount": 0.0,
-      "tax": 0.0,
-      "service_charge": 0.0,
-      "total": 0.95,
-      "payment.method": 0.95,
-      "payment.amount_paid": 0.95,
-      "payment.change": 0.95
+      "subtotal": 0.9,
+      "discount": 0,
+      "tax": 0,
+      "service_charge": 0,
+      "total": 1,
+      "payment.method": 1,
+      "payment.amount_paid": 1,
+      "payment.change": 1
     },
     "payment": {
       "method": "cash",
@@ -78,10 +78,11 @@
       "change": 0
     }
   },
+  "confidence": null,
   "usage": {
-    "completion_tokens": 618,
+    "completion_tokens": 557,
     "prompt_tokens": 2678,
-    "total_tokens": 3296
+    "total_tokens": 3235
   },
   "cost_usd": 0.0,
   "downscaled": false,
