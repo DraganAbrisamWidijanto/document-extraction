@@ -22,8 +22,8 @@
       "address_post_town": "tp",
       "address_postcode": "tp",
       "address_street_line": "tp",
-      "income_annually_in_british_pounds": "wrong",
-      "spending_annually_in_british_pounds": "wrong",
+      "income_annually_in_british_pounds": "tp",
+      "spending_annually_in_british_pounds": "tp",
       "report_date": "tp"
     }
   },

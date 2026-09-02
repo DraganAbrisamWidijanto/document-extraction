@@ -65,10 +65,10 @@ Official run: `docker compose run --rm eval` — all 67 documents re-extracted l
 |---|---|---|---|---|---|
 | CORD (45) | 0.93 | 44/45 | 0.93 | 33.1s / 33.0s | $0.00 |
 | Self-scan (10) | 0.99 | 10/10 | 1.00 | 33.0s / 33.0s | $0.00 |
-| Kleister (12) | 0.95 | — | — | 252.9s / 240.0s | $0.00 |
+| Kleister (12) | 0.96 | — | — | 252.9s / 240.0s | $0.00 |
 
 - Metrics: per-field P/R/F1 with failure kinds (tp / fp / fn / wrong), abstention counts, latency, tokens, cost. Macro F1 averages only fields that have GT instances, so it stays comparable across versions. Kleister uses 8 fields; the comparator normalizes Kleister's official GT format (legal-form suffixes like Ltd/Limited, one-sided abbreviations like 'Citb', street ranges like '2-3' vs '2') before comparing; 4 of the remaining street-line `fp`s are cases where the GT deliberately records no street line but the report prints one — counted as errors per the official convention, documented rather than patched.
-- Kleister error kinds after the fixes: 2 report-date misses (audit date vs period end) and 3 rounded income/spending figures were eliminated by prompt rules (period-end date; never round, abstain instead); 5 SoFA-page abstentions were eliminated by adding a totals-page boost to page selection. Remaining: 3 rounded-figure `wrong`s where the report itself only prints approximations, 2 postcode `wrong`s, and the 4 GT-null street `fp`s above.
+- Kleister error kinds after the fixes: 2 report-date misses (audit date vs period end) and 3 rounded income/spending figures were eliminated by prompt rules (period-end date; never round, abstain instead); 5 SoFA-page abstentions were eliminated by adding a totals-page boost to page selection. One further wrong (both income & spending taken from the prior-year comparative) was fixed by guaranteeing the densest SoFA totals page a selection slot. Remaining: 3 wrong figures the documents genuinely print only rounded (£'000 tables — the exact one-pound GT comes from the Charity Commission register, not the PDF), 2 postcode `wrong`s, and the 4 GT-null street `fp`s above.
 - The one CORD miss (cord_095): the receipt prints cash paid (62.000) right next to total due (61.799) and the model picked the cash amount. A known ambiguous case, documented rather than patched around.
 - One optimization with measured impact: oversized images are downscaled (1600px JPEG) before the call — recovered 7/7 timeout failures, −35% mean latency, +13 points total-exact.
 

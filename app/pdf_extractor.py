@@ -47,6 +47,11 @@ def pdf_to_text_per_page(pdf_path: str) -> list:
     return texts
 
 
+def _is_sofa_page(tl: str) -> bool:
+    """True for a Statement of Financial Activities totals page (income+spending)."""
+    return "total income" in tl and ("total expenditure" in tl or "resources expended" in tl)
+
+
 def score_pages(texts: list) -> list:
     """Score each page by keyword hits across field groups + regex boosts."""
     scores = []
@@ -63,10 +68,30 @@ def score_pages(texts: list) -> list:
         if "registered office" in tl:
             score += 3
         # SoFA totals page: carries the exact annual income/spending figures
-        if "total income" in tl and ("total expenditure" in tl or "resources expended" in tl):
+        if _is_sofa_page(tl):
             score += 4
         scores.append(score)
     return scores
+
+
+def best_sofa_page(texts: list, scores: list) -> Optional[int]:
+    """The SoFA totals page carrying the actual figures, or None when the text
+    layer has none (image-only scans).
+
+    Ranking: several pages can carry SoFA-like keywords (fund accounts, notes,
+    comparative tables); the totals table is the one densest with
+    thousands-separated numbers ('57,333'). Tie-break on page score, then
+    earliest page."""
+    best, best_key = None, None
+    for i, t in enumerate(texts):
+        tl = (t or "").lower()
+        if not _is_sofa_page(tl):
+            continue
+        big_nums = len(re.findall(r"\d{1,3},\d{3}\b", t or ""))
+        key = (big_nums, scores[i], -i)
+        if best is None or key > best_key:
+            best, best_key = i, key
+    return best
 
 
 def select_pages(scores: list, max_pages: int = MAX_PAGES) -> list:
@@ -219,6 +244,19 @@ def extract_kleister_pdf(pdf_path: str, cfg: Optional[Config] = None) -> dict:
     pages_total = len(texts)
     scores = score_pages(texts)
     pages = select_pages(scores)
+    # the SoFA totals page (densest with thousands-separated figures) is the
+    # source of exact income/spending — guarantee it a slot like page 0 / last
+    # page, swapping out the lowest-scoring non-guaranteed page when full
+    sofa = best_sofa_page(texts, scores)
+    if sofa is not None and sofa not in pages:
+        if len(pages) < MAX_PAGES:
+            pages.append(sofa)
+        else:
+            cand = [i for i in pages if i not in (0, pages_total - 1, sofa)]
+            if cand:
+                lowest = min(cand, key=lambda i: (scores[i], i))
+                pages[pages.index(lowest)] = sofa
+    pages = sorted(set(pages))
     rendered = render_pages(pdf_path, pages)
 
     page_results = []
