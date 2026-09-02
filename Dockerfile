@@ -12,8 +12,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY app/ ./app/
-COPY eval_harness.py batch_extract.py dev_extract.py export_gt.py select_pool.py \
-     run_eval.py compare_evals.py ./
+COPY eval_harness.py batch_extract.py run_eval.py compare_evals.py ./
 COPY data/ ./data/
 
 EXPOSE 8000

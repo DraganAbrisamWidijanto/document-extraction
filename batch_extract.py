@@ -31,7 +31,7 @@ def load_manifest(source):
     if source in ("cord", "all"):
         m = json.load(open(os.path.join(BASE_DIR, "data", "cord_pool", "manifest_test.json")))
         for e in m:
-            for d in ("data/cord_pool", "data/dev_sample"):
+            for d in ("data/cord_pool",):
                 p = os.path.join(BASE_DIR, d, e["image"])
                 if os.path.exists(p):
                     items.append({"name": f"cord_{e['idx']:03d}", "path": p,

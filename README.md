@@ -4,13 +4,13 @@ Extracts structured fields from receipt photos (items, totals, payment) and mult
 
 ## Quick start
 
+**Before running — you need a free Gemini API key.** The repo ships no key (gitignored). Create `geminiapi.txt` in the repo root with one key per line, or copy `.env.example` → `.env` and set `VLM_API_KEY`. Without a key the API starts but every extraction fails.
+
 ```bash
 docker compose build
 docker compose up api          # API on :8000
 docker compose run --rm eval   # end-to-end eval: re-extracts all 67 docs through the API, writes scorecards to results/
 ```
-
-API key: put your key(s) in `geminiapi.txt` at the repo root (one per line) or set `VLM_API_KEY` in `.env` (copy `.env.example`).
 
 Test the API directly:
 
@@ -53,9 +53,15 @@ For multi-page PDFs (Kleister), the pipeline in `app/pdf_extractor.py` is:
 
 ## Dataset
 
-- **CORD** (open benchmark) — 100 test receipts, picked 50 for diversity (item count, tax/discount/service, payment type) → 5 dev + 45 test. Images + official GT committed under `data/`.
-- **10 self-scans** — real Indonesian receipts, GT verified manually against each photo (recorded in each GT's `meta.note`). Covers vendor/date fields CORD lacks.
-- **Kleister-Charity** (open benchmark) — 12 multi-page UK charity annual reports (39–122 pages each), 8 fields (charity name/number, registered address ×3, annual income/spending, report date). PDFs + official GT committed under `data/kleister/`. This is the multi-page stress test: the pipeline must locate and merge fields spread across dozens of pages.
+Three sources, all committed under `data/`:
+
+| Source | Docs | Type | GT origin |
+|---|---|---|---|
+| **Self-scan** | 10 | Indonesian receipt photos (my own) | Manually verified against each photo |
+| **CORD** | 45 | Scanned receipt images (open benchmark, Shopee Indonesia) | [Official CORD GT](https://github.com/clovaai/cord) |
+| **Kleister-Charity** | 12 | Multi-page UK charity annual reports (39–122 pages, open benchmark) | [Official `expected.tsv`](https://github.com/applicaai/kleister-charity) |
+
+CORD test set: picked 45 out of 100 for diversity (item count, tax/discount, payment type). Kleister: the 12 reports with the most varied layouts. Covers two document types — simple receipts (one page, scanned) and complex reports (multi-page, dense financial tables, text layer + images).
 
 ## Results
 
