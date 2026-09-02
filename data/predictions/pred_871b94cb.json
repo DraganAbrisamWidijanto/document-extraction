@@ -1,0 +1,40 @@
+{
+  "name": "871b94cb",
+  "image": "",
+  "model": "gemini-3.5-flash-lite",
+  "ok": true,
+  "error": null,
+  "latency_s": 240.04,
+  "raw": "[{\"page\": 0, \"raw\": \"{\\n  \\\"charity_name\\\": \\\"Construction Industry Training Board\\\",\\n  \\\"charity_number\\\": null,\\n  \\\"address_post_town\\\": null,\\n  \\\"address_postcode\\\": null,\\n  \\\"address_street_line\\\": null,\\n  \\\"income_annually_in_british_pounds\\\": null,\\n  \\\"spending_annually_in_british_pounds\\\": null,\\n  \\\"report_date\\\": \\\"2014-12-31\\\",\\n  \\\"confidence\\\": {\\n    \\\"charity_name\\\": 0.9,\\n    \\\"charity_number\\\": 0.0,\\n    \\\"address_post_town\\\": 0.0,\\n    \\\"address_postcode\\\": 0.0,\\n    \\\"address_street_line\\\": 0.0,\\n    \\\"income_annually_in_british_pounds\\\": 0.0,\\n    \\\"spending_annually_in_british_pounds\\\": 0.0,\\n    \\\"report_date\\\": 0.95\\n  }\\n}\"}, {\"page\": 65, \"raw\": \"{\\n  \\\"charity_name\\\": null,\\n  \\\"charity_number\\\": null,\\n  \\\"address_post_town\\\": null,\\n  \\\"address_postcode\\\": null,\\n  \\\"address_street_line\\\": null,\\n  \\\"income_annually_in_british_pounds\\\": 263964000,\\n  \\\"spending_annually_in_british_pounds\\\": 297787000,\\n  \\\"report_date\\\": \\\"2014-12-31\\\",\\n  \\\"confidence\\\": {\\n    \\\"charity_name\\\": 0.0,\\n    \\\"charity_number\\\": 0.0,\\n    \\\"address_post_town\\\": 0.0,\\n    \\\"address_postcode\\\": 0.0,\\n    \\\"address_street_line\\\": 0.0,\\n    \\\"income_annually_in_british_pounds\\\": 1.0,\\n    \\\"spending_annually_in_british_pounds\\\": 1.0,\\n    \\\"report_date\\\": 1.0\\n  }\\n}\"}, {\"page\": 68, \"raw\": \"{\\n  \\\"charity_name\\\": null,\\n  \\\"charity_number\\\": null,\\n  \\\"address_post_town\\\": null,\\n  \\\"address_postcode\\\": null,\\n  \\\"address_street_line\\\": null,\\n  \\\"income_annually_in_british_pounds\\\": null,\\n  \\\"spending_annually_in_british_pounds\\\": null,\\n  \\\"report_date\\\": \\\"2014-12-31\\\",\\n  \\\"confidence\\\": {\\n    \\\"charity_name\\\": 0.0,\\n    \\\"charity_number\\\": 0.0,\\n    \\\"address_post_town\\\": 0.0,\\n    \\\"address_postcode\\\": 0.0,\\n    \\\"address_street_line\\\": 0.0,\\n    \\\"income_annually_in_british_pounds\\\": 0.0,\\n    \\\"spending_annually_in_british_pounds\\\": 0.0,\\n    \\\"report_date\\\": 1.0\\n  }\\n}\"}, {\"page\": 70, \"raw\": \"{\\n  \\\"charity_name\\\": null,\\n  \\\"charity_number\\\": null,\\n  \\\"address_post_town\\\": null,\\n  \\\"address_postcode\\\": null,\\n  \\\"address_street_line\\\": null,\\n  \\\"income_annually_in_british_pounds\\\": null,\\n  \\\"spending_annually_in_british_pounds\\\": null,\\n  \\\"report_date\\\": \\\"2014-12-31\\\",\\n  \\\"confidence\\\": {\\n    \\\"charity_name\\\": 0.0,\\n    \\\"charity_number\\\": 0.0,\\n    \\\"address_post_town\\\": 0.0,\\n    \\\"address_postcode\\\": 0.0,\\n    \\\"address_street_line\\\": 0.0,\\n    \\\"income_annually_in_british_pounds\\\": 0.0,\\n    \\\"spending_annually_in_british_pounds\\\": 0.0,\\n    \\\"report_date\\\": 0.9\\n  }\\n}\"}, {\"page\": 104, \"raw\": \"{\\n  \\\"charity_name\\\": null,\\n  \\\"charity_number\\\": null,\\n  \\\"address_post_town\\\": \\\"King\\u2019s Lynn\\\",\\n  \\\"address_postcode\\\": \\\"PE31 6RH\\\",\\n  \\\"address_street_line\\\": \\\"Bircham Newton\\\",\\n  \\\"income_annually_in_british_pounds\\\": null,\\n  \\\"spending_annually_in_british_pounds\\\": null,\\n  \\\"report_date\\\": null,\\n  \\\"confidence\\\": {\\n    \\\"charity_name\\\": 0.0,\\n    \\\"charity_number\\\": 0.0,\\n    \\\"address_post_town\\\": 0.9,\\n    \\\"address_postcode\\\": 0.9,\\n    \\\"address_street_line\\\": 0.9,\\n    \\\"income_annually_in_british_pounds\\\": 0.0,\\n    \\\"spending_annually_in_british_pounds\\\": 0.0,\\n    \\\"report_date\\\": 0.0\\n  }\\n}\"}, {\"page\": 105, \"raw\": \"{\\n  \\\"charity_name\\\": null,\\n  \\\"charity_number\\\": null,\\n  \\\"address_post_town\\\": null,\\n  \\\"address_postcode\\\": null,\\n  \\\"address_street_line\\\": null,\\n  \\\"income_annually_in_british_pounds\\\": null,\\n  \\\"spending_annually_in_british_pounds\\\": null,\\n  \\\"report_date\\\": null,\\n  \\\"confidence\\\": {\\n    \\\"charity_name\\\": 0.0,\\n    \\\"charity_number\\\": 0.0,\\n    \\\"address_post_town\\\": 0.0,\\n    \\\"address_postcode\\\": 0.0,\\n    \\\"address_street_line\\\": 0.0,\\n    \\\"income_annually_in_british_pounds\\\": 0.0,\\n    \\\"spending_annually_in_british_pounds\\\": 0.0,\\n    \\\"report_date\\\": 0.0\\n  }\\n}\"}, {\"page\": 111, \"raw\": \"{\\n  \\\"charity_name\\\": \\\"CITB\\\",\\n  \\\"charity_number\\\": \\\"264289\\\",\\n  \\\"address_post_town\\\": null,\\n  \\\"address_postcode\\\": null,\\n  \\\"address_street_line\\\": null,\\n  \\\"income_annually_in_british_pounds\\\": null,\\n  \\\"spending_annually_in_british_pounds\\\": null,\\n  \\\"report_date\\\": null,\\n  \\\"confidence\\\": {\\n    \\\"charity_name\\\": 0.9,\\n    \\\"charity_number\\\": 0.9,\\n    \\\"address_post_town\\\": 0.0,\\n    \\\"address_postcode\\\": 0.0,\\n    \\\"address_street_line\\\": 0.0,\\n    \\\"income_annually_in_british_pounds\\\": 0.0,\\n    \\\"spending_annually_in_british_pounds\\\": 0.0,\\n    \\\"report_date\\\": 0.0\\n  }\\n}\"}]",
+  "prediction": {
+    "charity_name": "Construction Industry Training Board",
+    "charity_number": "264289",
+    "address_post_town": "King\u2019s Lynn",
+    "address_postcode": "PE31 6RH",
+    "address_street_line": "Bircham Newton",
+    "income_annually_in_british_pounds": 263964000,
+    "spending_annually_in_british_pounds": 297787000,
+    "report_date": "2014-12-31"
+  },
+  "usage": {
+    "prompt_tokens": 18343,
+    "completion_tokens": 1631
+  },
+  "cost_usd": 0.0,
+  "downscaled": false,
+  "validation": {
+    "valid": true,
+    "errors": []
+  },
+  "pages_total": 112,
+  "pages_selected": 7,
+  "page_indices": [
+    0,
+    65,
+    68,
+    70,
+    104,
+    105,
+    111
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "prediction": {
+    "address_post_town": "CAMBRIDGE",
+    "address_postcode": "CB2 1DQ",
+    "charity_name": "Downing College Cambridge",
+    "charity_number": "1137455",
+    "income_annually_in_british_pounds": 12263000,
+    "report_date": "2016-06-30",
+    "spending_annually_in_british_pounds": 10889000
+  },
+  "meta": {
+    "source": "kleister-charity",
+    "note": "GT from Kleister-Charity expected.tsv (official)"
+  }
+}

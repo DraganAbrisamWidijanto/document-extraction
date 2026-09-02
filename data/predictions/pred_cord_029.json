@@ -2,8 +2,10 @@
   "name": "cord_029",
   "image": "",
   "model": "gemini-3.5-flash-lite",
-  "latency_s": 3.15,
-  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"COLD OCHA\",\n      \"quantity\": 1,\n      \"unit_price\": 10909,\n      \"amount\": 10909,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"BCA PROMO\",\n      \"quantity\": 1,\n      \"unit_price\": 54455,\n      \"amount\": 54455,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"1-ABURA UDON SPICY\",\n      \"quantity\": 1,\n      \"unit_price\": 0,\n      \"amount\": 0,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"1-KAKE UDON\",\n      \"quantity\": 1,\n      \"unit_price\": 0,\n      \"amount\": 0,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"SKEWERED SHUMAI\",\n      \"quantity\": 1,\n      \"unit_price\": 12727,\n      \"amount\": 12727,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"SKEWERED TOFU ROLL\",\n      \"quantity\": 1,\n      \"unit_price\": 12727,\n      \"amount\": 12727,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"EBI TEMPURA\",\n      \"quantity\": 1,\n      \"unit_price\": 13636,\n      \"amount\": 13636,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"KITSUNE UDON (KIDS)\",\n      \"quantity\": 1,\n      \"unit_price\": 28182,\n      \"amount\": 28182,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    }\n  ],\n  \"subtotal\": 132636,\n  \"discount\": null,\n  \"tax\": 13264,\n  \"service_charge\": null,\n  \"total\": 145900,\n  \"confidence\": {\n    \"subtotal\": 0.9,\n    \"discount\": 0.0,\n    \"tax\": 0.9,\n    \"service_charge\": 0.0,\n    \"total\": 0.9,\n    \"payment.method\": 0.0,\n    \"payment.amount_paid\": 0.0,\n    \"payment.change\": 0.0\n  },\n  \"payment\": {\n    \"method\": null,\n    \"amount_paid\": null,\n    \"change\": null\n  }\n}",
+  "ok": true,
+  "error": null,
+  "latency_s": 33.68,
+  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"COLD OCHA\",\n      \"quantity\": 1,\n      \"unit_price\": 10909,\n      \"amount\": 10909,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"BCA PROMO\",\n      \"quantity\": 1,\n      \"unit_price\": 54455,\n      \"amount\": 54455,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"I-ABURA UDON SPICY\",\n      \"quantity\": 1,\n      \"unit_price\": 0,\n      \"amount\": 0,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"I-KAKE UDON\",\n      \"quantity\": 1,\n      \"unit_price\": 0,\n      \"amount\": 0,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"SKEWERED SHUMAI\",\n      \"quantity\": 1,\n      \"unit_price\": 12727,\n      \"amount\": 12727,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"SKEWERED TOFU ROLL\",\n      \"quantity\": 1,\n      \"unit_price\": 12727,\n      \"amount\": 12727,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"EBI TEMPURA\",\n      \"quantity\": 1,\n      \"unit_price\": 13636,\n      \"amount\": 13636,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"KITSUNE UDON (KIDS)\",\n      \"quantity\": 1,\n      \"unit_price\": 28182,\n      \"amount\": 28182,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    }\n  ],\n  \"subtotal\": 132636,\n  \"discount\": null,\n  \"tax\": 13264,\n  \"service_charge\": null,\n  \"total\": 145900,\n  \"confidence\": {\n    \"subtotal\": 0.9,\n    \"discount\": 0.0,\n    \"tax\": 0.9,\n    \"service_charge\": 0.0,\n    \"total\": 0.9,\n    \"payment.method\": 0.0,\n    \"payment.amount_paid\": 0.0,\n    \"payment.change\": 0.0\n  },\n  \"payment\": {\n    \"method\": null,\n    \"amount_paid\": null,\n    \"change\": null\n  }\n}",
   "prediction": {
     "menu_items": [
       {
@@ -31,7 +33,7 @@
         }
       },
       {
-        "name": "1-ABURA UDON SPICY",
+        "name": "I-ABURA UDON SPICY",
         "quantity": 1,
         "unit_price": 0,
         "amount": 0,
@@ -43,7 +45,7 @@
         }
       },
       {
-        "name": "1-KAKE UDON",
+        "name": "I-KAKE UDON",
         "quantity": 1,
         "unit_price": 0,
         "amount": 0,
@@ -134,5 +136,8 @@
   "validation": {
     "valid": true,
     "errors": []
-  }
+  },
+  "pages_total": null,
+  "pages_selected": null,
+  "page_indices": null
 }

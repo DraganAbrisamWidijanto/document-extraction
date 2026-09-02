@@ -1,0 +1,16 @@
+{
+  "prediction": {
+    "address_post_town": "MANCHESTER",
+    "address_postcode": "M3 3AW",
+    "address_street_line": "3 HARDMAN STREET",
+    "charity_name": "General Medical Council",
+    "charity_number": "1089278",
+    "income_annually_in_british_pounds": 97054000,
+    "report_date": "2014-12-31",
+    "spending_annually_in_british_pounds": 101024000
+  },
+  "meta": {
+    "source": "kleister-charity",
+    "note": "GT from Kleister-Charity expected.tsv (official)"
+  }
+}

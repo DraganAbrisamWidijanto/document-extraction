@@ -1,0 +1,16 @@
+{
+  "prediction": {
+    "address_post_town": "LONDON",
+    "address_postcode": "NW3 2NU",
+    "address_street_line": "2-3 HEATHGATE PLACE",
+    "charity_name": "Anthony Nolan",
+    "charity_number": "803716",
+    "income_annually_in_british_pounds": 51747000,
+    "report_date": "2018-03-31",
+    "spending_annually_in_british_pounds": 49002000
+  },
+  "meta": {
+    "source": "kleister-charity",
+    "note": "GT from Kleister-Charity expected.tsv (official)"
+  }
+}

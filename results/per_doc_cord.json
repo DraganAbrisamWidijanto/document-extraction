@@ -125,7 +125,7 @@
       "subtotal": "tp",
       "discount": null,
       "tax": "tp",
-      "service_charge": "wrong",
+      "service_charge": "tp",
       "total": "tp",
       "payment.method": null,
       "payment.amount_paid": null,
@@ -419,7 +419,7 @@
     "fields": {
       "subtotal": "tp",
       "discount": null,
-      "tax": null,
+      "tax": "fp",
       "service_charge": null,
       "total": "tp",
       "payment.method": "fp",
@@ -470,7 +470,7 @@
     "fields": {
       "subtotal": "tp",
       "discount": null,
-      "tax": "fp",
+      "tax": null,
       "service_charge": null,
       "total": "tp",
       "payment.method": null,
@@ -648,7 +648,7 @@
       "service_charge": null,
       "total": "tp",
       "payment.method": "fn",
-      "payment.amount_paid": "fn",
+      "payment.amount_paid": "tp",
       "payment.change": null
     },
     "n_items_gt": 2,
@@ -768,7 +768,7 @@
       "tax": "tp",
       "service_charge": "fp",
       "total": "tp",
-      "payment.method": "wrong",
+      "payment.method": "tp",
       "payment.amount_paid": "tp",
       "payment.change": "tp"
     },

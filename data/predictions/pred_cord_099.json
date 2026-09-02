@@ -2,8 +2,10 @@
   "name": "cord_099",
   "image": "",
   "model": "gemini-3.5-flash-lite",
-  "latency_s": 2.48,
-  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"FL-Xmas 30 Off\",\n      \"quantity\": 1,\n      \"unit_price\": 68180,\n      \"amount\": 68180,\n      \"confidence\": {\n        \"name\": 0.95,\n        \"quantity\": 0.95,\n        \"unit_price\": 0.95,\n        \"amount\": 0.95\n      }\n    },\n    {\n      \"name\": \"PAKET SLICES\",\n      \"quantity\": 1,\n      \"unit_price\": 0,\n      \"amount\": 0,\n      \"confidence\": {\n        \"name\": 0.95,\n        \"quantity\": 0.95,\n        \"unit_price\": 0.95,\n        \"amount\": 0.95\n      }\n    },\n    {\n      \"name\": \"PAKET SLICES\",\n      \"quantity\": 1,\n      \"unit_price\": 0,\n      \"amount\": 0,\n      \"confidence\": {\n        \"name\": 0.95,\n        \"quantity\": 0.95,\n        \"unit_price\": 0.95,\n        \"amount\": 0.95\n      }\n    },\n    {\n      \"name\": \"PAKET SLICES\",\n      \"quantity\": 1,\n      \"unit_price\": 0,\n      \"amount\": 0,\n      \"confidence\": {\n        \"name\": 0.95,\n        \"quantity\": 0.95,\n        \"unit_price\": 0.95,\n        \"amount\": 0.95\n      }\n    }\n  ],\n  \"subtotal\": 68180,\n  \"discount\": 0,\n  \"tax\": 6818,\n  \"service_charge\": 0,\n  \"total\": 75000,\n  \"confidence\": {\n    \"subtotal\": 0.95,\n    \"discount\": 0.95,\n    \"tax\": 0.95,\n    \"service_charge\": 0.95,\n    \"total\": 0.95,\n    \"payment.method\": 0.9,\n    \"payment.amount_paid\": 0.95,\n    \"payment.change\": 0.95\n  },\n  \"payment\": {\n    \"method\": \"other\",\n    \"amount_paid\": 75000,\n    \"change\": 0\n  }\n}",
+  "ok": true,
+  "error": null,
+  "latency_s": 32.88,
+  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"FL-Xmas 30 Off\",\n      \"quantity\": 1,\n      \"unit_price\": 68180,\n      \"amount\": 68180,\n      \"confidence\": {\n        \"name\": 0.95,\n        \"quantity\": 0.95,\n        \"unit_price\": 0.95,\n        \"amount\": 0.95\n      }\n    },\n    {\n      \"name\": \"PAKET SLICES\",\n      \"quantity\": 1,\n      \"unit_price\": 0,\n      \"amount\": 0,\n      \"confidence\": {\n        \"name\": 0.95,\n        \"quantity\": 0.95,\n        \"unit_price\": 0.95,\n        \"amount\": 0.95\n      }\n    },\n    {\n      \"name\": \"PAKET SLICES\",\n      \"quantity\": 1,\n      \"unit_price\": 0,\n      \"amount\": 0,\n      \"confidence\": {\n        \"name\": 0.95,\n        \"quantity\": 0.95,\n        \"unit_price\": 0.95,\n        \"amount\": 0.95\n      }\n    },\n    {\n      \"name\": \"PAKET SLICES\",\n      \"quantity\": 1,\n      \"unit_price\": 0,\n      \"amount\": 0,\n      \"confidence\": {\n        \"name\": 0.95,\n        \"quantity\": 0.95,\n        \"unit_price\": 0.95,\n        \"amount\": 0.95\n      }\n    }\n  ],\n  \"subtotal\": 68180,\n  \"discount\": 0,\n  \"tax\": 6818,\n  \"service_charge\": 0,\n  \"total\": 75000,\n  \"confidence\": {\n    \"subtotal\": 0.95,\n    \"discount\": 0.95,\n    \"tax\": 0.95,\n    \"service_charge\": 0.95,\n    \"total\": 0.95,\n    \"payment.method\": 0.95,\n    \"payment.amount_paid\": 0.95,\n    \"payment.change\": 0.95\n  },\n  \"payment\": {\n    \"method\": \"credit_card\",\n    \"amount_paid\": 75000,\n    \"change\": 0\n  }\n}",
   "prediction": {
     "menu_items": [
       {
@@ -66,25 +68,28 @@
       "tax": 0.95,
       "service_charge": 0.95,
       "total": 0.95,
-      "payment.method": 0.9,
+      "payment.method": 0.95,
       "payment.amount_paid": 0.95,
       "payment.change": 0.95
     },
     "payment": {
-      "method": "other",
+      "method": "credit_card",
       "amount_paid": 75000,
       "change": 0
     }
   },
   "usage": {
-    "completion_tokens": 612,
+    "completion_tokens": 615,
     "prompt_tokens": 2678,
-    "total_tokens": 3290
+    "total_tokens": 3293
   },
   "cost_usd": 0.0,
   "downscaled": false,
   "validation": {
     "valid": true,
     "errors": []
-  }
+  },
+  "pages_total": null,
+  "pages_selected": null,
+  "page_indices": null
 }

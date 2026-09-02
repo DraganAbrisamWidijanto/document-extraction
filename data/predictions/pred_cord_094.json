@@ -2,8 +2,10 @@
   "name": "cord_094",
   "image": "",
   "model": "gemini-3.5-flash-lite",
-  "latency_s": 2.3,
-  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"TAHU GORENG\",\n      \"quantity\": 1,\n      \"unit_price\": 28000,\n      \"amount\": 28000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"CAKWE\",\n      \"quantity\": 1,\n      \"unit_price\": 17000,\n      \"amount\": 17000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"PHO TAI CHIN ( R )\",\n      \"quantity\": 1,\n      \"unit_price\": 63000,\n      \"amount\": 63000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"TEA\",\n      \"quantity\": 1,\n      \"unit_price\": 11000,\n      \"amount\": 11000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    }\n  ],\n  \"subtotal\": 119000,\n  \"discount\": null,\n  \"tax\": 12733,\n  \"service_charge\": 8330,\n  \"total\": 140063,\n  \"confidence\": {\n    \"subtotal\": 1,\n    \"discount\": 0,\n    \"tax\": 1,\n    \"service_charge\": 1,\n    \"total\": 1,\n    \"payment.method\": 1,\n    \"payment.amount_paid\": 1,\n    \"payment.change\": 0\n  },\n  \"payment\": {\n    \"method\": \"credit_card\",\n    \"amount_paid\": 140063,\n    \"change\": null\n  }\n}",
+  "ok": true,
+  "error": null,
+  "latency_s": 32.9,
+  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"TAHU GORENG\",\n      \"quantity\": 1,\n      \"unit_price\": 28000,\n      \"amount\": 28000,\n      \"confidence\": {\n        \"name\": 1.0,\n        \"quantity\": 1.0,\n        \"unit_price\": 1.0,\n        \"amount\": 1.0\n      }\n    },\n    {\n      \"name\": \"CAKWE\",\n      \"quantity\": 1,\n      \"unit_price\": 17000,\n      \"amount\": 17000,\n      \"confidence\": {\n        \"name\": 1.0,\n        \"quantity\": 1.0,\n        \"unit_price\": 1.0,\n        \"amount\": 1.0\n      }\n    },\n    {\n      \"name\": \"PHO TAI CHIN ( R )\",\n      \"quantity\": 1,\n      \"unit_price\": 63000,\n      \"amount\": 63000,\n      \"confidence\": {\n        \"name\": 1.0,\n        \"quantity\": 1.0,\n        \"unit_price\": 1.0,\n        \"amount\": 1.0\n      }\n    },\n    {\n      \"name\": \"TEA\",\n      \"quantity\": 1,\n      \"unit_price\": 11000,\n      \"amount\": 11000,\n      \"confidence\": {\n        \"name\": 1.0,\n        \"quantity\": 1.0,\n        \"unit_price\": 1.0,\n        \"amount\": 1.0\n      }\n    }\n  ],\n  \"subtotal\": 119000,\n  \"discount\": null,\n  \"tax\": 12733,\n  \"service_charge\": 8330,\n  \"total\": 140063,\n  \"confidence\": {\n    \"subtotal\": 1.0,\n    \"discount\": 0.0,\n    \"tax\": 1.0,\n    \"service_charge\": 1.0,\n    \"total\": 1.0,\n    \"payment.method\": 1.0,\n    \"payment.amount_paid\": 1.0,\n    \"payment.change\": 0.0\n  },\n  \"payment\": {\n    \"method\": \"credit_card\",\n    \"amount_paid\": 140063,\n    \"change\": null\n  }\n}",
   "prediction": {
     "menu_items": [
       {
@@ -12,10 +14,10 @@
         "unit_price": 28000,
         "amount": 28000,
         "confidence": {
-          "name": 1,
-          "quantity": 1,
-          "unit_price": 1,
-          "amount": 1
+          "name": 1.0,
+          "quantity": 1.0,
+          "unit_price": 1.0,
+          "amount": 1.0
         }
       },
       {
@@ -24,10 +26,10 @@
         "unit_price": 17000,
         "amount": 17000,
         "confidence": {
-          "name": 1,
-          "quantity": 1,
-          "unit_price": 1,
-          "amount": 1
+          "name": 1.0,
+          "quantity": 1.0,
+          "unit_price": 1.0,
+          "amount": 1.0
         }
       },
       {
@@ -36,10 +38,10 @@
         "unit_price": 63000,
         "amount": 63000,
         "confidence": {
-          "name": 1,
-          "quantity": 1,
-          "unit_price": 1,
-          "amount": 1
+          "name": 1.0,
+          "quantity": 1.0,
+          "unit_price": 1.0,
+          "amount": 1.0
         }
       },
       {
@@ -48,10 +50,10 @@
         "unit_price": 11000,
         "amount": 11000,
         "confidence": {
-          "name": 1,
-          "quantity": 1,
-          "unit_price": 1,
-          "amount": 1
+          "name": 1.0,
+          "quantity": 1.0,
+          "unit_price": 1.0,
+          "amount": 1.0
         }
       }
     ],
@@ -61,14 +63,14 @@
     "service_charge": 8330,
     "total": 140063,
     "confidence": {
-      "subtotal": 1,
-      "discount": 0,
-      "tax": 1,
-      "service_charge": 1,
-      "total": 1,
-      "payment.method": 1,
-      "payment.amount_paid": 1,
-      "payment.change": 0
+      "subtotal": 1.0,
+      "discount": 0.0,
+      "tax": 1.0,
+      "service_charge": 1.0,
+      "total": 1.0,
+      "payment.method": 1.0,
+      "payment.amount_paid": 1.0,
+      "payment.change": 0.0
     },
     "payment": {
       "method": "credit_card",
@@ -77,14 +79,17 @@
     }
   },
   "usage": {
-    "completion_tokens": 570,
+    "completion_tokens": 618,
     "prompt_tokens": 2678,
-    "total_tokens": 3248
+    "total_tokens": 3296
   },
   "cost_usd": 0.0,
   "downscaled": false,
   "validation": {
     "valid": true,
     "errors": []
-  }
+  },
+  "pages_total": null,
+  "pages_selected": null,
+  "page_indices": null
 }

@@ -2,7 +2,9 @@
   "name": "self_007",
   "image": "",
   "model": "gemini-3.5-flash-lite",
-  "latency_s": 2.51,
+  "ok": true,
+  "error": null,
+  "latency_s": 33.02,
   "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"R. Tori Paitan Shortplate\",\n      \"quantity\": 1,\n      \"unit_price\": 36000,\n      \"amount\": 36000,\n      \"confidence\": {\n        \"name\": 1.0,\n        \"quantity\": 1.0,\n        \"unit_price\": 1.0,\n        \"amount\": 1.0\n      }\n    },\n    {\n      \"name\": \"R. Basic Tori Paitan\",\n      \"quantity\": 1,\n      \"unit_price\": 26000,\n      \"amount\": 26000,\n      \"confidence\": {\n        \"name\": 1.0,\n        \"quantity\": 1.0,\n        \"unit_price\": 1.0,\n        \"amount\": 1.0\n      }\n    },\n    {\n      \"name\": \"RD. Gyudon\",\n      \"quantity\": 1,\n      \"unit_price\": 42000,\n      \"amount\": 42000,\n      \"confidence\": {\n        \"name\": 1.0,\n        \"quantity\": 1.0,\n        \"unit_price\": 1.0,\n        \"amount\": 1.0\n      }\n    },\n    {\n      \"name\": \"D. Ocha (free refil)\",\n      \"quantity\": 3,\n      \"unit_price\": 5000,\n      \"amount\": 15000,\n      \"confidence\": {\n        \"name\": 1.0,\n        \"quantity\": 1.0,\n        \"unit_price\": 1.0,\n        \"amount\": 1.0\n      }\n    }\n  ],\n  \"subtotal\": 119000,\n  \"discount\": null,\n  \"tax\": null,\n  \"service_charge\": null,\n  \"total\": 119000,\n  \"confidence\": {\n    \"subtotal\": 1.0,\n    \"discount\": 0.0,\n    \"tax\": 0.0,\n    \"service_charge\": 0.0,\n    \"total\": 1.0,\n    \"payment.method\": 1.0,\n    \"payment.amount_paid\": 1.0,\n    \"payment.change\": 1.0\n  },\n  \"payment\": {\n    \"method\": \"transfer\",\n    \"amount_paid\": 119000,\n    \"change\": 0\n  }\n}",
   "prediction": {
     "menu_items": [
@@ -86,5 +88,8 @@
   "validation": {
     "valid": true,
     "errors": []
-  }
+  },
+  "pages_total": null,
+  "pages_selected": null,
+  "page_indices": null
 }

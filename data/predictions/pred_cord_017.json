@@ -2,7 +2,9 @@
   "name": "cord_017",
   "image": "",
   "model": "gemini-3.5-flash-lite",
-  "latency_s": 2.76,
+  "ok": true,
+  "error": null,
+  "latency_s": 33.14,
   "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"Goblin's Mace\",\n      \"quantity\": 1,\n      \"unit_price\": 25000,\n      \"amount\": 25000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"Mozarella Hot Dog\",\n      \"quantity\": 2,\n      \"unit_price\": 19000,\n      \"amount\": 38000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"Chili Pepper Croquette\",\n      \"quantity\": 1,\n      \"unit_price\": 14000,\n      \"amount\": 14000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"Cheese Croquette\",\n      \"quantity\": 1,\n      \"unit_price\": 14000,\n      \"amount\": 14000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"Plastik Amook\",\n      \"quantity\": 1,\n      \"unit_price\": 0,\n      \"amount\": 0,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"Plastik Putih Take Away\",\n      \"quantity\": 1,\n      \"unit_price\": 0,\n      \"amount\": 0,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    }\n  ],\n  \"subtotal\": 91000,\n  \"discount\": 0,\n  \"tax\": null,\n  \"service_charge\": null,\n  \"total\": 91000,\n  \"confidence\": {\n    \"subtotal\": 1,\n    \"discount\": 1,\n    \"tax\": 0,\n    \"service_charge\": 0,\n    \"total\": 1,\n    \"payment.method\": 1,\n    \"payment.amount_paid\": 1,\n    \"payment.change\": 0\n  },\n  \"payment\": {\n    \"method\": \"debit\",\n    \"amount_paid\": 91000,\n    \"change\": null\n  }\n}",
   "prediction": {
     "menu_items": [
@@ -110,5 +112,8 @@
   "validation": {
     "valid": true,
     "errors": []
-  }
+  },
+  "pages_total": null,
+  "pages_selected": null,
+  "page_indices": null
 }

@@ -2,8 +2,10 @@
   "name": "cord_082",
   "image": "",
   "model": "gemini-3.5-flash-lite",
-  "latency_s": 2.22,
-  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"Chocolate Log Cake\",\n      \"quantity\": 1,\n      \"unit_price\": 115000,\n      \"amount\": 115000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"Snowman Cake Chocolate\",\n      \"quantity\": 1,\n      \"unit_price\": 60000,\n      \"amount\": 60000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"Strawberry Log Cake\",\n      \"quantity\": 2,\n      \"unit_price\": 105000,\n      \"amount\": 210000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    }\n  ],\n  \"subtotal\": 385000,\n  \"discount\": null,\n  \"tax\": null,\n  \"service_charge\": null,\n  \"total\": 385000,\n  \"confidence\": {\n    \"subtotal\": 1,\n    \"discount\": 0,\n    \"tax\": 0,\n    \"service_charge\": 0,\n    \"total\": 1,\n    \"payment.method\": 1,\n    \"payment.amount_paid\": 1,\n    \"payment.change\": 1\n  },\n  \"payment\": {\n    \"method\": \"credit_card\",\n    \"amount_paid\": 385000,\n    \"change\": 0\n  }\n}",
+  "ok": true,
+  "error": null,
+  "latency_s": 32.48,
+  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"Chocolate Log Cake\",\n      \"quantity\": 1,\n      \"unit_price\": 115000,\n      \"amount\": 115000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"Snowman Cake Chocolate\",\n      \"quantity\": 1,\n      \"unit_price\": 60000,\n      \"amount\": 60000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"Strawberry Log Cake\",\n      \"quantity\": 2,\n      \"unit_price\": 105000,\n      \"amount\": 210000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    }\n  ],\n  \"subtotal\": 385000,\n  \"discount\": null,\n  \"tax\": null,\n  \"service_charge\": null,\n  \"total\": 385000,\n  \"confidence\": {\n    \"subtotal\": 1,\n    \"discount\": 0,\n    \"tax\": 0,\n    \"service_charge\": 0,\n    \"total\": 1,\n    \"payment.method\": 0.9,\n    \"payment.amount_paid\": 1,\n    \"payment.change\": 1\n  },\n  \"payment\": {\n    \"method\": \"credit_card\",\n    \"amount_paid\": 385000,\n    \"change\": 0\n  }\n}",
   "prediction": {
     "menu_items": [
       {
@@ -54,7 +56,7 @@
       "tax": 0,
       "service_charge": 0,
       "total": 1,
-      "payment.method": 1,
+      "payment.method": 0.9,
       "payment.amount_paid": 1,
       "payment.change": 1
     },
@@ -65,14 +67,17 @@
     }
   },
   "usage": {
-    "completion_tokens": 469,
+    "completion_tokens": 471,
     "prompt_tokens": 2678,
-    "total_tokens": 3147
+    "total_tokens": 3149
   },
   "cost_usd": 0.0,
   "downscaled": false,
   "validation": {
     "valid": true,
     "errors": []
-  }
+  },
+  "pages_total": null,
+  "pages_selected": null,
+  "page_indices": null
 }

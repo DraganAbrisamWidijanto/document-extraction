@@ -1,0 +1,40 @@
+{
+  "name": "e7422516",
+  "image": "",
+  "model": "gemini-3.5-flash-lite",
+  "ok": true,
+  "error": null,
+  "latency_s": 231.28,
+  "raw": "[{\"page\": 0, \"raw\": \"{\\n  \\\"charity_name\\\": null,\\n  \\\"charity_number\\\": null,\\n  \\\"address_post_town\\\": null,\\n  \\\"address_postcode\\\": null,\\n  \\\"address_street_line\\\": null,\\n  \\\"income_annually_in_british_pounds\\\": null,\\n  \\\"spending_annually_in_british_pounds\\\": null,\\n  \\\"report_date\\\": null,\\n  \\\"confidence\\\": {\\n    \\\"charity_name\\\": 0.0,\\n    \\\"charity_number\\\": 0.0,\\n    \\\"address_post_town\\\": 0.0,\\n    \\\"address_postcode\\\": 0.0,\\n    \\\"address_street_line\\\": 0.0,\\n    \\\"income_annually_in_british_pounds\\\": 0.0,\\n    \\\"spending_annually_in_british_pounds\\\": 0.0,\\n    \\\"report_date\\\": 0.0\\n  }\\n}\"}, {\"page\": 37, \"raw\": \"{\\n  \\\"charity_name\\\": \\\"London Transport Museum Limited\\\",\\n  \\\"charity_number\\\": \\\"1123122\\\",\\n  \\\"address_post_town\\\": null,\\n  \\\"address_postcode\\\": null,\\n  \\\"address_street_line\\\": null,\\n  \\\"income_annually_in_british_pounds\\\": null,\\n  \\\"spending_annually_in_british_pounds\\\": null,\\n  \\\"report_date\\\": null,\\n  \\\"confidence\\\": {\\n    \\\"charity_name\\\": 1.0,\\n    \\\"charity_number\\\": 1.0,\\n    \\\"address_post_town\\\": 0.0,\\n    \\\"address_postcode\\\": 0.0,\\n    \\\"address_street_line\\\": 0.0,\\n    \\\"income_annually_in_british_pounds\\\": 0.0,\\n    \\\"spending_annually_in_british_pounds\\\": 0.0,\\n    \\\"report_date\\\": 0.0\\n  }\\n}\"}, {\"page\": 38, \"raw\": \"{\\n  \\\"charity_name\\\": \\\"London Transport Museum Limited\\\",\\n  \\\"charity_number\\\": null,\\n  \\\"address_post_town\\\": \\\"London\\\",\\n  \\\"address_postcode\\\": \\\"E14 5GL\\\",\\n  \\\"address_street_line\\\": \\\"15 Canada Square\\\",\\n  \\\"income_annually_in_british_pounds\\\": null,\\n  \\\"spending_annually_in_british_pounds\\\": null,\\n  \\\"report_date\\\": \\\"2016-03-31\\\",\\n  \\\"confidence\\\": {\\n    \\\"charity_name\\\": 0.9,\\n    \\\"charity_number\\\": 0.0,\\n    \\\"address_post_town\\\": 0.9,\\n    \\\"address_postcode\\\": 0.9,\\n    \\\"address_street_line\\\": 0.9,\\n    \\\"income_annually_in_british_pounds\\\": 0.0,\\n    \\\"spending_annually_in_british_pounds\\\": 0.0,\\n    \\\"report_date\\\": 0.9\\n  }\\n}\"}, {\"page\": 39, \"raw\": \"{\\n  \\\"charity_name\\\": null,\\n  \\\"charity_number\\\": null,\\n  \\\"address_post_town\\\": null,\\n  \\\"address_postcode\\\": null,\\n  \\\"address_street_line\\\": null,\\n  \\\"income_annually_in_british_pounds\\\": 15599000,\\n  \\\"spending_annually_in_british_pounds\\\": 15857000,\\n  \\\"report_date\\\": \\\"2016-03-31\\\",\\n  \\\"confidence\\\": {\\n    \\\"charity_name\\\": 0.0,\\n    \\\"charity_number\\\": 0.0,\\n    \\\"address_post_town\\\": 0.0,\\n    \\\"address_postcode\\\": 0.0,\\n    \\\"address_street_line\\\": 0.0,\\n    \\\"income_annually_in_british_pounds\\\": 1.0,\\n    \\\"spending_annually_in_british_pounds\\\": 1.0,\\n    \\\"report_date\\\": 1.0\\n  }\\n}\"}, {\"page\": 41, \"raw\": \"{\\n  \\\"charity_name\\\": null,\\n  \\\"charity_number\\\": null,\\n  \\\"address_post_town\\\": null,\\n  \\\"address_postcode\\\": null,\\n  \\\"address_street_line\\\": null,\\n  \\\"income_annually_in_british_pounds\\\": null,\\n  \\\"spending_annually_in_british_pounds\\\": null,\\n  \\\"report_date\\\": null,\\n  \\\"confidence\\\": {\\n    \\\"charity_name\\\": 0.0,\\n    \\\"charity_number\\\": 0.0,\\n    \\\"address_post_town\\\": 0.0,\\n    \\\"address_postcode\\\": 0.0,\\n    \\\"address_street_line\\\": 0.0,\\n    \\\"income_annually_in_british_pounds\\\": 0.0,\\n    \\\"spending_annually_in_british_pounds\\\": 0.0,\\n    \\\"report_date\\\": 0.0\\n  }\\n}\"}, {\"page\": 51, \"raw\": \"{\\n  \\\"charity_name\\\": \\\"London Transport Museum\\\",\\n  \\\"charity_number\\\": \\\"1123122\\\",\\n  \\\"address_post_town\\\": \\\"London\\\",\\n  \\\"address_postcode\\\": \\\"SW1H 0TL\\\",\\n  \\\"address_street_line\\\": \\\"Windsor House, 42-50 Victoria Street\\\",\\n  \\\"income_annually_in_british_pounds\\\": null,\\n  \\\"spending_annually_in_british_pounds\\\": null,\\n  \\\"report_date\\\": null,\\n  \\\"confidence\\\": {\\n    \\\"charity_name\\\": 1.0,\\n    \\\"charity_number\\\": 1.0,\\n    \\\"address_post_town\\\": 1.0,\\n    \\\"address_postcode\\\": 1.0,\\n    \\\"address_street_line\\\": 1.0,\\n    \\\"income_annually_in_british_pounds\\\": 0.0,\\n    \\\"spending_annually_in_british_pounds\\\": 0.0,\\n    \\\"report_date\\\": 0.0\\n  }\\n}\"}, {\"page\": 53, \"raw\": \"{\\n  \\\"charity_name\\\": \\\"London Transport Museum\\\",\\n  \\\"charity_number\\\": \\\"1123122\\\",\\n  \\\"address_post_town\\\": \\\"London\\\",\\n  \\\"address_postcode\\\": \\\"SW1H 0TL\\\",\\n  \\\"address_street_line\\\": \\\"Windsor House, 42-50 Victoria Street\\\",\\n  \\\"income_annually_in_british_pounds\\\": null,\\n  \\\"spending_annually_in_british_pounds\\\": null,\\n  \\\"report_date\\\": null,\\n  \\\"confidence\\\": {\\n    \\\"charity_name\\\": 0.9,\\n    \\\"charity_number\\\": 0.9,\\n    \\\"address_post_town\\\": 0.9,\\n    \\\"address_postcode\\\": 0.9,\\n    \\\"address_street_line\\\": 0.9,\\n    \\\"income_annually_in_british_pounds\\\": 0.0,\\n    \\\"spending_annually_in_british_pounds\\\": 0.0,\\n    \\\"report_date\\\": 0.0\\n  }\\n}\"}]",
+  "prediction": {
+    "charity_name": "London Transport Museum Limited",
+    "charity_number": "1123122",
+    "address_post_town": "London",
+    "address_postcode": "SW1H 0TL",
+    "address_street_line": "Windsor House, 42-50 Victoria Street",
+    "income_annually_in_british_pounds": 15599000,
+    "spending_annually_in_british_pounds": 15857000,
+    "report_date": "2016-03-31"
+  },
+  "usage": {
+    "prompt_tokens": 18931,
+    "completion_tokens": 1667
+  },
+  "cost_usd": 0.0,
+  "downscaled": false,
+  "validation": {
+    "valid": true,
+    "errors": []
+  },
+  "pages_total": 54,
+  "pages_selected": 7,
+  "page_indices": [
+    0,
+    37,
+    38,
+    39,
+    41,
+    51,
+    53
+  ]
+}

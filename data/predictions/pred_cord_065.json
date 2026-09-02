@@ -2,8 +2,10 @@
   "name": "cord_065",
   "image": "",
   "model": "gemini-3.5-flash-lite",
-  "latency_s": 9.45,
-  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"Bubur Polos + Telur\",\n      \"quantity\": 1,\n      \"unit_price\": 13000,\n      \"amount\": 13000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    }\n  ],\n  \"subtotal\": 13000,\n  \"discount\": null,\n  \"tax\": 0,\n  \"service_charge\": null,\n  \"total\": 13000,\n  \"confidence\": {\n    \"subtotal\": 0.9,\n    \"discount\": 0.0,\n    \"tax\": 0.9,\n    \"service_charge\": 0.0,\n    \"total\": 0.9,\n    \"payment.method\": 0.0,\n    \"payment.amount_paid\": 0.0,\n    \"payment.change\": 0.0\n  },\n  \"payment\": {\n    \"method\": null,\n    \"amount_paid\": null,\n    \"change\": null\n  }\n}",
+  "ok": true,
+  "error": null,
+  "latency_s": 32.15,
+  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"Bubur Polos + Telur\",\n      \"quantity\": 1,\n      \"unit_price\": 13000,\n      \"amount\": 13000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    }\n  ],\n  \"subtotal\": 13000,\n  \"discount\": null,\n  \"tax\": null,\n  \"service_charge\": null,\n  \"total\": 13000,\n  \"confidence\": {\n    \"subtotal\": 0.9,\n    \"discount\": 0.0,\n    \"tax\": 0.0,\n    \"service_charge\": 0.0,\n    \"total\": 0.9,\n    \"payment.method\": 0.0,\n    \"payment.amount_paid\": 0.0,\n    \"payment.change\": 0.0\n  },\n  \"payment\": {\n    \"method\": null,\n    \"amount_paid\": null,\n    \"change\": null\n  }\n}",
   "prediction": {
     "menu_items": [
       {
@@ -21,13 +23,13 @@
     ],
     "subtotal": 13000,
     "discount": null,
-    "tax": 0,
+    "tax": null,
     "service_charge": null,
     "total": 13000,
     "confidence": {
       "subtotal": 0.9,
       "discount": 0.0,
-      "tax": 0.9,
+      "tax": 0.0,
       "service_charge": 0.0,
       "total": 0.9,
       "payment.method": 0.0,
@@ -41,14 +43,17 @@
     }
   },
   "usage": {
-    "completion_tokens": 297,
+    "completion_tokens": 296,
     "prompt_tokens": 2698,
-    "total_tokens": 2995
+    "total_tokens": 2994
   },
   "cost_usd": 0.0,
   "downscaled": false,
   "validation": {
     "valid": true,
     "errors": []
-  }
+  },
+  "pages_total": null,
+  "pages_selected": null,
+  "page_indices": null
 }

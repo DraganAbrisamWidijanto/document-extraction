@@ -1,0 +1,40 @@
+{
+  "name": "1414c9bc",
+  "image": "",
+  "model": "gemini-3.5-flash-lite",
+  "ok": true,
+  "error": null,
+  "latency_s": 238.69,
+  "raw": "[{\"page\": 0, \"raw\": \"{\\n  \\\"charity_name\\\": \\\"Catch 22 Charity Limited\\\",\\n  \\\"charity_number\\\": \\\"1124127\\\",\\n  \\\"address_post_town\\\": null,\\n  \\\"address_postcode\\\": null,\\n  \\\"address_street_line\\\": null,\\n  \\\"income_annually_in_british_pounds\\\": null,\\n  \\\"spending_annually_in_british_pounds\\\": null,\\n  \\\"report_date\\\": \\\"2017-08-31\\\",\\n  \\\"confidence\\\": {\\n    \\\"charity_name\\\": 1.0,\\n    \\\"charity_number\\\": 1.0,\\n    \\\"address_post_town\\\": 0.0,\\n    \\\"address_postcode\\\": 0.0,\\n    \\\"address_street_line\\\": 0.0,\\n    \\\"income_annually_in_british_pounds\\\": 0.0,\\n    \\\"spending_annually_in_british_pounds\\\": 0.0,\\n    \\\"report_date\\\": 1.0\\n  }\\n}\"}, {\"page\": 34, \"raw\": \"{\\n  \\\"charity_name\\\": \\\"Catch22\\\",\\n  \\\"charity_number\\\": null,\\n  \\\"address_post_town\\\": null,\\n  \\\"address_postcode\\\": null,\\n  \\\"address_street_line\\\": null,\\n  \\\"income_annually_in_british_pounds\\\": null,\\n  \\\"spending_annually_in_british_pounds\\\": null,\\n  \\\"report_date\\\": \\\"2017-08-31\\\",\\n  \\\"confidence\\\": {\\n    \\\"charity_name\\\": 0.9,\\n    \\\"charity_number\\\": 0.0,\\n    \\\"address_post_town\\\": 0.0,\\n    \\\"address_postcode\\\": 0.0,\\n    \\\"address_street_line\\\": 0.0,\\n    \\\"income_annually_in_british_pounds\\\": 0.0,\\n    \\\"spending_annually_in_british_pounds\\\": 0.0,\\n    \\\"report_date\\\": 1.0\\n  }\\n}\"}, {\"page\": 46, \"raw\": \"{\\n  \\\"charity_name\\\": \\\"Catch22 Charity Limited\\\",\\n  \\\"charity_number\\\": null,\\n  \\\"address_post_town\\\": \\\"London\\\",\\n  \\\"address_postcode\\\": \\\"EC1V 3AG\\\",\\n  \\\"address_street_line\\\": \\\"27 Pear Tree Street\\\",\\n  \\\"income_annually_in_british_pounds\\\": 41650000,\\n  \\\"spending_annually_in_british_pounds\\\": 43349000,\\n  \\\"report_date\\\": \\\"2017-08-31\\\",\\n  \\\"confidence\\\": {\\n    \\\"charity_name\\\": 1.0,\\n    \\\"charity_number\\\": 0.0,\\n    \\\"address_post_town\\\": 1.0,\\n    \\\"address_postcode\\\": 1.0,\\n    \\\"address_street_line\\\": 1.0,\\n    \\\"income_annually_in_british_pounds\\\": 0.9,\\n    \\\"spending_annually_in_british_pounds\\\": 0.9,\\n    \\\"report_date\\\": 1.0\\n  }\\n}\"}, {\"page\": 49, \"raw\": \"{\\n  \\\"charity_name\\\": \\\"Catch22\\\",\\n  \\\"charity_number\\\": null,\\n  \\\"address_post_town\\\": null,\\n  \\\"address_postcode\\\": null,\\n  \\\"address_street_line\\\": null,\\n  \\\"income_annually_in_british_pounds\\\": 46818000,\\n  \\\"spending_annually_in_british_pounds\\\": 49530000,\\n  \\\"report_date\\\": \\\"2017-08-31\\\",\\n  \\\"confidence\\\": {\\n    \\\"charity_name\\\": 0.9,\\n    \\\"charity_number\\\": 0.0,\\n    \\\"address_post_town\\\": 0.0,\\n    \\\"address_postcode\\\": 0.0,\\n    \\\"address_street_line\\\": 0.0,\\n    \\\"income_annually_in_british_pounds\\\": 0.9,\\n    \\\"spending_annually_in_british_pounds\\\": 0.9,\\n    \\\"report_date\\\": 0.9\\n  }\\n}\"}, {\"page\": 62, \"raw\": \"{\\n  \\\"charity_name\\\": \\\"Catch22\\\",\\n  \\\"charity_number\\\": null,\\n  \\\"address_post_town\\\": null,\\n  \\\"address_postcode\\\": null,\\n  \\\"address_street_line\\\": null,\\n  \\\"income_annually_in_british_pounds\\\": null,\\n  \\\"spending_annually_in_british_pounds\\\": null,\\n  \\\"report_date\\\": \\\"2017-08-31\\\",\\n  \\\"confidence\\\": {\\n    \\\"charity_name\\\": 0.8,\\n    \\\"charity_number\\\": 0.0,\\n    \\\"address_post_town\\\": 0.0,\\n    \\\"address_postcode\\\": 0.0,\\n    \\\"address_street_line\\\": 0.0,\\n    \\\"income_annually_in_british_pounds\\\": 0.0,\\n    \\\"spending_annually_in_british_pounds\\\": 0.0,\\n    \\\"report_date\\\": 0.9\\n  }\\n}\"}, {\"page\": 74, \"raw\": \"{\\n  \\\"charity_name\\\": \\\"Catch22\\\",\\n  \\\"charity_number\\\": \\\"1124127\\\",\\n  \\\"address_post_town\\\": \\\"London\\\",\\n  \\\"address_postcode\\\": \\\"EC1V 3AG\\\",\\n  \\\"address_street_line\\\": \\\"27 Pear Tree Street\\\",\\n  \\\"income_annually_in_british_pounds\\\": null,\\n  \\\"spending_annually_in_british_pounds\\\": null,\\n  \\\"report_date\\\": \\\"2017-08-31\\\",\\n  \\\"confidence\\\": {\\n    \\\"charity_name\\\": 0.9,\\n    \\\"charity_number\\\": 1.0,\\n    \\\"address_post_town\\\": 1.0,\\n    \\\"address_postcode\\\": 1.0,\\n    \\\"address_street_line\\\": 1.0,\\n    \\\"income_annually_in_british_pounds\\\": 0.0,\\n    \\\"spending_annually_in_british_pounds\\\": 0.0,\\n    \\\"report_date\\\": 1.0\\n  }\\n}\"}, {\"page\": 75, \"raw\": \"{\\n  \\\"charity_name\\\": null,\\n  \\\"charity_number\\\": null,\\n  \\\"address_post_town\\\": null,\\n  \\\"address_postcode\\\": null,\\n  \\\"address_street_line\\\": null,\\n  \\\"income_annually_in_british_pounds\\\": null,\\n  \\\"spending_annually_in_british_pounds\\\": null,\\n  \\\"report_date\\\": null,\\n  \\\"confidence\\\": {\\n    \\\"charity_name\\\": 0.0,\\n    \\\"charity_number\\\": 0.0,\\n    \\\"address_post_town\\\": 0.0,\\n    \\\"address_postcode\\\": 0.0,\\n    \\\"address_street_line\\\": 0.0,\\n    \\\"income_annually_in_british_pounds\\\": 0.0,\\n    \\\"spending_annually_in_british_pounds\\\": 0.0,\\n    \\\"report_date\\\": 0.0\\n  }\\n}\"}]",
+  "prediction": {
+    "charity_name": "Catch 22 Charity Limited",
+    "charity_number": "1124127",
+    "address_post_town": "London",
+    "address_postcode": "EC1V 3AG",
+    "address_street_line": "27 Pear Tree Street",
+    "income_annually_in_british_pounds": 41650000,
+    "spending_annually_in_british_pounds": 43349000,
+    "report_date": "2017-08-31"
+  },
+  "usage": {
+    "prompt_tokens": 18414,
+    "completion_tokens": 1700
+  },
+  "cost_usd": 0.0,
+  "downscaled": false,
+  "validation": {
+    "valid": true,
+    "errors": []
+  },
+  "pages_total": 76,
+  "pages_selected": 7,
+  "page_indices": [
+    0,
+    34,
+    46,
+    49,
+    62,
+    74,
+    75
+  ]
+}

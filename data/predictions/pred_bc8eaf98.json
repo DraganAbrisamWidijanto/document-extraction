@@ -1,0 +1,40 @@
+{
+  "name": "bc8eaf98",
+  "image": "",
+  "model": "gemini-3.5-flash-lite",
+  "ok": true,
+  "error": null,
+  "latency_s": 231.77,
+  "raw": "[{\"page\": 0, \"raw\": \"{\\n  \\\"charity_name\\\": \\\"ANTHONY NOLAN\\\",\\n  \\\"charity_number\\\": null,\\n  \\\"address_post_town\\\": null,\\n  \\\"address_postcode\\\": null,\\n  \\\"address_street_line\\\": null,\\n  \\\"income_annually_in_british_pounds\\\": null,\\n  \\\"spending_annually_in_british_pounds\\\": null,\\n  \\\"report_date\\\": \\\"2018-03-31\\\",\\n  \\\"confidence\\\": {\\n    \\\"charity_name\\\": 0.9,\\n    \\\"charity_number\\\": 0.0,\\n    \\\"address_post_town\\\": 0.0,\\n    \\\"address_postcode\\\": 0.0,\\n    \\\"address_street_line\\\": 0.0,\\n    \\\"income_annually_in_british_pounds\\\": 0.0,\\n    \\\"spending_annually_in_british_pounds\\\": 0.0,\\n    \\\"report_date\\\": 0.9\\n  }\\n}\"}, {\"page\": 1, \"raw\": \"{\\n  \\\"charity_name\\\": \\\"ANTHONY NOLAN\\\",\\n  \\\"charity_number\\\": \\\"803716\\\",\\n  \\\"address_post_town\\\": \\\"London\\\",\\n  \\\"address_postcode\\\": \\\"NW3 2QG\\\",\\n  \\\"address_street_line\\\": \\\"Royal Free Hospital, Pond Street, Hampstead\\\",\\n  \\\"income_annually_in_british_pounds\\\": null,\\n  \\\"spending_annually_in_british_pounds\\\": null,\\n  \\\"report_date\\\": null,\\n  \\\"confidence\\\": {\\n    \\\"charity_name\\\": 1.0,\\n    \\\"charity_number\\\": 1.0,\\n    \\\"address_post_town\\\": 1.0,\\n    \\\"address_postcode\\\": 1.0,\\n    \\\"address_street_line\\\": 1.0,\\n    \\\"income_annually_in_british_pounds\\\": 0.0,\\n    \\\"spending_annually_in_british_pounds\\\": 0.0,\\n    \\\"report_date\\\": 0.0\\n  }\\n}\"}, {\"page\": 63, \"raw\": \"{\\n  \\\"charity_name\\\": \\\"Anthony Nolan\\\",\\n  \\\"charity_number\\\": null,\\n  \\\"address_post_town\\\": null,\\n  \\\"address_postcode\\\": null,\\n  \\\"address_street_line\\\": null,\\n  \\\"income_annually_in_british_pounds\\\": 51747000,\\n  \\\"spending_annually_in_british_pounds\\\": 49002000,\\n  \\\"report_date\\\": \\\"2018-03-31\\\",\\n  \\\"confidence\\\": {\\n    \\\"charity_name\\\": 0.9,\\n    \\\"charity_number\\\": 0.0,\\n    \\\"address_post_town\\\": 0.0,\\n    \\\"address_postcode\\\": 0.0,\\n    \\\"address_street_line\\\": 0.0,\\n    \\\"income_annually_in_british_pounds\\\": 1.0,\\n    \\\"spending_annually_in_british_pounds\\\": 1.0,\\n    \\\"report_date\\\": 1.0\\n  }\\n}\"}, {\"page\": 64, \"raw\": \"{\\n  \\\"charity_name\\\": \\\"Anthony Nolan\\\",\\n  \\\"charity_number\\\": null,\\n  \\\"address_post_town\\\": null,\\n  \\\"address_postcode\\\": null,\\n  \\\"address_street_line\\\": null,\\n  \\\"income_annually_in_british_pounds\\\": 51449000,\\n  \\\"spending_annually_in_british_pounds\\\": 48704000,\\n  \\\"report_date\\\": \\\"2018-03-31\\\",\\n  \\\"confidence\\\": {\\n    \\\"charity_name\\\": 0.9,\\n    \\\"charity_number\\\": 0.0,\\n    \\\"address_post_town\\\": 0.0,\\n    \\\"address_postcode\\\": 0.0,\\n    \\\"address_street_line\\\": 0.0,\\n    \\\"income_annually_in_british_pounds\\\": 1.0,\\n    \\\"spending_annually_in_british_pounds\\\": 1.0,\\n    \\\"report_date\\\": 1.0\\n  }\\n}\"}, {\"page\": 70, \"raw\": \"{\\n  \\\"charity_name\\\": \\\"Anthony Nolan\\\",\\n  \\\"charity_number\\\": null,\\n  \\\"address_post_town\\\": null,\\n  \\\"address_postcode\\\": null,\\n  \\\"address_street_line\\\": null,\\n  \\\"income_annually_in_british_pounds\\\": null,\\n  \\\"spending_annually_in_british_pounds\\\": null,\\n  \\\"report_date\\\": \\\"2018-03-31\\\",\\n  \\\"confidence\\\": {\\n    \\\"charity_name\\\": 0.9,\\n    \\\"charity_number\\\": 0.0,\\n    \\\"address_post_town\\\": 0.0,\\n    \\\"address_postcode\\\": 0.0,\\n    \\\"address_street_line\\\": 0.0,\\n    \\\"income_annually_in_british_pounds\\\": 0.0,\\n    \\\"spending_annually_in_british_pounds\\\": 0.0,\\n    \\\"report_date\\\": 1.0\\n  }\\n}\"}, {\"page\": 71, \"raw\": \"{\\n  \\\"charity_name\\\": \\\"Anthony Nolan\\\",\\n  \\\"charity_number\\\": null,\\n  \\\"address_post_town\\\": \\\"London\\\",\\n  \\\"address_postcode\\\": \\\"NW3 2QG\\\",\\n  \\\"address_street_line\\\": \\\"The Royal Free Hospital, Pond Street\\\",\\n  \\\"income_annually_in_british_pounds\\\": null,\\n  \\\"spending_annually_in_british_pounds\\\": null,\\n  \\\"report_date\\\": \\\"2018-03-31\\\",\\n  \\\"confidence\\\": {\\n    \\\"charity_name\\\": 0.9,\\n    \\\"charity_number\\\": 0.0,\\n    \\\"address_post_town\\\": 0.9,\\n    \\\"address_postcode\\\": 0.9,\\n    \\\"address_street_line\\\": 0.9,\\n    \\\"income_annually_in_british_pounds\\\": 0.0,\\n    \\\"spending_annually_in_british_pounds\\\": 0.0,\\n    \\\"report_date\\\": 0.9\\n  }\\n}\"}, {\"page\": 95, \"raw\": \"{\\n  \\\"charity_name\\\": \\\"Anthony Nolan\\\",\\n  \\\"charity_number\\\": null,\\n  \\\"address_post_town\\\": \\\"London\\\",\\n  \\\"address_postcode\\\": \\\"NW3 2NU\\\",\\n  \\\"address_street_line\\\": \\\"2 Heathgate Place, 75-87 Agincourt Road\\\",\\n  \\\"income_annually_in_british_pounds\\\": null,\\n  \\\"spending_annually_in_british_pounds\\\": null,\\n  \\\"report_date\\\": null,\\n  \\\"confidence\\\": {\\n    \\\"charity_name\\\": 0.9,\\n    \\\"charity_number\\\": 0.0,\\n    \\\"address_post_town\\\": 0.9,\\n    \\\"address_postcode\\\": 0.9,\\n    \\\"address_street_line\\\": 0.9,\\n    \\\"income_annually_in_british_pounds\\\": 0.0,\\n    \\\"spending_annually_in_british_pounds\\\": 0.0,\\n    \\\"report_date\\\": 0.0\\n  }\\n}\"}]",
+  "prediction": {
+    "charity_name": "ANTHONY NOLAN",
+    "charity_number": "803716",
+    "address_post_town": "London",
+    "address_postcode": "NW3 2QG",
+    "address_street_line": "Royal Free Hospital, Pond Street, Hampstead",
+    "income_annually_in_british_pounds": 51747000,
+    "spending_annually_in_british_pounds": 49002000,
+    "report_date": "2018-03-31"
+  },
+  "usage": {
+    "prompt_tokens": 18854,
+    "completion_tokens": 1704
+  },
+  "cost_usd": 0.0,
+  "downscaled": false,
+  "validation": {
+    "valid": true,
+    "errors": []
+  },
+  "pages_total": 96,
+  "pages_selected": 7,
+  "page_indices": [
+    0,
+    1,
+    63,
+    64,
+    70,
+    71,
+    95
+  ]
+}

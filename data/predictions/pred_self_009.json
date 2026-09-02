@@ -2,8 +2,10 @@
   "name": "self_009",
   "image": "",
   "model": "gemini-3.5-flash-lite",
-  "latency_s": 2.09,
-  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"1 SET PAKET MERONCE\",\n      \"quantity\": 1,\n      \"unit_price\": 35000,\n      \"amount\": 35000,\n      \"confidence\": {\n        \"name\": 0.95,\n        \"quantity\": 0.95,\n        \"unit_price\": 0.95,\n        \"amount\": 0.95\n      }\n    },\n    {\n      \"name\": \"PAKET POUCH KANVAS\",\n      \"quantity\": 2,\n      \"unit_price\": 50000,\n      \"amount\": 100000,\n      \"confidence\": {\n        \"name\": 0.95,\n        \"quantity\": 0.95,\n        \"unit_price\": 0.95,\n        \"amount\": 0.95\n      }\n    }\n  ],\n  \"subtotal\": 135000,\n  \"discount\": null,\n  \"tax\": null,\n  \"service_charge\": null,\n  \"total\": 135000,\n  \"confidence\": {\n    \"subtotal\": 0.95,\n    \"discount\": 0.0,\n    \"tax\": 0.0,\n    \"service_charge\": 0.0,\n    \"total\": 0.95,\n    \"payment.method\": 0.95,\n    \"payment.amount_paid\": 0.95,\n    \"payment.change\": 0.0\n  },\n  \"payment\": {\n    \"method\": \"emoney\",\n    \"amount_paid\": 135000,\n    \"change\": null\n  }\n}",
+  "ok": true,
+  "error": null,
+  "latency_s": 34.0,
+  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"1 SET PAKET MERONCE\",\n      \"quantity\": 1,\n      \"unit_price\": 35000,\n      \"amount\": 35000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"PAKET POUCH KANVAS\",\n      \"quantity\": 2,\n      \"unit_price\": 50000,\n      \"amount\": 100000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    }\n  ],\n  \"subtotal\": 135000,\n  \"discount\": null,\n  \"tax\": null,\n  \"service_charge\": null,\n  \"total\": 135000,\n  \"confidence\": {\n    \"subtotal\": 0.9,\n    \"discount\": 0.0,\n    \"tax\": 0.0,\n    \"service_charge\": 0.0,\n    \"total\": 0.9,\n    \"payment.method\": 0.9,\n    \"payment.amount_paid\": 0.9,\n    \"payment.change\": 0.0\n  },\n  \"payment\": {\n    \"method\": \"emoney\",\n    \"amount_paid\": 135000,\n    \"change\": null\n  }\n}",
   "prediction": {
     "menu_items": [
       {
@@ -12,10 +14,10 @@
         "unit_price": 35000,
         "amount": 35000,
         "confidence": {
-          "name": 0.95,
-          "quantity": 0.95,
-          "unit_price": 0.95,
-          "amount": 0.95
+          "name": 0.9,
+          "quantity": 0.9,
+          "unit_price": 0.9,
+          "amount": 0.9
         }
       },
       {
@@ -24,10 +26,10 @@
         "unit_price": 50000,
         "amount": 100000,
         "confidence": {
-          "name": 0.95,
-          "quantity": 0.95,
-          "unit_price": 0.95,
-          "amount": 0.95
+          "name": 0.9,
+          "quantity": 0.9,
+          "unit_price": 0.9,
+          "amount": 0.9
         }
       }
     ],
@@ -37,13 +39,13 @@
     "service_charge": null,
     "total": 135000,
     "confidence": {
-      "subtotal": 0.95,
+      "subtotal": 0.9,
       "discount": 0.0,
       "tax": 0.0,
       "service_charge": 0.0,
-      "total": 0.95,
-      "payment.method": 0.95,
-      "payment.amount_paid": 0.95,
+      "total": 0.9,
+      "payment.method": 0.9,
+      "payment.amount_paid": 0.9,
       "payment.change": 0.0
     },
     "payment": {
@@ -53,14 +55,17 @@
     }
   },
   "usage": {
-    "completion_tokens": 424,
+    "completion_tokens": 412,
     "prompt_tokens": 2698,
-    "total_tokens": 3122
+    "total_tokens": 3110
   },
   "cost_usd": 0.0,
   "downscaled": false,
   "validation": {
     "valid": true,
     "errors": []
-  }
+  },
+  "pages_total": null,
+  "pages_selected": null,
+  "page_indices": null
 }

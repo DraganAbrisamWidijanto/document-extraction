@@ -1,0 +1,16 @@
+{
+  "prediction": {
+    "address_post_town": "LONDON",
+    "address_postcode": "WC2E 7BB",
+    "address_street_line": "39 WELLINGTON STREET",
+    "charity_name": "London Transport Museum Ltd.",
+    "charity_number": "1123122",
+    "income_annually_in_british_pounds": 15599000,
+    "report_date": "2016-03-31",
+    "spending_annually_in_british_pounds": 15857000
+  },
+  "meta": {
+    "source": "kleister-charity",
+    "note": "GT from Kleister-Charity expected.tsv (official)"
+  }
+}

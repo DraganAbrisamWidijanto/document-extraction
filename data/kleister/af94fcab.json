@@ -1,0 +1,16 @@
+{
+  "prediction": {
+    "address_post_town": "LONDON",
+    "address_postcode": "WC1R 4TH",
+    "address_street_line": "39-40 EAGLE STREET",
+    "charity_name": "Bloodwise",
+    "charity_number": "216032",
+    "income_annually_in_british_pounds": 17062000,
+    "report_date": "2018-03-31",
+    "spending_annually_in_british_pounds": 17529000
+  },
+  "meta": {
+    "source": "kleister-charity",
+    "note": "GT from Kleister-Charity expected.tsv (official)"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "prediction": {
+    "address_post_town": "KING'S LYNN",
+    "address_postcode": "PE31 6RH",
+    "charity_name": "Citb",
+    "charity_number": "264289",
+    "income_annually_in_british_pounds": 263964000,
+    "report_date": "2014-12-31",
+    "spending_annually_in_british_pounds": 297787000
+  },
+  "meta": {
+    "source": "kleister-charity",
+    "note": "GT from Kleister-Charity expected.tsv (official)"
+  }
+}

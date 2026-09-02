@@ -2,8 +2,10 @@
   "name": "cord_095",
   "image": "",
   "model": "gemini-3.5-flash-lite",
-  "latency_s": 1.98,
-  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"BASO TAHU\",\n      \"quantity\": 1,\n      \"unit_price\": 43181,\n      \"amount\": 43181,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"ES JERUK\",\n      \"quantity\": 1,\n      \"unit_price\": 13000,\n      \"amount\": 13000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    }\n  ],\n  \"subtotal\": 56181,\n  \"discount\": null,\n  \"tax\": 5618,\n  \"service_charge\": null,\n  \"total\": 62000,\n  \"confidence\": {\n    \"subtotal\": 0.9,\n    \"discount\": 0.0,\n    \"tax\": 0.9,\n    \"service_charge\": 0.0,\n    \"total\": 0.9,\n    \"payment.method\": 0.9,\n    \"payment.amount_paid\": 0.9,\n    \"payment.change\": 0.9\n  },\n  \"payment\": {\n    \"method\": \"cash\",\n    \"amount_paid\": 62000,\n    \"change\": 201\n  }\n}",
+  "ok": true,
+  "error": null,
+  "latency_s": 32.21,
+  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"BASO TAHU\",\n      \"quantity\": 1,\n      \"unit_price\": 43181,\n      \"amount\": 43181,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    },\n    {\n      \"name\": \"ES JERUK\",\n      \"quantity\": 1,\n      \"unit_price\": 13000,\n      \"amount\": 13000,\n      \"confidence\": {\n        \"name\": 1,\n        \"quantity\": 1,\n        \"unit_price\": 1,\n        \"amount\": 1\n      }\n    }\n  ],\n  \"subtotal\": 56181,\n  \"discount\": null,\n  \"tax\": 5618,\n  \"service_charge\": null,\n  \"total\": 62000,\n  \"confidence\": {\n    \"subtotal\": 1,\n    \"discount\": 0,\n    \"tax\": 1,\n    \"service_charge\": 0,\n    \"total\": 1,\n    \"payment.method\": 1,\n    \"payment.amount_paid\": 1,\n    \"payment.change\": 1\n  },\n  \"payment\": {\n    \"method\": \"cash\",\n    \"amount_paid\": 62000,\n    \"change\": 201\n  }\n}",
   "prediction": {
     "menu_items": [
       {
@@ -12,10 +14,10 @@
         "unit_price": 43181,
         "amount": 43181,
         "confidence": {
-          "name": 0.9,
-          "quantity": 0.9,
-          "unit_price": 0.9,
-          "amount": 0.9
+          "name": 1,
+          "quantity": 1,
+          "unit_price": 1,
+          "amount": 1
         }
       },
       {
@@ -24,10 +26,10 @@
         "unit_price": 13000,
         "amount": 13000,
         "confidence": {
-          "name": 0.9,
-          "quantity": 0.9,
-          "unit_price": 0.9,
-          "amount": 0.9
+          "name": 1,
+          "quantity": 1,
+          "unit_price": 1,
+          "amount": 1
         }
       }
     ],
@@ -37,14 +39,14 @@
     "service_charge": null,
     "total": 62000,
     "confidence": {
-      "subtotal": 0.9,
-      "discount": 0.0,
-      "tax": 0.9,
-      "service_charge": 0.0,
-      "total": 0.9,
-      "payment.method": 0.9,
-      "payment.amount_paid": 0.9,
-      "payment.change": 0.9
+      "subtotal": 1,
+      "discount": 0,
+      "tax": 1,
+      "service_charge": 0,
+      "total": 1,
+      "payment.method": 1,
+      "payment.amount_paid": 1,
+      "payment.change": 1
     },
     "payment": {
       "method": "cash",
@@ -53,14 +55,17 @@
     }
   },
   "usage": {
-    "completion_tokens": 407,
+    "completion_tokens": 375,
     "prompt_tokens": 2678,
-    "total_tokens": 3085
+    "total_tokens": 3053
   },
   "cost_usd": 0.0,
   "downscaled": false,
   "validation": {
     "valid": true,
     "errors": []
-  }
+  },
+  "pages_total": null,
+  "pages_selected": null,
+  "page_indices": null
 }

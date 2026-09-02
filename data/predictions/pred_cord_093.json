@@ -2,8 +2,10 @@
   "name": "cord_093",
   "image": "",
   "model": "gemini-3.5-flash-lite",
-  "latency_s": 1.98,
-  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"THAI ICED TEA (L)\",\n      \"quantity\": 1,\n      \"unit_price\": 16363,\n      \"amount\": 16363,\n      \"confidence\": {\n        \"name\": 0.95,\n        \"quantity\": 0.95,\n        \"unit_price\": 0.95,\n        \"amount\": 0.95\n      }\n    }\n  ],\n  \"subtotal\": 16363,\n  \"discount\": null,\n  \"tax\": 1636,\n  \"service_charge\": null,\n  \"total\": 17999,\n  \"confidence\": {\n    \"subtotal\": 0.95,\n    \"discount\": 0.0,\n    \"tax\": 0.95,\n    \"service_charge\": 0.0,\n    \"total\": 0.95,\n    \"payment.method\": 0.0,\n    \"payment.amount_paid\": 0.0,\n    \"payment.change\": 0.0\n  },\n  \"payment\": {\n    \"method\": null,\n    \"amount_paid\": null,\n    \"change\": null\n  }\n}",
+  "ok": true,
+  "error": null,
+  "latency_s": 32.14,
+  "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"THAI ICED TEA (L)\",\n      \"quantity\": 1,\n      \"unit_price\": 16363,\n      \"amount\": 16363,\n      \"confidence\": {\n        \"name\": 1.0,\n        \"quantity\": 1.0,\n        \"unit_price\": 1.0,\n        \"amount\": 1.0\n      }\n    }\n  ],\n  \"subtotal\": 16363,\n  \"discount\": null,\n  \"tax\": 1636,\n  \"service_charge\": null,\n  \"total\": 17999,\n  \"confidence\": {\n    \"subtotal\": 1.0,\n    \"discount\": 0.0,\n    \"tax\": 1.0,\n    \"service_charge\": 0.0,\n    \"total\": 1.0,\n    \"payment.method\": 0.0,\n    \"payment.amount_paid\": 0.0,\n    \"payment.change\": 0.0\n  },\n  \"payment\": {\n    \"method\": null,\n    \"amount_paid\": null,\n    \"change\": null\n  }\n}",
   "prediction": {
     "menu_items": [
       {
@@ -12,10 +14,10 @@
         "unit_price": 16363,
         "amount": 16363,
         "confidence": {
-          "name": 0.95,
-          "quantity": 0.95,
-          "unit_price": 0.95,
-          "amount": 0.95
+          "name": 1.0,
+          "quantity": 1.0,
+          "unit_price": 1.0,
+          "amount": 1.0
         }
       }
     ],
@@ -25,11 +27,11 @@
     "service_charge": null,
     "total": 17999,
     "confidence": {
-      "subtotal": 0.95,
+      "subtotal": 1.0,
       "discount": 0.0,
-      "tax": 0.95,
+      "tax": 1.0,
       "service_charge": 0.0,
-      "total": 0.95,
+      "total": 1.0,
       "payment.method": 0.0,
       "payment.amount_paid": 0.0,
       "payment.change": 0.0
@@ -41,14 +43,17 @@
     }
   },
   "usage": {
-    "completion_tokens": 307,
+    "completion_tokens": 300,
     "prompt_tokens": 2678,
-    "total_tokens": 2985
+    "total_tokens": 2978
   },
   "cost_usd": 0.0,
   "downscaled": false,
   "validation": {
     "valid": true,
     "errors": []
-  }
+  },
+  "pages_total": null,
+  "pages_selected": null,
+  "page_indices": null
 }

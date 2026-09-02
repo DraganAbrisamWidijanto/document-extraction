@@ -2,7 +2,9 @@
   "name": "self_004",
   "image": "",
   "model": "gemini-3.5-flash-lite",
-  "latency_s": 32.64,
+  "ok": true,
+  "error": null,
+  "latency_s": 32.6,
   "raw": "{\n  \"menu_items\": [\n    {\n      \"name\": \"Yamie Asin Ayam\",\n      \"quantity\": 4,\n      \"unit_price\": 11000,\n      \"amount\": 44000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"Chili Oil Ayam\",\n      \"quantity\": 1,\n      \"unit_price\": 14000,\n      \"amount\": 14000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"Jeruk Es\",\n      \"quantity\": 1,\n      \"unit_price\": 5000,\n      \"amount\": 5000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    },\n    {\n      \"name\": \"Teh Es\",\n      \"quantity\": 4,\n      \"unit_price\": 4000,\n      \"amount\": 16000,\n      \"confidence\": {\n        \"name\": 0.9,\n        \"quantity\": 0.9,\n        \"unit_price\": 0.9,\n        \"amount\": 0.9\n      }\n    }\n  ],\n  \"subtotal\": 79000,\n  \"discount\": null,\n  \"tax\": null,\n  \"service_charge\": null,\n  \"total\": 79000,\n  \"confidence\": {\n    \"subtotal\": 0.9,\n    \"discount\": 0.0,\n    \"tax\": 0.0,\n    \"service_charge\": 0.0,\n    \"total\": 0.9,\n    \"payment.method\": 0.9,\n    \"payment.amount_paid\": 0.9,\n    \"payment.change\": 0.0\n  },\n  \"payment\": {\n    \"method\": \"emoney\",\n    \"amount_paid\": 79000,\n    \"change\": null\n  }\n}",
   "prediction": {
     "menu_items": [
@@ -86,5 +88,8 @@
   "validation": {
     "valid": true,
     "errors": []
-  }
+  },
+  "pages_total": null,
+  "pages_selected": null,
+  "page_indices": null
 }

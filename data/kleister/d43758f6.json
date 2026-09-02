@@ -1,0 +1,16 @@
+{
+  "prediction": {
+    "address_post_town": "LONDON",
+    "address_postcode": "SE1 7RL",
+    "address_street_line": "35 LOWER MARSH",
+    "charity_name": "Christian Aid",
+    "charity_number": "1105851",
+    "income_annually_in_british_pounds": 106976000,
+    "report_date": "2016-03-31",
+    "spending_annually_in_british_pounds": 100444000
+  },
+  "meta": {
+    "source": "kleister-charity",
+    "note": "GT from Kleister-Charity expected.tsv (official)"
+  }
+}
