@@ -502,6 +502,8 @@ def run_kleister(manifest_path, pred_dir):
     latencies = []
     cost_total = {"prompt_tokens": 0, "completion_tokens": 0, "cost_usd": 0.0}
     per_doc = []
+    # confidence accumulation per field: {field: {label: [confidences]}}
+    conf_acc = defaultdict(lambda: defaultdict(list))
 
     for e in manifest:
         idx, img = e["idx"], e["image"]
@@ -532,6 +534,8 @@ def run_kleister(manifest_path, pred_dir):
                 res = compare_scalar(pv, gv)
             if res:
                 agg[f][res] += 1
+                conf = (pr.get("confidence") or {}).get(f)
+                conf_acc[f][res].append(conf)
             doc["fields"][f] = res
             if f == "charity_name":
                 n_total += 1
@@ -596,6 +600,8 @@ def run_kleister(manifest_path, pred_dir):
         "cost_usd": round(cost_total["cost_usd"], 6),
         "tokens": {"prompt": cost_total["prompt_tokens"], "completion": cost_total["completion_tokens"]},
         "abstentions": dict(abstain_by_field),
+        "confidence": {f: {"tp": _avg(conf_acc[f]["tp"]), "wrong": _avg(conf_acc[f]["wrong"])}
+                       for f in conf_acc},
     }
     with open(os.path.join(RESULTS_DIR, "scorecard_kleister.json"), "w") as f:
         json.dump(scorecard, f, indent=2)

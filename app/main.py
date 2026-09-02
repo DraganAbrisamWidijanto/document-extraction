@@ -116,6 +116,7 @@ def extract_pdf(file: UploadFile = File(...)):
         "usage": result.get("usage"),
         "tokens": result.get("tokens"),
         "validation": result.get("validation"),
+        "confidence": result.get("confidence"),  # per-field 0-1 (abstained = 0.0)
         "pages_total": result.get("pages_total"),
         "pages_selected": result.get("pages_selected"),
         "page_indices": result.get("page_indices"),

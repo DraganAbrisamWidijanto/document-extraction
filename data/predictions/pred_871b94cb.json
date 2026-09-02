@@ -36,5 +36,15 @@
     104,
     105,
     111
-  ]
+  ],
+  "confidence": {
+    "charity_name": 0.45,
+    "charity_number": 0.9,
+    "address_post_town": 0.9,
+    "address_postcode": 0.9,
+    "address_street_line": 0.9,
+    "income_annually_in_british_pounds": 1.0,
+    "spending_annually_in_british_pounds": 1.0,
+    "report_date": 1.0
+  }
 }

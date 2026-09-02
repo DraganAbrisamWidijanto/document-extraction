@@ -49,7 +49,7 @@
 | Free option recommended | ✓ | Gemini free tier via Google AI Studio |
 | Extraction logic & eval harness = own code | ✓ | `app/extractor.py`, `app/pdf_extractor.py`, `eval_harness.py` — custom |
 | docker compose up → API serving | ✓ | `docker-compose.yml` api service, terverifikasi sebelumnya |
-| End-to-end eval = one-shot compose command | ✓ | `docker compose run --rm eval` exit 0: CORD + self live via API; Kleister 12 dok live via API pada run yang sama |
+| End-to-end eval = one-shot compose command | ✓ | `docker compose run --rm eval` exit 0: CORD + self live via API; Kleister juga lewat API pada run yang sama, lalu final scorecard-nya dihasilkan ulang in-process setelah fix bottleneck async-endpoint (detail di README Results) |
 | Docker E2E untuk Kleister (3rd split) | ✓ | Containerized run menemukan bottleneck async-endpoint (serial) + kode stale di image eval; setelah fix (shared image tag, sync endpoints, filename multipart, healthcheck), prompt/selector fix diverifikasi in-process: macro F1 0.95 (12 dok) |
 | Ship sample docs + GT in repo | ✓ | CORD images, self-scan, Kleister PDFs, GT JSON, pred JSON |
 | Commit output artifacts (scorecard, per-doc) | ✓ | `results/scorecard_*.json`, `results/per_doc_*.json` |
@@ -62,7 +62,7 @@
 |---|---|---|
 | Private repository | ✗ | Belum dibuat — user-driven (kamu minta tidak dipush) |
 | Reviewer invited | ✗ | Belum — setelah repo dibuat |
-| Meaningful git history | ✓ | 10+ commit sesi ini (terakhir e7cb4c0, perlu update) |
+| Meaningful git history | ✓ | 15+ commit sesi ini (terakhir `65d12e3`, update 2 Sep 2026) |
 | README: run commands | ✓ | Quick start section |
 | README: dataset/schema/approach and why | ✓ | Dataset + Approach sections |
 | README: architecture | ✓ | Trade-offs table |

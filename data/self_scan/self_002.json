@@ -28,6 +28,7 @@
   "meta": {
     "vendor": "Ayam Gepuk Pak Gembus",
     "date": "01/10/2025",
-    "source": "photo"
+    "source": "photo",
+    "note": "GT verified manually against the receipt photo (vendor, date, items, amounts)."
   }
 }

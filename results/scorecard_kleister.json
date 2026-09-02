@@ -30,5 +30,39 @@
   "abstentions": {
     "income_annually_in_british_pounds": 1,
     "spending_annually_in_british_pounds": 1
+  },
+  "confidence": {
+    "charity_name": {
+      "tp": 0.77,
+      "wrong": null
+    },
+    "charity_number": {
+      "tp": 0.99,
+      "wrong": null
+    },
+    "address_post_town": {
+      "tp": 0.97,
+      "wrong": null
+    },
+    "address_postcode": {
+      "tp": 0.96,
+      "wrong": 0.5
+    },
+    "address_street_line": {
+      "tp": 0.92,
+      "wrong": 0.5
+    },
+    "income_annually_in_british_pounds": {
+      "tp": 0.89,
+      "wrong": 1.0
+    },
+    "spending_annually_in_british_pounds": {
+      "tp": 0.89,
+      "wrong": 1.0
+    },
+    "report_date": {
+      "tp": 1.0,
+      "wrong": null
+    }
   }
 }

@@ -119,6 +119,7 @@ def main():
                         "name": name, "model": cfg.model,
                         "latency_s": res.get("latency_s"),
                         "raw": res.get("raw", ""), "prediction": res.get("prediction", {}),
+                        "confidence": res.get("confidence"),  # per-field 0-1 (Kleister PDF)
                         "usage": res.get("usage"),
                         "cost_usd": res.get("cost_usd"), "validation": res.get("validation"),
                     }
@@ -141,7 +142,8 @@ def main():
             "name": name, "image": os.path.basename(res.get("path", "")), "model": cfg.model,
             "ok": res.get("ok", True), "error": res.get("error"),
             "latency_s": res.get("latency_s"), "raw": res.get("raw", ""),
-            "prediction": res.get("prediction", {}), "usage": res.get("usage"),
+            "prediction": res.get("prediction", {}), "confidence": res.get("confidence"),
+            "usage": res.get("usage"),
             "cost_usd": res.get("cost_usd"), "downscaled": res.get("downscaled", False),
             "validation": res.get("validation"),
             "pages_total": res.get("pages_total"),

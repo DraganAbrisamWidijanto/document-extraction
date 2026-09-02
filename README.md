@@ -53,9 +53,9 @@ For multi-page PDFs (Kleister), the pipeline in `app/pdf_extractor.py` is:
 
 ## Dataset
 
-- **CORD** (open benchmark) — 100 test receipts, picked 50 for diversity (item count, tax/discount/service, payment type) → 5 dev + 45 test. Images + GT committed under `data/`.
-- **10 self-scans** — real Indonesian receipts, GT hand-verified against each photo (recorded in each GT's `meta.note`). Covers vendor/date fields CORD lacks.
-- **Kleister-Charity** (open benchmark) — 12 multi-page UK charity annual reports (39–122 pages each), 8 fields (charity name/number, registered address ×3, annual income/spending, report date). PDFs + official GT (from the dataset's `expected.tsv`) committed under `data/kleister/`. This is the multi-page stress test: the pipeline must locate and merge fields spread across dozens of pages.
+- **CORD** (open benchmark, from the internet) — 100 test receipts, picked 50 for diversity (item count, tax/discount/service, payment type) → 5 dev + 45 test. Images + official GT committed under `data/`.
+- **10 self-scans** — real Indonesian receipts (my own scans), GT verified manually against each photo (recorded in each GT's `meta.note`). Covers vendor/date fields CORD lacks.
+- **Kleister-Charity** (open benchmark, from the internet) — 12 multi-page UK charity annual reports (39–122 pages each), 8 fields (charity name/number, registered address ×3, annual income/spending, report date). PDFs + official GT (from the dataset's `expected.tsv`) committed under `data/kleister/`. This is the multi-page stress test: the pipeline must locate and merge fields spread across dozens of pages.
 
 ## Results
 

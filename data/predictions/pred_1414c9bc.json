@@ -290,5 +290,15 @@
       "latency_s": 31.677737712860107,
       "raw": "{\n  \"charity_name\": null,\n  \"charity_number\": null,\n  \"address_post_town\": null,\n  \"address_postcode\": null,\n  \"address_street_line\": null,\n  \"income_annually_in_british_pounds\": null,\n  \"spending_annually_in_british_pounds\": null,\n  \"report_date\": null,\n  \"confidence\": {\n    \"charity_name\": 0.0,\n    \"charity_number\": 0.0,\n    \"address_post_town\": 0.0,\n    \"address_postcode\": 0.0,\n    \"address_street_line\": 0.0,\n    \"income_annually_in_british_pounds\": 0.0,\n    \"spending_annually_in_british_pounds\": 0.0,\n    \"report_date\": 0.0\n  }\n}"
     }
-  ]
+  ],
+  "confidence": {
+    "charity_name": 0.5,
+    "charity_number": 1.0,
+    "address_post_town": 1.0,
+    "address_postcode": 1.0,
+    "address_street_line": 1.0,
+    "income_annually_in_british_pounds": 0.47,
+    "spending_annually_in_british_pounds": 0.47,
+    "report_date": 1.0
+  }
 }
