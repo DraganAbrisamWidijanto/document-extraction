@@ -1,23 +1,22 @@
-__pycache__/
-*.pyc
-*.egg-info/
-dist/
-.venv/
-venv/
 
-# large source data — re-derivable from data/cord_test.parquet via export_gt.py / select_pool.py
-*.parquet
-__MACOSX/
-.DS_Store
-Thumbs.db
-*.sqlite
-
-# raw photo drop folder — curated copies live in data/self_scan/
-self scan/
-
-# secrets — never commit API keys
-geminiapi*.txt
-.env
 # Kleister raw dataset files - GT source only, do not commit
-data/kleister/in.tsv.xz
+# large source data — re-derivable from data/cord_test.parquet via export_gt.py / select_pool.py
+# raw photo drop folder — curated copies live in data/self_scan/
+# secrets — never commit API keys
+*.egg-info/
+*.parquet
+*.pyc
+*.sqlite
+.DS_Store
+.env
+.venv/
+__MACOSX/
+__pycache__/
 data/kleister/expected.tsv
+data/kleister/in.tsv.xz
+dist/
+geminiapi*.txt
+HANDOFF.md
+self scan/
+Thumbs.db
+venv/

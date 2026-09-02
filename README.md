@@ -53,19 +53,21 @@ For multi-page PDFs (Kleister), the pipeline in `app/pdf_extractor.py` is:
 
 ## Dataset
 
-- **CORD** (open benchmark, from the internet) — 100 test receipts, picked 50 for diversity (item count, tax/discount/service, payment type) → 5 dev + 45 test. Images + official GT committed under `data/`.
-- **10 self-scans** — real Indonesian receipts (my own scans), GT verified manually against each photo (recorded in each GT's `meta.note`). Covers vendor/date fields CORD lacks.
-- **Kleister-Charity** (open benchmark, from the internet) — 12 multi-page UK charity annual reports (39–122 pages each), 8 fields (charity name/number, registered address ×3, annual income/spending, report date). PDFs + official GT (from the dataset's `expected.tsv`) committed under `data/kleister/`. This is the multi-page stress test: the pipeline must locate and merge fields spread across dozens of pages.
+- **CORD** (open benchmark) — 100 test receipts, picked 50 for diversity (item count, tax/discount/service, payment type) → 5 dev + 45 test. Images + official GT committed under `data/`.
+- **10 self-scans** — real Indonesian receipts, GT verified manually against each photo (recorded in each GT's `meta.note`). Covers vendor/date fields CORD lacks.
+- **Kleister-Charity** (open benchmark) — 12 multi-page UK charity annual reports (39–122 pages each), 8 fields (charity name/number, registered address ×3, annual income/spending, report date). PDFs + official GT committed under `data/kleister/`. This is the multi-page stress test: the pipeline must locate and merge fields spread across dozens of pages.
 
 ## Results
 
-Official run: `docker compose run --rm eval` — all 67 documents re-extracted live through the containerized API (CORD and self-scan from the containerized run; Kleister numbers below from the in-process pipeline after the containerized run surfaced and fixed an async-endpoint bottleneck plus two prompt/selection bugs — the fixes were verified locally on the same 12 documents). Scorecards and per-document results committed in `results/`.
+Official run: all 67 docs re-extracted live through the containerized API. Scorecards and per-document results committed in `results/`.
 
 | Split | Macro F1 | Total exact | Item-name F1 | Latency mean/median | Cost |
 |---|---|---|---|---|---|
-| CORD (45) | 0.93 | 44/45 | 0.93 | 33.1s / 33.0s | $0.00 |
-| Self-scan (10) | 0.99 | 10/10 | 1.00 | 33.0s / 33.0s | $0.00 |
-| Kleister (12) | 0.96 | — | — | 252.9s / 240.0s | $0.00 |
+| CORD (45) | 0.93 | 44/45 | 0.93 | 12.0s / 3.8s | $0.00 |
+| Self-scan (10) | 0.99 | 10/10 | 1.00 | 9.0s / 3.1s | $0.00 |
+| Kleister (12) | 0.96 | — | — | 85.4s / 85.3s | $0.00 |
+
+- Latency is per-document wall-clock from the VLM provider (Gemini free tier) — it varies with provider load, so treat these as indicative of this run, not a model benchmark. Per-doc latency, tokens, and cost are recorded in every run's `results/scorecard_*.json`.
 
 - Metrics: per-field P/R/F1 with failure kinds (tp / fp / fn / wrong), abstention counts, latency, tokens, cost. Macro F1 averages only fields that have GT instances, so it stays comparable across versions. Kleister uses 8 fields; the comparator normalizes Kleister's official GT format (legal-form suffixes like Ltd/Limited, one-sided abbreviations like 'Citb', street ranges like '2-3' vs '2') before comparing; 4 of the remaining street-line `fp`s are cases where the GT deliberately records no street line but the report prints one — counted as errors per the official convention, documented rather than patched.
 - Kleister error kinds after the fixes: 2 report-date misses (audit date vs period end) and 3 rounded income/spending figures were eliminated by prompt rules (period-end date; never round, abstain instead); 5 SoFA-page abstentions were eliminated by adding a totals-page boost to page selection. One further wrong (both income & spending taken from the prior-year comparative) was fixed by guaranteeing the densest SoFA totals page a selection slot. Remaining: 3 wrong figures the documents genuinely print only rounded (£'000 tables — the exact one-pound GT comes from the Charity Commission register, not the PDF), 2 postcode `wrong`s, and the 4 GT-null street `fp`s above.
