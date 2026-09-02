@@ -41,7 +41,7 @@ th { background: #fafafa; font-weight: 600; }
 </head>
 <body>
 <div class="container">
-<h1>🧾 Receipt Viewer — CORD (45) + Self-scan (5)</h1>
+<h1>🧾 Document Viewer — CORD (45) + Self-scan (5) + Kleister PDF (5)</h1>
 <div class="controls">
   <select id="docSelect" onchange="loadDoc()"></select>
   <span id="nav" class="nav"></span>
@@ -141,8 +141,31 @@ async function loadDoc(idx) {
   document.getElementById('summary').textContent = `(${currentIdx+1}/${docs.length})`;
   // image (reset zoom on doc change)
   zoomReset();
-  document.getElementById('receiptImg').src = data.img;
-  document.getElementById('receiptImg').onerror = function() { this.src = ''; this.alt = 'no image'; };
+  if (data.img_pages && data.img_pages.length > 1) {
+    // multi-page gallery
+    document.getElementById('receiptImg').style.display = 'none';
+    let g = document.getElementById('pageGallery');
+    if (!g) {
+      g = document.createElement('div');
+      g.id = 'pageGallery';
+      g.style.cssText = 'display:flex;flex-direction:column;gap:8px;padding:4px;';
+      document.getElementById('imgwrap').appendChild(g);
+    }
+    g.innerHTML = data.img_pages.map((url, i) => {
+      const pi = data.page_indices ? data.page_indices[i] : i;
+      return `<div data-page="${pi}" style="border:1px solid #ddd;border-radius:4px;overflow:hidden;background:#fafafa;">
+        <div style="padding:2px 8px;font-size:11px;color:#666;background:#f0f0f0;border-bottom:1px solid #ddd;">Page ${pi} (${i+1}/${data.img_pages.length})</div>
+        <img src="${url}" style="width:100%;display:block;" loading="lazy">
+      </div>`;
+    }).join('');
+    g.style.display = 'flex';
+  } else {
+    // single image
+    const g = document.getElementById('pageGallery');
+    if (g) g.style.display = 'none';
+    document.getElementById('receiptImg').style.display = 'block';
+    document.getElementById('receiptImg').src = data.img;
+  }
   // prediction
   const predEl = document.getElementById('predJson');
   if (data.prediction && Object.keys(data.prediction).length) {
@@ -157,17 +180,28 @@ async function loadDoc(idx) {
   gtEl.className = '';
   gtEl.textContent = JSON.stringify(data.gt, null, 2);
   // field table
-  let tbl = '<table><tr><th>Field</th><th>Pred</th><th>GT</th><th>Status</th></tr>';
+  const fp = data.field_pages || {};
+  const hasPages = Object.keys(fp).length > 0;
+  let tbl = `<table><tr><th>Field</th><th>Pred</th><th>GT</th><th>Status</th>${hasPages ? '<th>Source page(s)</th>' : ''}</tr>`;
   for (const row of data.fields) {
     const cls = row.status || '';
-    tbl += `<tr><td>${row.field}</td><td>${row.pred ?? 'null'}</td><td>${row.gt ?? 'null'}</td><td class="${cls}">${row.status ?? '—'}</td></tr>`;
+    const pages = hasPages && fp[row.field] ? fp[row.field].map(p => `<a onclick="scrollToPage(${p})" style="cursor:pointer;color:#2563eb;text-decoration:underline;">p${p}</a>`).join(', ') : '';
+    tbl += `<tr><td>${row.field}</td><td>${row.pred ?? 'null'}</td><td>${row.gt ?? 'null'}</td><td class="${cls}">${row.status ?? '—'}</td>${hasPages ? `<td>${pages}</td>` : ''}</tr>`;
   }
   tbl += '</table>';
-  // items match
+  // items match (receipt splits only)
   const it = data.items;
-  tbl += `<p style="margin-top:8px;font-size:12px;color:#666;">
-    Items: ${it.gt} GT → ${it.pred} pred (${it.name_tp} name match) ${it.missing.length ? ' | MISSING: '+it.missing.join(', ') : ''}
-  </p>`;
+  if (it && (it.gt > 0 || it.pred > 0)) {
+    tbl += `<p style="margin-top:8px;font-size:12px;color:#666;">
+      Items: ${it.gt} GT → ${it.pred} pred (${it.name_tp} name match) ${it.missing.length ? ' | MISSING: '+it.missing.join(', ') : ''}
+    </p>`;
+  }
+  // page info for PDFs
+  if (data.pages_total) {
+    tbl += `<p style="margin-top:8px;font-size:12px;color:#666;">
+      Pages: ${data.pages_selected}/${data.pages_total} selected (${data.page_indices.join(', ')}) · ${data.latency_s}s · tokens ${data.usage ? (data.usage.prompt_tokens || 0) + '/' + (data.usage.completion_tokens || 0) : 'n/a'}
+    </p>`;
+  }
   document.getElementById('fieldTable').innerHTML = tbl;
 }
 
@@ -178,6 +212,14 @@ document.addEventListener('keydown', e => {
   if (e.key === 'ArrowLeft' && currentIdx > 0) loadDoc(currentIdx - 1);
   if (e.key === 'ArrowRight' && currentIdx < docs.length - 1) loadDoc(currentIdx + 1);
 });
+function scrollToPage(p) {
+  const el = document.querySelector(`#pageGallery [data-page="${p}"]`);
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    el.style.outline = '2px solid #f59e0b';
+    setTimeout(() => { el.style.outline = ''; }, 1500);
+  }
+}
 init();
 </script>
 </body>

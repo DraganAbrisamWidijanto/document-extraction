@@ -1,8 +1,9 @@
 """Eval harness: field-level P/R/F1, error typology, confidence, abstention, cost.
 
-Supports 2 GT formats:
+Supports 3 GT formats:
   - CORD: gt_parse {menu[], sub_total{}, total{}}
   - self-scan: {prediction{...}, meta{}} (schema format)
+  - kleister: {prediction{...}, meta{}} (charity report, 8 fields)
 
 Outputs:
   - Human-readable summary (stdout + results/eval_<split>.txt)
@@ -11,6 +12,7 @@ Outputs:
 Usage:
   python eval_harness.py --manifest data/cord_pool/manifest_test.json --pred-dir data/predictions
   python eval_harness.py --manifest data/self_scan/manifest.json --pred-dir data/predictions --gt-format self
+  python eval_harness.py --manifest data/kleister/manifest.json --pred-dir data/predictions --gt-format kleister
 """
 import argparse
 import json
@@ -25,6 +27,15 @@ os.makedirs(RESULTS_DIR, exist_ok=True)
 SCALAR_FIELDS = ["subtotal", "discount", "tax", "service_charge", "total"]
 PAY_FIELDS = ["method", "amount_paid", "change"]
 ITEM_FIELDS = ["quantity", "unit_price", "amount"]
+
+# Kleister charity-report schema (GT adapter maps address__* -> address_*)
+KLEISTER_FIELDS = [
+    "charity_name", "charity_number",
+    "address_post_town", "address_postcode", "address_street_line",
+    "income_annually_in_british_pounds", "spending_annually_in_british_pounds",
+    "report_date",
+]
+KLEISTER_NUMERIC = {"income_annually_in_british_pounds", "spending_annually_in_british_pounds"}
 
 
 # ---------------------------------------------------------------------------
@@ -145,14 +156,24 @@ def gt_self_to_schema(gt):
     }
 
 
+def gt_kleister_to_schema(gt):
+    """Kleister GT is already in our schema field names (address_post_town etc)."""
+    p = gt["prediction"]
+    return {f: p.get(f) for f in KLEISTER_FIELDS}
+
+
 # ---------------------------------------------------------------------------
 # Field comparison
 # ---------------------------------------------------------------------------
 def compare_scalar(pv, gv):
     """Return 'tp'|'fp'|'fn'|'wrong', or None if both absent."""
     if isinstance(pv, str) or isinstance(gv, str):
-        pn = (pv or "").strip().lower() or None
-        gn = (gv or "").strip().lower() or None
+        def _norm(s):
+            t = (s or "").strip().lower()
+            # normalize typographic apostrophes to ASCII
+            return t.replace("\u2019", "'").replace("\u2018", "'")
+        pn = _norm(pv) or None
+        gn = _norm(gv) or None
         if pn is None and gn is None:
             return None
         if gn is None:
@@ -168,6 +189,66 @@ def compare_scalar(pv, gv):
     if pn is None:
         return "fn"
     if pn == gn:
+        return "tp"
+    return "wrong"
+
+
+# ---------------------------------------------------------------------------
+# Kleister GT normalization (eval fairness, not extraction)
+# ---------------------------------------------------------------------------
+LEGAL_SUFFIXES = {"ltd", "ltd.", "limited", "co", "co.", "company", "plc", "cic"}
+_NUM_WORD = {"one": "1", "two": "2", "three": "3", "four": "4", "five": "5",
+             "six": "6", "seven": "7", "eight": "8", "nine": "9"}
+
+
+def _name_tokens(s):
+    """Lowercase tokens with legal-form suffixes dropped."""
+    toks = re.findall(r"[a-z0-9]+", (s or "").lower())
+    return [t for t in toks if t not in LEGAL_SUFFIXES]
+
+
+def _street_tokens(s):
+    """Lowercase street tokens: numeric ranges collapse to their lower bound,
+    number-words map to digits ('2-3 HEATHGATE' ~ '2 heathgate')."""
+    out = []
+    for tok in re.findall(r"[a-z0-9]+", (s or "").lower()):
+        m = re.match(r"(\d+)-(\d+)$", tok)
+        if m:
+            out.append(m.group(1))
+            continue
+        out.append(_NUM_WORD.get(tok, tok))
+    return out
+
+
+def _compare_kleister_name(pv, gv):
+    pn, gn = _name_tokens(pv), _name_tokens(gv)
+    if pn == gn:
+        return "tp"
+    # one-sided abbreviation: GT drops tokens the pred keeps (e.g. official
+    # long form 'construction industry training board' vs GT 'citb' handled
+    # separately) — require the shorter to be a prefix/subsequence of the longer
+    shorter, longer = (pn, gn) if len(pn) <= len(gn) else (gn, pn)
+    it = iter(longer)
+    if all(tok in it for tok in shorter):
+        return "tp"
+    # initialism: GT short form like 'citb' == first letters of the long form
+    if len(shorter) == 1 and len(longer) > 1:
+        if shorter[0] == "".join(t[0] for t in longer if t):
+            return "tp"
+    return "wrong"
+
+
+def _compare_kleister_street(pv, gv):
+    pn, gn = _street_tokens(pv), _street_tokens(gv)
+    if not pn and not gn:
+        return None
+    if not gn:
+        return "fp"   # pred present, GT absent
+    if not pn:
+        return "fn"
+    shorter, longer = (pn, gn) if len(pn) <= len(gn) else (gn, pn)
+    it = iter(longer)
+    if all(tok in it for tok in shorter):
         return "tp"
     return "wrong"
 
@@ -271,7 +352,7 @@ def run(manifest_path, pred_dir, gt_format):
         usage = pr.get("usage") or {}
         cost_total["prompt_tokens"] += int(usage.get("prompt_tokens", 0))
         cost_total["completion_tokens"] += int(usage.get("completion_tokens", 0))
-        cost_total["cost_usd"] += float(pr.get("cost_usd", 0))
+        cost_total["cost_usd"] += float(pr.get("cost_usd") or 0)
 
         doc = {"idx": idx, "img": img, "fields": {}}
         for f in SCALAR_FIELDS:
@@ -413,10 +494,126 @@ def run(manifest_path, pred_dir, gt_format):
     return scorecard
 
 
+def run_kleister(manifest_path, pred_dir):
+    """Eval loop for Kleister-Charity: 8 fields, mixed string/numeric compare."""
+    manifest = json.load(open(os.path.join(BASE_DIR, manifest_path)))
+    agg = {f: {"tp": 0, "fp": 0, "fn": 0, "wrong": 0} for f in KLEISTER_FIELDS}
+    n_total = total_ok = 0
+    latencies = []
+    cost_total = {"prompt_tokens": 0, "completion_tokens": 0, "cost_usd": 0.0}
+    per_doc = []
+
+    for e in manifest:
+        idx, img = e["idx"], e["image"]
+        gt_raw = json.load(open(os.path.join(BASE_DIR, os.path.dirname(manifest_path), f"{idx}.json")))
+        gt = gt_kleister_to_schema(gt_raw)
+
+        pred_path = os.path.join(BASE_DIR, pred_dir, f"pred_{idx}.json")
+        if not os.path.exists(pred_path):
+            print(f"  !! no prediction for {idx}")
+            continue
+        pr = json.load(open(pred_path))
+        pred = pr.get("prediction") or {}
+        if pr.get("latency_s") is not None:
+            latencies.append(pr["latency_s"])
+        usage = pr.get("usage") or {}
+        cost_total["prompt_tokens"] += int(usage.get("prompt_tokens", 0))
+        cost_total["completion_tokens"] += int(usage.get("completion_tokens", 0))
+        cost_total["cost_usd"] += float(pr.get("cost_usd") or 0)
+
+        doc = {"idx": idx, "img": img, "fields": {}}
+        for f in KLEISTER_FIELDS:
+            pv, gv = pred.get(f), gt.get(f)
+            if f == "charity_name":
+                res = _compare_kleister_name(pv, gv)
+            elif f == "address_street_line":
+                res = _compare_kleister_street(pv, gv)
+            else:
+                res = compare_scalar(pv, gv)
+            if res:
+                agg[f][res] += 1
+            doc["fields"][f] = res
+            if f == "charity_name":
+                n_total += 1
+                if res == "tp":
+                    total_ok += 1
+
+        per_doc.append(doc)
+        print(f"{idx:>8} {img[:30]:<32} charity_name={doc['fields'].get('charity_name')}")
+
+    # ---------- aggregate ----------
+    lines = []
+    lines.append("\n" + "=" * 70)
+    lines.append(f"EVAL SUMMARY (kleister)  docs={len(per_doc)}")
+    lines.append("=" * 70)
+    lines.append(f"{'field':<36} {'P':>6} {'R':>6} {'F1':>6}  tp fp fn wrong")
+    all_tp = all_fp = all_fn = all_wrong = 0
+    field_f1 = {}
+    for f in KLEISTER_FIELDS:
+        cnt = agg[f]
+        for lbl in ("tp", "fp", "fn", "wrong"):
+            cnt.setdefault(lbl, 0)
+        p, r, f1 = prf(cnt)
+        all_tp += cnt["tp"]
+        all_fp += cnt["fp"]
+        all_fn += cnt["fn"]
+        all_wrong += cnt["wrong"]
+        field_f1[f] = round(f1, 3)
+        lines.append(f"{f:<36} {p:6.2f} {r:6.2f} {f1:6.2f}  {cnt['tp']:>2} {cnt['fp']:>2} {cnt['fn']:>2} {cnt['wrong']:>3}")
+
+    micro_p, micro_r, micro_f1 = prf({"tp": all_tp, "fp": all_fp, "fn": all_fn})
+    macro_f1 = round(sum(field_f1.values()) / len(field_f1), 3)
+    lines.append("-" * 70)
+    lines.append(f"{'MICRO/FIELD-LEVEL':<36} {micro_p:6.2f} {micro_r:6.2f} {micro_f1:6.2f}  ({all_tp} tp / {all_fp} fp / {all_fn} fn / {all_wrong} wrong)")
+    lines.append(f"{'MACRO (field avg)':<36} {micro_p:6.2f} {micro_r:6.2f} {macro_f1:6.2f}  (mean field F1 over {len(KLEISTER_FIELDS)} fields)")
+
+    if n_total:
+        lines.append(f"charity_name exact: {total_ok}/{n_total} ({total_ok/n_total:.2f})")
+
+    abstain_by_field = defaultdict(int)
+    for d in per_doc:
+        for f, res in d["fields"].items():
+            if res == "fn":
+                abstain_by_field[f] += 1
+    if abstain_by_field:
+        lines.append("Abstentions: " + ", ".join(f"{k}={v}" for k, v in sorted(abstain_by_field.items())))
+
+    if latencies:
+        latencies.sort()
+        n = len(latencies)
+        lines.append(f"Latency: mean={sum(latencies)/n:.1f}s median={latencies[n//2]:.1f}s min={latencies[0]:.1f}s max={latencies[-1]:.1f}s")
+    lines.append(f"Tokens: {cost_total['prompt_tokens']} in / {cost_total['completion_tokens']} out | cost: ${cost_total['cost_usd']:.6f}")
+
+    out = "\n".join(lines)
+    print(out)
+
+    scorecard = {
+        "split": "kleister", "docs": len(per_doc), "macro_f1": macro_f1,
+        "field_f1": field_f1, "charity_name_exact": [total_ok, n_total],
+        "latency": {"mean": round(sum(latencies)/len(latencies), 1),
+                    "median": round(latencies[len(latencies)//2], 1),
+                    "min": round(latencies[0], 1), "max": round(latencies[-1], 1)} if latencies else None,
+        "cost_usd": round(cost_total["cost_usd"], 6),
+        "tokens": {"prompt": cost_total["prompt_tokens"], "completion": cost_total["completion_tokens"]},
+        "abstentions": dict(abstain_by_field),
+    }
+    with open(os.path.join(RESULTS_DIR, "scorecard_kleister.json"), "w") as f:
+        json.dump(scorecard, f, indent=2)
+    with open(os.path.join(RESULTS_DIR, "eval_kleister.txt"), "w") as f:
+        f.write(out)
+    with open(os.path.join(RESULTS_DIR, "per_doc_kleister.json"), "w") as f:
+        json.dump(per_doc, f, indent=2)
+    return scorecard
+
+
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--manifest", required=True)
     ap.add_argument("--pred-dir", default="data/predictions")
-    ap.add_argument("--gt-format", default="cord", choices=["cord", "self"])
+    ap.add_argument("--gt-format", default="cord", choices=["cord", "self", "kleister"])
     args = ap.parse_args()
-    run(args.manifest, args.pred_dir, args.gt_format)
+
+    if args.gt_format == "kleister":
+        run_kleister(args.manifest, args.pred_dir)
+    else:
+        run(args.manifest, args.pred_dir, args.gt_format)

@@ -1,6 +1,15 @@
 services:
   api:
     build: .
+    # one shared image tag for both services: `docker compose build` (re)tags the
+    # same layers once, so eval can never run a stale project-scoped image
+    image: datasaur:latest
+    healthcheck:
+      test: ["CMD-SHELL", "python -c \"import urllib.request;urllib.request.urlopen('http://localhost:8000/health', timeout=5)\""]
+      interval: 5s
+      timeout: 10s
+      retries: 12
+      start_period: 10s
     ports:
       - "8000:8000"
     environment:
@@ -16,9 +25,11 @@ services:
   # docker compose run --rm eval   (end-to-end: extract fresh via the API, then score)
   eval:
     build: .
+    image: datasaur:latest
     command: ["python", "run_eval.py", "--live", "--api-url", "http://api:8000", "--workers", "5"]
     depends_on:
-      - api
+      api:
+        condition: service_healthy
     environment:
       VLM_BASE_URL: ${VLM_BASE_URL:-https://generativelanguage.googleapis.com/v1beta/openai}
       VLM_API_KEY: ${VLM_API_KEY:-}

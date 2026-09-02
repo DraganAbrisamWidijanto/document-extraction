@@ -36,6 +36,12 @@ SPLITS = {
         "source": "self",
         "pred_glob": "data/self_scan/manifest.json",
     },
+    "kleister": {
+        "manifest": "data/kleister/manifest.json",
+        "gt_format": "kleister",
+        "source": "kleister",
+        "pred_glob": "data/kleister/manifest.json",
+    },
 }
 
 
@@ -59,7 +65,7 @@ def extract_live(splits, workers, api_url=None):
     endpoint (end-to-end against the API, per the take-home spec); otherwise
     it uses the in-process pipeline (same code path, no HTTP hop).
     """
-    src = "all" if set(splits) == {"cord", "self"} else splits[0]
+    src = "all" if set(splits) == {"cord", "self", "kleister"} else splits[0]
     cmd = [PY, "batch_extract.py", "--source", src, "--workers", str(workers), "--overwrite"]
     if api_url:
         cmd += ["--api-url", api_url]
@@ -71,14 +77,14 @@ def extract_live(splits, workers, api_url=None):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--live", action="store_true", help="re-extract before scoring")
-    ap.add_argument("--split", default="all", choices=["all", "cord", "self"])
+    ap.add_argument("--split", default="all", choices=["all", "cord", "self", "kleister"])
     ap.add_argument("--workers", type=int, default=4)
     ap.add_argument("--api-url", default=None,
                     help="with --live: extract via the API at this base URL "
                          "(e.g. http://localhost:8000) instead of in-process")
     args = ap.parse_args()
 
-    splits = ["cord", "self"] if args.split == "all" else [args.split]
+    splits = ["cord", "self", "kleister"] if args.split == "all" else [args.split]
 
     if args.live:
         rc = extract_live(splits, args.workers, args.api_url)
